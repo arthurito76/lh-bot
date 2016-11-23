@@ -75,4 +75,4 @@ if (intent) {
 // Server Init
 const server = restify.createServer()
 server.listen(3000)
-server.post('/API/Messages', connector.listen())
+server.post('/', connector.listen())

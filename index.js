@@ -1,20 +1,78 @@
-var express = require('express');
-var app = express();
+const recast = require('recastai')
+const config = require('./config.js')
+const getInfoPokemon = require('./intents/infopokemon.js')
+const getGreetings = require('./intents/greetings.js')
+const merciAnswer = require('./intents/merciAnswer.js')
+const pizzaAnswer = require('./intents/pizzaAnswer.js')
+const boitesAnswer = require('./intents/boitesAnswer.js')
+const byeAnswer = require('./intents/byeAnswer.js')
+const burgerAnswer = require('./intents/burgerAnswer.js')
+const mouleAnswer = require('./intents/mouleAnswer.js')
+const saladeAnswer = require('./intents/saladeAnswer.js')
+const friteAnswer = require('./intents/friteAnswer.js')
+const bioAnswer = require('./intents/bioAnswer.js')
+const bouchonsAnswer = require('./intents/bouchonsAnswer.js')
+const biereAnswer = require('./intents/biereAnswer.js')
+const sushisAnswer = require('./intents/sushisAnswer.js')
+const chinoisAnswer = require('./intents/chinoisAnswer.js')
+const insultesAnswer = require('./intents/insultesAnswer.js')
+const cocktailsAnswer = require('./intents/cocktailsAnswer.js')
+const museeAnswer = require('./intents/museeAnswer.js')
 
-app.set('port', (process.env.PORT || 5000));
+const restify = require('restify')
+const builder = require('botbuilder')
+// Connection to Microsoft Bot Framework
+const connector = new builder.ChatConnector({
+  appId: '3cfbf84d-f022-495f-a8f7-0d4b2ddd6504',
+  appPassword: 'yio4TqmvQt6ewOzCsqOPgd5',
+})
+const recastClient = new recast.Client(config.recast)
+const bot = new builder.UniversalBot(connector)
+const sendMessageByType = {
+  image: (session, elem) => session.send(new builder.Message().addAttachment({
+    contentType: 'image/png',
+    contentUrl: elem.content,
+  })),
+  text: (session, elem) => session.send(elem.content),
+}
+// Event when Message received
 
-app.use(express.static(__dirname + '/public'));
+const INTENTS = {
+	 infopokemon: getInfoPokemon,
+  greetings: getGreetings,
+  bye: byeAnswer,
+  pizzalh: pizzaAnswer,
+  burger: burgerAnswer,
+  moules: mouleAnswer,
+  salade: saladeAnswer,
+  frites: friteAnswer,
+  bio: bioAnswer,
+  bouchons: bouchonsAnswer,
+  biere: biereAnswer,
+  sushis: sushisAnswer,
+  chinois: chinoisAnswer,
+  insultes: insultesAnswer,
+  cocktails : cocktailsAnswer,
+  musee : museeAnswer,
+  merci: merciAnswer,
+  boites: boitesAnswer,
+}
 
-// views is directory for all template files
-app.set('views', __dirname + '/views');
-app.set('view engine', 'ejs');
-
-app.get('/', function(request, response) {
-  response.render('pages/index');
-});
-
-app.listen(app.get('port'), function() {
-  console.log('Node app is running on port', app.get('port'));
-});
-
-
+bot.dialog('/', (session) => {
+  recastClient.textRequest(session.message.text)
+  .then(res => {
+    const intent = res.intent()
+const entity = res.get('pokemon')
+if (intent) {
+  INTENTS[intent.slug](entity)
+  .then(res => { res.forEach((message) => session.send(message)) })
+  .catch(err => { err.forEach((message) => session.send(message)) })
+}
+ })
+  .catch(() => session.send('Je ne comprends pas encore tout très bien, il faut être patient avec moi. Je suis un jeune bot qui doit apprendre.'))
+})
+// Setup Restify Server
+// Server Init
+const server = restify.createServer()
+server.listen(3000)
+server.post('/API/Messages', connector.listen())

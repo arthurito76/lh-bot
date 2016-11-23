@@ -74,5 +74,6 @@ if (intent) {
 // Setup Restify Server
 // Server Init
 const server = restify.createServer()
-server.listen(3000)
-server.post('/', connector.listen())
+server.listen(process.env.PORT || 3000, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});

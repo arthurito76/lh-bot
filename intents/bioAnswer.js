@@ -1,9 +1,5 @@
-const random = array => { return array[Math.floor(Math.random() * array.length)] }
-const bioAnswer = () => {
-  const answers = [
-    'Alors pour manger bio je te conseille XXX',
-    'XXX est le seul lieu où manger bio que je connaisse',
-  ]
-   return Promise.resolve([random(answers)])
-}
-module.exports = bioAnswer
+const toText = message => ({ type: 'text', content: message } )
+const toImage = imageUrl => ({ type: 'image', content: imageUrl } )
+const answer = []
+answer.push(toImage('http://www.universal-connect.com/wp-content/uploads/2016/04/universal-connect-video.jpg'))
+answer.push(toText(‘Vive le bio !’))

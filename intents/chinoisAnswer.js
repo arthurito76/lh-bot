@@ -1,9 +1,9 @@
-const random = array => { return array[Math.floor(Math.random() * array.length)] }
+
 const chinoisAnswer = () => {
   const answers = [
-    'Sans hésiter va à Saïgon à Saint-Vincent ;-)',
-    'Saïgon à Saint-Vincent, tu m\'en donneras des nouvelles !',
+    'Sans hésiter va à Saïgon à Saint-Vincent. C\'est à emporter et à savourer ;-)',
+    ' Le Palais Impérial si tu veux te poser',
   ]
-   return Promise.resolve([random(answers)])
+   return Promise.resolve(answers)
 }
 module.exports = chinoisAnswer

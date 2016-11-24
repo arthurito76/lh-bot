@@ -1,10 +1,9 @@
-const random = array => { return array[Math.floor(Math.random() * array.length)] }
 const burgerAnswer = () => {
   const answers = [
-    'Tu peux aller à La Petite Rade',
-    'La Petite Rade est au top',
-    'La Petite Rade sans hésiter',
+    'Tout d\'abord je dirais La Petite Rade, avec un des meilleurs spots de la ville en prime',
+    'Le Fifty\'s n\'est pas piqué des hanetons non plus',
+    'Et n\'oublions pas de mentionner les Pénates non plus qui ne donne pas sa part aux lions',
   ]
-   return Promise.resolve([random(answers)])
+   return Promise.resolve(answers)
 }
 module.exports = burgerAnswer

@@ -1,6 +1,7 @@
 const recast = require('recastai')
 const config = require('./config.js')
 const getInfoPokemon = require('./intents/infopokemon.js')
+const mangerAnswer = require('./intents/mangerAnswer.js')
 const getGreetings = require('./intents/greetings.js')
 const merciAnswer = require('./intents/merciAnswer.js')
 const pizzaAnswer = require('./intents/pizzaAnswer.js')
@@ -54,6 +55,7 @@ const INTENTS = {
   musee : museeAnswer,
   merci: merciAnswer,
   boites: boitesAnswer,
+  manger: mangerAnswer,
 }
 
 bot.dialog('/', (session) => {

@@ -10,7 +10,6 @@ const burgerAnswer = require('./intents/burgerAnswer.js')
 const mouleAnswer = require('./intents/mouleAnswer.js')
 const saladeAnswer = require('./intents/saladeAnswer.js')
 const friteAnswer = require('./intents/friteAnswer.js')
-const bioAnswer = require('./intents/bioAnswer.js')
 const bouchonsAnswer = require('./intents/bouchonsAnswer.js')
 const biereAnswer = require('./intents/biereAnswer.js')
 const sushisAnswer = require('./intents/sushisAnswer.js')
@@ -46,7 +45,6 @@ const INTENTS = {
   moules: mouleAnswer,
   salade: saladeAnswer,
   frites: friteAnswer,
-  bio: bioAnswer,
   bouchons: bouchonsAnswer,
   biere: biereAnswer,
   sushis: sushisAnswer,

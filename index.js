@@ -18,7 +18,6 @@ const chinoisAnswer = require('./intents/chinoisAnswer.js')
 const insultesAnswer = require('./intents/insultesAnswer.js')
 const cocktailsAnswer = require('./intents/cocktailsAnswer.js')
 const museeAnswer = require('./intents/museeAnswer.js')
-
 const restify = require('restify')
 const builder = require('botbuilder')
 // Connection to Microsoft Bot Framework

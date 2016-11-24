@@ -65,7 +65,7 @@ const entity = res.get('pokemon')
 if (intent) {
   INTENTS[intent.slug](entity)
   .then(res => { res.forEach((message) => session.send(message)) })
-  .catch(err => { err.forEach((message) => session.send(message)) })
+  .catch(err => { err.forEach((message) => session.send('Je ne comprends pas encore tout très bien, il faut être patient avec moi. Je suis un jeune bot qui doit apprendre.')) })
 }
  })
   .catch(() => session.send('Je ne comprends pas encore tout très bien, il faut être patient avec moi. Je suis un jeune bot qui doit apprendre.'))

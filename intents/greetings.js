@@ -1,13 +1,10 @@
-const random = array => { return array[Math.floor(Math.random() * array.length)] }
+
+
+const toText = message => ({ type: 'text', content: message } )
+const toImage = imageUrl => ({ type: 'image', content: imageUrl } )
 const getGreetings = () => {
-  const answers = [
-    'Hello!',
-    'Yo ;)',
-    'Coucou toi.',
-    'A va ti ?',
-    'Salut bézot',
-    'Hey !',
-  ]
-return Promise.resolve([random(answers)])
+  const answer = []
+answer.push(toText('Hello!','Yo','Coucou toi','A va ti ?','Salut bézot','Hey !'))
+   return Promise.resolve(answer)
 }
 module.exports = getGreetings

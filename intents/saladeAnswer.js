@@ -4,6 +4,6 @@ const saladeAnswer = () => {
   const answer = []
 answer.push(toImage('http://www.universal-connect.com/wp-content/themes/universal-connect/imgs/logo-universal-connect.png'))
 answer.push(toText('une bonne salade!'))
-   return Promise.resolve(answers)
+   return Promise.resolve(answer)
 }
 module.exports = saladeAnswer

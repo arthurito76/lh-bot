@@ -38,7 +38,6 @@ session.send(new builder.Message().addAttachment({
 } else {
   text: (session, elem) => session.send(elem.content),
 }
-}
 // Event when Message received
 
 const INTENTS = {

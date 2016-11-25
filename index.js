@@ -29,15 +29,14 @@ const connector = new builder.ChatConnector({
 })
 const recastClient = new recast.Client(config.recast)
 const bot = new builder.UniversalBot(connector)
-const sendMessageByType = (session, elem) => {
-if (elem.type == 'image') {
-session.send(new builder.Message().addAttachment({
+const sendMessageByType = {
+ image: (session, elem) => session.send(new builder.Message().addAttachment({
    contentType: 'image/png',
    contentUrl: elem.content,
- }))
-} else {
-  text: (session, elem) => session.send(elem.content),
+ })),
+ text: (session, elem) => session.send(elem.content),
 }
+
 // Event when Message received
 
 const INTENTS = {

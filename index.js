@@ -5,6 +5,7 @@ const mangerAnswer = require('./intents/mangerAnswer.js')
 const promenadeAnswer = require('./intents/promenadeAnswer.js')
 const getGreetings = require('./intents/greetings.js')
 const merciAnswer = require('./intents/merciAnswer.js')
+const vinAnswer = require('./intents/vinAnswer.js')
 const pizzaAnswer = require('./intents/pizzaAnswer.js')
 const boitesAnswer = require('./intents/boitesAnswer.js')
 const byeAnswer = require('./intents/byeAnswer.js')
@@ -58,6 +59,7 @@ const INTENTS = {
   gastro: gastroAnswer,
   promenade: promenadeAnswer,
   concert: concertAnswer,
+  vin: vinAnswer,
 }
 
 const sendMessageByType = (session, elem) => {

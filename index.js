@@ -5,6 +5,7 @@ const mangerAnswer = require('./intents/mangerAnswer.js')
 const promenadeAnswer = require('./intents/promenadeAnswer.js')
 const getGreetings = require('./intents/greetings.js')
 const merciAnswer = require('./intents/merciAnswer.js')
+const sortirAnswer = require('./intents/sortirAnswer.js')
 const vinAnswer = require('./intents/vinAnswer.js')
 const hotelAnswer = require('./intents/hotelAnswer.js')
 const pizzaAnswer = require('./intents/pizzaAnswer.js')
@@ -50,6 +51,7 @@ const INTENTS = {
   apero: aperoAnswer,
   biere: biereAnswer,
   hotel: hotelAnswer,
+  sortir: sortirAnswer,
   sushis: sushisAnswer,
   chinois: chinoisAnswer,
   insultes: insultesAnswer,

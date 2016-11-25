@@ -61,16 +61,7 @@ bot.dialog('/', (session) => {
 const entity = res.get('pokemon')
 console.log(intent);
 if (intent) {
-	const sendMessageByType = (session, elem) => {
-if (elem.type == 'image') {
-session.send(new builder.Message().addAttachment({
-   contentType: 'image/png',
-   contentUrl: elem.content,
- }))
-} else {
-  text: (session, elem) => session.send(elem.content),
-}
-}	
+	
   INTENTS[intent.slug]
 .then(res => { res.forEach((message) => sendMessageByType(session, message)) }) 
 .catch(err => { err.forEach((message) => sendMessageByType(session, message)) }) 

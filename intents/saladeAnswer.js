@@ -6,5 +6,6 @@ answer.push(toImage('http://www.universal-connect.com/wp-content/themes/universa
 answer.push(toText('une bonne salade!'))
 console.log(answer);
    return Promise.resolve(answer)
+   console.log(answer);
 }
 module.exports = saladeAnswer

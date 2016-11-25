@@ -1,10 +1,8 @@
-const random = array => { return array[Math.floor(Math.random() * array.length)] }
+const utils = require('./util.js')
 const steakAnswer = () => {
-  const answers = [
-    'Tu peux aller à Al Dente',
-    'Al Dente est au top',
-    'Al Dente sans hésiter',
-  ]
-   return Promise.resolve([random(answers)])
+  const answer = []
+answer.push(utils.toText('Le Grignot te propose de belles pièces de viande'))
+ answer.push(utils.toText('Niveau boucher rien n\'égal Laiguillon'))		
+  return Promise.resolve(answer)
 }
 module.exports = steakAnswer

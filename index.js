@@ -60,8 +60,8 @@ session.send(new builder.Message().addAttachment({
    contentType: 'image/png',
    contentUrl: elem.content,
  }))
-} else {
-  text: (session, elem) => session.send(elem.content),
+} else { 
+session.send(elem.content)
 }
 }
 

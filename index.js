@@ -79,7 +79,7 @@ if (intent) {
 .catch(err => { err.forEach((message) => sendMessageByType(session, message)) }) 
 } else { session.send('Je ne comprends pas encore tout très bien, il faut être patient avec moi. Je suis un jeune bot qui doit apprendre.') }
  })
-  .catch(() => session.send('Je ne comprends pas encore tout très bien, il faut être patient avec moi. Je suis un jeune bot qui doit apprendre.'))
+  .catch(() => session.send('ouch!.'))
 })
 // Setup Restify Server
 // Server Init

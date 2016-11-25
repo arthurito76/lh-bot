@@ -2,11 +2,13 @@ const recast = require('recastai')
 const config = require('./config.js')
 const getInfoPokemon = require('./intents/infopokemon.js')
 const mangerAnswer = require('./intents/mangerAnswer.js')
+const promenadeAnswer = require('./intents/promenadeAnswer.js')
 const getGreetings = require('./intents/greetings.js')
 const merciAnswer = require('./intents/merciAnswer.js')
 const pizzaAnswer = require('./intents/pizzaAnswer.js')
 const boitesAnswer = require('./intents/boitesAnswer.js')
 const byeAnswer = require('./intents/byeAnswer.js')
+const gastroAnswer = require('./intents/gastroAnswer.js')
 const cavaAnswer = require('./intents/cavaAnswer.js')
 const aperoAnswer = require('./intents/aperoAnswer.js')
 const burgerAnswer = require('./intents/burgerAnswer.js')
@@ -52,6 +54,8 @@ const INTENTS = {
   merci: merciAnswer,
   boites: boitesAnswer,
   manger: mangerAnswer,
+  gastro: gastroAnswer,
+  promenade: promenadeAnswer,
 }
 
 const sendMessageByType = (session, elem) => {

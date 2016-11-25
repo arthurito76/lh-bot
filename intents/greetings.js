@@ -3,6 +3,6 @@ const random = array => { return array[Math.floor(Math.random() * array.length)]
 const getGreetings = () => {
   const answer = []
 answer.push(utils.toText('Hello!','Yo','Coucou toi','A va ti ?','Salut bézot','Hey !'))
-  return Promise.resolve([toText(random(answer))])
+  return Promise.resolve([utils.toText(random(answer))])
 }
 module.exports = getGreetings

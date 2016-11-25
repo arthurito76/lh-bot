@@ -6,7 +6,7 @@ answer.push(utils.toText('Hello!'))
  answer.push(utils.toText('Salut toi mon bézot'))	
   answer.push(utils.toText('A va ti ?'))	
     answer.push(utils.toText('yo'))	
-  return Promise.resolve([utils.toText(random(answer))])
+  return Promise.resolve(random(answers))
   
 }
 module.exports = getGreetings

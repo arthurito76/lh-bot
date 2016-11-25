@@ -7,6 +7,8 @@ const merciAnswer = require('./intents/merciAnswer.js')
 const pizzaAnswer = require('./intents/pizzaAnswer.js')
 const boitesAnswer = require('./intents/boitesAnswer.js')
 const byeAnswer = require('./intents/byeAnswer.js')
+const cavaAnswer = require('./intents/cavaAnswer.js')
+const aperoAnswer = require('./intents/aperoAnswer.js')
 const burgerAnswer = require('./intents/burgerAnswer.js')
 const mouleAnswer = require('./intents/mouleAnswer.js')
 const saladeAnswer = require('./intents/saladeAnswer.js')
@@ -27,25 +29,30 @@ const connector = new builder.ChatConnector({
 })
 const recastClient = new recast.Client(config.recast)
 const bot = new builder.UniversalBot(connector)
-const sendMessageByType = {
-  image: (session, elem) => session.send(new builder.Message().addAttachment({
-    contentType: 'image/png',
-    contentUrl: elem.content,
-  })),
+const sendMessageByType = (session, elem) => {
+if (elem.type == 'image') {
+session.send(new builder.Message().addAttachment({
+   contentType: 'image/png',
+   contentUrl: elem.content,
+ }))
+} else {
   text: (session, elem) => session.send(elem.content),
+}
 }
 // Event when Message received
 
 const INTENTS = {
 	 infopokemon: getInfoPokemon,
   greetings: getGreetings,
-  bye: byeAnswer,
+  aurevoir: byeAnswer,
   pizzalh: pizzaAnswer,
   burger: burgerAnswer,
   moules: mouleAnswer,
   salade: saladeAnswer,
+  cava: cavaAnswer,
   frites: friteAnswer,
   bouchons: bouchonsAnswer,
+  apero: aperoAnswer,
   biere: biereAnswer,
   sushis: sushisAnswer,
   chinois: chinoisAnswer,
@@ -64,10 +71,10 @@ bot.dialog('/', (session) => {
 const entity = res.get('pokemon')
 console.log(intent);
 if (intent) {
-  INTENTS[intent.slug](entity)
-  .then(res => { res.forEach((message) => session.send(message)) })
-  .catch(err => { err.forEach((message) => session.send(message)) })
-} else { session.send('Je ne comprends pas encore tout très bien, il faut être patient avec moi. Je suis un jeune bot qui doit apprendre.') }
+  INTENTS[intent.slug]
+.then(res => { res.forEach((message) => sendMessageByType(session, message)) }) 
+.catch(err => { err.forEach((message) => sendMessageByType(session, message)) }) 
+else { session.send('Je ne comprends pas encore tout très bien, il faut être patient avec moi. Je suis un jeune bot qui doit apprendre.') }
  })
   .catch(() => session.send('Je ne comprends pas encore tout très bien, il faut être patient avec moi. Je suis un jeune bot qui doit apprendre.'))
 })

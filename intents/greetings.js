@@ -9,7 +9,7 @@ const getGreetings = () => {
     'Hi, how can I help you?',
     'Hey, what do you need?',
   ]
-  return Promise.resolve(random(answer))
+  return Promise.resolve([random(answer)])
   
 }
 module.exports = getGreetings

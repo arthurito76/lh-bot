@@ -62,7 +62,7 @@ bot.dialog('/', (session) => {
   .then(res => {
     const intent = res.intent()
 const entity = res.get('pokemon')
-console.log(intent)
+console.log(intent);
 if (intent) {
   INTENTS[intent.slug](entity)
   .then(res => { res.forEach((message) => session.send(message)) })

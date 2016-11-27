@@ -24,6 +24,7 @@ const bouchonsAnswer = require('./intents/bouchonsAnswer.js')
 const biereAnswer = require('./intents/biereAnswer.js')
 const sushisAnswer = require('./intents/sushisAnswer.js')
 const chinoisAnswer = require('./intents/chinoisAnswer.js')
+const kebabAnswer = require('./intents/kebabAnswer.js')
 const insultesAnswer = require('./intents/insultesAnswer.js')
 const cocktailsAnswer = require('./intents/cocktailsAnswer.js')
 const museeAnswer = require('./intents/museeAnswer.js')
@@ -52,6 +53,7 @@ const INTENTS = {
   bouchons: bouchonsAnswer,
   apero: aperoAnswer,
   biere: biereAnswer,
+  kebab: kebabAnswer,
   hotel: hotelAnswer,
   sortir: sortirAnswer,
   sushis: sushisAnswer,

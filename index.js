@@ -1,6 +1,6 @@
 const recast = require('recastai')
 const config = require('./config.js')
-const INTENT = require('./intents/index.js')
+const INTENT = require('./intents')
 const restify = require('restify')
 const builder = require('botbuilder')
 // Connection to Microsoft Bot Framework
@@ -12,38 +12,38 @@ const recastClient = new recast.Client(config.recast)
 const bot = new builder.UniversalBot(connector)
 // Event when Message received
 
-const INTENTS = {
-	 infopokemon: getInfoPokemon,
-  greetings: getGreetings,
-  aurevoir: byeAnswer,
-  pizzalh: pizzaAnswer,
-  burger: burgerAnswer,
-  moules: mouleAnswer,
-  salade: saladeAnswer,
-  cava: cavaAnswer,
-  the: theAnswer,
-  libanais: libanaisAnswer,
-  frites: friteAnswer,
-  bouchons: bouchonsAnswer,
-  apero: aperoAnswer,
-  biere: biereAnswer,
-  kebab: kebabAnswer,
-  hotel: hotelAnswer,
-  sortir: sortirAnswer,
-  sushis: sushisAnswer,
-  chinois: chinoisAnswer,
-  insultes: insultesAnswer,
-  cocktails : cocktailsAnswer,
-  musee : museeAnswer,
-  merci: merciAnswer,
-  boites: boitesAnswer,
-  manger: mangerAnswer,
-  gastro: gastroAnswer,
-  promenade: promenadeAnswer,
-  concert: concertAnswer,
-  vin: vinAnswer,
-  homeapero: homeaperoAnswer,
-}
+const INTENTS = [
+	 'infopokemon',
+  'greetings',
+  'aurevoir',
+  'pizzalh',
+  'burger',
+  'moules',
+  'salade',
+  'cava',
+  'the',
+  'libanais',
+  'frites',
+  'bouchons',
+  'apero',
+  'biere',
+  'kebab',
+  'hotel',
+  'sortir',
+  'sushis',
+  'chinois',
+  'insultes',
+  'cocktails',
+  'musee',
+  'merci',
+  'boites',
+  'manger',
+  'gastro',
+  'promenade',
+  'concert',
+  'vin',
+  'homeapero',
+]
 
 const sendMessageByType = (session, elem) => {
 if (elem.type == 'image') {

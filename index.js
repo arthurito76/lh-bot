@@ -1,35 +1,6 @@
 const recast = require('recastai')
 const config = require('./config.js')
-const getInfoPokemon = require('./intents/infopokemon.js')
-const mangerAnswer = require('./intents/mangerAnswer.js')
-const promenadeAnswer = require('./intents/promenadeAnswer.js')
-const getGreetings = require('./intents/greetings.js')
-const merciAnswer = require('./intents/merciAnswer.js')
-const homeaperoAnswer = require('./intents/homeaperoAnswer.js')
-const sortirAnswer = require('./intents/sortirAnswer.js')
-const vinAnswer = require('./intents/vinAnswer.js')
-const libanaisAnswer = require('./intents/libanaisAnswer.js')
-const theAnswer = require('./intents/theAnswer.js')
-const hotelAnswer = require('./intents/hotelAnswer.js')
-const pizzaAnswer = require('./intents/pizzaAnswer.js')
-const boitesAnswer = require('./intents/boitesAnswer.js')
-const byeAnswer = require('./intents/byeAnswer.js')
-const concertAnswer = require('./intents/concertAnswer.js')
-const gastroAnswer = require('./intents/gastroAnswer.js')
-const cavaAnswer = require('./intents/cavaAnswer.js')
-const aperoAnswer = require('./intents/aperoAnswer.js')
-const burgerAnswer = require('./intents/burgerAnswer.js')
-const mouleAnswer = require('./intents/mouleAnswer.js')
-const saladeAnswer = require('./intents/saladeAnswer.js')
-const friteAnswer = require('./intents/friteAnswer.js')
-const bouchonsAnswer = require('./intents/bouchonsAnswer.js')
-const biereAnswer = require('./intents/biereAnswer.js')
-const sushisAnswer = require('./intents/sushisAnswer.js')
-const chinoisAnswer = require('./intents/chinoisAnswer.js')
-const kebabAnswer = require('./intents/kebabAnswer.js')
-const insultesAnswer = require('./intents/insultesAnswer.js')
-const cocktailsAnswer = require('./intents/cocktailsAnswer.js')
-const museeAnswer = require('./intents/museeAnswer.js')
+const INTENTS = require('./intents')
 const restify = require('restify')
 const builder = require('botbuilder')
 // Connection to Microsoft Bot Framework
@@ -40,39 +11,6 @@ const connector = new builder.ChatConnector({
 const recastClient = new recast.Client(config.recast)
 const bot = new builder.UniversalBot(connector)
 // Event when Message received
-
-const INTENTS = {
-	 infopokemon: getInfoPokemon,
-  greetings: getGreetings,
-  aurevoir: byeAnswer,
-  pizzalh: pizzaAnswer,
-  burger: burgerAnswer,
-  moules: mouleAnswer,
-  salade: saladeAnswer,
-  cava: cavaAnswer,
-  the: theAnswer,
-  libanais: libanaisAnswer,
-  frites: friteAnswer,
-  bouchons: bouchonsAnswer,
-  apero: aperoAnswer,
-  biere: biereAnswer,
-  kebab: kebabAnswer,
-  hotel: hotelAnswer,
-  sortir: sortirAnswer,
-  sushis: sushisAnswer,
-  chinois: chinoisAnswer,
-  insultes: insultesAnswer,
-  cocktails : cocktailsAnswer,
-  musee : museeAnswer,
-  merci: merciAnswer,
-  boites: boitesAnswer,
-  manger: mangerAnswer,
-  gastro: gastroAnswer,
-  promenade: promenadeAnswer,
-  concert: concertAnswer,
-  vin: vinAnswer,
-  homeapero: homeaperoAnswer,
-}
 
 
 const sendMessageByType = (session, elem) => {

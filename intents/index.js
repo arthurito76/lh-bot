@@ -2,7 +2,7 @@ module.exports = {
   getInfoPokemon : require('./infopokemon.js'),
  mangerAnswer : require('./mangerAnswer.js'),
  promenadeAnswer : require('./promenadeAnswer.js'),
- getGreetings : require('./greetings.js'),
+ greetings : require('./greetings.js'),
  merciAnswer : require('./merciAnswer.js'),
  homeaperoAnswer : require('./homeaperoAnswer.js'),
  sortirAnswer : require('./sortirAnswer.js'),

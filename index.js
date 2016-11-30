@@ -23,8 +23,6 @@ session.send(new builder.Message().addAttachment({
 session.send(elem.content)
 }
 }
-
-
 bot.dialog('/', (session) => {
   recastClient.textRequest(session.message.text)
   .then(res => {
@@ -32,7 +30,6 @@ bot.dialog('/', (session) => {
 if (intent) {
 const restaurantName = res.get('restoinfo')	
 INTENTS[intent.slug](restoinfo)
-console.log(intent);
 .then(res => { res.forEach((message) => sendMessageByType(session, message)) }) 
 .catch(err => { err.forEach((message) => sendMessageByType(session, message)) }) 
 } else { session.send(['Je ne comprends pas encore tout très bien, il faut être patient avec moi. Je suis un jeune bot qui doit apprendre.', 'ouhlala j\'ai encore beaucoup à apprendre tu sais', 'no comprendo senior', 'hein ?', 'je n\'ai pas la réponse mais je vais me renseigner']) }

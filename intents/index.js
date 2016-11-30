@@ -36,4 +36,5 @@ petanque : require('./petanqueAnswer.js')  ,
 createur : require('./createurAnswer.js')  ,
 age : require('./ageAnswer.js')  ,
 mappelle : require('./mappelleAnswer.js')  ,
+findresto : require('./findresto.js')  ,
  } 

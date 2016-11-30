@@ -31,4 +31,6 @@ getInfoPokemon : require('./infopokemon.js'),
  cocktails : require('./cocktailsAnswer.js'),
  musee : require('./museeAnswer.js')  ,
 bagel : require('./bagelAnswer.js')  ,
+nom : require('./nomAnswer.js')  ,
+createur : require('./createurAnswer.js')  ,
  } 

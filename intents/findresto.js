@@ -1,6 +1,6 @@
 const _ = require('lodash') 
 const datas = require('./data.js') 
-const dynamic = () => { 
+const findresto = () => { 
 const object = lodash.filter(datas, data => data.name === entity.raw) 
 } 
-module.exports = dynamic
+module.exports = findresto

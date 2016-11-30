@@ -37,4 +37,6 @@ createur : require('./createurAnswer.js')  ,
 age : require('./ageAnswer.js')  ,
 mappelle : require('./mappelleAnswer.js')  ,
 findresto : require('./findresto.js')  ,
+crepe : require('./crepeAnswer.js')  ,
+illegal : require('./illegalAnswer.js')  ,
  } 

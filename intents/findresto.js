@@ -1,4 +1,5 @@
 const _ = require('lodash') 
+const utils = require('./util.js')
 const datas = require('./data.js') 
 const findresto = (RESTOINFO) => { 
  if (!RESTOINFO) { return Promise.resolve([u.toText('De quel restaurant parlez vous?')])}

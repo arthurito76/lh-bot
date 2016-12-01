@@ -9,8 +9,8 @@ const object =_.find(datas, data => fuzzy.metrics.jaro_winkler(data.name, RESTOI
 console.log(object)
 if (!object) { return Promise.resolve([utils.toText('Je ne trouve pas ce resto')])}
 const answer = []
-  answer.push(utils.toText('Je connais ce restaurant il est situé ' + object.location))
-  answer.push(utils.toText('sa note est de ' + object.rating))
+  answer.push(utils.toText('localisation ' + object.location))
+  answer.push(utils.toText('sa page facebook: ' + object.page))
    return Promise.resolve(answer)
 } 
 module.exports = findresto

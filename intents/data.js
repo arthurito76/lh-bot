@@ -1,18 +1,18 @@
 const datas = [
   {
     name: 'l\'Eau Tarie',
-    location: 'Rue piétonne',
-    rating: 5
+    location: 'Rues piétonnes',
+    page: 'https://www.facebook.com/www.leautarielehavre.fr/?fref=ts'
   },
   {
     name: 'l\'Abri Côtier',
-    location: 'Adress2',
-    rating: 4
+    location: 'Plage',
+    page: 'https://www.facebook.com/abricotierbar/?fref=ts'
   },
   {
     name: 'Le Trappiste',
-    location: 'Adress3',
-    rating: 3
+    location: 'Niemeyer',
+    page: 'https://www.facebook.com/LeTrappistLeHavre/?fref=ts'
   },
 ]
 module.exports = datas

@@ -27,9 +27,10 @@ bot.dialog('/', (session) => {
   recastClient.textRequest(session.message.text)
   .then(res => {
     const intent = res.intent()
+	const restaurantName = res.get('RESTOINFO')
+	console.log (restaurantName)	
 if (intent) {
-const restaurantName = res.get('RESTOINFO')	
-console.log (restaurantName)
+
 INTENTS[intent.slug](restaurantName)
 .then(res => { res.forEach((message) => sendMessageByType(session, message)) }) 
 .catch(err => { err.forEach((message) => sendMessageByType(session, message)) }) 

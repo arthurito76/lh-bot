@@ -1,7 +1,7 @@
 const _ = require('lodash') 
 const datas = require('./data.js') 
-const findresto = (restoinfo) => { 
-const object = lodash_.find (datas, data => data.name === restoinfo.raw) 
+const findresto = (RESTOINFO) => { 
+const object = _.find (datas, data => data.name === RESTOINFO.raw) 
 console.log(object)
 } 
 module.exports = findresto

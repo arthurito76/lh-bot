@@ -28,7 +28,7 @@ bot.dialog('/', (session) => {
   .then(res => {
     const intent = res.intent()
 if (intent) {
-const restaurantName = res.get('restoinfo')	
+const restaurantName = res.get('RESTOINFO')	
 INTENTS[intent.slug](restaurantName)
 .then(res => { res.forEach((message) => sendMessageByType(session, message)) }) 
 .catch(err => { err.forEach((message) => sendMessageByType(session, message)) }) 

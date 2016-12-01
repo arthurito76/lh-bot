@@ -39,4 +39,6 @@ mappelle : require('./mappelleAnswer.js')  ,
 findresto : require('./findresto.js')  ,
 crepe : require('./crepeAnswer.js')  ,
 illegal : require('./illegalAnswer.js')  ,
+cine : require('./cineAnswer.js')  ,
+lol : require('./lolAnswer.js')  ,
  } 

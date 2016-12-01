@@ -1,16 +1,16 @@
 const datas = [
   {
-    name: 'l\'Eaut tarie',
+    name: 'l\'Eau Tarie',
     location: 'Rue piétonne',
     rating: 5
   },
   {
-    name: 'Abri côtier',
+    name: 'l\'Abri Côtier',
     location: 'Adress2',
     rating: 4
   },
   {
-    name: 'Le trappiste',
+    name: 'Le Trappiste',
     location: 'Adress3',
     rating: 3
   },

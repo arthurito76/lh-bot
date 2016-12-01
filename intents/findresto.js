@@ -6,7 +6,7 @@ const findresto = (RESTOINFO) => {
 console.log(datas) 
  if (!RESTOINFO) { return Promise.resolve([utils.toText('De quel restaurant parlez vous?')])}
 console.log(RESTOINFO)
-const distance = clj_fuzzy.metrics.jaro_winkler(data.name, RESTOINFO.raw)
+const distance = fuzzy.metrics.jaro_winkler(data.name, RESTOINFO.raw)
 console.log(distance)
 const object =_.find(datas, data => distance > 0.8)
 console.log(object)

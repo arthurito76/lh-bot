@@ -41,4 +41,5 @@ crepe : require('./crepeAnswer.js')  ,
 illegal : require('./illegalAnswer.js')  ,
 cine : require('./cineAnswer.js')  ,
 lol : require('./lolAnswer.js')  ,
+emo : require('./emoAnswer.js')  ,
  } 

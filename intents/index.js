@@ -42,4 +42,6 @@ illegal : require('./illegalAnswer.js')  ,
 cine : require('./cineAnswer.js')  ,
 lol : require('./lolAnswer.js')  ,
 emo : require('./emoAnswer.js')  ,
+italien : require('./italienAnswer.js')  ,
+horairesmairie: require('./horairesmairieAnswer.js')  ,
  } 

@@ -1,5 +1,5 @@
 const random = array => { return array[Math.floor(Math.random() * array.length)] }
-const bioAnswer = () => {
+const fromageAnswer = () => {
   const answer = []
   answer.push(toText('Les meilleurs fromagers sont aux Halles'))
 answer.push(utils.toImage('http://arthurfortin.fr/images/from.jpeg'))
@@ -7,4 +7,4 @@ answer.push(utils.toImage('http://arthurfortin.fr/images/from.jpeg'))
 answer.push(utils.toImage('http://arthurfortin.fr/images/savoie.jpg'))
    return Promise.resolve([random(answers)])
 }
-module.exports = bioAnswer
+module.exports = fromageAnswer

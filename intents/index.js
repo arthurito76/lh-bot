@@ -46,4 +46,5 @@ italien : require('./italienAnswer.js')  ,
 sandwich : require('./sandwichAnswer.js')  ,
 horairesmairie: require('./horairesmairieAnswer.js')  ,
 marche: require('./marcheAnswer.js')  ,
+fromage: require('./fromageAnswer.js')  ,
  } 

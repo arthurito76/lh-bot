@@ -85,5 +85,14 @@ const datas = [
     page: 'https://www.facebook.com/LeJardin.LH/'
   },
   
+   {
+      name: 'Cave à Bières',
+    location: 'Saint Vincent',
+  },
+  {
+      name: 'Cave à Bières',
+    location: 'Saint Vincent',
+  },
+  
 ]
 module.exports = datas

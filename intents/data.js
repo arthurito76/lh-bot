@@ -49,5 +49,41 @@ const datas = [
     location: 'quartier des Halles',
     page: 'https://www.facebook.com/aubureau.lehavre'
   },
+          {
+    name: 'All in Bagels',
+    location: 'quartier de l\'Eure et Bibliothèque municipale',
+    page: 'https://www.facebook.com/AllInBagels'
+  },
+            {
+    name: 'Al Dente',
+    location: 'quartier de l\'Eure et Bibliothèque municipale',
+    page: 'https://www.facebook.com/Al-Dente-Ristorante-196816710348037'
+  },
+          {
+    name: 'Al Dente',
+    location: 'quartier de l\'Eure et Bibliothèque municipale',
+    page: 'https://www.facebook.com/Al-Dente-Ristorante-196816710348037'
+  },
+    {
+    name: 'Bistrot de Quentin',
+    location: 'Rues Piétonnes',
+    page: 'https://www.facebook.com/lebistrotdequentin'
+  },
+      {
+    name: 'Black Café',
+    location: 'Niemeyer',
+    page: 'https://www.facebook.com/Black-Caf%C3%A9-739396976180251/'
+  },
+        {
+    name: 'Petite Rade',
+    location: 'Plage',
+    page: 'https://www.facebook.com/La-Petite-Rade-188341881206913/'
+  },
+          {
+    name: 'Le Jardin',
+    location: 'Saint Vincent',
+    page: 'https://www.facebook.com/LeJardin.LH/'
+  },
+  
 ]
 module.exports = datas

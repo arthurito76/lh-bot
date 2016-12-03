@@ -43,5 +43,7 @@ cine : require('./cineAnswer.js')  ,
 lol : require('./lolAnswer.js')  ,
 emo : require('./emoAnswer.js')  ,
 italien : require('./italienAnswer.js')  ,
+sandwich : require('./sandwichAnswer.js')  ,
 horairesmairie: require('./horairesmairieAnswer.js')  ,
+marche: require('./marcheAnswer.js')  ,
  } 

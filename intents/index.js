@@ -49,4 +49,7 @@ marche: require('./marcheAnswer.js')  ,
 fromage: require('./fromageAnswer.js')  ,
 visiter: require('./visiterAnswer.js')  ,
 brunch: require('./brunchAnswer.js')  ,
+sport: require('./sportAnswer.js')  ,
+creche: require('./crecheAnswer.js')  ,
+spa: require('./spaAnswer.js')  ,
  } 

@@ -47,4 +47,5 @@ sandwich : require('./sandwichAnswer.js')  ,
 horairesmairie: require('./horairesmairieAnswer.js')  ,
 marche: require('./marcheAnswer.js')  ,
 fromage: require('./fromageAnswer.js')  ,
+visiter: require('./visiterAnswer.js')  ,
  } 

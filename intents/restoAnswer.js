@@ -1,5 +1,5 @@
 const utils = require('./util.js')
-const restoAnswer = () => {
+const restoAnswer = (restaurantType) => {
 	if (restaurantType == 'Indien') { 
 const answer = [] answer.push(utils.toText('un bon resto indien')) 
 return Promise.resolve(answer) }

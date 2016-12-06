@@ -53,4 +53,5 @@ sport: require('./sportAnswer.js')  ,
 creche: require('./crecheAnswer.js')  ,
 spa: require('./spaAnswer.js')  ,
 theatre: require('./theatreAnswer.js')  ,
+media: require('./mediaAnswer.js')  ,
  } 

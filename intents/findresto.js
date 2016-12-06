@@ -11,6 +11,7 @@ if (!object) { return Promise.resolve([utils.toText('Je ne trouve pas ce resto')
 const answer = []
   answer.push(utils.toText('localisation ' + object.location))
   answer.push(utils.toText('sa page facebook: ' + object.page))
+  answer.push(utils.toText('avis : ' + object.avis))
    return Promise.resolve(answer)
 } 
 module.exports = findresto

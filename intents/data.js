@@ -138,5 +138,12 @@ const datas = [
 	avis: 'Si tu n\'a pas encore visité ce lieu dédié à la peinture impressionniste (entre autres), accueillant entre autres Monet, Renoir ou Boudin, alors t\'as loupé ta vie.'
   },
   
+  {
+      name: 'Docks Vauban',
+    location: 'Près de la gare',
+	page: 'https://www.facebook.com/Docksvauban',
+	avis: 'Temple commercial peuplé d\'enseignes franchisées. Mais le lieu est beau et ça ramène de la vie donc va y faire un tour.'
+  },
+  
 ]
 module.exports = datas

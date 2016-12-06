@@ -1,12 +1,12 @@
 const utils = require('./util.js')
-const restoAnswer = (restaurantType) => {
-	if (restaurantType == 'Indien') { 
+const restoAnswer = (RESTAURANTTYPE) => {
+	if (RESTAURANTTYPE == 'Indien') { 
 const answer = [] 
 answer.push(utils.toText('un bon resto indien')) 
 console.log(answer)
 return Promise.resolve(answer) }
 
-if (restaurantType == 'Turc') { 
+if (RESTAURANTTYPE == 'Turc') { 
 const answer = [] 
 answer.push(utils.toText('un bon resto turc')) 
 return Promise.resolve(answer) }

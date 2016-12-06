@@ -36,7 +36,7 @@ const datas = [
 	avis: 'LE PUB du Havre. Avec des concerts et des gens tatoués.'
   },
      {
-    name: 'Le Merle Moqueur',
+    name: 'Merle Moqueur',
     location: 'Notre Dame',
     page: 'https://www.facebook.com/Le-Merle-Moqueur-383939731755519',
 	avis: 'Un rade sans chichis avec des assiettes copieuses. Bonne ambiance quoi.'
@@ -100,9 +100,43 @@ const datas = [
    {
       name: 'Cave à Bières',
     location: 'Saint Vincent',
+	 page: 'https://www.facebook.com/LeJardin.LH/',
 	avis: 'la caverne d\'Ali Baba des amoureux de bières et une galerie d\'art en passe de devenir incontournable.'
   },
   
+     {
+      name: 'les Enfants Sages',
+    location: 'Notre Dame',
+	page: 'https://www.facebook.com/restaurantlesenfantssages',
+	avis: 'Un joli lieu situé dans une ancienne école. C\'est beau, c\'est bon mais c\'est pas donné.'
+  },
+  
+       {
+      name: 'le Chat Bleu',
+    location: 'Sainte-Adresse',
+	page: 'https://www.facebook.com/Le-Chat-Bleu-au-bon-goût-dici-et-dailleurs-294275044012714',
+	avis: 'Le refuge idéal pour les urbains souhaitant trouver un refuge où manger un bout, prende un thé ou une mousse. Tout est bon, tout est fait maison.'
+  },
+  
+       {
+      name: 'le Tétris',
+    location: 'Fort de Tourneville',
+	page: 'https://www.facebook.com/LeTetris',
+	avis: 'Le lieu dédié aux jeunes avec des concertes qu\'ils aiment et un festival, Ouest Park, où la ville se retrouve autour de nombreux concerts et de beaucoup d\'alcool. Bref c\'est fait pour toi.'
+  },
+  
+     {
+      name: 'le Bistrot',
+    location: 'avenue Coty',
+	page: 'https://www.facebook.com/lebistrotcoty',
+	avis: 'un rade, un vrai, encore dans son jus, pas comme ces cochonnerie de bars lounges.'
+  },
+       {
+      name: 'MUMA',
+    location: 'Quartier Perret',
+	page: 'https://www.facebook.com/MuMaLeHavre',
+	avis: 'Si tu n\'a pas encore visité ce lieu dédié à la peinture impressionniste (entre autres), accueillant entre autres Monet, Renoir ou Boudin, alors t\'as loupé ta vie.'
+  },
   
 ]
 module.exports = datas

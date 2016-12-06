@@ -1,5 +1,6 @@
 const utils = require('./util.js')
 const restoAnswer = (RESTAURANTTYPE) => {
+	console.log(RESTAURANTTYPE)
 	if (RESTAURANTTYPE == 'Indien') { 
 const answer = [] 
 answer.push(utils.toText('un bon resto indien')) 

@@ -7,6 +7,12 @@ const answer = []
 answer.push(utils.toText('la mer, LOL')) 
 return Promise.resolve(answer) }
 
+if (ACTIVITE.raw == 'piscine') { 
+const answer = [] 
+answer.push(utils.toText('Alors je te conseillerais la piscine des Docks. Grand bassin, balnéo et salle de sport. Le lieu est beau et bien pourvu. '))
+answer.push(utils.toImage('http://arthurfortin.fr/images/pisdock.jpeg')) 
+return Promise.resolve(answer) }
+
 if (ACTIVITE.raw == 'musée') { 
 const answer = [] 
 answer.push(utils.toText('Le MUMA est notre musée. Tu y trouveras une belle collections d\'impressionnistes. A titre d\'anecdote le Musée fut à l\'origine la 1ère Maison de la Culture'))

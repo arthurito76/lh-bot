@@ -7,34 +7,7 @@ const answer = []
 answer.push(utils.toText('la mer, LOL')) 
 return Promise.resolve(answer) }
 
-	if (ACTIVITE.raw == 'promener') { 
-const answer = [] 
-  answer.push(utils.toText('La plus zen des promenades c\est aux Jardins Suspendus. Un vrai coin d\'exotisme au coeur de la ville'))
-  answer.push(utils.toImage('http://www.lehavre.fr/sites/all/files/imagecache/645x320/articles/_mea0063_0.jpg'))
-   answer.push(utils.toText('Il y a aussi la forêt de Montgeon, une forêt en pleine ville c\'est bath non ?'))
-answer.push(utils.toImage('http://www.lehavre.fr/sites/all/files/imagecache/645x320/articles/bando-foret-de-montgeon-645.jpg'))
-return Promise.resolve(answer) }
-
-if (ACTIVITE.raw == 'sortir') { 
-const answer = [] 
-answer.push(utils.toText('Tout dépend de ce que tu veux boire'))
-}
-return Promise.resolve(answer) }
-
-if (ACTIVITE.raw == 'visiter') { 
-const answer = [] 
- answer.push(utils.toText('Ce n\'est pas compliqué : laisse Bee te faire découvrir la ville'))
-answer.push(utils.toImage('http://arthurfortin.fr/images/bee'))
-    answer.push(utils.toText('RDV rues piétonnes'))
-return Promise.resolve(answer) }
-
-if (ACTIVITE.raw == 'marché') { 
-const answer = [] 
-answer.push(utils.toText('Alors tu as le marché des Halles qui est pas mal et très mondain le dimanche matin.'))
-    answer.push(utils.toText('Et à Saint-Vincent le samedi matin. Ce sont des producteurs locaux donc fonce. '))
-answer.push(utils.toText('https://www.facebook.com/Le-marché-des-commerçants-de-Saint-Vincent-place-des-Gobelins-1751247418424921 '))
-return Promise.resolve(answer) }
-
+	
 if (ACTIVITE.raw == 'théâtre') { 
 const answer = [] 
 answer.push(utils.toImage('http://arthurfortin.fr/images/volc.jpeg'))
@@ -79,8 +52,5 @@ else {
 const answer = [] 
 answer.push(utils.toText('Je vais me renseigner')) 
 return Promise.resolve(answer) }
-
 }
-
-
 module.exports = activiteAnswer

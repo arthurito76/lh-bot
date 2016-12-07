@@ -21,6 +21,14 @@ answer.push(utils.toText('Alors je te conseille Sushis Makers près du Bassin du
  answer.push(utils.toText('Sushis Makers près du Bassin du Commerce et Samouraï à la plage sauront émoustiller tes papilles'))		
 return Promise.resolve(answer) }
 
+if (RESTAURANTTYPE.raw == 'italien') { 
+const answer = [] 
+answer.push(utils.toText('Alors côté épicerie tu as l\'italien qui se trouve aux Halles'))
+  answer.push(utils.toImage('http://arthurfortin.fr/images/picco.jpg'))
+  answer.push(utils.toText('Sinon pour manger tu as Al Dente'))
+  answer.push(utils.toImage('http://arthurfortin.fr/images/dente.jpg'))	
+return Promise.resolve(answer) }
+
 if (RESTAURANTTYPE.raw == 'pizza') { 
 const answer = [] 
 answer.push(utils.toText('Tu peux aller à Al Dente'))

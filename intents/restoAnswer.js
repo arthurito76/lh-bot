@@ -112,12 +112,13 @@ if (RESTAURANTTYPE.raw == 'Turc') {
 const answer = [] 
 answer.push(utils.toText('un bon resto turc')) 
 return Promise.resolve(answer) }
-}
 
 else { 
 const answer = [] 
-answer.push(utils.toText('Pas de réponse mais je vais me renseigner')) 
+answer.push(utils.toText('Je vais me renseigner')) 
 return Promise.resolve(answer) }
+
 }
+
 
 module.exports = restoAnswer

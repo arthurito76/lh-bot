@@ -37,6 +37,13 @@ answer.push(utils.toText('Alors le midi tu peux aller à l\'Eautarie'))
     answer.push(utils.toText('Et puis n\'oublions pas la Ptite Rade, qui t\'en sert avec un burger dantesque'))
 return Promise.resolve(answer) }
 
+if (RESTAURANTTYPE.raw == 'bagel') { 
+const answer = [] 
+answer.push(utils.toText('Ca tombe bien que tu aimes ça car je vais te dire la meilleure adresse de la ville : All in Bagels'))
+ answer.push(utils.toText('Il y a une boutique au quartier de l\'Eure et une à la bibliothèque de Niemeyer '))
+ answer.push(utils.toImage('http://arthurfortin.fr/images/all.jpg'))	
+return Promise.resolve(answer) }
+
 if (RESTAURANTTYPE.raw == 'kebab') { 
 const answer = [] 
 answer.push(utils.toText('Salut chef ;-)'))
@@ -106,4 +113,7 @@ const answer = []
 answer.push(utils.toText('un bon resto turc')) 
 return Promise.resolve(answer) }
 }
+
+else { return Promise.resolve([utils.toText('Là je n\'ai pas la réponse mais je vais mener mon enquête')])}
+
 module.exports = restoAnswer

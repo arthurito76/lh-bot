@@ -75,8 +75,6 @@ const answer = []
 	 answer.push(utils.toText('http://www.cinemasirius.com/cette-semaine'))
 return Promise.resolve(answer) }
 
-
-
 else { 
 const answer = [] 
 answer.push(utils.toText('Je vais me renseigner')) 

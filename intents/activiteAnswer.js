@@ -1,5 +1,5 @@
 const utils = require('./util.js')
-const restoAnswer = (RESTOINFO, RESTAURANTTYPE, ACTIVITE) => {
+const activiteAnswer = (RESTOINFO, RESTAURANTTYPE, ACTIVITE) => {
 		if (!ACTIVITE) { return Promise.resolve([utils.toText('Que veux-tu faire ?')])}
 	
 	if (ACTIVITE.raw == 'bateau') { 
@@ -34,4 +34,4 @@ return Promise.resolve(answer) }
 }
 
 
-module.exports = restoAnswer
+module.exports = activiteAnswer

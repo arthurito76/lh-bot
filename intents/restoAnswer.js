@@ -15,6 +15,35 @@ answer.push(utils.toText('Sans hésiter va à Saïgon à Saint-Vincent. C\'est �
 answer.push(utils.toImage('http://arthurfortin.fr/images/palais.jpg'))
 return Promise.resolve(answer) }
 
+if (RESTAURANTTYPE.raw == 'brunch') { 
+const answer = [] 
+answer.push(utils.toText('Tu peux aller au Chat Bleu. La vue y est imprenable en plus'))
+answer.push(utils.toImage('http://arthurfortin.fr/images/chat.jpeg'))
+  answer.push(utils.toText('et La Place, place Saint-Vincent'))
+return Promise.resolve(answer) }
+
+if (RESTAURANTTYPE.raw == 'fromage') { 
+const answer = [] 
+answer.push(utils.toText('Les meilleurs fromagers sont aux Halles'))
+answer.push(utils.toImage('http://arthurfortin.fr/images/from.jpeg'))
+  answer.push(utils.toText('Niveau resto je te conseille la Petite Savoie'))
+answer.push(utils.toImage('http://arthurfortin.fr/images/savoie.jpg'))
+return Promise.resolve(answer) }
+
+if (RESTAURANTTYPE.raw == 'frites') { 
+const answer = [] 
+answer.push(utils.toText('Alors le midi tu peux aller à l\'Eautarie'))
+ answer.push(utils.toText('J\'aime bien aussi les frites de Chez Quentin, accompagnées d\'une bonne viande c\'est l\'estomac en fête'))
+    answer.push(utils.toText('Et puis n\'oublions pas la Ptite Rade, qui t\'en sert avec un burger dantesque'))
+return Promise.resolve(answer) }
+
+if (RESTAURANTTYPE.raw == 'kebab') { 
+const answer = [] 
+answer.push(utils.toText('Salut chef ;-)'))
+  answer.push(utils.toText('Va à Instanbul à Saint Vincent, meilleur kebab de France par kebab-frites.com'))
+   answer.push(utils.toText('http://restaurantistanbul.blogspot.fr/)'))
+return Promise.resolve(answer) }
+
 if (RESTAURANTTYPE.raw == 'japonais') { 
 const answer = [] 
 answer.push(utils.toText('Alors je te conseille Sushis Makers près du Bassin du Commerce et Samouraï à la plage'))

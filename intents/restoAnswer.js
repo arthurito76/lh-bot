@@ -8,6 +8,20 @@ answer.push(utils.toText('un bon resto indien'))
 console.log(answer)
 return Promise.resolve(answer) }
 
+if (RESTAURANTTYPE.raw == 'steak') { 
+const answer = [] 
+answer.push(utils.toText('Le Grignot te propose de belles pièces de viande'))
+ answer.push(utils.toText('Niveau boucher rien n\'égal Laiguillon'))		
+console.log(answer)
+return Promise.resolve(answer) }
+
+if (RESTAURANTTYPE.raw == 'sandwich') { 
+const answer = [] 
+answer.push(utils.toText('Pour un bon wich va à Williamsburg. Du choix et des produits frais comme on les aime.'))
+ answer.push(utils.toImage('http://arthurfortin.fr/images/will.jpg'))	
+console.log(answer)
+return Promise.resolve(answer) }
+
 if (RESTAURANTTYPE.raw == 'chinois') { 
 const answer = [] 
 answer.push(utils.toText('Sans hésiter va à Saïgon à Saint-Vincent. C\'est à emporter et à savourer ;-)'))

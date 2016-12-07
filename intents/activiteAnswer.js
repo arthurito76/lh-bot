@@ -7,12 +7,12 @@ const answer = []
 answer.push(utils.toText('la mer, LOL')) 
 return Promise.resolve(answer) }
 
-	if (ACTIVITE.raw == 'boîte de nuit') { 
+	if (ACTIVITE.raw == 'boîtes de nuit') { 
 const answer = [] 
 answer.push(utils.toText('Désolé, pour la vie nocturne il faut quitter le Havre. Je pourrais te dire d\'aller aux magasins généraux mais si tu veux rentrer vivant évite. La mairie ne veut pas de vie nocturne'))	
 return Promise.resolve(answer) }
 
-if (ACTIVITE.raw == 'concert') { 
+if (ACTIVITE.raw == 'concerts') { 
 const answer = [] 
  answer.push(utils.toText('Si tu cherches un bon concert vas sur ce site'))
    answer.push(utils.toText('http://www.infoconcert.com/ville/le-havre-2002/concerts.html')) 

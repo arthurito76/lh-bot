@@ -7,6 +7,20 @@ const answer = []
 answer.push(utils.toText('la mer, LOL')) 
 return Promise.resolve(answer) }
 
+if (ACTIVITE.raw == 'musée') { 
+const answer = [] 
+answer.push(utils.toText('Le MUMA est notre musée. Tu y trouveras une belle collections d\'impressionnistes. A titre d\'anecdote le Musée fut à l\'origine la 1ère Maison de la Culture'))
+ answer.push(utils.toText('Pour le contemporain il y a le Portique'))
+  answer.push(utils.toText('Et on a un gros réseau de bars et boutiques qui organisent des expos toute l\'année donc veille !'))
+return Promise.resolve(answer) }
+
+if (ACTIVITE.raw == 'pétanque') { 
+const answer = [] 
+answer.push(utils.toText('Tu as la version populaire à la plage, avec un pack de bière '))
+ answer.push(utils.toText('ou la version chic aux Enfants Sages'))	
+ answer.push(utils.toImage('http://arthurfortin.fr/images/enf.jpg'))	
+return Promise.resolve(answer) }
+
 if (ACTIVITE.raw == 'promener') { 
 const answer = [] 
   answer.push(utils.toText('La plus zen des promenades c\est aux Jardins Suspendus. Un vrai coin d\'exotisme au coeur de la ville'))

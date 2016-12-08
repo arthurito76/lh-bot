@@ -1,6 +1,5 @@
 module.exports = {
 getInfoPokemon : require('./infopokemon.js'),
- manger : require('./mangerAnswer.js'),
  greetings : require('./greetings.js'),
  merci : require('./merciAnswer.js'),
  homeapero : require('./homeaperoAnswer.js'),

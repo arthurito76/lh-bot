@@ -7,6 +7,12 @@ const answer = []
 answer.push(utils.toText('la mer, LOL')) 
 return Promise.resolve(answer) }
 
+if (ACTIVITE.raw == 'manger') { 
+const answer = [] 
+answer.push(utils.toText('Voilà une question intéressante, je vais essayer de te répondre...'))
+ answer.push(utils.toText('Que voudrais-tu manger ?'))
+return Promise.resolve(answer) }
+
 	if (ACTIVITE.raw == 'apéro') { 
 const answer = [] 
 answer.push(utils.toText('Voilà une vrai question... Tout dépend de ce que tu aimes'))

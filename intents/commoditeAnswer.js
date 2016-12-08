@@ -7,6 +7,13 @@ const answer = []
 answer.push(utils.toText('ouhlalalala')) 
 return Promise.resolve(answer) }
 
+if (COMMODITE.raw == 'médias') { 
+const answer = [] 
+answer.push(utils.toText('Alors on a une presse locale bien moribonde, et qui ne dit rien. '))
+    answer.push(utils.toText('près je te conseille Les Havraisemblables. Un blog indépendant bien écrit avec des choses vraiment intéressantes'))
+answer.push(utils.toText('http://leshavraisemblables.fr/'))
+return Promise.resolve(answer) }
+
 if (COMMODITE.raw == 'crèche') { 
 const answer = [] 
 answer.push(utils.toText('Ca c\'est une question complexe. Soyons francs : les places sont chères au Havre. Je t\'invite à consulter Google mais je vais enquêter ;-)'))

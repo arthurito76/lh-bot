@@ -8,6 +8,17 @@ answer.push(utils.toText('un bon resto indien'))
 console.log(answer)
 return Promise.resolve(answer) }
 
+if (RESTAURANTTYPE.raw == 'bio') { 
+const answer = [] 
+ answer.push(utils.toText('Alors la plus grande boutique bio à LH est Naturéo au Grand Hameau'))
+answer.push(utils.toImage('http://arthurfortin.fr/images/natur.jpeg'))
+  answer.push(utils.toText('Rayons Verts avenue Coty'))
+answer.push(utils.toImage('http://arthurfortin.fr/images/ray.jpeg'))
+ answer.push(utils.toText('Le marché Bio rue de Paris'))
+answer.push(utils.toImage('http://arthurfortin.fr/images/natur.jpeg'))
+console.log(answer)
+return Promise.resolve(answer) }
+
 	if (RESTAURANTTYPE.raw == 'crêpes') { 
 const answer = [] 
 answer.push(utils.toText('Les meilleures crêpes de la ville sont à Saint-François'))

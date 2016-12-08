@@ -27,5 +27,5 @@ creche: require('./crecheAnswer.js')  ,
 media: require('./mediaAnswer.js')  ,
 resto: require('./restoAnswer.js')  ,
 activiteinfo: require('./activiteAnswer.js')  ,
-commodite: require('./commoditeAnswer.js')  ,
+commoditeinfo: require('./commoditeAnswer.js')  ,
  } 

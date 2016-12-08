@@ -2,7 +2,7 @@ const utils = require('./util.js')
 const commoditeAnswer = (RESTOINFO, RESTAURANTTYPE, ACTIVITE, COMMODITE) => {
 		if (!COMMODITE) { return Promise.resolve([utils.toText('Quelle est ta démarche ?')])}
 	
-	if (ACTIVITE.raw == 'mairie') { 
+	if (COMMODITE.raw == 'mairie') { 
 const answer = [] 
 answer.push(utils.toText('ouhlalalala')) 
 return Promise.resolve(answer) }

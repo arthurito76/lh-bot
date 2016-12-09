@@ -2,6 +2,7 @@ const datas = [
   {
     name: 'l\'Eau Tarie',
     location: 'Rues piétonnes',
+	locationTag : ['centre ville', 'rues piétonnes'],
     page: 'https://www.facebook.com/www.leautarielehavre.fr/?fref=ts',
 	tags: ['bar', 'bière', 'vin', 'tapas'],
 	avis: 'Un bar bien sympa pour prendre un apéro avec une terrasse chauffée pour ne pas trop se les meuler.'
@@ -10,12 +11,14 @@ const datas = [
     name: 'l\'Abri Côtier',
     location: 'Plage',
     page: 'https://www.facebook.com/abricotierbar/?fref=ts',
+	locationTag : ['mer', 'plage'], 
 	tags: ['bar', 'bière', 'vin', 'tapas'],
 	avis: 'Pour moi le meilleur bar du Havre. Un emplacement parfait, une équipe au top et en plus on peut danser jusqu\'à 2h le samedi soir.'
   },
   {
     name: 'Le Trappiste',
     location: 'Niemeyer',
+	locationTag : ['centre ville', 'niemeyer'], 
     page: 'https://www.facebook.com/LeTrappistLeHavre/?fref=ts',
 	tags: ['bar', 'bière', 'belge', 'tapas'],
 	avis: 'Un bar bien décoré pour celles et ceux qui aiment la bière qui fait mal au crâne.'
@@ -23,6 +26,7 @@ const datas = [
   {
     name: 'O\'Brother',
     location: 'Niemeyer',
+	locationTag : ['centre ville', 'niemeyer'], 
     page: 'https://www.facebook.com/obrotherlh',
 	tags: ['pub', 'bière', 'match', 'tapas', 'sport'],
 	avis: 'Un bar à l\'ambiance irish idéal pour se mater un match. A noter une bouffe excellente le midi.'
@@ -30,6 +34,7 @@ const datas = [
     {
     name: 'L\'Etable',
     location: 'rues Piétonnes',
+	locationTag : ['centre ville', 'rues piétonnes'],
 	tags: ['bar', 'bière', 'vin', 'tapas'],
     page: 'https://www.facebook.com/etable76',
 	avis: 'Un lieu agréable et un peu cher.'
@@ -37,24 +42,28 @@ const datas = [
     {
     name: 'Mac Daids',
     location: 'rues Piétonnes',
+	locationTag : ['centre ville', 'rues piétonnes'],
     page: 'https://www.facebook.com/mc-daids-242943955526',
 	avis: 'LE PUB du Havre. Avec des concerts et des gens tatoués.'
   },
      {
     name: 'Merle Moqueur',
     location: 'Notre Dame',
+	locationTag : ['centre ville', 'notre dame'],
     page: 'https://www.facebook.com/Le-Merle-Moqueur-383939731755519',
 	avis: 'Un rade sans chichis avec des assiettes copieuses. Bonne ambiance quoi.'
   },
        {
     name: 'Les Zazous',
     location: 'près de l\'Hôtel de Ville',
+	locationTag : ['centre ville', 'hôtel de ville'],
     page: 'https://www.facebook.com/leszazouslehavre',
 	avis: 'Un bar avec une sacré ambiance et de l\'animation là où il en faut.'
   },
          {
     name: 'Wallaby Bar',
     location: 'Saint-François',
+	locationTag : ['centre ville', 'saint françois'],
     page: 'https://www.facebook.com/wallaby.bar.7',
 	avis: 'Niché dans une rue de Saint-François, ce bar demeure le meilleur rade du quartier, tout simplement.'
   },

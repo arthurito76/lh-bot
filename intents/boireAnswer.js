@@ -29,9 +29,8 @@ return Promise.resolve(answer) }
 
 	if (BOIRE.raw == 'vin') { 
 const answer = [] 
-answer.push(utils.toText('Alors pour acheter du bon pinard va à Cave Bérigny'))
-  answer.push(utils.toText('Sinon vers Saint-Vincent il y a Cavavin'))
-   answer.push(utils.toText('Tu peux aussi aller à l\'Escapade. En plus y\'a pleins de bonnes choses à grignoter (fromage, charcuteries...)')) 
+answer.push(utils.toText('Alors pour boire du bon pinard va à l\'Escapade. En plus y\'a pleins de bonnes choses à grignoter (fromage, charcuteries...)'))
+  answer.push(utils.toText('Sinon tu as le Chat Bleu qui propose de bons petits vins. Avec Tapas dispos également '))
 console.log(answer)
 return Promise.resolve(answer) }
 

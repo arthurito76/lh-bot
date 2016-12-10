@@ -14,6 +14,11 @@ answer.push(utils.toText('Va à LOHO !'))
 answer.push(utils.toImage('http://arthurfortin.fr/images/loho.jpg'))
 return Promise.resolve(answer) }
 
+if (ACHAT.raw == 'vin') { 
+const answer = [] 
+answer.push(utils.toText('Va à LOHO !'))
+answer.push(utils.toImage('http://arthurfortin.fr/images/loho.jpg'))
+return Promise.resolve(answer) }
 
 else { 
 const answer = [] 

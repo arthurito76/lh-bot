@@ -19,4 +19,5 @@ resto: require('./restoAnswer.js')  ,
 activiteinfo: require('./activiteAnswer.js')  ,
 commoditeinfo: require('./commoditeAnswer.js')  ,
 boireinfo: require('./boireAnswer.js')  ,
+achatinfo: require('./achatAnswer.js')  ,
  } 

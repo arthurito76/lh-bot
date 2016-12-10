@@ -5,15 +5,19 @@ const achatAnswer = (RESTOINFO, RESTAURANTTYPE, ACTIVITE, COMMODITE, BOIRE, ACHA
 	if (ACHAT.raw == 'souvenirs') { 
 const answer = [] 
 answer.push(utils.toText('Va à LOHO !'))
-
+answer.push(utils.toImage('http://arthurfortin.fr/images/loho.jpg'))
 return Promise.resolve(answer) }
 
-
+if (ACHAT.raw == 'produits locaux') { 
+const answer = [] 
+answer.push(utils.toText('Va à LOHO !'))
+answer.push(utils.toImage('http://arthurfortin.fr/images/loho.jpg'))
+return Promise.resolve(answer) }
 
 
 else { 
 const answer = [] 
-answer.push(utils.toText('Je vais me renseigner')) 
+answer.push(utils.toText('Je vais mener ma petite enquête voir si une boutique fait ça')) 
 return Promise.resolve(answer) }
 }
 module.exports = achatAnswer

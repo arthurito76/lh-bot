@@ -11,6 +11,13 @@ answer.push(utils.toText('Et le 2ème meilleur de la ville c\'est l\'Air du Thé
 answer.push(utils.toImage('http://le-havre.dreamville.fr/media/commerces/15564/visuels/lair-du-the-le-havre-15564-visuel-1.jpg'))
 return Promise.resolve(answer) }
 
+if (BOIRE.raw == 'chocolat chaud') { 
+const answer = [] 
+answer.push(utils.toText('Sans hésiter je te réponds le Chat Bleu'))
+answer.push(utils.toText('En plus il y a de bonnes choses à grignoter, une ambiance cool et un patron sympa'))
+answer.push(utils.toImage('http://arthurfortin.fr/images/chat.jpeg'))
+return Promise.resolve(answer) }
+
 if (BOIRE.raw == 'café') { 
 const answer = [] 
 answer.push(utils.toText('Pour un bon petit caf je te conseillerais Wiliamsburg. Ses petites douceurs sucrées sont délicieuses.'))
@@ -28,7 +35,7 @@ answer.push(utils.toText('Alors pour acheter du bon pinard va à Cave Bérigny')
 console.log(answer)
 return Promise.resolve(answer) }
 
-	if (BOIRE.raw == 'cocktail') { 
+	if (BOIRE.raw == 'cocktail' || BOIRE.raw == 'mojito') { 
 const answer = [] 
 answer.push(utils.toText('Alors tout va dépendre de l\'ambiance que tu recherches'))
  answer.push(utils.toText('Le Cyclamen pour la grande qualité des cocktails et de leur préparation. Le taulier est un spécialiste. Mais n\'y va pas en mode on va se la coller avec les amis, t\'es là pour savourer'))
@@ -38,7 +45,7 @@ answer.push(utils.toText('Alors tout va dépendre de l\'ambiance que tu recherch
 console.log(answer)
 return Promise.resolve(answer) }
 
-if (BOIRE.raw == 'bière') { 
+if (BOIRE.raw == 'bière' || BOIRE.raw == 'mousse' ) { 
 const answer = [] 
 answer.push(utils.toText('Pour acheter une bonne bière faut aller à la Cave à Bière. En plus tu pourras savourer une expo au passage'))
   answer.push(utils.toImage('http://arthurfortin.fr/images/cave.jpg'))

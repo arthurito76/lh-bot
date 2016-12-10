@@ -16,4 +16,4 @@ const answer = []
 answer.push(utils.toText('Je vais me renseigner')) 
 return Promise.resolve(answer) }
 }
-module.exports = boireAnswer
+module.exports = achatAnswer

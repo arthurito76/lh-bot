@@ -4,7 +4,7 @@ const utils = require('./util.js')
 const datas = require('./data.js') 
 const findresto = (RESTOINFO) => { 
 console.log(datas) 
- if (!RESTOINFO) { return Promise.resolve([utils.toText('De quel restaurant parlez vous?')])}
+ if (!RESTOINFO) { return Promise.resolve([utils.toText('De quel lieux parles-tu ?')])}
 const object =_.find(datas, data => fuzzy.metrics.jaro_winkler(data.name, RESTOINFO.raw) > 0.8)
 console.log(object)
 if (!object) { return Promise.resolve([utils.toText('Je ne trouve pas ce resto')])}
@@ -13,5 +13,12 @@ const answer = []
   answer.push(utils.toText('sa page facebook: ' + object.page))
   answer.push(utils.toText('avis : ' + object.avis))
    return Promise.resolve(answer)
+   
+   else { 
+const answer = [] 
+answer.push(utils.toText('Je n\'ai pas mais je vais tester ça au plus vite alors')) 
+return Promise.resolve(answer) }
+}
+
 } 
 module.exports = findresto

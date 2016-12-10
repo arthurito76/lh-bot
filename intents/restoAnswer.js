@@ -132,7 +132,7 @@ answer.push(utils.toImage('http://arthurfortin.fr/images/piz.jpg'))
  answer.push(utils.toImage('http://arthurfortin.fr/images/pizza.jpg'))		
 return Promise.resolve(answer) }
 
-if (RESTAURANTTYPE.raw == 'gastro') { 
+if (RESTAURANTTYPE.raw == 'gastro' || RESTAURANTTYPE.raw == 'gastronomique') { 
 const answer = [] 
 answer.push(utils.toText('Au Havre on a un bon gastro, il s\'appelle Jean-Luc Tartarin'))
    answer.push(utils.toText('2 étoiles au Michelin, excusez du peu'))

@@ -82,7 +82,7 @@ answer.push(utils.toText('Salut chef ;-)'))
    answer.push(utils.toText('http://restaurantistanbul.blogspot.fr/)'))
 return Promise.resolve(answer) }
 
-if (RESTAURANTTYPE.raw == 'japonais') { 
+if (RESTAURANTTYPE.raw == 'japonais'|| RESTAURANTTYPE.raw == 'sushis') { 
 const answer = [] 
 answer.push(utils.toText('Alors je te conseille Sushis Makers près du Bassin du Commerce et Samouraï à la plage'))
  answer.push(utils.toText('Sushis Makers près du Bassin du Commerce et Samouraï à la plage sauront émoustiller tes papilles'))		
@@ -94,6 +94,12 @@ answer.push(utils.toText('Alors côté épicerie tu as l\'italien qui se trouve 
   answer.push(utils.toImage('http://arthurfortin.fr/images/picco.jpg'))
   answer.push(utils.toText('Sinon pour manger tu as Al Dente'))
   answer.push(utils.toImage('http://arthurfortin.fr/images/dente.jpg'))	
+return Promise.resolve(answer) }
+
+if (RESTAURANTTYPE.raw == 'petit déjeuner') { 
+const answer = [] 
+answer.push(utils.toText('je te conseillerais Williamsburg. Un long café noir accompagné d\'une petite douceur sucrée '))
+   answer.push(utils.toImage('http://arthurfortin.fr/images/will.jpg'))
 return Promise.resolve(answer) }
 
 if (RESTAURANTTYPE.raw == 'libanais') { 

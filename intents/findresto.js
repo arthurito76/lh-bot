@@ -18,7 +18,6 @@ const answer = []
 const answer = [] 
 answer.push(utils.toText('Je n\'ai pas mais je vais tester ça au plus vite alors')) 
 return Promise.resolve(answer) }
-}
 
 } 
 module.exports = findresto

@@ -14,7 +14,7 @@ answer.push(utils.toText('Va à LOHO ! C\'est une super boutique '))
 answer.push(utils.toImage('http://arthurfortin.fr/images/loho.jpg'))
 return Promise.resolve(answer) }
 
-if (ACHAT.raw == 'putes' || ACHAT.raw == 'drogue' || ACHAT.raw == 'shit' || ACHAT.raw == 'coke' || ACHAT.raw == 'cocaïne' || ACHAT.raw == 'weed') { 
+if (ACHAT.raw == 'drogue' || ACHAT.raw == 'shit' || ACHAT.raw == 'coke' || ACHAT.raw == 'cocaïne' || ACHAT.raw == 'weed') { 
 const answer = [] 
 answer.push(utils.toText('T\'es ouf, je ne veux pas finir en zonzon moi ! '))
 return Promise.resolve(answer) }

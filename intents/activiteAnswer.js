@@ -83,9 +83,20 @@ answer.push(utils.toText('Et la piscine des Docks en propose en plus d\'autres d
 answer.push(utils.toImage('http://arthurfortin.fr/images/pisdock.jpeg'))
 return Promise.resolve(answer) }
 
+if (ACTIVITE.raw == 'putes') { 
+const answer = [] 
+answer.push(utils.toText('Sois plus romantique, trouve-toi une petite havraise. Les fins de soirée à l\Abri-Côtier sont bien bien pour cela ;-)'))
+return Promise.resolve(answer) }
+
 	if (ACTIVITE.raw == 'boîtes de nuit') { 
 const answer = [] 
 answer.push(utils.toText('Désolé, pour la vie nocturne il faut quitter le Havre. Je pourrais te dire d\'aller aux magasins généraux mais si tu veux rentrer vivant évite. La mairie ne veut pas de vie nocturne'))	
+return Promise.resolve(answer) }
+
+if (ACTIVITE.raw == 'apéro') { 
+const answer = [] 
+answer.push(utils.toText('Te pose pas de questions, passe à l\'Ours Dubocage'))
+  answer.push(utils.toText('Et chez l\'italien des Halles'))	
 return Promise.resolve(answer) }
 
 if (ACTIVITE.raw == 'concerts') { 

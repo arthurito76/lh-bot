@@ -99,6 +99,12 @@ answer.push(utils.toText('Te pose pas de questions, passe à l\'Ours Dubocage'))
   answer.push(utils.toText('Et chez l\'italien des Halles'))	
 return Promise.resolve(answer) }
 
+if (ACTIVITE.raw == 'fléchettes') { 
+const answer = [] 
+answer.push(utils.toText('Alors pour les fléchettes je te conseille le Mac Daids'))
+  answer.push(utils.toText('Et le Black Café'))	
+return Promise.resolve(answer) }
+
 if (ACTIVITE.raw == 'concerts') { 
 const answer = [] 
  answer.push(utils.toText('Si tu cherches un bon concert vas sur ce site'))

@@ -14,5 +14,8 @@ const answer = []
   answer.push(utils.toText('avis : ' + object.avis))
    return Promise.resolve(answer)
 
+const goodPlaces = _.filter(datas => place.tags.indexOf(entity.raw) !== -1)   
+return Promise.resolve(goodPlaces)
+   
 } 
 module.exports = findresto

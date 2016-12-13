@@ -7,6 +7,11 @@ const answer = []
 answer.push(utils.toText('la mer, LOL')) 
 return Promise.resolve(answer) }
 
+if (ACTIVITE.raw == 'manger') { 
+const answer = [] 
+answer.push(utils.toText('Que veux-tu manger ?')) 
+return Promise.resolve(answer) }
+
 if (ACTIVITE.raw == 'goûter') { 
 const answer = [] 
 answer.push(utils.toText('Pour le goûter va à Williamsburg. Ses petites douceurs sucrées sont délicieuses.')) 

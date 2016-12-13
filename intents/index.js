@@ -17,4 +17,5 @@ activiteinfo: require('./activiteAnswer.js')  ,
 commoditeinfo: require('./commoditeAnswer.js')  ,
 boireinfo: require('./boireAnswer.js')  ,
 achatinfo: require('./achatAnswer.js')  ,
+tagresto: require('./tagAnswer.js')  ,
  } 

@@ -3,7 +3,7 @@ const _ = require('lodash')
 const datas = require('./data.js') 
 const tagAnswer = (TAGINFO) => {
 	
-	console.log (tagAnswer)
+	console.log(datas) 
 		if (!TAGINFO) { return Promise.resolve([utils.toText('Précise ta recherche')])}
 
 const goodPlaces = _.filter(datas, place => place.tags.indexOf(TAGINFO.raw) !== -1)

@@ -2,7 +2,7 @@ const utils = require('./util.js')
 const _ = require('lodash')
 const datas = require('./data.js') 
 const tagAnswer = (RESTOINFO, RESTAURANTTYPE, ACTIVITE, COMMODITE, BOIRE, ACHAT, TAGINFO) => {
-		if (!TAGINFO) { return Promise.resolve([utils.toText('Quel type de resto aimez-vous?')])}
+		if (!TAGINFO) { return Promise.resolve([utils.toText('Précise ta recherche')])}
 
 const goodPlaces = _.filter(datas, place => place.tags.indexOf(TAGINFO.raw) !== -1)
 

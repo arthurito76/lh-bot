@@ -11,7 +11,7 @@ const datas = [
     name: 'l\'Abri Côtier',
     location: 'Plage',
     page: 'https://www.facebook.com/abricotierbar/?fref=ts',
-	locationTag : ['mer', 'plage'], 
+	locationTag : ['mer', 'plage', 'bar'], 
 	tags: ['bar', 'bière', 'vin', 'tapas'],
 	avis: 'Pour moi le meilleur bar du Havre. Un emplacement parfait, une équipe au top et en plus on peut danser jusqu\'à 2h le samedi soir.'
   },

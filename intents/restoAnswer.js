@@ -25,7 +25,20 @@ answer.push(utils.toText('Les meilleures crêpes de la ville sont à Saint-Fran�
  answer.push(utils.toText('C\'est l\'ancien quartier breton donc autant te dire qu\'on ne rigole pas avec les crêpes chez eux '))	
 return Promise.resolve(answer) }
 
+	if (RESTAURANTTYPE.raw == 'charcuterie') { 
+const answer = [] 
+answer.push(utils.toText('Alors va à l\'Escapade si c\'est pour l\'apéro.)'))
+ answer.push(utils.toText('Sinon un bon grignot si t\'es en mode resto  '))	
+return Promise.resolve(answer) }
+
 if (RESTAURANTTYPE.raw == 'steak') { 
+const answer = [] 
+answer.push(utils.toText('Le Grignot te propose de belles pièces de viande'))
+ answer.push(utils.toText('Niveau boucher rien n\'égal Laiguillon'))		
+console.log(answer)
+return Promise.resolve(answer) }
+
+if (RESTAURANTTYPE.raw == 'charcuterie') { 
 const answer = [] 
 answer.push(utils.toText('Le Grignot te propose de belles pièces de viande'))
  answer.push(utils.toText('Niveau boucher rien n\'égal Laiguillon'))		

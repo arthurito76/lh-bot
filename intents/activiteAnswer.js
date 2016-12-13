@@ -7,6 +7,12 @@ const answer = []
 answer.push(utils.toText('la mer, LOL')) 
 return Promise.resolve(answer) }
 
+if (ACTIVITE.raw == 'goûter') { 
+const answer = [] 
+answer.push(utils.toText('Pour le goûter va à Williamsburg. Ses petites douceurs sucrées sont délicieuses.')) 
+answer.push(utils.toImage('http://arthurfortin.fr/images/will.jpg'))
+return Promise.resolve(answer) }
+
 if (ACTIVITE.raw == 'manger') { 
 const answer = [] 
 answer.push(utils.toText('Voilà une question intéressante, je vais essayer de te répondre...'))

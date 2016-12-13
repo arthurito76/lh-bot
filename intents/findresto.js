@@ -14,7 +14,7 @@ const answer = []
   answer.push(utils.toText('avis : ' + object.avis))
    return Promise.resolve(answer)
 
-const goodPlaces = _.filter(datas => place.tags.indexOf(entity.raw) !== -1)   
+const goodPlaces = _.filter(datas, place => place.tags.indexOf(RESTOINFO.raw) !== -1)
 return Promise.resolve(goodPlaces)
    
 } 

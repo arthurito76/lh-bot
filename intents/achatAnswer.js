@@ -1,5 +1,5 @@
 const utils = require('./util.js')
-const achatAnswer = (RESTOINFO, RESTAURANTTYPE, ACTIVITE, COMMODITE, BOIRE, ACHAT) => {
+const achatAnswer = (RESTOINFO, RESTAURANTTYPE, ACTIVITE, COMMODITE, ACHAT) => {
 		if (!ACHAT) { return Promise.resolve([utils.toText('Quel type de produit ?')])}
 	
 	if (ACHAT.raw == 'souvenirs') { 

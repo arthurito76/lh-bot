@@ -13,7 +13,9 @@ if (goodPlaces.length === 0) {
 }
  
 const answer = [] 
-return Promise.resolve('J\'ai trouvé un restaurant qui te conviendra! C\'est le' + goodPlaces[0].name + 'situé à' + goodPlaces[0].location) 
+answer.push(utils.toText('J\'ai trouvé un restaurant qui te conviendra! C\'est le' + goodPlaces[0].name + 'situé à' + goodPlaces[0].location) )
+ return Promise.resolve(answer)
+ 
 }
 
 module.exports = tagAnswer

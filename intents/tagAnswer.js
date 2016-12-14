@@ -13,7 +13,8 @@ if (goodPlaces.length === 0) {
 }
  
 const answer = [] 
-answer.push(utils.toText('J\'ai trouvé un restaurant qui te conviendra! C\'est le' + goodPlaces[0].name + 'situé à' + goodPlaces[0].location) )
+answer.push(utils.toText('J\'ai trouvé un restaurant qui te conviendra! C\'est le ' + goodPlaces[0].name + ' situé à ' + goodPlaces[0].location) )
+answer.push(utils.toText('mon avis : ' + goodPlaces[0].avis) )
  return Promise.resolve(answer)
  
 }

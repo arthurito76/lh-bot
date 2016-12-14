@@ -1,5 +1,4 @@
 module.exports = {
-getInfoPokemon : require('./infopokemon.js'),
  greetings : require('./greetings.js'),
  merci : require('./merciAnswer.js'),
  aurevoir : require('./byeAnswer.js'),
@@ -12,7 +11,6 @@ mappelle : require('./mappelleAnswer.js')  ,
 findresto : require('./findresto.js')  ,
 lol : require('./lolAnswer.js')  ,
 emo : require('./emoAnswer.js')  ,
-resto: require('./restoAnswer.js')  ,
 activiteinfo: require('./activiteAnswer.js')  ,
 commoditeinfo: require('./commoditeAnswer.js')  ,
 achatinfo: require('./achatAnswer.js')  ,

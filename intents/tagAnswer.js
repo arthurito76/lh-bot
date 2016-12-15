@@ -1,7 +1,7 @@
 const utils = require('./util.js')
 const _ = require('lodash')
 const datas = require('./data.js') 
-const tagAnswer = (RESTOINFO, RESTAURANTTYPE, ACTIVITE, COMMODITE, ACHAT, TAGINFO) => {
+const tagAnswer = (RESTOINFO, ACTIVITE, COMMODITE, TAGINFO) => {
 	
 	console.log(datas) 
 		if (!TAGINFO) { return Promise.resolve([utils.toText('Précise ta recherche')])}

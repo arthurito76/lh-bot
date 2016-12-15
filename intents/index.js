@@ -13,6 +13,5 @@ lol : require('./lolAnswer.js')  ,
 emo : require('./emoAnswer.js')  ,
 activiteinfo: require('./activiteAnswer.js')  ,
 commoditeinfo: require('./commoditeAnswer.js')  ,
-achatinfo: require('./achatAnswer.js')  ,
 tagresto: require('./tagAnswer.js')  ,
  } 

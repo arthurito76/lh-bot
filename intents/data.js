@@ -210,6 +210,25 @@ const datas = [
 	tags: ['fromage', 'restaurant', 'raclette'],
 	avis: 'Si tu veux manger du fromage et avoir une haleine de raclette c\'est là que ça se passe'
   },
+  
+  {
+    name: 'LOHO',
+    location: 'Notre Dame',
+	locationTag : ['Notre-Dame'],
+    page: 'https://www.facebook.com/lelocalshop.loho',
+	tags: ['souvenir', 'mugs', 'produits locaux'],
+	avis: 'Va à LOHO ! C\'est une super boutique'
+  },
+  
+  
+  {
+    name: 'Berigny',
+    location: 'rues piétonnes',
+	locationTag : ['rues piétonnes'],
+    page: 'https://www.facebook.com/pages/Cave-Berigny-Le-Havre/',
+	tags: ['vin', 'rhum', 'whisky'],
+	avis: 'Une institution dans le pinard et autres liquoreux'
+  },
     
 ]
 

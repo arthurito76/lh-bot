@@ -11,7 +11,5 @@ mappelle : require('./mappelleAnswer.js')  ,
 findresto : require('./findresto.js')  ,
 lol : require('./lolAnswer.js')  ,
 emo : require('./emoAnswer.js')  ,
-activiteinfo: require('./activiteAnswer.js')  ,
-commoditeinfo: require('./commoditeAnswer.js')  ,
 tagresto: require('./tagAnswer.js')  ,
  } 

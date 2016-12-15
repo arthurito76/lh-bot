@@ -198,8 +198,8 @@ const datas = [
     location: 'Rue de la Soif',
 	locationTag : ['plage'],
     page: 'https://www.facebook.com/odelicesdulibanduhavre',
-	tags: ['libanais', 'mezzé', 'chawerma', 'emporter'],
-	avis: 'L\'un des meilleurs italiens de la ville, basta !'
+	tags: ['50\'s', 'cheeseburger', 'burger'],
+	avis: 'L\'un des meilleurs burgers avec une ambiance des 50\'s !'
   },
   
   {
@@ -216,7 +216,7 @@ const datas = [
     location: 'Notre Dame',
 	locationTag : ['Notre-Dame'],
     page: 'https://www.facebook.com/lelocalshop.loho',
-	tags: ['souvenir', 'mugs', 'produits locaux'],
+	tags: ['souvenirs', 'mugs', 'produits locaux'],
 	avis: 'Va à LOHO ! C\'est une super boutique'
   },
   

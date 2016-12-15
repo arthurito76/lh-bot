@@ -144,7 +144,7 @@ const datas = [
     location: 'Notre-Dame',
 	locationTag : ['Notre-dame'],
     page: 'https://www.facebook.com/sushimakers',
-	tags: ['sushis, japonais'],
+	tags: ['sushis', 'japonais'],
 	avis: 'Du japonais fait maison. Si si'
   },
   

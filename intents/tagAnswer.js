@@ -11,7 +11,10 @@ const goodPlaces = _.filter(datas, place => place.tags.indexOf(TAGINFO.raw) !== 
 if (goodPlaces.length === 0) {
   return Promise.resolve('Oups, rien trouvé :-(')
 }
- for (var i = 0; len = goodPlaces.length; i < len; i++) { 
+
+
+
+ for (var i = 0; i <  goodPlaces.length;  i++) { 
 
 const answer = [] 
 answer.push(utils.toText('Yes, j\'ai trouvé quelque chose pour toi : ') ) 

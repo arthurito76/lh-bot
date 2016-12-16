@@ -13,9 +13,8 @@ if (goodPlaces.length === 0) {
 
 
 const answer = [] 
- for (var i = 0, len = goodPlaces.length; i < len; i++) { 
-
-answer.push(utils.toText('Yes, j\'ai trouvé quelque chose pour toi : ') ) 
+answer.push(utils.toText('Yes, j\'ai trouvé quelque chose pour toi : ') )
+ for (var i = 0, len = goodPlaces.length; i < len; i++) {  
 answer.push(utils.toText(goodPlaces[i].name + ' situé à ' + goodPlaces[i].location) ) 
 answer.push(utils.toText('mon avis : ' + goodPlaces[i].avis) ) 
 }

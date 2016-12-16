@@ -11,12 +11,13 @@ if (goodPlaces.length === 0) {
   return Promise.resolve('Oups, rien trouvé :-(')
 }
 
+
 const answer = [] 
- for (var i = 0; i <  goodPlaces.length;  i++) { 
+ for (var i = 0, len = goodPlaces.length; i < len; i++) { 
+
 answer.push(utils.toText('Yes, j\'ai trouvé quelque chose pour toi : ') ) 
 answer.push(utils.toText(goodPlaces[i].name + ' situé à ' + goodPlaces[i].location) ) 
 answer.push(utils.toText('mon avis : ' + goodPlaces[i].avis) ) 
-console.log(answer)
 return Promise.resolve(answer) 
 }
  

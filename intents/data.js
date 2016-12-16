@@ -31,6 +31,23 @@ const datas = [
 	tags: ['pub', 'bière', 'match', 'tapas', 'sport'],
 	avis: 'Un bar à l\'ambiance irish idéal pour se mater un match. A noter une bouffe excellente le midi.'
   },
+  
+  {
+    name: 'Louise',
+    location: 'rues piétonnes',
+	locationTag : ['centre ville', 'rues piétonnes'], 
+    page: 'https://www.facebook.com/louise.cafe.le.havre',
+	tags: ['glace'],
+	avis: 'Un bon spot pour une bonne glace.'
+  },
+  {
+    name: 'Le Taj Mahal',
+    location: 'Saint-François',
+	locationTag : ['centre ville', 'saint-françois'], 
+    page: 'https://www.facebook.com/Le-Taj-Mahal-Buffet-à-volonté-indien-278293868903728/',
+	tags: ['indien'],
+	avis: 'Un bon indien.'
+  },
     {
     name: 'L\'Etable',
     location: 'rues Piétonnes',
@@ -100,6 +117,15 @@ const datas = [
 	locationTag : ['Grand Hameau, ville haute'],
     page: 'https://www.facebook.com/AffichesLaCaveABieresLeHavre',
 	tags: ['bio', 'magasin'],
+	avis: 'Un endroit pour acheter bio avec du choix'
+  },
+  
+  {
+    name: 'Tartarin',
+    location: 'avenue Foch',
+	locationTag : ['centre-ville', 'avenue foch'],
+    page: 'https://www.facebook.com/AffichesLaCaveABieresLeHavre',
+	tags: ['gastronomique', 'guide michelin'],
 	avis: 'Un endroit pour acheter bio avec du choix'
   },
   

@@ -31,23 +31,6 @@ const datas = [
 	tags: ['pub', 'bière', 'match', 'tapas', 'sport'],
 	avis: 'Un bar à l\'ambiance irish idéal pour se mater un match. A noter une bouffe excellente le midi.'
   },
-  
-  {
-    name: 'Louise',
-    location: 'rues piétonnes',
-	locationTag : ['centre ville', 'rues piétonnes'], 
-    page: 'https://www.facebook.com/louise.cafe.le.havre',
-	tags: ['glace'],
-	avis: 'Un bon spot pour une bonne glace.'
-  },
-  {
-    name: 'Le Taj Mahal',
-    location: 'Saint-François',
-	locationTag : ['centre ville', 'saint-françois'], 
-    page: 'https://www.facebook.com/Le-Taj-Mahal-Buffet-à-volonté-indien-278293868903728/',
-	tags: ['indien'],
-	avis: 'Un bon indien.'
-  },
     {
     name: 'L\'Etable',
     location: 'rues Piétonnes',
@@ -120,15 +103,6 @@ const datas = [
 	avis: 'Un endroit pour acheter bio avec du choix'
   },
   
-  {
-    name: 'Tartarin',
-    location: 'avenue Foch',
-	locationTag : ['centre-ville', 'avenue foch'],
-    page: 'https://www.facebook.com/AffichesLaCaveABieresLeHavre',
-	tags: ['gastronomique', 'guide michelin'],
-	avis: 'Un endroit pour acheter bio avec du choix'
-  },
-  
     {
     name: 'Rayons Verts',
     location: 'Avenue Coty',
@@ -170,7 +144,7 @@ const datas = [
     location: 'Notre-Dame',
 	locationTag : ['Notre-dame'],
     page: 'https://www.facebook.com/sushimakers',
-	tags: ['sushis', 'japonais'],
+	tags: ['sushis, japonais'],
 	avis: 'Du japonais fait maison. Si si'
   },
   
@@ -224,8 +198,8 @@ const datas = [
     location: 'Rue de la Soif',
 	locationTag : ['plage'],
     page: 'https://www.facebook.com/odelicesdulibanduhavre',
-	tags: ['50\'s', 'cheeseburger', 'burger'],
-	avis: 'L\'un des meilleurs burgers avec une ambiance des 50\'s !'
+	tags: ['libanais', 'mezzé', 'chawerma', 'emporter'],
+	avis: 'L\'un des meilleurs italiens de la ville, basta !'
   },
   
   {
@@ -236,24 +210,50 @@ const datas = [
 	tags: ['fromage', 'restaurant', 'raclette'],
 	avis: 'Si tu veux manger du fromage et avoir une haleine de raclette c\'est là que ça se passe'
   },
-  
-  {
-    name: 'LOHO',
-    location: 'Notre Dame',
-	locationTag : ['Notre-Dame'],
-    page: 'https://www.facebook.com/lelocalshop.loho',
-	tags: ['souvenirs', 'mugs', 'produits locaux'],
-	avis: 'Va à LOHO ! C\'est une super boutique'
+    
+	  {
+    name: 'Le Lyonnais',
+    location: 'Saint-François',
+	locationTag : ['centre-ville', 'saint-françois'],
+    page: 'https://www.facebook.com/pages/Le-Lyonnais/206566939421182',
+	tags: ['gastronomie française', 'escargots'],
+	avis: 'Un excellent resto pour une bonne gastronomie française'
   },
   
+    {
+    name: 'Taverne Paillette',
+    location: 'Saint-Roch',
+	locationTag : ['centre-ville', 'saint-roch'],
+    page: 'https://www.facebook.com/La-Taverne-Paillette-176529912364014',
+	tags: ['moules', 'fruit de mer', 'choucroute', 'brasserie'],
+	avis: 'Un excellent resto pour une bonne gastronomie française'
+  },
+  
+   {
+    name: 'Le Bureau',
+    location: 'Niemeyer',
+	locationTag : ['centre-ville', 'niemeyer'],
+    page: 'https://www.facebook.com/aubureau.lehavre',
+	tags: ['fish\'n ships'],
+	avis: 'L\'un des seuls lieux où manger un fish\'n ships'
+  },
   
   {
-    name: 'Berigny',
-    location: 'rues piétonnes',
-	locationTag : ['rues piétonnes'],
-    page: 'https://www.facebook.com/pages/Cave-Berigny-Le-Havre/',
-	tags: ['vin', 'rhum', 'whisky'],
-	avis: 'Une institution dans le pinard et autres liquoreux'
+    name: 'Fleur de Sel',
+    location: 'Saint-François',
+	locationTag : ['centre-ville', 'Saint-François'],
+    page: 'https://www.facebook.com/Fleur-de-Sel-665021900279649',
+	tags: ['gastronomique', 'truffe'],
+	avis: 'L\'un des seuls lieux où manger un fish\'n ships'
+  },
+  
+   {
+    name: 'Saveurs Île Maurice',
+    location: 'quai Southampton',
+	locationTag : ['centre-ville', 'quai Southampton'],
+    page: 'https://www.facebook.com/Saveurs-Ile-Maurice-282357235180859',
+	tags: ['accras', 'samoussas', 'pina colada'],
+	avis: 'L\'un des seuls lieux où manger un fish\'n ships'
   },
     
 ]

@@ -11,7 +11,6 @@ if (goodPlaces.length === 0) {
   return Promise.resolve('Oups, rien trouvé :-(')
 }
 
-if (goodPlaces.length > 1) {
 
  for (var i = 0; i <  goodPlaces.length;  i++) { 
 
@@ -21,7 +20,7 @@ answer.push(utils.toText(goodPlaces[i].name + ' situé à ' + goodPlaces[i].loca
 answer.push(utils.toText('mon avis : ' + goodPlaces[i].avis) ) 
 return Promise.resolve(answer) 
 console.log(answer)
-}}
+}
  
 }
 

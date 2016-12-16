@@ -18,8 +18,8 @@ const answer = []
 answer.push(utils.toText('Yes, j\'ai trouvé quelque chose pour toi : ') ) 
 answer.push(utils.toText(goodPlaces[i].name + ' situé à ' + goodPlaces[i].location) ) 
 answer.push(utils.toText('mon avis : ' + goodPlaces[i].avis) ) 
-return Promise.resolve(answer) 
 }
+return Promise.resolve(answer) 
  
 }
 

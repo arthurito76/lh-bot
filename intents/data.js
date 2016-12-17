@@ -256,6 +256,15 @@ const datas = [
 	avis: 'L\'un des seuls lieux où manger un fish\'n ships'
   },
   
+    {
+    name: 'Louise',
+    location: 'rues piétonnes',
+	locationTag : ['centre-ville', 'rues piétonnes'],
+    page: 'https://www.facebook.com/louise.cafe.le.havre',
+	tags: ['glace'],
+	avis: 'Pour savourer une bonne glasse avec un café'
+  },
+  
     
 ]
 

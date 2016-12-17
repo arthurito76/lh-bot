@@ -255,6 +255,15 @@ const datas = [
 	tags: ['accras', 'samoussas', 'pina colada'],
 	avis: 'L\'un des seuls lieux où manger un fish\'n ships'
   },
+  
+  {
+    name: 'patinoire',
+    location: 'ingouville',
+	locationTag : ['centre-ville', 'ingouville'],
+    page: 'https://www.facebook.com/Saveurs-Ile-Maurice-282357235180859',
+	activite: ['patinoire'],
+	avis: 'L\'un des seuls lieux où manger un fish\'n ships'
+  },
     
 ]
 

@@ -5,12 +5,11 @@ const activiteAnswer = (RESTOINFO, TAGINFO, ACTIVITEINFO) => {
 	 
 		if (!ACTIVITEINFO) { return Promise.resolve([utils.toText('Précise ton activité')])}
 
-const goodPlaces = _.filter(datas, place => place.tags.indexOf(ACTIVITEINFO.raw) !== -1)
+const goodPlaces = _.filter(datas, place => place.activite.indexOf(ACTIVITEINFO.raw) !== -1)
 
 if (goodPlaces.length === 0) {
   return Promise.resolve('Oups, rien trouvé :-(')
 }
-
 
 const answer = [] 
 answer.push(utils.toText('Yes, j\'ai trouvé quelque chose pour toi : ') )

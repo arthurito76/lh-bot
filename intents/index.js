@@ -12,5 +12,4 @@ findresto : require('./findresto.js')  ,
 lol : require('./lolAnswer.js')  ,
 emo : require('./emoAnswer.js')  ,
 tagresto: require('./tagAnswer.js')  ,
-activite: require('./activiteAnswer.js')  ,
  } 

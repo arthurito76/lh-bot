@@ -265,6 +265,14 @@ const datas = [
 	avis: 'Pour savourer une bonne glasse avec un café'
   },
   
+    {
+    name: 'Tétris',
+    location: 'fort de tourneville',
+	locationTag : ['tourneville'],
+    page: 'https://www.facebook.com/louise.cafe.le.havre',
+	tags: ['concert', 'musique électro' ],
+	avis: 'Le lieu pour un concert'
+  },
     
 ]
 

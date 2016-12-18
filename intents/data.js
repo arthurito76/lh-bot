@@ -12,7 +12,7 @@ const datas = [
     location: 'Plage',
     page: 'https://www.facebook.com/abricotierbar/?fref=ts',
 	locationTag : ['mer', 'plage'], 
-	tags: ['bar', 'bière', 'tapas', 'mojito', 'cocktails'],
+	tags: ['bar', 'bière', 'tapas', 'mojito', 'cocktails', 'caïpirinha'],
 	avis: 'Pour moi le meilleur bar du Havre. Un emplacement parfait, une équipe au top et en plus on peut danser jusqu\'à 2h le samedi soir.'
   },
   {
@@ -81,7 +81,7 @@ const datas = [
     location: 'Saint-François',
 	locationTag : ['Saint-François'],
     page: 'https://www.facebook.com/pages/Le-Cyclamen/178489788865708',
-	tags: ['cocktails', 'rhum', 'mojito'],
+	tags: ['cocktails', 'rhum', 'mojito', 'Caïpirinha'],
 	avis: 'Une cave et un bar à vin vraiment sympas avec un petit coin jardin où siroter du bon pinard.'
   },
     
@@ -90,7 +90,7 @@ const datas = [
     location: 'Saint-François',
 	locationTag : ['Saint-François'],
     page: 'https://www.facebook.com/AffichesLaCaveABieresLeHavre',
-	tags: ['bière', 'exposition', 'artiste'],
+	tags: ['bière', 'exposition', 'artiste', 'bière belge'],
 	avis: 'Le lieu idéal pour acheter de la bonne bière et savourer une expo.'
   },
   
@@ -273,7 +273,71 @@ const datas = [
 	tags: ['concert', 'musique électro' ],
 	avis: 'Le lieu pour un concert'
   },
+  
+      {
+    name: 'le Bistrot',
+    location: 'avenue Coty',
+	locationTag : ['coty'],
+    page: 'https://www.facebook.com/lebistrotcoty',
+	tags: ['concert', 'bistrot', 'bar', 'bière' ],
+	avis: 'Une institution pour écouter un concert'
+  },
+  
+  {
+    name: 'le Merle Moqueur',
+    location: 'Notre Dame',
+	locationTag : ['notre dame'],
+    page: 'https://www.facebook.com/Le-Merle-Moqueur-383939731755519',
+	tags: ['concert', 'bistrot', 'bar', 'bière', 'rock' ],
+	avis: 'Un bon rade pour une bonne binouse accompagnée d\'un concert'
+  },
+  
+    {
+    name: 'Zazous',
+    location: 'Hôtel de Ville',
+	locationTag : ['Hôtel de Ville'],
+    page: 'https://www.facebook.com/leszazouslehavre',
+	tags: ['concert', 'bistrot', 'bar', 'bière', 'rock', 'blind test' ],
+	avis: 'bonne ambiance, bon délire et des sessions blind test chaque semaine pour se fendre la poire.'
+  },
+  
+  {
+    name: 'Wallaby Bar',
+    location: 'Hôtel de Ville',
+	locationTag : ['Saint François'],
+    page: 'https://www.facebook.com/wallaby.bar.7',
+	tags: ['concert', 'bistrot', 'bar', 'cocktail', 'mojito', 'caïpirinha' ],
+	avis: 'bonne ambiance, bon délire et des sessions blind test chaque semaine pour se fendre la poire.'
+  },
     
+  {
+    name: 'Bistrot de Quentin',
+    location: 'Hôtel de Ville',
+	locationTag : ['Saint François'],
+    page: 'https://www.facebook.com/lebistrotdequentin',
+	tags: ['happy hour', 'bistrot', 'bar', 'burger', 'restaurant', 'midi', 'resto' ],
+	avis: 'Un très bon resto le midi et un très bon bar le soir.'
+  },
+  
+   {
+    name: 'Black Café',
+    location: 'Niemeyer',
+	locationTag : ['Niemeyer'],
+    page: 'https://www.facebook.com/Black-Café-739396976180251',
+	tags: ['bar', 'bière', 'billard', 'fléchettes' ],
+	avis: 'Un très bon resto le midi et un très bon bar le soir.'
+  },
+  
+   {
+    name: 'Mac Daid\'s',
+    location: 'Niemeyer',
+	locationTag : ['Niemeyer'],
+    page: 'https://www.facebook.com/pages/Mac-Daids/115590181861208',
+	tags: ['pub', 'bière', 'billard', 'fléchettes', 'guiness' ],
+	avis: 'LE pub havrais'
+  },
+    
+	
 ]
 
 module.exports = datas

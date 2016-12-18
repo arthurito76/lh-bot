@@ -7,7 +7,6 @@ module.exports = {
 nom : require('./nomAnswer.js')  ,
 createur : require('./createurAnswer.js')  ,
 age : require('./ageAnswer.js')  ,
-mappelle : require('./mappelleAnswer.js')  ,
 illegal : require('./illegalAnswer.js')  ,
 findresto : require('./findresto.js')  ,
 lol : require('./lolAnswer.js')  ,

@@ -346,7 +346,24 @@ const datas = [
 	avis: 'LE pub havrais'
   },
     
-	
+	{
+    name: 'Gaumont',
+    location: 'Les docks vaubans',
+	locationTag : ['docks vaubans'],
+    page: 'https://www.facebook.com/GaumontDocksVaubanLeHavre',
+	tags: ['cinéma', 'blockbusters', 'film' ],
+	avis: 'Le cinéma pour se mater un bon spectable en grand format'
+  },
+  
+  {
+    name: 'Sirius',
+    location: 'La gare',
+	locationTag : ['gare'],
+    page: 'https://www.facebook.com/pages/Le-Sirius/656479911083484',
+	tags: ['cinéma', 'blockbusters', 'film', 'film d\'auteur' ],
+	avis: 'Le lieu pour se mater un film bien noté par Télérama'
+  },
+  
 ]
 
 module.exports = datas

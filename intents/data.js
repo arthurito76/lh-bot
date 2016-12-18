@@ -68,6 +68,15 @@ const datas = [
   },
   
    {
+    name: 'French Coffee Shop',
+    location: 'hôtel de Ville',
+	locationTag : ['hôtel de Ville'],
+    page: 'https://www.facebook.com/LHfrenchcoffeeshop/',
+	tags: ['coffee shop', 'café', 'cheescake', 'sandwichs', 'cappucino', 'petit déjeuner'],
+	avis: 'Un chouette coffee shop, à la starbuck style.'
+  },
+  
+   {
     name: 'L\'Escapade',
     location: 'plage',
 	locationTag : ['plage'],

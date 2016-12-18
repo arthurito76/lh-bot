@@ -8,7 +8,7 @@ const tagAnswer = (RESTOINFO, TAGINFO) => {
 const goodPlaces = _.filter(datas, place => place.tags.indexOf(TAGINFO.raw) !== -1)
 
 if (goodPlaces.length === 0) {
-  return Promise.resolve('Oups, rien trouvé :-(')
+  return Promise.resolve([utils.toText('j\'ai rien en stock bézot')]))
 }
 
 

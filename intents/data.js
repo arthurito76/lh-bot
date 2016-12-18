@@ -153,7 +153,7 @@ const datas = [
     location: 'Niemeyer',
 	locationTag : ['centre-ville', 'Notre-Dame'],
     page: 'https://www.facebook.com/legrignotLH',
-	tags: ['brasserie', 'fruits de mer', 'restaurant', 'viande'],
+	tags: ['brasserie', 'fruits de mer', 'restaurant', 'viande', 'bavette'],
 	avis: 'Une chouette brasserie à la déco typique'
   },
   
@@ -315,7 +315,7 @@ const datas = [
     location: 'Hôtel de Ville',
 	locationTag : ['Saint François'],
     page: 'https://www.facebook.com/lebistrotdequentin',
-	tags: ['happy hour', 'bistrot', 'bar', 'burger', 'restaurant', 'midi', 'resto' ],
+	tags: ['happy hour', 'bistrot', 'bar', 'burger', 'restaurant', 'midi', 'resto', 'bavette' ],
 	avis: 'Un très bon resto le midi et un très bon bar le soir.'
   },
   
@@ -325,7 +325,7 @@ const datas = [
 	locationTag : ['Niemeyer'],
     page: 'https://www.facebook.com/Black-Café-739396976180251',
 	tags: ['bar', 'bière', 'billard', 'fléchettes' ],
-	avis: 'Un très bon resto le midi et un très bon bar le soir.'
+	avis: 'Le spot idéal pour se faire un billard'
   },
   
    {

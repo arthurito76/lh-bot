@@ -1,6 +1,7 @@
 const utils = require('./util.js')
 const _ = require('lodash')
 const datas = require('./data.js') 
+const random = array => { return array[Math.floor(Math.random() * array.length)] }
 const tagAnswer = (RESTOINFO, TAGINFO) => {
 	 
 		if (!TAGINFO) { return Promise.resolve([utils.toText('Précise ta recherche')])}
@@ -8,7 +9,13 @@ const tagAnswer = (RESTOINFO, TAGINFO) => {
 const goodPlaces = _.filter(datas, place => place.tags.indexOf(TAGINFO.raw) !== -1)
 
 if (goodPlaces.length === 0) {
-  return Promise.resolve([utils.toText('Là j\'ai rien en stock bézot mais je vais enquêter')])}
+   const answer = []
+answer.push(utils.toText('J\'ai pas ça mon bézot'))
+ answer.push(utils.toText('Non désolé, essaie de reformuler peut-être'))	
+  answer.push(utils.toText('ouhla t\'es dur avec moi'))	
+    answer.push(utils.toText('j\'ai pas ça en stock mais je vais chercher'))	
+  return Promise.resolve([random(answer)])
+  }
 
 
 const answer = [] 

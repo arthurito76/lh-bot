@@ -5,7 +5,7 @@ const datas = require('./data.js')
 const findresto = (RESTOINFO) => { 
 console.log(datas) 
  if (!RESTOINFO) { return Promise.resolve([utils.toText('De quel lieux parles-tu ?')])}
-const object =_.find(datas, data => fuzzy.metrics.jaro_winkler(data.name, RESTOINFO.raw) > 0.8)
+const object =_.find(datas, data => fuzzy.metrics.jaro_winkler(datas.name, RESTOINFO.raw) > 0.8)
 console.log(object)
 if (!object) { return Promise.resolve([utils.toText('Je ne trouve pas ce resto mais je vais me renseigner')])}
 const answer = []

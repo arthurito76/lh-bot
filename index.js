@@ -29,7 +29,7 @@ bot.dialog('/', (session) => {
     const intent = res.intent()
 if (intent) {
 const restaurantName = res.get('restoinfo')	
-const tagType = res.get('taginfo')
+const tagType = res.all('taginfo')
 INTENTS[intent.slug](restaurantName, tagType)
 .then(res => { res.forEach((message) => sendMessageByType(session, message)) }) 
 .catch(err => { err.forEach((message) => sendMessageByType(session, message)) }) 

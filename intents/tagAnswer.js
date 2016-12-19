@@ -6,7 +6,7 @@ const tagAnswer = (RESTOINFO, TAGINFO) => {
 	 
 		if (!TAGINFO) { return Promise.resolve([utils.toText('Précise ta recherche')])}
 
-const goodPlaces = _.filter(datas, place => place.tags.indexOf(TAGINFO.raw) !== -1)
+const goodPlaces = _.filter(datas, place => TAGINFO.every(tag => place.tags.indexOf(TAGINFO.raw) !== -1))
 
 if (goodPlaces.length === 0) {
    const answer = []

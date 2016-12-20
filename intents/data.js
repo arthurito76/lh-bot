@@ -12,7 +12,7 @@ const datas = [
     location: 'Plage',
     page: 'https://www.facebook.com/abricotierbar/?fref=ts',
 	locationTag : ['mer', 'plage'], 
-	tags: ['bar', 'bière', 'tapas', 'mojito', 'cocktails', 'caïpirinha','accras', 'foccacias'],
+	tags: ['bar', 'bière', 'tapas', 'mojito', 'cocktails','cocktail', 'caïpirinha','accras', 'foccacias', 'mer', 'plage'],
 	avis: 'Pour moi le meilleur bar du Havre. Un emplacement parfait, une équipe au top et en plus on peut danser jusqu\'à 2h le samedi soir.'
   },
   {
@@ -28,7 +28,7 @@ const datas = [
     location: 'Niemeyer',
 	locationTag : ['centre ville', 'niemeyer'], 
     page: 'https://www.facebook.com/obrotherlh',
-	tags: ['pub', 'bière', 'match', 'tapas', 'sport'],
+	tags: ['pub', 'bière', 'match', 'tapas', 'sport', 'foot', 'rugby'],
 	avis: 'Un bar à l\'ambiance irish idéal pour se mater un match. A noter une bouffe excellente le midi.'
   },
     {
@@ -44,7 +44,7 @@ const datas = [
     name: 'La Petite Rade',
     location: 'plage',
 	locationTag : ['plage'],
-	tags: ['bar', 'bière', 'burger', 'frites'],
+	tags: ['bar', 'bière', 'burger', 'frites', 'plage', 'mer' ],
     page: 'https://www.facebook.com/La-Petite-Rade-188341881206913',
 	avis: 'LE spot pour se siffler une mousse en mangeant un burger délicieux.'
   },
@@ -53,7 +53,7 @@ const datas = [
       name: 'le Chat Bleu',
     location: 'Sainte-Adresse',
 	locationTag : ['plage', 'mer'],
-	tags: ['café', 'thé', 'tapas', 'charcuterie', 'salon de thé', 'pâtisseries', 'brunch'],
+	tags: ['café', 'thé', 'tapas', 'charcuterie', 'salon de thé', 'pâtisseries', 'brunch', 'plage', 'mer'],
 	page: 'https://www.facebook.com/Le-Chat-Bleu-au-bon-goût-dici-et-dailleurs-294275044012714',
 	avis: 'Le refuge idéal pour les urbains souhaitant trouver un refuge où manger un bout, prende un thé ou une mousse. Tout est bon, tout est fait maison.'
   },
@@ -85,12 +85,21 @@ const datas = [
 	avis: 'Une cave et un bar à vin vraiment sympas avec un petit coin jardin où siroter du bon pinard.'
   },
   
+     {
+    name: 'Chez André',
+    location: 'Bellanger',
+	locationTag : ['Bellanger'],
+    page: 'https://www.facebook.com/Lescapade76',
+	tags: ['vin', 'restaurant', 'fromage'],
+	avis: 'Unun chouette bar où siroter du bon pinard.'
+  },
+  
    {
     name: 'Le Cyclamen',
     location: 'Saint-François',
 	locationTag : ['Saint-François'],
     page: 'https://www.facebook.com/pages/Le-Cyclamen/178489788865708',
-	tags: ['cocktails', 'rhum', 'mojito', 'Caïpirinha'],
+	tags: ['cocktails', 'cocktails','rhum', 'mojito', 'Caïpirinha'],
 	avis: 'Une cave et un bar à vin vraiment sympas avec un petit coin jardin où siroter du bon pinard.'
   },
     
@@ -399,6 +408,25 @@ const datas = [
 	tags: ['vêtements', 'homme', 'femme', 'T-shirts','produits locaux', 'souvenirs','illustrations' ],
 	avis: 'La boutique consommer local'
   },
+  
+    {
+    name: 'Docks Vauban',
+    location: 'Vauban',
+	locationTag : ['Vauban'],
+    page: 'https://www.facebook.com/Docksvauban/',
+	tags: ['vêtements', 'homme', 'femme', 'T-shirts','Carnets de vol', 'Zara','H&M', 'librairie', 'jouets' ],
+	avis: 'Un centre commercial bien désigné rempli de franchises'
+  },
+  
+   {
+    name: 'Split',
+    location: 'Vauban',
+	locationTag : ['Vauban'],
+    page: 'https://www.facebook.com/Split-Le-Havre-113149882080660',
+	tags: ['tennis', 'baskets', 'sweat', 'skateur','vêtements', 'femmes','hommes', 'lunettes', 'planches de skate' ],
+	avis: 'Le lieu pour avoir du style'
+  },
+  
   
 ]
 

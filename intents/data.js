@@ -4,7 +4,7 @@ const datas = [
     location: 'Rues piétonnes',
 	locationTag : ['centre ville', 'rues piétonnes', 'frites'],
     page: 'https://www.facebook.com/www.leautarielehavre.fr/?fref=ts',
-	tags: ['bar', 'bière', 'charcuterie', 'fromage', 'terrasse chaufféé', 'terrasse', 'match'],
+	tags: ['bar', 'bière', 'charcuterie', 'fromage'],
 	avis: 'Un bar bien sympa pour prendre un apéro avec une terrasse chauffée pour ne pas trop se les meuler.'
   },
   {
@@ -12,7 +12,7 @@ const datas = [
     location: 'Plage',
     page: 'https://www.facebook.com/abricotierbar/?fref=ts',
 	locationTag : ['mer', 'plage'], 
-	tags: ['bar', 'bière', 'tapas', 'mojito', 'cocktails', 'caïpirinha', 'plage', 'mer'],
+	tags: ['bar', 'bière', 'tapas', 'mojito', 'cocktails', 'caïpirinha'],
 	avis: 'Pour moi le meilleur bar du Havre. Un emplacement parfait, une équipe au top et en plus on peut danser jusqu\'à 2h le samedi soir.'
   },
   {
@@ -44,7 +44,7 @@ const datas = [
     name: 'La Petite Rade',
     location: 'plage',
 	locationTag : ['plage'],
-	tags: ['bar', 'bière', 'burger', 'frites', 'plage', 'mer'],
+	tags: ['bar', 'bière', 'burger', 'frites'],
     page: 'https://www.facebook.com/La-Petite-Rade-188341881206913',
 	avis: 'LE spot pour se siffler une mousse en mangeant un burger délicieux.'
   },
@@ -53,7 +53,7 @@ const datas = [
       name: 'le Chat Bleu',
     location: 'Sainte-Adresse',
 	locationTag : ['plage', 'mer'],
-	tags: ['café', 'thé', 'tapas', 'charcuterie', 'salon de thé', 'pâtisseries', 'brunch', 'mer', 'plage'],
+	tags: ['café', 'thé', 'tapas', 'charcuterie', 'salon de thé', 'pâtisseries', 'brunch'],
 	page: 'https://www.facebook.com/Le-Chat-Bleu-au-bon-goût-dici-et-dailleurs-294275044012714',
 	avis: 'Le refuge idéal pour les urbains souhaitant trouver un refuge où manger un bout, prende un thé ou une mousse. Tout est bon, tout est fait maison.'
   },
@@ -63,7 +63,7 @@ const datas = [
     location: 'Rues piétonnes',
 	locationTag : ['centre ville'],
     page: 'https://www.facebook.com/Williamsburg-Food-Coffee-771263892910406',
-	tags: ['coffee shop', 'café', 'cheescake', 'sandwichs', 'cappucino', 'petit déjeuner','cappucino'],
+	tags: ['coffee shop', 'café', 'cheescake', 'sandwichs', 'cappucino', 'petit déjeuner'],
 	avis: 'Le Havre a son coffee shop, tu peux y aller les yeux fermés.'
   },
   
@@ -362,6 +362,15 @@ const datas = [
     page: 'https://www.facebook.com/pages/Le-Sirius/656479911083484',
 	tags: ['cinéma', 'blockbusters', 'film', 'film d\'auteur' ],
 	avis: 'Le lieu pour se mater un film bien noté par Télérama'
+  },
+  
+  {
+    name: 'skate park',
+    location: 'La plage',
+	locationTag : ['plage'],
+    page: 'https://www.facebook.com/pages/Le-Sirius/656479911083484',
+	tags: ['skate', 'roller', 'plage' ],
+	avis: 'ride on !'
   },
   
 ]

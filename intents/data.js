@@ -4,7 +4,7 @@ const datas = [
     location: 'Rues piétonnes',
 	locationTag : ['centre ville', 'rues piétonnes', 'frites'],
     page: 'https://www.facebook.com/www.leautarielehavre.fr/?fref=ts',
-	tags: ['bar', 'bière', 'charcuterie', 'fromage'],
+	tags: ['bar', 'bière', 'charcuterie', 'fromage', 'terrasse', 'terrasse chauffée'],
 	avis: 'Un bar bien sympa pour prendre un apéro avec une terrasse chauffée pour ne pas trop se les meuler.'
   },
   {
@@ -12,7 +12,7 @@ const datas = [
     location: 'Plage',
     page: 'https://www.facebook.com/abricotierbar/?fref=ts',
 	locationTag : ['mer', 'plage'], 
-	tags: ['bar', 'bière', 'tapas', 'mojito', 'cocktails', 'caïpirinha'],
+	tags: ['bar', 'bière', 'tapas', 'mojito', 'cocktails', 'caïpirinha','accras', 'foccacias'],
 	avis: 'Pour moi le meilleur bar du Havre. Un emplacement parfait, une équipe au top et en plus on peut danser jusqu\'à 2h le samedi soir.'
   },
   {
@@ -245,6 +245,15 @@ const datas = [
     page: 'https://www.facebook.com/aubureau.lehavre',
 	tags: ['fish\'n ships'],
 	avis: 'L\'un des seuls lieux où manger un fish\'n ships'
+  },
+  
+   {
+    name: 'Ortiz',
+    location: 'Niemeyer',
+	locationTag : ['centre-ville', 'plage'],
+    page: 'https://www.facebook.com/aubureau.lehavre',
+	tags: ['glace', 'plage', 'mer', 'glace italienne'],
+	avis: 'L\'institution glacière au Havre. Idéal pour une glace à la plage'
   },
   
   {

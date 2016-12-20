@@ -28,4 +28,4 @@ return Promise.resolve(answer)
  
 }
 
-module.exports = activiteAnswerAnswer
+module.exports = activiteAnswer

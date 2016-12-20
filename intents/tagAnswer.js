@@ -4,16 +4,16 @@ const datas = require('./data.js')
 const random = array => { return array[Math.floor(Math.random() * array.length)] }
 const tagAnswer = (RESTOINFO, TAGINFO) => {
 	 
-		if (!TAGINFO) { return Promise.resolve([utils.toText('Précise ta recherche')])}
+		if (!TAGINFO) { return Promise.resolve([utils.toText('Que veux-tu boire ou manger exactement ?')])}
 
 const goodPlaces = _.filter(datas, place => TAGINFO.every(tag => place.tags.indexOf(tag.raw) !== -1))
 
 if (goodPlaces.length === 0) {
    const answer = []
-answer.push(utils.toText('J\'ai pas ça mon bézot'))
- answer.push(utils.toText('Non désolé, essaie de reformuler peut-être'))	
-  answer.push(utils.toText('ouhla t\'es dur avec moi. Réessaie si tu veux '))	
-    answer.push(utils.toText('j\'ai pas ça en stock mais je vais chercher'))	
+answer.push(utils.toText('J\'ai pas ça mon bézot, les lieux de vie ne sont pléthores non plus au Havre'))
+ answer.push(utils.toText('Non désolé, essaie de reformuler peut-être. Je ne veux pas que tu meurs de soif ou de faim'))	
+  answer.push(utils.toText('ouhla t\'es dur avec moi. Réessaie si tu veux mais n\'oublie pas que je ne suis qu\'un petit robot. Pas Bacchus'))	
+    answer.push(utils.toText('j\'ai pas ça en stock mais je vais chercher parmi mes connaissances épicuriennes'))	
   return Promise.resolve([random(answer)])
   }
 

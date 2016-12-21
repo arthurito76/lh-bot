@@ -427,6 +427,32 @@ const datas = [
 	avis: 'Le lieu pour avoir du style'
   },
   
+     {
+    name: 'Piscine des Docks',
+    location: 'Vauban',
+	locationTag : ['Vauban'],
+    page: 'https://www.facebook.com/pages/Les-Bains-des-Docks/1417724998465411',
+	tags: ['piscine', 'nager', 'spa', 'massage','sport', 'salle de sport','aquabiking'],
+	avis: 'Une piscine qui aura coûté un bras mais qui est vraiment splendide'
+  },
+  
+       {
+    name: 'Vent d\'Ouest',
+    location: 'Saint-Joseph',
+	locationTag : ['saint-joseph'],
+    page: 'https://www.facebook.com/pages/Hôtel-Vent-dOuest/148982211803940',
+	tags: ['hôtel', 'spa', 'petit-déjeuner', 'massage','dormir'],
+	avis: 'Un bien chouette hôtel qui propose de quoi se détendre (non pas de prestations sexuelles)'
+  },
+  
+       {
+    name: 'Muséum d\'Histoire Naturelle',
+    location: 'Notre-Dame',
+	locationTag : ['notre-dame'],
+    page: 'https://www.facebook.com/pages/Muséum-dhistoire-naturelle-du-Havre/145058868870605',
+	tags: ['visite', 'histoire', 'expositions', 'exposition'],
+	avis: 'Si tu n\'as pas visité ce musée avant 50 ans t\'as loupé ta vie'
+  },
   
 ]
 

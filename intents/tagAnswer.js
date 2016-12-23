@@ -7,6 +7,8 @@ const tagAnswer = (RESTOINFO, TAGINFO) => {
 	console.log (TAGINFO) 
 	 
 		if (!TAGINFO) { return Promise.resolve([utils.toText('Que veux-tu boire ou manger exactement ?')])}
+		
+		console.log (TAGINFO) 
 
 const goodPlaces = _.filter(datas, place => TAGINFO.every(tag => place.tags.indexOf(tag.raw) !== -1))
 

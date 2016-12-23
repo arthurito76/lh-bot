@@ -4,7 +4,7 @@ const datas = require('./data.js')
 const random = array => { return array[Math.floor(Math.random() * array.length)] }
 const achatAnswer = (RESTOINFO, TAGINFO, ACTIVITEINFO, ACHATINFO) => {
 	 
-		if (!ACHATINFO) { return Promise.resolve([utils.toText('Précise ce que tu veux acheter ?')])}
+		if (!ACHATINFO.length) { return Promise.resolve([utils.toText('Précise ce que tu veux acheter ?')])}
 
 const goodAchat = _.filter(datas, place => ACHATINFO.every(tag => place.tags.indexOf(tag.raw) !== -1))
 

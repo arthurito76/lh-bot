@@ -385,7 +385,104 @@ const datas = [
     
 
   
- 
+ {
+    name: 'LH Store',
+    location: 'Rues piétonnes',
+	locationTag : ['rues piétonnes'],
+    page: 'https://www.facebook.com/LH-CONCEPT-STORE-226383204081032',
+	tags: ['vêtements', 'homme', 'femme','LH', 'T-shirts', 'sweats', 'polos'  ],
+	avis: 'LA boutique pour avoir le style façon LH '
+  },
+  
+    {
+    name: 'LOHO',
+    location: 'Niemeyer',
+	locationTag : ['Niemeyer'],
+    page: 'https://www.facebook.com/lelocalshop.loho',
+	tags: ['vêtements', 'homme', 'femme', 'T-shirts','produits locaux', 'souvenirs','illustrations' ],
+	avis: 'La boutique consommer local'
+  },
+  
+    {
+    name: 'Docks Vauban',
+    location: 'Vauban',
+	locationTag : ['Vauban'],
+    page: 'https://www.facebook.com/Docksvauban/',
+	tags: ['vêtements', 'homme', 'femme', 'T-shirts','Carnets de vol', 'Zara','H&M', 'librairie', 'jouets' ],
+	avis: 'Un centre commercial bien désigné rempli de franchises'
+  },
+  
+   {
+    name: 'Split',
+    location: 'Vauban',
+	locationTag : ['Vauban'],
+    page: 'https://www.facebook.com/Split-Le-Havre-113149882080660',
+	tags: ['tennis', 'baskets', 'sweat', 'skateur','vêtements', 'femmes','hommes', 'lunettes', 'planches de skate' ],
+	avis: 'Le lieu pour avoir du style'
+  },
+  
+  {
+    name: 'Piscine des Docks',
+    location: 'Vauban',
+	locationTag : ['Vauban'],
+    page: 'https://www.facebook.com/pages/Les-Bains-des-Docks/1417724998465411',
+	tags: ['piscine', 'nager', 'spa', 'massage','sport', 'salle de sport','aquabiking'],
+	avis: 'Une piscine qui aura coûté un bras mais qui est vraiment splendide'
+  },
+  
+       {
+    name: 'Vent d\'Ouest',
+    location: 'Saint-Joseph',
+	locationTag : ['saint-joseph'],
+    page: 'https://www.facebook.com/pages/Hôtel-Vent-dOuest/148982211803940',
+	tags: ['hôtel', 'spa', 'petit-déjeuner', 'massage','dormir'],
+	avis: 'Un bien chouette hôtel qui propose de quoi se détendre (non pas de prestations sexuelles)'
+  },
+  
+       {
+    name: 'Muséum d\'Histoire Naturelle',
+    location: 'Notre-Dame',
+	locationTag : ['notre-dame'],
+    page: 'https://www.facebook.com/pages/Muséum-dhistoire-naturelle-du-Havre/145058868870605',
+	tags: ['visite', 'histoire', 'expositions', 'exposition'],
+	avis: 'Si tu n\'as pas visité ce musée avant 50 ans t\'as loupé ta vie'
+  },
+  
+   {
+    name: 'Sirius',
+    location: 'La gare',
+	locationTag : ['gare'],
+    page: 'https://www.facebook.com/pages/Le-Sirius/656479911083484',
+	tags: ['cinéma', 'blockbusters', 'film', 'film d\'auteur' ],
+	avis: 'Le lieu pour se mater un film bien noté par Télérama'
+  },
+  
+  {
+    name: 'skate park',
+    location: 'La plage',
+	locationTag : ['plage'],
+    page: 'https://www.facebook.com/pages/Le-Sirius/656479911083484',
+	tags: ['skate', 'roller' ],
+	avis: 'ride on !'
+  },
+  
+  	{
+    name: 'Gaumont',
+    location: 'Les docks vaubans',
+	locationTag : ['docks vaubans'],
+    page: 'https://www.facebook.com/GaumontDocksVaubanLeHavre',
+	tags: ['cinéma', 'blockbusters', 'film' ],
+	avis: 'Le cinéma pour se mater un bon spectable en grand format'
+  },
+  
+    {
+    name: 'Tétris',
+    location: 'fort de tourneville',
+	locationTag : ['tourneville'],
+    page: 'https://www.facebook.com/louise.cafe.le.havre',
+	tags: ['concert', 'musique électro' ],
+	avis: 'Le lieu pour un concert'
+  },
   
   
      

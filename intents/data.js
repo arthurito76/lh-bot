@@ -417,7 +417,7 @@ const datas = [
     location: 'Vauban',
 	locationTag : ['Vauban'],
     page: 'https://www.facebook.com/Split-Le-Havre-113149882080660',
-	tags: ['tennis', 'baskets', 'sweat', 'skateur','vêtements', 'femmes','hommes', 'lunettes', 'planches de skate' ],
+	tags: ['tennis', 'baskets', 'sweat', 'skateur','vêtements', 'femmes','hommes', 'lunettes', 'planches de skate', 'chaussures' ],
 	avis: 'Le lieu pour avoir du style'
   },
   
@@ -480,7 +480,7 @@ const datas = [
     location: 'fort de tourneville',
 	locationTag : ['tourneville'],
     page: 'https://www.facebook.com/louise.cafe.le.havre',
-	tags: ['concert', 'musique électro' ],
+	tags: ['concert', 'musique électro','rap','électro' ],
 	avis: 'Le lieu pour un concert'
   },
   

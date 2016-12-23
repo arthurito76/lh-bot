@@ -6,7 +6,7 @@ const tagAnswer = (RESTOINFO, TAGINFO) => {
 	
 	console.log (TAGINFO) 
 	 
-		if (!TAGINFO) { return Promise.resolve([utils.toText('Que veux-tu boire ou manger exactement ?')])}
+		if (!TAGINFO.length) { return Promise.resolve([utils.toText('Que veux-tu boire ou manger exactement ?')])}
 		
 		console.log (TAGINFO) 
 

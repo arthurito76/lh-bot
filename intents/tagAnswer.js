@@ -3,6 +3,8 @@ const _ = require('lodash')
 const datas = require('./data.js') 
 const random = array => { return array[Math.floor(Math.random() * array.length)] }
 const tagAnswer = (RESTOINFO, TAGINFO) => {
+	
+	console.log (TAGINFO) 
 	 
 		if (!TAGINFO) { return Promise.resolve([utils.toText('Que veux-tu boire ou manger exactement ?')])}
 

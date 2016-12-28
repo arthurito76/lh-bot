@@ -352,7 +352,7 @@ const datas = [
     location: 'hôtel-de-ville',
 	locationTag : ['saint-françois'],
     page: 'https://www.facebook.com/wallaby..7',
-	tags: ['concert', 'bistrot','cocktail', 'mojito', 'caïpirinha' ],
+	tags: ['concert', 'bistrot','cocktail', 'mojito', 'caïpirinha', 'bière' ],
 	avis: 'Un bon rade niché dans Saint-François qui te donne l\'impression de vivre un été permanent.'
   },
     

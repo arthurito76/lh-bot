@@ -17,7 +17,7 @@ console.log (SPECIALITIES)
 
 var goodPlaces = _.filter(goodPlaces, place => SPECIALITIES.every(tag => {
       const match = fuzzySpecialities.get(tag.raw);
-      if (match.distance > 0.6) {
+      if (match.distance > 0.4) {
         return true;
       }
       return false;
@@ -26,7 +26,7 @@ var goodPlaces = _.filter(goodPlaces, place => SPECIALITIES.every(tag => {
 if (CUSTOMLOCATION.length) {
 	goodPlaces = _.filter(goodPlaces, place => CUSTOMLOCATION.every(tag => {
       const match = fuzzyLocation.get(tag.raw);
-      if (match.distance > 0.6) {
+      if (match.distance > 0.4) {
         return true;
       }
       return false;

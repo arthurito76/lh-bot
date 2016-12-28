@@ -2,11 +2,12 @@ const utils = require('./util.js')
 const _ = require('lodash')
 const datas = require('./data.js') 
 const Fuzzy = require('fuzzy-matching')
- const fuzzyLocation = new Fuzzy(datas.reduce((prev, current) => {
- return [...prev, current.locationTag];
+  const fuzzyLocation = new Fuzzy(datas.reduce((prev, current) => {
+ return [...prev, ...current.locationTag];
 }, []));
+
 const fuzzySpecialities = new Fuzzy(datas.reduce((prev, current) => {
-  return [...prev, current.tags];
+ return [...prev, ...current.tags];
 }, []));
 const random = array => { return array[Math.floor(Math.random() * array.length)] }
  const tagAnswer = (RESTOINFO, SPECIALITIES, CUSTOMLOCATION) => { 
@@ -15,23 +16,21 @@ if (!SPECIALITIES.length) { return Promise.resolve([utils.toText('Que veux-tu bo
 
 console.log (SPECIALITIES) 
 
-var goodPlaces = _.filter(goodPlaces, place => SPECIALITIES.every(tag => {
-      const match = fuzzySpecialities.get(tag.raw);
-      if (match.distance > 0.4) {
-        return true;
-      }
-      return false;
-  })
-)
-if (CUSTOMLOCATION.length) {
-	goodPlaces = _.filter(goodPlaces, place => CUSTOMLOCATION.every(tag => {
-      const match = fuzzyLocation.get(tag.raw);
-      if (match.distance > 0.4) {
-        return true;
-      }
-      return false;
-  })
-)
+ var goodPlaces = []
+SPECIALITIES.forEach(tag => {
+     const match = fuzzySpecialities.get(tag.raw);
+     if (match.distance > 0.8) {
+       goodPlaces = _.filter(datas, place => place.tags.indexOf(match.value) !== -1)
+     }
+ })
+
+if (goodPlaces.length && CUSTOMLOCATION.length) {
+    CUSTOMLOCATION.forEach(tag => {
+       const match = fuzzyLocation.get(tag.raw);
+       if (match.distance > 0.8) {
+         goodPlaces = _.filter(goodPlaces, place => place.locationTag.indexOf(match.value) !== -1)
+       }
+   })
 }
 
 if (goodPlaces.length === 0) {

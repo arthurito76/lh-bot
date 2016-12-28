@@ -3,10 +3,10 @@ const _ = require('lodash')
 const datas = require('./data.js') 
 const Fuzzy = require('fuzzy-matching')
  const fuzzyLocation = new Fuzzy(datas.reduce((prev, current) => {
-  return prev.push(current.locationTag);
+ return [...prev, current.locationTag];
 }, []));
 const fuzzySpecialities = new Fuzzy(datas.reduce((prev, current) => {
-  return prev.push(current.tags);
+  return [...prev, current.tags];
 }, []));
 const random = array => { return array[Math.floor(Math.random() * array.length)] }
  const tagAnswer = (RESTOINFO, SPECIALITIES, CUSTOMLOCATION) => { 

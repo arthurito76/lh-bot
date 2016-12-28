@@ -4,9 +4,11 @@ const datas = require('./data.js')
 const random = array => { return array[Math.floor(Math.random() * array.length)] }
  const tagAnswer = (RESTOINFO, SPECIALITIES, CUSTOMLOCATION) => { 
 
-if (!SPECIALITIES.length) { return Promise.resolve([utils.toText('Que veux-tu boire ou manger exactement ?')])} 
+if (!SPECIALITIES.length) { return Promise.resolve([utils.toText('Que veux-tu boire ou manger exactement ?')])}
 
-const goodPlaces = _.filter(datas, place => SPECIALITIES.every(tag => place.tags.indexOf(tag.raw) !== -1))
+console.log (SPECIALITIES) 
+
+var goodPlaces = _.filter(datas, place => SPECIALITIES.every(tag => place.tags.indexOf(tag.raw) !== -1))
 
 if (CUSTOMLOCATION.length) {
 	goodPlaces = _.filter(goodPlaces, place => CUSTOMLOCATION.every(tag => place.locationTag.indexOf(tag.raw) !== -1))

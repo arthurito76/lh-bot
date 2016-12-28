@@ -2,14 +2,14 @@ const datas = [
   {
     name: 'l\'Eau Tarie',
     location: 'Rues piétonnes',
-	locationTag : ['centre ville', 'rues piétonnes'],
+	locationTag : ['centre-ville', 'rues piétonnes'],
     page: 'https://www.facebook.com/www.leautarielehavre.fr/?fref=ts',
 	tags: ['bière', 'charcuterie', 'fromage', 'terrasse', 'terrasse chauffée'],
 	avis: 'Un  bien sympa pour prendre un apéro avec une terrasse chauffée pour ne pas trop se les meuler.'
   },
   {
     name: 'l\'Abri Côtier',
-    location: 'Plage',
+    location: 'plage',
     page: 'https://www.facebook.com/abricotier/?fref=ts',
 	locationTag : ['mer', 'plage'], 
 	tags: ['', 'bière', 'tapas', 'mojito', 'cocktails','cocktail', 'caïpirinha','accras', 'foccacias'],
@@ -18,7 +18,7 @@ const datas = [
   {
     name: 'Le Trappiste',
     location: 'Niemeyer',
-	locationTag : ['centre ville', 'niemeyer', 'halles'], 
+	locationTag : ['centre-ville', 'niemeyer', 'halles'], 
     page: 'https://www.facebook.com/LeTrappistLeHavre/?fref=ts',
 	tags: ['bière', 'belge'],
 	avis: 'Un  bien décoré pour celles et ceux qui aiment la bière qui fait mal au crâne.'
@@ -26,7 +26,7 @@ const datas = [
   {
     name: 'O\'Brother',
     location: 'Niemeyer',
-	locationTag : ['centre ville', 'niemeyer', 'halles'], 
+	locationTag : ['centre-ville', 'niemeyer', 'halles'], 
     page: 'https://www.facebook.com/obrotherlh',
 	tags: ['pub', 'bière', 'match', 'tapas', 'sport', 'foot', 'rugby'],
 	avis: 'Un  à l\'ambiance irish idéal pour se mater un match. A noter une bouffe excellente le midi.'
@@ -34,7 +34,7 @@ const datas = [
     {
     name: 'L\'Etable',
     location: 'rues Piétonnes',
-	locationTag : ['centre ville', 'rues piétonnes'],
+	locationTag : ['centre-ville', 'rues piétonnes'],
 	tags: ['bière', 'vin', 'tapas', 'charcuterie'],
     page: 'https://www.facebook.com/etable76',
 	avis: 'Un lieu agréable et un peu cher.'
@@ -88,7 +88,7 @@ const datas = [
   {
     name: 'Williamsburg',
     location: 'Rues piétonnes',
-	locationTag : ['centre ville', 'rues piétonnes'],
+	locationTag : ['centre-ville', 'rues piétonnes'],
     page: 'https://www.facebook.com/Williamsburg-Food-Coffee-771263892910406',
 	tags: ['coffee shop', 'café', 'cheescake', 'sandwichs', 'cappucino', 'petit déjeuner'],
 	avis: 'Le Havre a son coffee shop, tu peux y aller les yeux fermés.'
@@ -96,8 +96,8 @@ const datas = [
   
    {
     name: 'French Coffee Shop',
-    location: 'hôtel de Ville',
-	locationTag : ['hôtel de Ville', 'centre ville'],
+    location: 'hôtel-de-ville',
+	locationTag : ['hôtel-de-ville', 'centre-ville'],
     page: 'https://www.facebook.com/LHfrenchcoffeeshop/',
 	tags: ['coffee shop', 'café', 'cheescake', 'sandwichs', 'cappucino', 'petit déjeuner'],
 	avis: 'Un chouette coffee shop, à la starbuck style.'
@@ -124,7 +124,7 @@ const datas = [
    {
     name: 'Le Cyclamen',
     location: 'Saint-François',
-	locationTag : ['Saint-François', 'centre ville'],
+	locationTag : ['Saint-François', 'centre-ville'],
     page: 'https://www.facebook.com/pages/Le-Cyclamen/178489788865708',
 	tags: ['cocktails', 'cocktails','rhum', 'mojito', 'Caïpirinha'],
 	avis: 'Une cave et un  à vin vraiment sympas avec un petit coin jardin où siroter du bon pinard.'
@@ -132,8 +132,8 @@ const datas = [
     
 	{
     name: 'La Cave à bière',
-    location: 'Saint-Vincent',
-	locationTag : ['Saint-Vincent', 'centre ville'],
+    location: 'saint-vincent',
+	locationTag : ['saint-vincent', 'centre-ville'],
     page: 'https://www.facebook.com/AffichesLaCaveABieresLeHavre',
 	tags: ['bière', 'exposition', 'artiste', 'bière belge'],
 	avis: 'Le lieu idéal pour acheter de la bonne bière et savourer une expo.'
@@ -169,7 +169,7 @@ const datas = [
   {
     name: 'All in Bagels',
     location: 'Saint-Nicolas et Niemeyer',
-	locationTag : ['Saint-Nicolas', 'Niemeyer', 'centre ville'],
+	locationTag : ['Saint-Nicolas', 'Niemeyer', 'centre-ville'],
     page: 'https://www.facebook.com/AllInBagels',
 	tags: ['bagels'],
 	avis: 'Ca tombe bien que tu aimes ça car je vais te dire la meilleure adresse de la ville : All in Bagels'
@@ -177,8 +177,8 @@ const datas = [
   
     {
     name: 'Istanbul',
-    location: 'Saint-Vincent',
-	locationTag : ['Saint-Vincent', 'plage'],
+    location: 'saint-vincent',
+	locationTag : ['saint-vincent', 'plage'],
     page: 'https://www.facebook.com/pages/Istanbul-Kebab/251742424858786',
 	tags: ['kebab'],
 	avis: 'Le meilleur kebab de France par kebab-frites.com'
@@ -198,7 +198,7 @@ const datas = [
     location: 'Niemeyer',
 	locationTag : ['centre-ville', 'Notre-Dame'],
     page: 'https://www.facebook.com/legrignotLH',
-	tags: ['brasserie', 'fruits de mer', '', 'viande', 'bavette', 'Niemeyer', 'centre ville'],
+	tags: ['brasserie', 'fruits de mer', '', 'viande', 'bavette', 'Niemeyer', 'centre-ville'],
 	avis: 'Une chouette brasserie à la déco typique'
   },
   
@@ -241,7 +241,7 @@ const datas = [
    {
     name: 'Le Fifty\'s',
     location: 'Rue de la Soif',
-	locationTag : ['niemeyer', 'centre ville'],
+	locationTag : ['niemeyer', 'centre-ville'],
     page: 'https://www.facebook.com/odelicesdulibanduhavre',
 	tags: ['burger'],
 	avis: 'Un burger comme dans les 50\'s. Sors ton costume champion et fais comme les américains'
@@ -331,8 +331,8 @@ const datas = [
   
   {
     name: 'le Merle Moqueur',
-    location: 'Notre Dame',
-	locationTag : ['notre dame'],
+    location: 'notre-dame',
+	locationTag : ['notre-dame'],
     page: 'https://www.facebook.com/Le-Merle-Moqueur-383939731755519',
 	tags: ['concert', 'bistrot', 'bière', 'rock' ],
 	avis: 'Un bon rade pour une bonne binouse accompagnée d\'un concert'
@@ -340,8 +340,8 @@ const datas = [
   
     {
     name: 'Zazous',
-    location: 'Hôtel de Ville',
-	locationTag : ['Hôtel de Ville'],
+    location: 'hôtel-de-ville',
+	locationTag : ['hôtel-de-ville'],
     page: 'https://www.facebook.com/leszazouslehavre',
 	tags: ['concert', 'bistrot','bière', 'rock', 'blind test' ],
 	avis: 'bonne ambiance, bon délire et des sessions blind test chaque semaine pour se fendre la poire.'
@@ -349,8 +349,8 @@ const datas = [
   
   {
     name: 'Wallaby Bar',
-    location: 'Hôtel de Ville',
-	locationTag : ['Saint François'],
+    location: 'hôtel-de-ville',
+	locationTag : ['saint-françois'],
     page: 'https://www.facebook.com/wallaby..7',
 	tags: ['concert', 'bistrot','cocktail', 'mojito', 'caïpirinha' ],
 	avis: 'Un bon rade niché dans Saint-François qui te donne l\'impression de vivre un été permanent.'
@@ -358,8 +358,8 @@ const datas = [
     
   {
     name: 'Bistrot de Quentin',
-    location: 'Hôtel de Ville',
-	locationTag : ['Saint François'],
+    location: 'hôtel-de-ville',
+	locationTag : ['saint-françois'],
     page: 'https://www.facebook.com/lebistrotdequentin',
 	tags: ['happy hour', 'bistrot', 'burger', 'midi', 'bavette' ],
 	avis: 'Un très bon  le midi et un très bon  le soir.'

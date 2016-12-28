@@ -9,11 +9,10 @@ if (!SPECIALITIES.length) { return Promise.resolve([utils.toText('Que veux-tu bo
 console.log (SPECIALITIES) 
 
 var goodPlaces = _.filter(datas, place => SPECIALITIES.every(tag => place.tags.indexOf(tag.raw) !== -1))
-
+console.log (CUSTOMLOCATION)
 if (CUSTOMLOCATION.length) {
 	goodPlaces = _.filter(goodPlaces, place => CUSTOMLOCATION.every(tag => place.locationTag.indexOf(tag.raw) !== -1))
 	console.log (CUSTOMLOCATION) 
-
 }
 
 if (goodPlaces.length === 0) {

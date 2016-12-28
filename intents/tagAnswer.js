@@ -12,6 +12,7 @@ var goodPlaces = _.filter(datas, place => SPECIALITIES.every(tag => place.tags.i
 
 if (CUSTOMLOCATION.length) {
 	goodPlaces = _.filter(goodPlaces, place => CUSTOMLOCATION.every(tag => place.locationTag.indexOf(tag.raw) !== -1))
+	console.log (CUSTOMLOCATION) 
 
 }
 

@@ -2,9 +2,9 @@ const datas = [
   {
     name: 'l\'Eau Tarie',
     location: 'Rues piétonnes',
-	locationTag : ['centre ville', 'rues piétonnes', 'frites'],
+	locationTag : ['centre ville', 'rues piétonnes'],
     page: 'https://www.facebook.com/www.leautarielehavre.fr/?fref=ts',
-	tags: ['', 'bière', 'charcuterie', 'fromage', 'terrasse', 'terrasse chauffée', 'centre ville','rues piétonnes'],
+	tags: ['bière', 'charcuterie', 'fromage', 'terrasse', 'terrasse chauffée'],
 	avis: 'Un  bien sympa pour prendre un apéro avec une terrasse chauffée pour ne pas trop se les meuler.'
   },
   {
@@ -12,30 +12,30 @@ const datas = [
     location: 'Plage',
     page: 'https://www.facebook.com/abricotier/?fref=ts',
 	locationTag : ['mer', 'plage'], 
-	tags: ['', 'bière', 'tapas', 'mojito', 'cocktails','cocktail', 'caïpirinha','accras', 'foccacias', 'mer', 'plage'],
+	tags: ['', 'bière', 'tapas', 'mojito', 'cocktails','cocktail', 'caïpirinha','accras', 'foccacias'],
 	avis: 'Pour moi le meilleur  du Havre. Un emplacement parfait, une équipe au top et en plus on peut danser jusqu\'à 2h le samedi soir.'
   },
   {
     name: 'Le Trappiste',
     location: 'Niemeyer',
-	locationTag : ['centre ville', 'niemeyer'], 
+	locationTag : ['centre ville', 'niemeyer', 'halles'], 
     page: 'https://www.facebook.com/LeTrappistLeHavre/?fref=ts',
-	tags: ['', 'bière', 'belge', 'Niemeyer', 'halles'],
+	tags: ['bière', 'belge'],
 	avis: 'Un  bien décoré pour celles et ceux qui aiment la bière qui fait mal au crâne.'
   },
   {
     name: 'O\'Brother',
     location: 'Niemeyer',
-	locationTag : ['centre ville', 'niemeyer'], 
+	locationTag : ['centre ville', 'niemeyer', 'halles'], 
     page: 'https://www.facebook.com/obrotherlh',
-	tags: ['pub', 'bière', 'match', 'tapas', 'sport', 'foot', 'rugby', 'Niemeyer', 'halles'],
+	tags: ['pub', 'bière', 'match', 'tapas', 'sport', 'foot', 'rugby'],
 	avis: 'Un  à l\'ambiance irish idéal pour se mater un match. A noter une bouffe excellente le midi.'
   },
     {
     name: 'L\'Etable',
     location: 'rues Piétonnes',
 	locationTag : ['centre ville', 'rues piétonnes'],
-	tags: ['', 'bière', 'vin', 'tapas', 'charcuterie', 'rues piétonnes', 'centre ville'],
+	tags: ['bière', 'vin', 'tapas', 'charcuterie'],
     page: 'https://www.facebook.com/etable76',
 	avis: 'Un lieu agréable et un peu cher.'
   },
@@ -43,8 +43,8 @@ const datas = [
   {
     name: 'La Petite Rade',
     location: 'plage',
-	locationTag : ['plage'],
-	tags: ['', 'bière', 'burger', 'frites', 'plage', 'mer' ],
+	locationTag : ['plage', 'mer'],
+	tags: ['bière', 'burger', 'frites' ],
     page: 'https://www.facebook.com/La-Petite-Rade-188341881206913',
 	avis: 'LE spot pour se siffler une mousse en mangeant un burger délicieux.'
   },
@@ -53,7 +53,7 @@ const datas = [
     name: 'Crêpe Chignon',
     location: 'Saint-François',
 	locationTag : ['saint-françois'],
-	tags: ['crêpe', 'crêperie', 'cidre', 'Saint-François', '' ],
+	tags: ['crêpe', 'crêperie', 'cidre' ],
     page: 'https://www.facebook.com/La-Petite-Rade-188341881206913',
 	avis: '♪ Ils ont des chapeaux ronds, vive la Bretagne... ♪'
   },
@@ -62,7 +62,7 @@ const datas = [
     name: 'Le Cosmopolitain',
     location: 'Saint-Nicolas',
 	locationTag : ['saint-nicolas'],
-	tags: ['danser', 'boîte de nuit', 'night club', 'Saint-Nicolas','centre ville' ],
+	tags: ['danser', 'boîte de nuit', 'night club' ],
     page: 'https://www.facebook.com/cosmolh/',
 	avis: 'Si tu veux guincher tu peux y faire un tour'
   },
@@ -71,7 +71,7 @@ const datas = [
     name: 'Le Music Bar',
     location: 'Saint-Nicolas',
 	locationTag : ['saint-nicolas'],
-	tags: ['danser', 'boîte de nuit', 'night club', 'karaoké', 'Saint-Nicolas','centre ville' ],
+	tags: ['danser', 'boîte de nuit', 'night club', 'karaoké' ],
     page: 'https://www.facebook.com/pages/Music-Bar/158778094180401',
 	avis: 'Tu es ivre et tu veux pouvoir t\'exprimer après 2h du matin ? Ce lieu est fait pour toi' 
   },
@@ -80,7 +80,7 @@ const datas = [
       name: 'le Chat Bleu',
     location: 'Sainte-Adresse',
 	locationTag : ['plage', 'mer'],
-	tags: ['café', 'thé', 'tapas', 'charcuterie', 'salon de thé', 'pâtisseries', 'brunch', 'plage', 'mer'],
+	tags: ['café', 'thé', 'tapas', 'charcuterie', 'salon de thé', 'pâtisseries', 'brunch'],
 	page: 'https://www.facebook.com/Le-Chat-Bleu-au-bon-goût-dici-et-dailleurs-294275044012714',
 	avis: 'Le refuge idéal pour les urbains souhaitant trouver un refuge où manger un bout, prende un thé ou une mousse. Tout est bon, tout est fait maison.'
   },
@@ -88,62 +88,62 @@ const datas = [
   {
     name: 'Williamsburg',
     location: 'Rues piétonnes',
-	locationTag : ['centre ville'],
+	locationTag : ['centre ville', 'rues piétonnes'],
     page: 'https://www.facebook.com/Williamsburg-Food-Coffee-771263892910406',
-	tags: ['coffee shop', 'café', 'cheescake', 'sandwichs', 'cappucino', 'petit déjeuner', 'rues piétonnes','centre ville'],
+	tags: ['coffee shop', 'café', 'cheescake', 'sandwichs', 'cappucino', 'petit déjeuner'],
 	avis: 'Le Havre a son coffee shop, tu peux y aller les yeux fermés.'
   },
   
    {
     name: 'French Coffee Shop',
     location: 'hôtel de Ville',
-	locationTag : ['hôtel de Ville'],
+	locationTag : ['hôtel de Ville', 'centre ville'],
     page: 'https://www.facebook.com/LHfrenchcoffeeshop/',
-	tags: ['coffee shop', 'café', 'cheescake', 'sandwichs', 'cappucino', 'petit déjeuner', 'centre ville', 'hôtel de ville'],
+	tags: ['coffee shop', 'café', 'cheescake', 'sandwichs', 'cappucino', 'petit déjeuner'],
 	avis: 'Un chouette coffee shop, à la starbuck style.'
   },
   
    {
     name: 'L\'Escapade',
     location: 'plage',
-	locationTag : ['plage'],
+	locationTag : ['plage', 'mer'],
     page: 'https://www.facebook.com/Lescapade76',
-	tags: ['vin', 'charcuterie', 'fromage', 'plage', 'mer', 'terrasse'],
+	tags: ['vin', 'charcuterie', 'fromage', 'terrasse'],
 	avis: 'Une cave et un  à vin vraiment sympas avec un petit coin jardin où siroter du bon pinard.'
   },
   
      {
     name: 'Chez André',
     location: 'Bellanger',
-	locationTag : ['Bellanger'],
+	locationTag : ['Bellanger', 'saint-vincent'],
     page: 'https://www.facebook.com/Lescapade76',
-	tags: ['vin', '', 'fromage', 'saint-vincent'],
+	tags: ['vin', 'fromage'],
 	avis: 'Unun chouette  où siroter du bon pinard.'
   },
   
    {
     name: 'Le Cyclamen',
     location: 'Saint-François',
-	locationTag : ['Saint-François'],
+	locationTag : ['Saint-François', 'centre ville'],
     page: 'https://www.facebook.com/pages/Le-Cyclamen/178489788865708',
-	tags: ['cocktails', 'cocktails','rhum', 'mojito', 'Caïpirinha', 'centre ville', 'saint-françois'],
+	tags: ['cocktails', 'cocktails','rhum', 'mojito', 'Caïpirinha'],
 	avis: 'Une cave et un  à vin vraiment sympas avec un petit coin jardin où siroter du bon pinard.'
   },
     
 	{
     name: 'La Cave à bière',
     location: 'Saint-Vincent',
-	locationTag : ['Saint-François'],
+	locationTag : ['Saint-Vincent', 'centre ville'],
     page: 'https://www.facebook.com/AffichesLaCaveABieresLeHavre',
-	tags: ['bière', 'exposition', 'artiste', 'bière belge', 'centre ville', 'saint-vincent'],
+	tags: ['bière', 'exposition', 'artiste', 'bière belge'],
 	avis: 'Le lieu idéal pour acheter de la bonne bière et savourer une expo.'
   },
   
   {
     name: 'Naturéo',
     location: 'Le Grand Hameau',
-	locationTag : ['Grand Hameau, ville haute'],
-    page: 'https://www.facebook.com/AffichesLaCaveABieresLeHavre',
+	locationTag : ['Grand Hameau', 'ville haute'],
+    page: '',
 	tags: ['bio', 'magasin'],
 	avis: 'Un endroit pour acheter bio avec du choix'
   },
@@ -160,9 +160,9 @@ const datas = [
    {
     name: 'Le Marché Bio',
     location: 'rue de Paris',
-	locationTag : ['centre-ville, Notre-Dame'],
+	locationTag : ['centre-ville', 'Notre-Dame'],
     page: 'https://www.facebook.com/lemarchebioLH/',
-	tags: ['bio', 'magasin', 'centre ville'],
+	tags: ['bio', 'magasin'],
 	avis: 'Un endroit pour acheter bio avec du choix'
   },
   
@@ -180,16 +180,16 @@ const datas = [
     location: 'Saint-Vincent',
 	locationTag : ['Saint-Vincent', 'plage'],
     page: 'https://www.facebook.com/pages/Istanbul-Kebab/251742424858786',
-	tags: ['kebab', 'saint-Vincent', 'plage'],
+	tags: ['kebab'],
 	avis: 'Le meilleur kebab de France par kebab-frites.com'
   },
   
   {
     name: 'Sushis Makers',
     location: 'Notre-Dame',
-	locationTag : ['Notre-dame'],
+	locationTag : ['Notre-dame', 'centre-ville'],
     page: 'https://www.facebook.com/sushimakers',
-	tags: ['sushis', 'japonais', 'centre-ville', 'notre-dame'],
+	tags: ['sushis', 'japonais'],
 	avis: 'Du japonais fait maison. Si si'
   },
   
@@ -207,7 +207,7 @@ const datas = [
     location: 'saint-vincent',
 	locationTag : ['centre-ville', 'saint-vincent'],
     page: '',
-	tags: ['chinois', 'emporter', 'nems', 'acheter', 'centre-ville', 'saint-vincent'],
+	tags: ['chinois', 'emporter', 'nems', 'acheter'],
 	avis: 'LE meilleur chinois de la ville'
   },
   
@@ -216,16 +216,16 @@ const datas = [
     location: 'rue Aristide Briant',
 	locationTag : ['centre-ville', 'saint-vincent'],
     page: 'http://www.palais-imperial.fr/',
-	tags: ['chinois', '', 'nems', 'livrer', 'centre-ville', ''],
+	tags: ['chinois', 'nems', 'livrer'],
 	avis: 'Un bon  où manger chinois'
   },
   
    {
     name: 'Al Dente',
     location: 'Niemeyer',
-	locationTag : ['Niemeyer'],
+	locationTag : ['Niemeyer', 'centre-ville'],
     page: 'https://www.facebook.com/Al-Dente-Ristorante-196816710348037',
-	tags: ['pizza', 'emporter', 'pizzeria', 'italien', 'centre-ville', 'niemeyer', ''],
+	tags: ['pizza', 'emporter', 'pizzeria', 'italien'],
 	avis: 'L\'un des meilleurs italiens de la ville, basta !'
   },
   
@@ -234,16 +234,16 @@ const datas = [
     location: 'Rue de la Soif',
 	locationTag : ['plage'],
     page: 'https://www.facebook.com/odelicesdulibanduhavre',
-	tags: ['libanais', 'mezzé', 'chawerma', 'à emporter', 'plage'],
+	tags: ['libanais', 'mezzé', 'chawerma', 'à emporter'],
 	avis: 'L\'un des meilleurs italiens de la ville, basta !'
   },
   
    {
     name: 'Le Fifty\'s',
     location: 'Rue de la Soif',
-	locationTag : ['plage'],
+	locationTag : ['niemeyer', 'centre ville'],
     page: 'https://www.facebook.com/odelicesdulibanduhavre',
-	tags: ['burger', 'niemeyer', 'centre ville'],
+	tags: ['burger'],
 	avis: 'Un burger comme dans les 50\'s. Sors ton costume champion et fais comme les américains'
   },
   
@@ -252,7 +252,7 @@ const datas = [
     location: 'Saint-François',
 	locationTag : ['centre-ville', 'saint-françois'],
     page: 'https://www.facebook.com/pages/La-Petite-Savoie/156213701077390',
-	tags: ['fromage', '', 'raclette', 'centre-ville', 'saint-françois', ''],
+	tags: ['fromage','raclette'],
 	avis: 'Si tu veux manger du fromage et avoir une haleine de raclette c\'est là que ça se passe'
   },
     
@@ -261,7 +261,7 @@ const datas = [
     location: 'Saint-François',
 	locationTag : ['centre-ville', 'saint-françois'],
     page: 'https://www.facebook.com/pages/Le-Lyonnais/206566939421182',
-	tags: ['gastronomie française', 'escargots', 'centre-ville', 'saint-françois', ''],
+	tags: ['gastronomie française', 'escargots'],
 	avis: 'Un excellent  pour une bonne gastronomie française'
   },
   
@@ -286,9 +286,9 @@ const datas = [
    {
     name: 'Ortiz',
     location: 'Niemeyer',
-	locationTag : ['centre-ville', 'plage'],
+	locationTag : ['centre-ville', 'plage', 'mer'],
     page: 'https://www.facebook.com/aubureau.lehavre',
-	tags: ['glace', 'plage', 'mer', 'glace italienne'],
+	tags: ['glace', 'glace italienne'],
 	avis: 'L\'institution glacière au Havre. Idéal pour une glace à la plage'
   },
   
@@ -325,7 +325,7 @@ const datas = [
     location: 'avenue Coty',
 	locationTag : ['coty'],
     page: 'https://www.facebook.com/lebistrotcoty',
-	tags: ['concert', 'bistrot', '', 'bière' ],
+	tags: ['concert', 'bistrot', 'bière' ],
 	avis: 'Une institution pour écouter un concert'
   },
   
@@ -334,7 +334,7 @@ const datas = [
     location: 'Notre Dame',
 	locationTag : ['notre dame'],
     page: 'https://www.facebook.com/Le-Merle-Moqueur-383939731755519',
-	tags: ['concert', 'bistrot', '', 'bière', 'rock' ],
+	tags: ['concert', 'bistrot', 'bière', 'rock' ],
 	avis: 'Un bon rade pour une bonne binouse accompagnée d\'un concert'
   },
   
@@ -343,7 +343,7 @@ const datas = [
     location: 'Hôtel de Ville',
 	locationTag : ['Hôtel de Ville'],
     page: 'https://www.facebook.com/leszazouslehavre',
-	tags: ['concert', 'bistrot', '', 'bière', 'rock', 'blind test' ],
+	tags: ['concert', 'bistrot','bière', 'rock', 'blind test' ],
 	avis: 'bonne ambiance, bon délire et des sessions blind test chaque semaine pour se fendre la poire.'
   },
   
@@ -352,7 +352,7 @@ const datas = [
     location: 'Hôtel de Ville',
 	locationTag : ['Saint François'],
     page: 'https://www.facebook.com/wallaby..7',
-	tags: ['concert', 'bistrot', '', 'cocktail', 'mojito', 'caïpirinha' ],
+	tags: ['concert', 'bistrot','cocktail', 'mojito', 'caïpirinha' ],
 	avis: 'Un bon rade niché dans Saint-François qui te donne l\'impression de vivre un été permanent.'
   },
     
@@ -361,7 +361,7 @@ const datas = [
     location: 'Hôtel de Ville',
 	locationTag : ['Saint François'],
     page: 'https://www.facebook.com/lebistrotdequentin',
-	tags: ['happy hour', 'bistrot', '', 'burger', '', 'midi', '', 'bavette' ],
+	tags: ['happy hour', 'bistrot', 'burger', 'midi', 'bavette' ],
 	avis: 'Un très bon  le midi et un très bon  le soir.'
   },
   
@@ -370,14 +370,14 @@ const datas = [
     location: 'Niemeyer',
 	locationTag : ['Niemeyer'],
     page: 'https://www.facebook.com/Black-Café-739396976180251',
-	tags: ['', 'bière', 'billard', 'fléchettes' ],
+	tags: ['bière', 'billard', 'fléchettes' ],
 	avis: 'Le spot idéal pour se faire un billard'
   },
   
    {
     name: 'Mac Daid\'s',
     location: 'Niemeyer',
-	locationTag : ['Niemeyer'],
+	locationTag : ['Niemeyer', 'centre-ville'],
     page: 'https://www.facebook.com/pages/Mac-Daids/115590181861208',
 	tags: ['pub', 'bière', 'billard', 'fléchettes', 'guiness' ],
 	avis: 'LE pub havrais'
@@ -461,7 +461,7 @@ const datas = [
     name: 'skate park',
     location: 'La plage',
 	locationTag : ['plage'],
-    page: 'https://www.facebook.com/pages/Le-Sirius/656479911083484',
+    page: '',
 	tags: ['skate', 'roller' ],
 	avis: 'ride on !'
   },

@@ -25,11 +25,6 @@ SPECIALITIES.forEach(tag => {
  
  console.log (CUSTOMLOCATION)
  
- if (goodPlaces.length && CUSTOMLOCATION.length === 0 ) {
-   const answer = []
-answer.push(utils.toText('Je n\'ai rien dans ce coin, désolé '))	
-  return Promise.resolve([random(answer)])
-  }
 
 if (goodPlaces.length && CUSTOMLOCATION.length) {
     CUSTOMLOCATION.forEach(tag => {

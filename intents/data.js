@@ -483,10 +483,6 @@ const datas = [
 	tags: ['concert', 'musique électro','rap','électro' ],
 	avis: 'Le lieu pour un concert'
   },
-  
-  
-     
-  
-]
+ ]
 
 module.exports = datas

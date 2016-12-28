@@ -11,6 +11,7 @@
   "dependencies": {
     "botbuilder": "^3.4.4",
     "clj-fuzzy": "^0.3.3",
+    "fuzzy-matching": "^0.4.3",
     "latest-version": "^2.0.0",
     "lodash": "^4.17.2",
     "recastai": "^2.3.0",

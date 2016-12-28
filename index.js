@@ -33,6 +33,8 @@ const specialitiesType = res.all('specialities')
 const activiteType = res.all('activiteinfo')
 const achatType = res.all('achatinfo')
 const locationType = res.all('customlocation')
+console.log(locationType)
+
 INTENTS[intent.slug](restaurantName, specialitiesType, locationType, activiteType, achatType)
 .then(res => { res.forEach((message) => sendMessageByType(session, message)) }) 
 .catch(err => { err.forEach((message) => sendMessageByType(session, message)) }) 

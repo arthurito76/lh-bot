@@ -29,10 +29,10 @@ bot.dialog('/', (session) => {
     const intent = res.intent()
 if (intent) {
 const restaurantName = res.get('restoinfo')	
-const tagType = res.all('taginfo')
+const specialitiesType = res.all('specialities')
 const activiteType = res.all('activiteinfo')
 const achatType = res.all('achatinfo')
-INTENTS[intent.slug](restaurantName, tagType, activiteType, achatType)
+INTENTS[intent.slug](restaurantName, specialitiesType, activiteType, achatType)
 .then(res => { res.forEach((message) => sendMessageByType(session, message)) }) 
 .catch(err => { err.forEach((message) => sendMessageByType(session, message)) }) 
 } else { session.send(['Je ne comprends pas encore tout très bien, il faut être patient avec moi. Je suis un jeune bot qui doit apprendre.', 'ouhlala j\'ai encore beaucoup à apprendre tu sais', 'Là je n\'ai pas la réponse mais promis je vais chercher', 'hein ?', 'je vais sortir mon chapeau et ma guinbardine pour enquêter...', 'Je ne suis qu\'un bot, pas terminator', 'j\'aimerais te répondre mais les limites de l\'AI ne me permettent de répondre qu\'à des requêtes simples']) }

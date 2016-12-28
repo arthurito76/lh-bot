@@ -13,8 +13,7 @@ const random = array => { return array[Math.floor(Math.random() * array.length)]
  const tagAnswer = (RESTOINFO, SPECIALITIES, CUSTOMLOCATION) => { 
 
 if (!SPECIALITIES.length) { return Promise.resolve([utils.toText('Que veux-tu boire ou manger exactement ?')])}
-
-console.log (SPECIALITIES) 
+ 
 
  var goodPlaces = []
 SPECIALITIES.forEach(tag => {
@@ -23,6 +22,8 @@ SPECIALITIES.forEach(tag => {
        goodPlaces = _.filter(datas, place => place.tags.indexOf(match.value) !== -1)
      }
  })
+ 
+ console.log (CUSTOMLOCATION)
 
 if (goodPlaces.length && CUSTOMLOCATION.length) {
     CUSTOMLOCATION.forEach(tag => {

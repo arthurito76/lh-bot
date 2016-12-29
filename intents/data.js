@@ -3,6 +3,7 @@ const datas = [
     name: 'l\'Eau Tarie',
     location: 'Rues piétonnes',
 	locationTag : ['centre-ville', 'rues piétonnes'],
+	image : 'http://arthurfortin.fr/images/eauta.jpg',
     page: 'https://www.facebook.com/www.leautarielehavre.fr/?fref=ts',
 	tags: ['bière', 'charcuterie', 'fromage', 'terrasse', 'terrasse chauffée'],
 	avis: 'Un  bien sympa pour prendre un apéro avec une terrasse chauffée pour ne pas trop se les meuler.'
@@ -11,7 +12,8 @@ const datas = [
     name: 'l\'Abri Côtier',
     location: 'plage',
     page: 'https://www.facebook.com/abricotier/?fref=ts',
-	locationTag : ['mer', 'plage'], 
+	locationTag : ['mer', 'plage'],
+	image : 'http://arthurfortin.fr/images/abri.jpg', 
 	tags: ['', 'bière', 'tapas', 'mojito', 'cocktails','cocktail', 'caïpirinha','accras', 'foccacias'],
 	avis: 'Pour moi le meilleur  du Havre. Un emplacement parfait, une équipe au top et en plus on peut danser jusqu\'à 2h le samedi soir.'
   },
@@ -19,6 +21,7 @@ const datas = [
     name: 'Le Trappiste',
     location: 'Niemeyer',
 	locationTag : ['centre-ville', 'niemeyer', 'halles'], 
+	image : 'http://arthurfortin.fr/images/abri.jpg',
     page: 'https://www.facebook.com/LeTrappistLeHavre/?fref=ts',
 	tags: ['bière', 'belge'],
 	avis: 'Un  bien décoré pour celles et ceux qui aiment la bière qui fait mal au crâne.'

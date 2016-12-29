@@ -13,15 +13,19 @@ const bot = new builder.UniversalBot(connector)
 // Event when Message received
 
 
-const sendMessageByType = (session, elem) => {
-if (elem.type == 'image') {
-session.send(new builder.Message().addAttachment({
+const sendMessageByType = {
+ image: (session, elem) => session.send(new builder.Message().addAttachment({
    contentType: 'image/png',
    contentUrl: elem.content,
- }))
-} else { 
-session.send(elem.content)
-}
+ })),
+ text: (session, elem) => session.send(elem.content),
+ buttons: (session, elem) => {
+   const buttons = elem.content.map(button => {
+     return (new builder.CardAction().title(button.title).type(button.type).value(button.value))
+   })
+   const card = new builder.ThumbnailCard().buttons(buttons).subtitle(elem.title)
+   session.send(new builder.Message().addAttachment(card))
+ },
 }
 bot.dialog('/', (session) => {
   recastClient.textRequest(session.message.text)

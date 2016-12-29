@@ -45,12 +45,17 @@ answer.push(utils.toText('J\'ai pas ça mon bézot, les lieux de vie ne sont pl�
   }
 
 
-const answer = [] 
+ const answer = [] 
 answer.push(utils.toText('Yes, j\'ai trouvé quelque chose pour toi : ') )
  for (var i = 0, len = goodPlaces.length; i < len; i++) {  
 answer.push(utils.toText(goodPlaces[i].name + ' situé à ' + goodPlaces[i].location) ) 
-answer.push(utils.toText('mon avis : ' + goodPlaces[i].avis) ) 
-answer.push(utils.toImage(goodPlaces[i].image) ) 
+answer.push(utils.toText('mon avis : ' + goodPlaces[i].avis) )
+/*const buttons = [
+  utils.toButton('Titre du bouton', 'www.google.fr', 'openUrl'), //bouton 1
+  utils.toButton('Titre du bouton', 'www.google.fr', 'openUrl'), //bouton 2
+]
+
+answer.push(utils.toButtons('Titre, question, ou réponse', buttons)) */
 }
 return Promise.resolve(answer) 
  

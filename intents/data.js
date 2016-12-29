@@ -80,6 +80,7 @@ const datas = [
       name: 'le Chat Bleu',
     location: 'Sainte-Adresse',
 	locationTag : ['plage', 'mer'],
+	image : 'http://arthurfortin.fr/images/chat.jpeg',
 	tags: ['café', 'thé', 'tapas', 'charcuterie', 'salon de thé', 'pâtisseries', 'brunch'],
 	page: 'https://www.facebook.com/Le-Chat-Bleu-au-bon-goût-dici-et-dailleurs-294275044012714',
 	avis: 'Le refuge idéal pour les urbains souhaitant trouver un refuge où manger un bout, prende un thé ou une mousse. Tout est bon, tout est fait maison.'

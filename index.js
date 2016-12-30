@@ -13,7 +13,7 @@ const bot = new builder.UniversalBot(connector)
 // Event when Message received
 
 
- const sendMessageByType = (session, elem) => {
+  const sendMessageByType = (session, elem) => {
   if (elem.type == 'image') {
     session.send(new builder.Message(session).addAttachment({
       contentType: 'image/png',
@@ -21,19 +21,17 @@ const bot = new builder.UniversalBot(connector)
     }))
   } else if (elem.type == 'carousel') {
 
-    var cards = [
-      new builder.HeroCard(session)
-        .title('test')
-        .buttons([
-           builder.CardAction.openUrl(session, 'https://azure.microsoft.com/en-us/pricing/', 'More Information')
-       ]),
-       new builder.HeroCard(session)
-         .title('test2')
-         .buttons([
-            builder.CardAction.openUrl(session, 'https://azure.microsoft.com/en-us/pricing/', 'More Information')
-        ])
-    ]
-    console.log(cards)
+    var cards = []
+    elem.cards.forEach(card => {
+      cards.push(
+        new builder.HeroCard(session)
+          .title(card.title)
+          .buttons([
+             builder.CardAction.openUrl(session, 'https://azure.microsoft.com/en-us/pricing/', 'More Information')
+         ])
+      )
+    })
+    
     var msg = new builder.Message(session)
         .textFormat(builder.TextFormat.xml)
         .attachments(cards)

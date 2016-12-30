@@ -56,7 +56,7 @@ for (var i = 0, len = goodPlaces.length; i < len; i++) {
 
   cards.push({ title, image, buttons })
 }
-answer.push(toCarousel(cards))
+answer.push(utils.toCarousel(cards))
 
 return Promise.resolve(answer) 
 }

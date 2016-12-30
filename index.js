@@ -13,7 +13,7 @@ const bot = new builder.UniversalBot(connector)
 // Event when Message received
 
 
- const sendMessageByType = (session, elem) => {
+  const sendMessageByType = (session, elem) => {
   if (elem.type == 'image') {
     session.send(new builder.Message(session).addAttachment({
       contentType: 'image/png',
@@ -23,21 +23,21 @@ const bot = new builder.UniversalBot(connector)
 
     var cards = []
     elem.cards.forEach(card => {
+      var buttons = []
+      card.buttons.forEach(button => {
+        if (button.type === 'openUrl') {
+          buttons.push(builder.CardAction.openUrl(session, button.value, button.title))
+        } else {
+          buttons.push(builder.CardAction.imBack(session, button.value, button.title))
+        }
+      })
       cards.push(
         new builder.HeroCard(session)
           .title(card.title)
           .images([
             builder.CardImage.create(session, card.image)
           ])
-          .buttons(
-            card.buttons.map(button => {
-              if (button.type === 'openUrl') {
-                return builder.CardAction.openUrl(session, button.value, button.title)
-              } else {
-                return builder.CardAction.imBack(session, button.value, button.title)
-              }
-            })
-          )
+          .buttons(buttons)
       )
     })
     

@@ -24,7 +24,8 @@ const sendMessageByType = (session, elem) => {
       return (new builder.CardAction().title(button.title).type(button.type).value(button.value))
     })
     const card = new builder.ThumbnailCard().buttons(buttons).subtitle(elem.title)
-    session.send(new builder.Message().addAttachment(card)) : console.log(card)
+	console.log(card)
+    session.send(new builder.Message().addAttachment(card))  
   } else { 
     session.send(elem.content)
   }

@@ -8,6 +8,7 @@ return [...prev, current.name];
 
  const avis = (RESTOINFO) => {
   
+  
   if (!RESTOINFO) { return Promise.resolve([utils.toText('xxxxxxxxx')])}
 
   goodPlaces = []
@@ -15,7 +16,7 @@ return [...prev, current.name];
   if (match.distance > 0.8) {
     goodPlaces = _.filter(datas, place => place.name === match.value)
   }
-  
+  console.log (goodPlaces)
    
    var answer = []
    goodPlaces.forEach(place => {

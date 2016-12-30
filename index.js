@@ -20,31 +20,24 @@ const bot = new builder.UniversalBot(connector)
       contentUrl: elem.content,
     }))
   } else if (elem.type == 'carousel') {
+
+    var cards = elem.cards.map(card => {
+      new builder.HeroCard(session)
+          .title(card.title)
+          .images([
+            builder.CardImage.create(session, card.image)
+          ])
+      })
+    console.log(cards)
     var msg = new builder.Message(session)
         .textFormat(builder.TextFormat.xml)
-        .attachments(
-          var e = elem.cards.map(card => {
-            new builder.HeroCard(session)
-                .title(card.title)
-                .buttons(
-                  card.buttons.map(button => {
-                    if (button.type === 'openUrl') {
-                      return builder.CardAction.openUrl(session, button.value, button.title)
-                    } else {
-                      return builder.CardAction.imBack(session, button.value, button.title)
-                    }
-                  })
-               )
-            })
-            console.log(e)
-            return e
-          )
+        .attachments(cards)
         .attachmentLayout('carousel')
     session.send(msg)  
   } else { 
     session.send(elem.content)
   }
-} 
+}  
 bot.dialog('/', (session) => {
   recastClient.textRequest(session.message.text)
   .then(res => {

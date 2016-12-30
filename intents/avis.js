@@ -7,6 +7,7 @@ return [...prev, current.name];
 }, []));
 
 const avis = (RESTOINFO) => {
+	console.log(RESTOINFO)
   
   if (!RESTOINFO.length) { return Promise.resolve([utils.toText('xxxxxxxxx')])}
   

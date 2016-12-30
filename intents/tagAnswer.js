@@ -50,13 +50,13 @@ for (var i = 0, len = goodPlaces.length; i < len; i++) {
   const title = goodPlaces[i].name + ' situé à ' + goodPlaces[i].location
   const image = goodPlaces[i].image
   const buttons = [
+    utils.toButton('Titre du bouton', 'https://azure.microsoft.com/en-us/pricing/', 'openUrl'), //bouton 2
     utils.toButton('Lire mon avis', 'lire mon avis sur ' + goodPlaces[i].name, 'imBack'), //bouton 1
-    utils.toButton('Titre du bouton', 'www.google.fr', 'openUrl'), //bouton 2
   ]
 
   cards.push({ title, image, buttons })
 }
-answer.push(utils.toCarousel(cards))
+answer.push(toCarousel(cards))
 
 return Promise.resolve(answer) 
 }

@@ -29,15 +29,6 @@ const bot = new builder.UniversalBot(connector)
                 .images([
                   builder.CardImage.create(session, card.image)
                 ])
-                .buttons(
-                  card.buttons.map(button => {
-                    if (button.type === 'openUrl') {
-                      return builder.CardAction.openUrl(session, button.value, button.title)
-                    } else {
-                      return builder.CardAction.imBack(session, button.value, button.title)
-                    }
-                  })
-               )
             })
           )
         .attachmentLayout('carousel')

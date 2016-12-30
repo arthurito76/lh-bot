@@ -15,7 +15,7 @@ const avis = (RESTOINFO) => {
     if (match.distance > 0.8) {
       goodPlaces = _.filter(datas, place => place.name === tag.raw)
     }
-  })
+  }
    
    var answer = []
    goodPlaces.forEach(place => {

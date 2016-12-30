@@ -6,18 +6,18 @@ const fuzzyLocation = new Fuzzy(datas.reduce((prev, current) => {
 return [...prev, ...current.locationTag];
 }, []));
 
-const fuzzySpecialities = new Fuzzy(datas.reduce((prev, current) => {
+const fuzzyAchatinfo = new Fuzzy(datas.reduce((prev, current) => {
  return [...prev, ...current.tags];
 }, []));
 const random = array => { return array[Math.floor(Math.random() * array.length)] }
-const achatAnswer = (RESTOINFO, SPECIALITIES, ACTIVITEINFO, ACHATINFO, CUSTOMLOCATION) => {
+const achatAnswer = (RESTOINFO, SPECIALITIES, CUSTOMLOCATION, ACTIVITEINFO, ACHATINFO) => {
 	console.log(ACHATINFO)
 	 
 		if (!ACHATINFO.length) { return Promise.resolve([utils.toText('Précise ce que tu veux acheter ?')])}
 
 var goodAchat = []
 ACHATINFO.forEach(tag => {
-     const match = fuzzySpecialities.get(tag.raw);
+     const match = fuzzyAchatinfo.get(tag.raw);
      if (match.distance > 0.8) {
        goodAchat = _.filter(datas, place => place.tags.indexOf(match.value) !== -1)
      }

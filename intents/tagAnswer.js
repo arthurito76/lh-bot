@@ -54,10 +54,11 @@ for (var i = 0, len = goodPlaces.length; i < len; i++) {
     utils.toButton('Titre du bouton', 'www.google.fr', 'openUrl'), //bouton 2
   ]
 
-  cards.push({ title, image, buttons })
+  cards.push({ title, image, buttons })) 
 }
 answer.push(toCarousel(cards))
 
 return Promise.resolve(answer) 
+}
 
 module.exports = tagAnswer

@@ -43,11 +43,11 @@ answer.push(utils.toText('J\'ai pas ça mon bézot, les lieux de vie ne sont pl�
   return Promise.resolve([random(answer)])
   }
 
- const answer = [] 
+  const answer = [] 
 answer.push(utils.toText('Yes, j\'ai trouvé quelque chose pour toi : ') )
 const cards = []
 for (var i = 0, len = goodPlaces.length; i < len; i++) {  
-  const title = goodPlaces[i].name + ' situé à ' + goodPlaces[i].location)
+  const title = goodPlaces[i].name + ' situé à ' + goodPlaces[i].location
   const image = goodPlaces[i].image
   const buttons = [
     utils.toButton('Lire mon avis', 'lire mon avis sur ' + goodPlaces[i].name, 'imBack'), //bouton 1

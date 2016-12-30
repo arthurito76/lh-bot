@@ -20,7 +20,7 @@ const bot = new builder.UniversalBot(connector)
       contentUrl: elem.content,
     }))
   } else if (elem.type == 'carousel') {
-
+console.log(elem)
     var cards = elem.cards.map(card => {
       new builder.HeroCard(session)
           .title(card.title)

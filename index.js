@@ -19,17 +19,18 @@ const bot = new builder.UniversalBot(connector)
       contentType: 'image/png',
       contentUrl: elem.content,
     }))
-  } else if (elem.type == 'card') {
+  } else if (elem.type == 'carousel') {
     var msg = new builder.Message(session)
         .textFormat(builder.TextFormat.xml)
-        .attachments([
+        .attachments(
+          elem.cards.map(card => {
             new builder.HeroCard(session)
-                .title(elem.title)
+                .title(card.title)
                 .images([
-                  builder.CardImage.create(session, elem.image)
+                  builder.CardImage.create(session, card.image)
                 ])
                 .buttons(
-                  elem.buttons.map(button => {
+                  card.buttons.map(button => {
                     if (button.type === 'openUrl') {
                       return builder.CardAction.openUrl(session, button.value, button.title)
                     } else {
@@ -37,13 +38,14 @@ const bot = new builder.UniversalBot(connector)
                     }
                   })
                )
-        ])
+            })
+          )
         .attachmentLayout('carousel')
     session.send(msg)  
   } else { 
     session.send(elem.content)
   }
-}
+} 
 bot.dialog('/', (session) => {
   recastClient.textRequest(session.message.text)
   .then(res => {

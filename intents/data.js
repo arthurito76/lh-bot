@@ -66,7 +66,7 @@ const datas = [
   },
   
   {
-    name: 'Le Cosmopolitain',
+    name: 'Le Cosmopolite',
     location: 'Saint-Nicolas',
 	locationTag : ['saint-nicolas'],
 	tags: ['danser', 'boîte de nuit', 'night club' ],

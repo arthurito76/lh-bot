@@ -23,7 +23,6 @@ SPECIALITIES.forEach(tag => {
      }
  })
  
- console.log (CUSTOMLOCATION)
  
 
 if (goodPlaces.length && CUSTOMLOCATION.length) {

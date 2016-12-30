@@ -23,15 +23,21 @@ const bot = new builder.UniversalBot(connector)
 
     var cards = []
     elem.cards.forEach(card => {
+      var buttons = []
+      card.buttons.forEach(button => {
+        if (button.type === 'openUrl') {
+          buttons.push(builder.CardAction.openUrl(session, button.value, button.title))
+        } else {
+          buttons.push(builder.CardAction.imBack(session, button.value, button.title))
+        }
+      })
       cards.push(
         new builder.HeroCard(session)
           .title(card.title)
           .images([
-              builder.CardImage.create(session, "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Seattlenighttimequeenanne.jpg/320px-Seattlenighttimequeenanne.jpg")
+              builder.CardImage.create(session, card.image)
           ])
-          .buttons([
-            builder.CardAction.openUrl(session, card.buttons[0].value, card.buttons[0].title)
-          ])
+          .buttons(buttons)
       )
     })
     
@@ -43,7 +49,7 @@ const bot = new builder.UniversalBot(connector)
   } else { 
     session.send(elem.content)
   }
-}  
+} 
 bot.dialog('/', (session) => {
   recastClient.textRequest(session.message.text)
   .then(res => {

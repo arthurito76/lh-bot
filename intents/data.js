@@ -30,6 +30,7 @@ const datas = [
     name: 'O\'Brother',
     location: 'Niemeyer',
 	locationTag : ['centre-ville', 'niemeyer', 'halles'], 
+	image : 'http://arthurfortin.fr/images/obr.jpg',
     page: 'https://www.facebook.com/obrotherlh',
 	tags: ['pub', 'bière', 'match', 'tapas', 'sport', 'foot', 'rugby'],
 	avis: 'Un  à l\'ambiance irish idéal pour se mater un match. A noter une bouffe excellente le midi.'
@@ -38,6 +39,7 @@ const datas = [
     name: 'L\'Etable',
     location: 'rues Piétonnes',
 	locationTag : ['centre-ville', 'rues piétonnes'],
+	image : 'http://arthurfortin.fr/images/eta.jpg',
 	tags: ['bière', 'vin', 'tapas', 'charcuterie'],
     page: 'https://www.facebook.com/etable76',
 	avis: 'Un lieu agréable et un peu cher.'
@@ -47,6 +49,7 @@ const datas = [
     name: 'La Petite Rade',
     location: 'plage',
 	locationTag : ['plage', 'mer'],
+	image : 'http://arthurfortin.fr/images/rade.jpg',
 	tags: ['bière', 'burger', 'frites' ],
     page: 'https://www.facebook.com/La-Petite-Rade-188341881206913',
 	avis: 'LE spot pour se siffler une mousse en mangeant un burger délicieux.'
@@ -56,6 +59,7 @@ const datas = [
     name: 'Crêpe Chignon',
     location: 'Saint-François',
 	locationTag : ['saint-françois'],
+	image : 'http://arthurfortin.fr/images/chign.jpg',
 	tags: ['crêpe', 'crêperie', 'cidre' ],
     page: 'https://www.facebook.com/La-Petite-Rade-188341881206913',
 	avis: '♪ Ils ont des chapeaux ronds, vive la Bretagne... ♪'

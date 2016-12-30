@@ -14,14 +14,20 @@ const bot = new builder.UniversalBot(connector)
 
 
 const sendMessageByType = (session, elem) => {
-if (elem.type == 'image') {
-session.send(new builder.Message().addAttachment({
-   contentType: 'image/png',
-   contentUrl: elem.content,
- }))
-} else { 
-session.send(elem.content)
-}
+  if (elem.type == 'image') {
+    session.send(new builder.Message().addAttachment({
+      contentType: 'image/png',
+      contentUrl: elem.content,
+    }))
+  } else if (elem.type == 'buttons') {
+    const buttons = elem.content.map(button => {
+      return (new builder.CardAction().title(button.title).type(button.type).value(button.value))
+    })
+    const card = new builder.ThumbnailCard().buttons(buttons).subtitle(elem.title)
+    session.send(new builder.Message().addAttachment(card))
+  } else { 
+    session.send(elem.content)
+  }
 }
 bot.dialog('/', (session) => {
   recastClient.textRequest(session.message.text)

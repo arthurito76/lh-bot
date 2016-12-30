@@ -7,17 +7,15 @@ return [...prev, current.name];
 }, []));
 
 const avis = (RESTOINFO) => {
-	console.log(RESTOINFO)
   
-  if (!RESTOINFO) { return Promise.resolve([utils.toText('xxxxxxxxx')])}
-  
-  var goodPlaces = []
-  RESTOINFO.forEach(tag => {
-     const match = fuzzyNames.get(tag.raw);
-     if (match.distance > 0.8) {
-       goodPlaces = _.filter(datas, place => place.name === tag.raw)
-     }
-   })
+  if (!RESTOINFO.length) { return Promise.resolve([utils.toText('xxxxxxxxx')])}
+
+  goodPlaces = []
+  const match = fuzzyNames.get(RESTOINFO.raw);
+    if (match.distance > 0.8) {
+      goodPlaces = _.filter(datas, place => place.name === tag.raw)
+    }
+  })
    
    var answer = []
    goodPlaces.forEach(place => {
@@ -25,6 +23,6 @@ const avis = (RESTOINFO) => {
    })
    
    return Promise.resolve(answer)
-}
+} 
 
 module.exports = avis

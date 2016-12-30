@@ -69,6 +69,7 @@ const datas = [
     name: 'Le Cosmopolite',
     location: 'Saint-Nicolas',
 	locationTag : ['saint-nicolas'],
+	image : 'http://arthurfortin.fr/images/cosm.jpg',
 	tags: ['danser', 'boîte de nuit', 'night club' ],
     page: 'https://www.facebook.com/cosmolh/',
 	avis: 'Si tu veux guincher tu peux y faire un tour'
@@ -78,6 +79,7 @@ const datas = [
     name: 'Le Music Bar',
     location: 'Saint-Nicolas',
 	locationTag : ['saint-nicolas'],
+	image : 'http://arthurfortin.fr/images/musbar.jpg',
 	tags: ['danser', 'boîte de nuit', 'night club', 'karaoké' ],
     page: 'https://www.facebook.com/pages/Music-Bar/158778094180401',
 	avis: 'Tu es ivre et tu veux pouvoir t\'exprimer après 2h du matin ? Ce lieu est fait pour toi' 

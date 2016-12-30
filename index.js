@@ -13,21 +13,18 @@ const bot = new builder.UniversalBot(connector)
 // Event when Message received
 
 
-const sendMessageByType = (session, elem) => {
+ const sendMessageByType = (session, elem) => {
   if (elem.type == 'image') {
-    session.send(new builder.Message().addAttachment({
+    session.send(new builder.Message(session).addAttachment({
       contentType: 'image/png',
       contentUrl: elem.content,
     }))
   } else if (elem.type == 'buttons') {
-    console.log(elem)
-    console.log(session)
     const buttons = elem.content.map(button => {
-      return (new builder.CardAction().title(button.title).type(button.type).value(button.value))
+      return (new builder.CardAction(session).title(button.title).type(button.type).value(button.value))
     })
-    console.log(buttons)
-    const card = new builder.ThumbnailCard().buttons(buttons).subtitle(elem.title)
-    session.send(new builder.Message().addAttachment(card))  
+    const card = new builder.ThumbnailCard(session).buttons(buttons).subtitle(elem.title)
+    session.send(new builder.Message(session).addAttachment(card))  
   } else { 
     session.send(elem.content)
   }

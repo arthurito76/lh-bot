@@ -21,13 +21,12 @@ const bot = new builder.UniversalBot(connector)
     }))
   } else if (elem.type == 'carousel') {
 
-    var cards = elem.cards.map(card => {
+    var cards = [
       new builder.HeroCard(session)
-          .title('hello')
-          .images([
-            builder.CardImage.create(session, 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Seattlenighttimequeenanne.jpg/320px-Seattlenighttimequeenanne.jpg')
-          ])
-      })
+        .title('test')
+        .buttons([
+           builder.CardAction.openUrl(session, 'https://azure.microsoft.com/en-us/pricing/', 'More Information')
+       ]
     console.log(cards)
     var msg = new builder.Message(session)
         .textFormat(builder.TextFormat.xml)
@@ -37,7 +36,7 @@ const bot = new builder.UniversalBot(connector)
   } else { 
     session.send(elem.content)
   }
-}  
+} 
 bot.dialog('/', (session) => {
   recastClient.textRequest(session.message.text)
   .then(res => {

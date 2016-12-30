@@ -19,16 +19,26 @@ const bot = new builder.UniversalBot(connector)
       contentType: 'image/png',
       contentUrl: elem.content,
     }))
-  } else if (elem.type == 'buttons') {
+  } else if (elem.type == 'card') {
     var msg = new builder.Message(session)
         .textFormat(builder.TextFormat.xml)
         .attachments([
             new builder.HeroCard(session)
                 .title(elem.title)
-                .buttons([
-                   builder.CardAction.openUrl(session, 'https://azure.microsoft.com/en-us/pricing/', 'More Information')
-               ])
+                .images([
+                  builder.CardImage.create(session, elem.image)
+                ])
+                .buttons(
+                  elem.buttons.map(button => {
+                    if (button.type === 'openUrl') {
+                      return builder.CardAction.openUrl(session, button.value, button.title)
+                    } else {
+                      return builder.CardAction.imBack(session, button.value, button.title)
+                    }
+                  })
+               )
         ])
+        .attachmentLayout('carousel')
     session.send(msg)  
   } else { 
     session.send(elem.content)

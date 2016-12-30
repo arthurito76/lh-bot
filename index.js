@@ -13,7 +13,7 @@ const bot = new builder.UniversalBot(connector)
 // Event when Message received
 
 
-  const sendMessageByType = (session, elem) => {
+ const sendMessageByType = (session, elem) => {
   if (elem.type == 'image') {
     session.send(new builder.Message(session).addAttachment({
       contentType: 'image/png',
@@ -26,9 +26,18 @@ const bot = new builder.UniversalBot(connector)
       cards.push(
         new builder.HeroCard(session)
           .title(card.title)
-          .buttons([
-             builder.CardAction.openUrl(session, 'https://azure.microsoft.com/en-us/pricing/', 'More Information')
-         ])
+          .images([
+            builder.CardImage.create(session, card.image)
+          ])
+          .buttons(
+            card.buttons.map(button => {
+              if (button.type === 'openUrl') {
+                return builder.CardAction.openUrl(session, button.value, button.title)
+              } else {
+                return builder.CardAction.imBack(session, button.value, button.title)
+              }
+            })
+          )
       )
     })
     
@@ -40,7 +49,7 @@ const bot = new builder.UniversalBot(connector)
   } else { 
     session.send(elem.content)
   }
-}  
+} 
 bot.dialog('/', (session) => {
   recastClient.textRequest(session.message.text)
   .then(res => {

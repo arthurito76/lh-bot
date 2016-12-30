@@ -1,12 +1,35 @@
 const utils = require('./util.js')
 const _ = require('lodash')
 const datas = require('./data.js') 
+const Fuzzy = require('fuzzy-matching')
+const fuzzyLocation = new Fuzzy(datas.reduce((prev, current) => {
+return [...prev, ...current.locationTag];
+}, []));
+
+const fuzzySpecialities = new Fuzzy(datas.reduce((prev, current) => {
+ return [...prev, ...current.tags];
+}, []));
 const random = array => { return array[Math.floor(Math.random() * array.length)] }
-const achatAnswer = (RESTOINFO, TAGINFO, ACTIVITEINFO, ACHATINFO) => {
+const achatAnswer = (RESTOINFO, SPECIALITIES, ACHATINFO, CUSTOMLOCATION) => {
 	 
 		if (!ACHATINFO.length) { return Promise.resolve([utils.toText('Précise ce que tu veux acheter ?')])}
 
-const goodAchat = _.filter(datas, place => ACHATINFO.every(tag => place.tags.indexOf(tag.raw) !== -1))
+var goodAchat = []
+ACHATINFO.forEach(tag => {
+     const match = fuzzySpecialities.get(tag.raw);
+     if (match.distance > 0.8) {
+       goodAchat = _.filter(datas, place => place.tags.indexOf(match.value) !== -1)
+     }
+ })
+ 
+ if (goodAchat.length && CUSTOMLOCATION.length) {
+    CUSTOMLOCATION.forEach(tag => {
+       const match = fuzzyLocation.get(tag.raw);
+       if (match.distance > 0.8) {
+         goodAchat = _.filter(goodAchat, place => place.locationTag.indexOf(match.value) !== -1)
+       }
+   })
+}
 
 if (goodAchat.length === 0) {
    const answer = []
@@ -17,14 +40,22 @@ answer.push(utils.toText('Je n’ai rien là.Mais n\'oublie pas : Chaque achat s
   }
 
 
-const answer = [] 
+ const answer = [] 
 answer.push(utils.toText('Yes, j\'ai trouvé quelque chose pour toi : ') )
- for (var i = 0, len = goodAchat.length; i < len; i++) {  
-answer.push(utils.toText(goodAchat[i].name + ' situé à ' + goodAchat[i].location) ) 
-answer.push(utils.toText('mon avis : ' + goodAchat[i].avis) ) 
+const cards = []
+for (var i = 0, len = goodAchat.length; i < len; i++) {  
+  const title = goodAchat[i].name + ' situé à ' + goodAchat[i].location
+  const image = goodAchat[i].image
+  const buttons = [
+    utils.toButton('Lire mon avis', 'lire mon avis sur ' + goodAchat[i].name, 'imBack'), //bouton 1
+	utils.toButton('page facebook',goodAchat[i].page , 'openUrl'), //bouton 2
+  ]
+
+  cards.push({ title, image, buttons })
 }
+answer.push(utils.toCarousel(cards))
+
 return Promise.resolve(answer) 
- 
 }
 
 module.exports = achatAnswer

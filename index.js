@@ -13,7 +13,7 @@ const bot = new builder.UniversalBot(connector)
 // Event when Message received
 
 
- const sendMessageByType = (session, elem) => {
+  const sendMessageByType = (session, elem) => {
   if (elem.type == 'image') {
     session.send(new builder.Message(session).addAttachment({
       contentType: 'image/png',
@@ -26,7 +26,8 @@ const bot = new builder.UniversalBot(connector)
         .title('test')
         .buttons([
            builder.CardAction.openUrl(session, 'https://azure.microsoft.com/en-us/pricing/', 'More Information')
-       ]
+       ])
+    ]
     console.log(cards)
     var msg = new builder.Message(session)
         .textFormat(builder.TextFormat.xml)
@@ -36,7 +37,7 @@ const bot = new builder.UniversalBot(connector)
   } else { 
     session.send(elem.content)
   }
-} 
+}  
 bot.dialog('/', (session) => {
   recastClient.textRequest(session.message.text)
   .then(res => {

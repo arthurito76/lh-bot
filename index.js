@@ -27,7 +27,10 @@ const bot = new builder.UniversalBot(connector)
         new builder.HeroCard(session)
           .title(card.title)
           .images([
-            builder.CardImage.create(session, card.image)
+              builder.CardImage.create(session, "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Seattlenighttimequeenanne.jpg/320px-Seattlenighttimequeenanne.jpg")
+          ])
+          .buttons([
+            builder.CardAction.openUrl(session, card.buttons[0].value, card.buttons[0].title)
           ])
       )
     })
@@ -40,7 +43,7 @@ const bot = new builder.UniversalBot(connector)
   } else { 
     session.send(elem.content)
   }
-} 
+}  
 bot.dialog('/', (session) => {
   recastClient.textRequest(session.message.text)
   .then(res => {

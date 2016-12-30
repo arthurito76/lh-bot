@@ -23,12 +23,18 @@ const bot = new builder.UniversalBot(connector)
     var msg = new builder.Message(session)
         .textFormat(builder.TextFormat.xml)
         .attachments(
-          elem.cards.map(card => {
+          var e = elem.cards.map(card => {
             new builder.HeroCard(session)
                 .title(card.title)
-                .images([
-                  builder.CardImage.create(session, card.image)
-                ])
+                .buttons(
+                  card.buttons.map(button => {
+                    if (button.type === 'openUrl') {
+                      return builder.CardAction.openUrl(session, button.value, button.title)
+                    } else {
+                      return builder.CardAction.imBack(session, button.value, button.title)
+                    }
+                  })
+               )
             })
           )
         .attachmentLayout('carousel')

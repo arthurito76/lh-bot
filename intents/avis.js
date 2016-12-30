@@ -14,7 +14,7 @@ return [...prev, current.name];
   goodPlaces = []
   const match = fuzzyNames.get(RESTOINFO.raw);
   console.log(match)
-  if (match.distance > 0.8) {
+  if (match.distance > 0.5) {
     goodPlaces = _.filter(datas, place => place.name === match.value)
   }
  

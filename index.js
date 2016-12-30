@@ -20,12 +20,12 @@ const bot = new builder.UniversalBot(connector)
       contentUrl: elem.content,
     }))
   } else if (elem.type == 'carousel') {
-console.log(elem)
+
     var cards = elem.cards.map(card => {
       new builder.HeroCard(session)
-          .title(card.title)
+          .title('hello')
           .images([
-            builder.CardImage.create(session, card.image)
+            builder.CardImage.create(session, 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Seattlenighttimequeenanne.jpg/320px-Seattlenighttimequeenanne.jpg')
           ])
       })
     console.log(cards)

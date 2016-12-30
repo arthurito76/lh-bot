@@ -36,6 +36,8 @@ const bot = new builder.UniversalBot(connector)
                   })
                )
             })
+            console.log(e)
+            return e
           )
         .attachmentLayout('carousel')
     session.send(msg)  

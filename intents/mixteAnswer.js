@@ -16,7 +16,7 @@ var goodmixte = []
 ACTIVITEINFO.forEach(tag => {
      const match = fuzzyActivite.get(tag.raw);
      if (match.distance > 0.7) {
-       goodActivite = _.filter(datas, place => place.tags.indexOf(match.value) !== -1)
+       goodmixte = _.filter(datas, place => place.tags.indexOf(match.value) !== -1)
      }
  })
  

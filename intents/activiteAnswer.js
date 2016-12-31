@@ -6,7 +6,7 @@ const fuzzyLocation = new Fuzzy(datas.reduce((prev, current) => {
 return [...prev, ...current.locationTag];
 }, []));
 
-const fuzzySpecialities = new Fuzzy(datas.reduce((prev, current) => {
+const fuzzyActivite = new Fuzzy(datas.reduce((prev, current) => {
  return [...prev, ...current.tags];
 }, []));
 const random = array => { return array[Math.floor(Math.random() * array.length)] }
@@ -16,7 +16,7 @@ const activiteAnswer = (RESTOINFO, SPECIALITIES, CUSTOMLOCATION, ACTIVITEINFO, A
 
 var goodActivite = []
 ACTIVITEINFO.forEach(tag => {
-     const match = fuzzyAchatinfo.get(tag.raw);
+     const match = fuzzyActivite.get(tag.raw);
      if (match.distance > 0.8) {
        goodActivite = _.filter(datas, place => place.tags.indexOf(match.value) !== -1)
      }

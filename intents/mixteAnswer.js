@@ -42,12 +42,12 @@ answer.push(utils.toText('Pour faire tout ça je n\'ai pas de réponse...'))
  const answer = [] 
 answer.push(utils.toText('Yes, j\'ai trouvé quelque chose pour toi : ') )
 const cards = []
-for (var i = 0, len = goodActivite.length; i < len; i++) {  
-  const title = goodActivite[i].name + ' situé à ' + goodActivite[i].location
-  const image = goodActivite[i].image
+for (var i = 0, len = goodMixte.length; i < len; i++) {  
+  const title = goodMixte[i].name + ' situé à ' + goodMixte[i].location
+  const image = goodMixte[i].image
   const buttons = [
-    utils.toButton('Lire mon avis', 'lire mon avis sur ' + goodActivite[i].name, 'imBack'), //bouton 1
-	utils.toButton('page facebook',goodActivite[i].page , 'openUrl'), //bouton 2
+    utils.toButton('Lire mon avis', 'lire mon avis sur ' + goodMixte[i].name, 'imBack'), //bouton 1
+	utils.toButton('page facebook',goodMixte[i].page , 'openUrl'), //bouton 2
   ]
 
   cards.push({ title, image, buttons })

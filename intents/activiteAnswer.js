@@ -32,7 +32,7 @@ ACTIVITEINFO.forEach(tag => {
 }
 
 
-if (goodAchat.length === 0) {
+if (goodActivite.length === 0) {
    const answer = []
 answer.push(utils.toText('Je ne sais pas où te diriger mon bézot, je suis désolé'))
  answer.push(utils.toText('Là je n\'ai rien. Peut-être le moment de partir du Havre pour découvrir plus de choses à faire ?'))	

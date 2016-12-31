@@ -12,11 +12,11 @@ const fuzzyActivite = new Fuzzy(datas.reduce((prev, current) => {
 const random = array => { return array[Math.floor(Math.random() * array.length)] }
 const mixteAnswer = (RESTOINFO, SPECIALITIES, CUSTOMLOCATION, ACTIVITEINFO, ACHATINFO) => {
 
-var goodmixte = []
+var goodMixte = []
 ACTIVITEINFO.forEach(tag => {
      const match = fuzzyActivite.get(tag.raw);
      if (match.distance > 0.7) {
-       goodmixte = _.filter(datas, place => place.tags.indexOf(match.value) !== -1)
+       goodMixte = _.filter(datas, place => place.tags.indexOf(match.value) !== -1)
      }
  })
  

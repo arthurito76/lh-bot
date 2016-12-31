@@ -503,7 +503,7 @@ const datas = [
 	locationTag : ['gare'],
 	image : 'http://arthurfortin.fr/images/sir.jpg',
     page: 'https://www.facebook.com/pages/Le-Sirius/656479911083484',
-	tags: ['cinéma', 'blockbusters', 'film', 'film d\'auteur' ],
+	tags: ['cinéma', 'blockbusters', 'film', 'film d\'auteur', 'café' ],
 	avis: 'Le lieu pour se mater un film bien noté par Télérama'
   },
   

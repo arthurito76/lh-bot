@@ -14,7 +14,7 @@ const datas = [
     page: 'https://www.facebook.com/abricotier/?fref=ts',
 	locationTag : ['mer', 'plage'],
 	image : 'http://arthurfortin.fr/images/abri.jpg', 
-	tags: ['', 'bière', 'tapas', 'mojito', 'cocktails','cocktail', 'caïpirinha','accras', 'foccacias'],
+	tags: ['', 'bière', 'tapas', 'mojito', 'cocktails','cocktail', 'caïpirinha','accras', 'foccacias', 'exposition', 'expo'],
 	avis: 'Pour moi le meilleur  du Havre. Un emplacement parfait, une équipe au top et en plus on peut danser jusqu\'à 2h le samedi soir.'
   },
   {

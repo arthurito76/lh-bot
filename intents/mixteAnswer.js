@@ -25,7 +25,7 @@ ACTIVITEINFO.forEach(tag => {
        const match = fuzzyLocation.get(tag.raw);
 	   console.log (match)
        if (match.distance > 0.7) {
-         goodMixte = _.filter(goodMixte, place => place.Tags.indexOf(match.value) !== -1)
+         goodMixte = _.filter(goodMixte, place => place.tags.indexOf(match.value) !== -1)
        }
    })
 }

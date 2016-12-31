@@ -15,7 +15,7 @@ const mixteAnswer = (RESTOINFO, SPECIALITIES, CUSTOMLOCATION, ACTIVITEINFO, ACHA
 var goodmixte = []
 ACTIVITEINFO.forEach(tag => {
      const match = fuzzyActivite.get(tag.raw);
-     if (match.distance > 0.8) {
+     if (match.distance > 0.7) {
        goodActivite = _.filter(datas, place => place.tags.indexOf(match.value) !== -1)
      }
  })
@@ -23,7 +23,7 @@ ACTIVITEINFO.forEach(tag => {
  if (goodMixte.length && SPECIALITIES.length) {
     SPECIALITIES.forEach(tag => {
        const match = fuzzyLocation.get(tag.raw);
-       if (match.distance > 0.8) {
+       if (match.distance > 0.7) {
          goodMixte = _.filter(goodMixte, place => place.Tags.indexOf(match.value) !== -1)
        }
    })

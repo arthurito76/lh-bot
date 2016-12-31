@@ -23,6 +23,7 @@ ACTIVITEINFO.forEach(tag => {
  if (goodMixte.length && SPECIALITIES.length) {
     SPECIALITIES.forEach(tag => {
        const match = fuzzyLocation.get(tag.raw);
+	   console.log (match)
        if (match.distance > 0.7) {
          goodMixte = _.filter(goodMixte, place => place.Tags.indexOf(match.value) !== -1)
        }

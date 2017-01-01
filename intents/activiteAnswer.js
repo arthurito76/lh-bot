@@ -5,7 +5,9 @@ const Fuzzy = require('fuzzy-matching')
 const fuzzyLocation = new Fuzzy(datas.reduce((prev, current) => {
 return [...prev, ...current.locationTag];
 }, []));
-
+const fuzzyDetail = new Fuzzy(datas.reduce((prev, current) => {
+return [...prev, ...current.detailsTag];
+}, []));
 const fuzzyActivite = new Fuzzy(datas.reduce((prev, current) => {
  return [...prev, ...current.tags];
 }, []));
@@ -31,6 +33,14 @@ ACTIVITEINFO.forEach(tag => {
    })
 }
 
+if (goodActivite.length && DETAIL.length) {
+    DETAIL.forEach(tag => {
+       const match = fuzzyDetail.get(tag.raw);
+       if (match.distance > 0.8) {
+         goodActivite = _.filter(goodActivite, place => place.detailsTag.indexOf(match.value) !== -1)
+       }
+   })
+}
 
 if (goodActivite.length === 0) {
    const answer = []

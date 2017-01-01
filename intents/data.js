@@ -232,7 +232,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/sush.jpg',
     page: 'https://www.facebook.com/sushimakers',
 	tags: ['sushis', 'japonais'],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: ['livre à domicile' ],
 	avis: 'Du japonais fait maison. Si si'
   },
   

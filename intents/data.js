@@ -392,6 +392,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/zaz.jpg',
     page: 'https://www.facebook.com/wallaby..7',
 	tags: ['concert', 'bistrot','cocktail', 'mojito', 'caïpirinha', 'bière' ],
+	detailsTag: ['terrasse', 'ouvert le dimanche' ],
 	avis: 'Un bon rade niché dans Saint-François qui te donne l\'impression de vivre un été permanent.'
   },
     
@@ -401,7 +402,8 @@ const datas = [
 	locationTag : ['saint-françois'],
 	image : 'http://arthurfortin.fr/images/quentin.jpg',
     page: 'https://www.facebook.com/lebistrotdequentin',
-	tags: ['happy hour', 'bistrot', 'burger', 'midi', 'bavette' ],
+	tags: ['happy hour', 'bistrot', 'burger', 'bavette' ],
+	detailsTag: ['terrasse', 'ouvert le dimanche' ],
 	avis: 'Un très bon  le midi et un très bon  le soir.'
   },
   

@@ -275,8 +275,8 @@ const datas = [
 	locationTag : ['Niemeyer', 'centre-ville'],
 	image : 'http://arthurfortin.fr/images/ald.jpg',
     page: 'https://www.facebook.com/Al-Dente-Ristorante-196816710348037',
-	tags: ['pizza', 'emporter', 'pizzeria', 'italien'],
-	detailsTag: ['' ],
+	tags: ['pizza', 'pizzeria', 'italien'],
+	detailsTag: ['emporter' ],
 	avis: 'L\'un des meilleurs italiens de la ville, basta !'
   },
   

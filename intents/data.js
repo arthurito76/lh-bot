@@ -35,7 +35,7 @@ const datas = [
 	locationTag : ['centre-ville', 'niemeyer', 'halles'], 
 	image : 'http://arthurfortin.fr/images/obr.jpg',
     page: 'https://www.facebook.com/obrotherlh',
-	tags: ['pub', 'bière', 'match', 'tapas', 'burger'],
+	tags: ['pub', 'bière', 'tapas', 'burger'],
 	detailsTag: ['terrasse', 'match', 'foot', 'rugby', 'midi' ],
 	avis: 'Un bar à l\'ambiance irish idéal pour se mater un match. A noter une bouffe excellente le midi.'
   },

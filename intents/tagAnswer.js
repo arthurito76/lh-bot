@@ -53,14 +53,22 @@ answer.push(utils.toText('J\'ai pas ça mon bézot, les lieux de vie ne sont pl�
   }
 
 
-const answer = [] 
+ const answer = [] 
 answer.push(utils.toText('Yes, j\'ai trouvé quelque chose pour toi : ') )
- for (var i = 0, len = goodPlaces.length; i < len; i++) {  
-answer.push(utils.toText(goodPlaces[i].name + ' situé à ' + goodPlaces[i].location) ) 
-answer.push(utils.toText('mon avis : ' + goodPlaces[i].avis) ) 
+const cards = []
+for (var i = 0, len = goodPlaces.length; i < len; i++) {  
+  const title = goodPlaces[i].name + ' situé à ' + goodPlaces[i].location
+  const image = goodPlaces[i].image
+  const buttons = [
+    utils.toButton('Lire mon avis', 'lire mon avis sur ' + goodPlaces[i].name, 'imBack'), //bouton 1
+	utils.toButton('page facebook',goodPlaces[i].page , 'openUrl'), //bouton 2
+  ]
+
+  cards.push({ title, image, buttons })
 }
+answer.push(utils.toCarousel(cards))
+
 return Promise.resolve(answer) 
- 
 }
 
 module.exports = tagAnswer

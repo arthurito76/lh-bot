@@ -16,7 +16,7 @@ const datas = [
 	locationTag : ['mer', 'plage'],
 	image : 'http://arthurfortin.fr/images/abri.jpg', 
 	tags: ['bar', 'bière', 'tapas', 'mojito', 'cocktails','cocktail', 'caïpirinha','accras', 'foccacias', 'exposition', 'expo'],
-	detailsTag: ['terrasse chauffée', 'danser', 'terrasse' ],
+	detailsTag: ['terrasse chauffée', 'danser', 'terrasse', 'ouvert le dimanche' ],
 	avis: 'Le meilleur bar du Havre. Un emplacement parfait, une équipe au top et en plus on peut danser jusqu\'à 2h le samedi soir.'
   },
   {
@@ -56,7 +56,7 @@ const datas = [
 	locationTag : ['plage', 'mer'],
 	image : 'http://arthurfortin.fr/images/rade.jpg',
 	tags: ['bar', 'bière', 'burger', 'frites', 'tapas'],
-	detailsTag: ['terrasse' ],
+	detailsTag: ['terrasse', 'ouvert le dimanche' ],
     page: 'https://www.facebook.com/La-Petite-Rade-188341881206913',
 	avis: 'LE spot pour se siffler une mousse en mangeant un burger délicieux.'
   },
@@ -100,7 +100,7 @@ const datas = [
 	locationTag : ['plage', 'mer'],
 	image : 'http://arthurfortin.fr/images/chat.jpeg',
 	tags: ['café', 'thé', 'tapas', 'charcuterie', 'salon de thé', 'pâtisseries', 'brunch'],
-	detailsTag: ['terrasse', 'exposition', 'expo' ],
+	detailsTag: ['terrasse', 'exposition', 'expo', 'ouvert le dimanche' ],
 	page: 'https://www.facebook.com/Le-Chat-Bleu-au-bon-goût-dici-et-dailleurs-294275044012714',
 	avis: 'Le refuge idéal pour les urbains souhaitant trouver un refuge où manger un bout, prende un thé ou une mousse. Tout est bon, tout est fait maison.'
   },
@@ -331,7 +331,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/pail.jpg',
     page: 'https://www.facebook.com/La-Taverne-Paillette-176529912364014',
 	tags: ['moules', 'fruit de mer', 'choucroute', 'brasserie'],
-	detailsTag: ['' ],
+	detailsTag: ['ouvert le dimanche' ],
 	avis: 'Un excellent  pour une bonne gastronomie française'
   },
   
@@ -342,7 +342,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/bur.jpg',
     page: 'https://www.facebook.com/aubureau.lehavre',
 	tags: ['fish\'n ships', 'afterwork', 'bière', 'burger', 'restaurant', 'concert', 'rock'],
-	detailsTag: ['' ],
+	detailsTag: ['ouvert le dimanche' ],
 	avis: 'L\'un des seuls lieux où manger un fish\'n ships'
   },
   
@@ -353,7 +353,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/ortiz.jpg',
     page: 'https://www.facebook.com/aubureau.lehavre',
 	tags: ['glace', 'glace italienne'],
-	detailsTag: ['' ],
+	detailsTag: ['ouvert le dimanche' ],
 	avis: 'L\'institution glacière au Havre. Idéal pour une glace à la plage'
   },
   
@@ -453,7 +453,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/bla.jpg',
     page: 'https://www.facebook.com/Black-Café-739396976180251',
 	tags: ['bière' ],
-	detailsTag: ['fléchettes', 'billard' ],
+	detailsTag: ['fléchettes', 'billard', 'ouvert le dimanche' ],
 	avis: 'Le spot idéal pour se faire un billard'
   },
   
@@ -464,7 +464,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/mac.jpg',
     page: 'https://www.facebook.com/pages/Mac-Daids/115590181861208',
 	tags: ['pub', 'bière', 'guiness' ],
-	detailsTag: ['billard', 'fléchettes' ],
+	detailsTag: ['billard', 'fléchettes', 'ouvert le dimanche' ],
 	avis: 'LE pub havrais'
   },
     

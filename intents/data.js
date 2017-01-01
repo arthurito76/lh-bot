@@ -5,8 +5,8 @@ const datas = [
 	locationTag : ['centre-ville', 'rues piétonnes'],
 	image : 'http://arthurfortin.fr/images/eauta.jpg',
     page: 'https://www.facebook.com/www.leautarielehavre.fr/?fref=ts',
-	tags: ['bière', 'charcuterie', 'fromage', 'terrasse', 'terrasse chauffée'],
-	detailsTag: ['terrasse chauffée' ],
+	tags: ['bière', 'charcuterie', 'fromage', 'mojito' ],
+	detailsTag: ['terrasse chauffée','terrasse', 'match', 'foot', 'rugby'],
 	avis: 'Un  bien sympa pour prendre un apéro avec une terrasse chauffée pour ne pas trop se les meuler.'
   },
   {
@@ -16,7 +16,7 @@ const datas = [
 	locationTag : ['mer', 'plage'],
 	image : 'http://arthurfortin.fr/images/abri.jpg', 
 	tags: ['', 'bière', 'tapas', 'mojito', 'cocktails','cocktail', 'caïpirinha','accras', 'foccacias', 'exposition', 'expo'],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: ['terrasse chauffée', 'danser', 'terrasse' ],
 	avis: 'Pour moi le meilleur  du Havre. Un emplacement parfait, une équipe au top et en plus on peut danser jusqu\'à 2h le samedi soir.'
   },
   {
@@ -26,7 +26,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/abri.jpg',
     page: 'https://www.facebook.com/LeTrappistLeHavre/?fref=ts',
 	tags: ['bière', 'belge'],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: ['terrasse' ],
 	avis: 'Un  bien décoré pour celles et ceux qui aiment la bière qui fait mal au crâne.'
   },
   {
@@ -36,7 +36,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/obr.jpg',
     page: 'https://www.facebook.com/obrotherlh',
 	tags: ['pub', 'bière', 'match', 'tapas', 'sport', 'foot', 'rugby'],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: ['terrasse', 'match', 'foot', 'rugby' ],
 	avis: 'Un  à l\'ambiance irish idéal pour se mater un match. A noter une bouffe excellente le midi.'
   },
     {
@@ -45,7 +45,7 @@ const datas = [
 	locationTag : ['centre-ville', 'rues piétonnes'],
 	image : 'http://arthurfortin.fr/images/eta.jpg',
 	tags: ['bière', 'vin', 'tapas', 'charcuterie'],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: ['terrasse' ],
     page: 'https://www.facebook.com/etable76',
 	avis: 'Un lieu agréable et un peu cher.'
   },
@@ -55,8 +55,8 @@ const datas = [
     location: 'plage',
 	locationTag : ['plage', 'mer'],
 	image : 'http://arthurfortin.fr/images/rade.jpg',
-	tags: ['bière', 'burger', 'frites', 'terrasse' ],
-	detailsTag: ['fermeture à 2h' ],
+	tags: ['bière', 'burger', 'frites' ],
+	detailsTag: ['terrasse' ],
     page: 'https://www.facebook.com/La-Petite-Rade-188341881206913',
 	avis: 'LE spot pour se siffler une mousse en mangeant un burger délicieux.'
   },
@@ -67,7 +67,7 @@ const datas = [
 	locationTag : ['saint-françois'],
 	image : 'http://arthurfortin.fr/images/chign.jpg',
 	tags: ['crêpe', 'crêperie', 'cidre' ],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: ['' ],
     page: 'https://www.facebook.com/La-Petite-Rade-188341881206913',
 	avis: '♪ Ils ont des chapeaux ronds, vive la Bretagne... ♪'
   },
@@ -78,7 +78,7 @@ const datas = [
 	locationTag : ['saint-nicolas'],
 	image : 'http://arthurfortin.fr/images/cosm.jpg',
 	tags: ['danser', 'boîte de nuit', 'night club' ],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: ['danser', 'danser après 2h' ],
     page: 'https://www.facebook.com/cosmolh/',
 	avis: 'Si tu veux guincher tu peux y faire un tour'
   },
@@ -89,7 +89,7 @@ const datas = [
 	locationTag : ['saint-nicolas'],
 	image : 'http://arthurfortin.fr/images/musbar.jpg',
 	tags: ['danser', 'boîte de nuit', 'night club', 'karaoké' ],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: ['danser', 'danser après 2h' ],
     page: 'https://www.facebook.com/pages/Music-Bar/158778094180401',
 	avis: 'Tu es ivre et tu veux pouvoir t\'exprimer après 2h du matin ? Ce lieu est fait pour toi' 
   },
@@ -99,8 +99,8 @@ const datas = [
     location: 'Sainte-Adresse',
 	locationTag : ['plage', 'mer'],
 	image : 'http://arthurfortin.fr/images/chat.jpeg',
-	tags: ['café', 'thé', 'tapas', 'charcuterie', 'salon de thé', 'pâtisseries', 'brunch', 'exposition', 'expo'],
-	detailsTag: ['fermeture à 2h' ],
+	tags: ['café', 'thé', 'tapas', 'charcuterie', 'salon de thé', 'pâtisseries', 'brunch'],
+	detailsTag: ['terrasse', 'exposition', 'expo' ],
 	page: 'https://www.facebook.com/Le-Chat-Bleu-au-bon-goût-dici-et-dailleurs-294275044012714',
 	avis: 'Le refuge idéal pour les urbains souhaitant trouver un refuge où manger un bout, prende un thé ou une mousse. Tout est bon, tout est fait maison.'
   },
@@ -112,7 +112,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/will.jpg',
     page: 'https://www.facebook.com/Williamsburg-Food-Coffee-771263892910406',
 	tags: ['coffee shop', 'café', 'cheescake', 'sandwichs', 'cappucino', 'petit déjeuner', 'muffin', 'salade'],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: [''],
 	avis: 'Le Havre a son coffee shop, tu peux y aller les yeux fermés.'
   },
   
@@ -123,7 +123,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/french.jpg',
     page: 'https://www.facebook.com/LHfrenchcoffeeshop/',
 	tags: ['coffee shop', 'café', 'cheescake', 'sandwichs', 'cappucino', 'petit déjeuner'],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: ['' ],
 	avis: 'Un chouette coffee shop, à la starbuck style.'
   },
   
@@ -134,7 +134,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/esc.jpg',
     page: 'https://www.facebook.com/Lescapade76',
 	tags: ['vin', 'charcuterie', 'fromage', 'terrasse'],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: ['terrasse' ],
 	avis: 'Une cave et un  à vin vraiment sympas avec un petit coin jardin où siroter du bon pinard.'
   },
   
@@ -145,7 +145,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/andre.jpg',
     page: 'https://www.facebook.com/restaurantchezandre/',
 	tags: ['vin', 'fromage'],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: ['' ],
 	avis: 'Unun chouette  où siroter du bon pinard.'
   },
   
@@ -156,7 +156,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/cycl.jpg',
     page: 'https://www.facebook.com/pages/Le-Cyclamen/178489788865708',
 	tags: ['cocktails', 'cocktails','rhum', 'mojito', 'Caïpirinha'],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: ['' ],
 	avis: 'Une cave et un  à vin vraiment sympas avec un petit coin jardin où siroter du bon pinard.'
   },
     
@@ -165,8 +165,8 @@ const datas = [
     location: 'saint-vincent',
 	locationTag : ['saint-vincent', 'centre-ville'],
     page: 'https://www.facebook.com/AffichesLaCaveABieresLeHavre',
-	tags: ['bière', 'exposition', 'artiste', 'bière belge', 'illustration'],
-	detailsTag: ['fermeture à 2h' ],
+	tags: ['bière', 'bière belge'],
+	detailsTag: [ 'exposition', 'artiste' ],
 	avis: 'Le lieu idéal pour acheter de la bonne bière et savourer une expo.'
   },
   
@@ -177,7 +177,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/natur.jpg',
     page: '',
 	tags: ['bio', 'magasin'],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: ['' ],
 	avis: 'Un endroit pour acheter bio avec du choix'
   },
   
@@ -188,7 +188,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/ray.jpg',
     page: 'https://www.facebook.com/Rayons-Verts-1421643768155053',
 	tags: ['bio', 'magasin'],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: ['' ],
 	avis: 'Un endroit pour acheter bio avec du choix'
   },
   
@@ -199,7 +199,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/marchbio.jpg',
     page: 'https://www.facebook.com/lemarchebioLH/',
 	tags: ['bio', 'magasin'],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: ['' ],
 	avis: 'Un endroit pour acheter bio avec du choix'
   },
   
@@ -210,7 +210,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/all.jpg',
     page: 'https://www.facebook.com/AllInBagels',
 	tags: ['bagels'],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: ['' ],
 	avis: 'Ca tombe bien que tu aimes ça car je vais te dire la meilleure adresse de la ville : All in Bagels'
   },
   
@@ -221,7 +221,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/ist.jpg',
     page: 'https://www.facebook.com/pages/Istanbul-Kebab/251742424858786',
 	tags: ['kebab'],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: ['' ],
 	avis: 'Le meilleur kebab de France par kebab-frites.com'
   },
   
@@ -232,7 +232,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/sush.jpg',
     page: 'https://www.facebook.com/sushimakers',
 	tags: ['sushis', 'japonais'],
-	detailsTag: ['livre à domicile' ],
+	detailsTag: ['livre à domicile', 'livraison' ],
 	avis: 'Du japonais fait maison. Si si'
   },
   
@@ -243,7 +243,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/grign.jpg',
     page: 'https://www.facebook.com/legrignotLH',
 	tags: ['brasserie', 'fruits de mer', 'entrecôte', 'viande', 'bavette'],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: ['brasserie' ],
 	avis: 'Une chouette brasserie à la déco typique'
   },
   
@@ -253,8 +253,8 @@ const datas = [
 	locationTag : ['centre-ville', 'saint-vincent'],
 	image : '',
     page: '',
-	tags: ['chinois', 'emporter', 'nems', 'acheter'],
-	detailsTag: ['fermeture à 2h' ],
+	tags: ['chinois', 'nems'],
+	detailsTag: ['à emporter' ],
 	avis: 'LE meilleur chinois de la ville'
   },
   
@@ -264,8 +264,8 @@ const datas = [
 	locationTag : ['centre-ville', 'saint-vincent'],
 	image : 'http://arthurfortin.fr/images/pal.jpg',
     page: 'http://www.palais-imperial.fr/',
-	tags: ['chinois', 'nems', 'livrer'],
-	detailsTag: ['fermeture à 2h' ],
+	tags: ['chinois', 'nems'],
+	detailsTag: ['' ],
 	avis: 'Un bon  où manger chinois'
   },
   
@@ -276,7 +276,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/ald.jpg',
     page: 'https://www.facebook.com/Al-Dente-Ristorante-196816710348037',
 	tags: ['pizza', 'emporter', 'pizzeria', 'italien'],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: ['' ],
 	avis: 'L\'un des meilleurs italiens de la ville, basta !'
   },
   
@@ -287,7 +287,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/odel.jpg',
     page: 'https://www.facebook.com/odelicesdulibanduhavre',
 	tags: ['libanais', 'mezzé', 'chawerma', 'à emporter'],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: ['à emporter' ],
 	avis: 'L\'un des meilleurs italiens de la ville, basta !'
   },
   
@@ -298,7 +298,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/fift.jpg',
     page: 'https://www.facebook.com/odelicesdulibanduhavre',
 	tags: ['burger'],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: ['' ],
 	avis: 'Un burger comme dans les 50\'s. Sors ton costume champion et fais comme les américains'
   },
   
@@ -309,7 +309,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/savoi.jpg',
     page: 'https://www.facebook.com/pages/La-Petite-Savoie/156213701077390',
 	tags: ['fromage','raclette'],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: ['' ],
 	avis: 'Si tu veux manger du fromage et avoir une haleine de raclette c\'est là que ça se passe'
   },
     
@@ -320,7 +320,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/lyo.jpg',
     page: 'https://www.facebook.com/pages/Le-Lyonnais/206566939421182',
 	tags: ['gastronomie française', 'escargots'],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: ['' ],
 	avis: 'Un excellent  pour une bonne gastronomie française'
   },
   
@@ -331,7 +331,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/pail.jpg',
     page: 'https://www.facebook.com/La-Taverne-Paillette-176529912364014',
 	tags: ['moules', 'fruit de mer', 'choucroute', 'brasserie'],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: ['' ],
 	avis: 'Un excellent  pour une bonne gastronomie française'
   },
   
@@ -342,7 +342,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/bur.jpg',
     page: 'https://www.facebook.com/aubureau.lehavre',
 	tags: ['fish\'n ships', 'afterwork', 'bière', 'burger', 'restaurant', 'concert', 'rock'],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: ['' ],
 	avis: 'L\'un des seuls lieux où manger un fish\'n ships'
   },
   
@@ -353,7 +353,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/ortiz.jpg',
     page: 'https://www.facebook.com/aubureau.lehavre',
 	tags: ['glace', 'glace italienne'],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: ['' ],
 	avis: 'L\'institution glacière au Havre. Idéal pour une glace à la plage'
   },
   
@@ -363,8 +363,8 @@ const datas = [
 	locationTag : ['centre-ville', 'Saint-François'],
 	image : 'http://arthurfortin.fr/images/fleur.jpg',
     page: 'https://www.facebook.com/Fleur-de-Sel-665021900279649',
-	tags: ['gastronomique', 'truffe'],
-	detailsTag: ['fermeture à 2h' ],
+	tags: [ 'truffe'],
+	detailsTag: ['gastronomique' ],
 	avis: 'L\'un des seuls lieux où manger un fish\'n ships'
   },
   
@@ -375,7 +375,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/odel.jpg',
     page: 'https://www.facebook.com/Saveurs-Ile-Maurice-282357235180859',
 	tags: ['accras', 'samoussas', 'pina colada'],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: ['' ],
 	avis: 'L\'un des seuls lieux où manger un fish\'n ships'
   },
   
@@ -385,8 +385,8 @@ const datas = [
 	locationTag : ['centre-ville', 'rues piétonnes'],
 	image : '',
     page: 'https://www.facebook.com/louise.cafe.le.havre',
-	tags: ['glace'],
-	detailsTag: ['fermeture à 2h' ],
+	tags: ['glace', 'café'],
+	detailsTag: ['terrasse' ],
 	avis: 'Pour savourer une bonne glasse avec un café'
   },
   
@@ -397,8 +397,8 @@ const datas = [
 	locationTag : ['coty'],
 	image : 'http://arthurfortin.fr/images/lebis.jpg',
     page: 'https://www.facebook.com/lebistrotcoty',
-	tags: ['concert', 'bistrot', 'bière', 'rock' ],
-	detailsTag: ['fermeture à 2h' ],
+	tags: ['bière' ],
+	detailsTag: ['concert', 'rock' ],
 	avis: 'Une institution pour écouter un concert'
   },
   
@@ -408,8 +408,8 @@ const datas = [
 	locationTag : ['notre-dame'],
 	image : 'http://arthurfortin.fr/images/merl.jpg',
     page: 'https://www.facebook.com/Le-Merle-Moqueur-383939731755519',
-	tags: ['concert', 'bistrot', 'bière', 'rock' ],
-	detailsTag: ['fermeture à 2h' ],
+	tags: ['bière' ],
+	detailsTag: ['concert', 'rock' ],
 	avis: 'Un bon rade pour une bonne binouse accompagnée d\'un concert'
   },
   
@@ -419,8 +419,8 @@ const datas = [
 	locationTag : ['hôtel-de-ville'],
 	image : 'http://arthurfortin.fr/images/zaz.jpg',
     page: 'https://www.facebook.com/leszazouslehavre',
-	tags: ['concert', 'bistrot','bière', 'rock', 'blind test' ],
-	detailsTag: ['fermeture à 2h' ],
+	tags: ['bière'],
+	detailsTag: ['concert', 'rock', 'blind test' ],
 	avis: 'bonne ambiance, bon délire et des sessions blind test chaque semaine pour se fendre la poire.'
   },
   
@@ -430,8 +430,8 @@ const datas = [
 	locationTag : ['saint-françois'],
 	image : 'http://arthurfortin.fr/images/zaz.jpg',
     page: 'https://www.facebook.com/wallaby..7',
-	tags: ['concert', 'bistrot','cocktail', 'mojito', 'caïpirinha', 'bière' ],
-	detailsTag: ['terrasse', 'ouvert le dimanche' ],
+	tags: ['cocktail', 'mojito', 'caïpirinha', 'bière' ],
+	detailsTag: [ 'concert' ],
 	avis: 'Un bon rade niché dans Saint-François qui te donne l\'impression de vivre un été permanent.'
   },
     
@@ -442,7 +442,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/quentin.jpg',
     page: 'https://www.facebook.com/lebistrotdequentin',
 	tags: ['happy hour', 'bistrot', 'burger', 'bavette' ],
-	detailsTag: ['terrasse', 'ouvert le dimanche' ],
+	detailsTag: ['terrasse', 'midi'],
 	avis: 'Un très bon  le midi et un très bon  le soir.'
   },
   
@@ -452,8 +452,8 @@ const datas = [
 	locationTag : ['Niemeyer'],
 	image : 'http://arthurfortin.fr/images/bla.jpg',
     page: 'https://www.facebook.com/Black-Café-739396976180251',
-	tags: ['bière', 'billard', 'fléchettes' ],
-	detailsTag: ['fermeture à 2h' ],
+	tags: ['bière' ],
+	detailsTag: ['fléchettes', 'billard' ],
 	avis: 'Le spot idéal pour se faire un billard'
   },
   
@@ -463,8 +463,8 @@ const datas = [
 	locationTag : ['Niemeyer', 'centre-ville'],
 	image : 'http://arthurfortin.fr/images/mac.jpg',
     page: 'https://www.facebook.com/pages/Mac-Daids/115590181861208',
-	tags: ['pub', 'bière', 'billard', 'fléchettes', 'guiness' ],
-	detailsTag: ['fermeture à 2h' ],
+	tags: ['pub', 'bière', 'guiness' ],
+	detailsTag: ['billard', 'fléchettes' ],
 	avis: 'LE pub havrais'
   },
     
@@ -476,8 +476,8 @@ const datas = [
 	locationTag : ['rues piétonnes'],
 	image : 'http://arthurfortin.fr/images/lh.jpg',
     page: 'https://www.facebook.com/LH-CONCEPT-STORE-226383204081032',
-	tags: ['vêtements', 'homme', 'femme','LH', 'T-shirts', 'sweats', 'polos'  ],
-	detailsTag: ['fermeture à 2h' ],
+	tags: ['vêtements', 'homme', 'femme', 'T-shirts', 'sweats', 'polos'  ],
+	detailsTag: ['LH' ],
 	avis: 'LA boutique pour avoir le style façon LH '
   },
   
@@ -487,8 +487,8 @@ const datas = [
 	locationTag : ['Niemeyer'],
 	image : 'http://arthurfortin.fr/images/loho.jpg',
     page: 'https://www.facebook.com/lelocalshop.loho',
-	tags: ['vêtements', 'homme', 'femme', 'T-shirts','produits locaux', 'souvenirs','illustrations' ],
-	detailsTag: ['fermeture à 2h' ],
+	tags: ['vêtements', 'homme', 'femme', 'T-shirts','produits locaux', 'souvenirs','illustrations', 'mugs' ],
+	detailsTag: ['Karsenty', 'Marygribouille' ],
 	avis: 'La boutique consommer local'
   },
   
@@ -499,7 +499,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/dock.jpg',
     page: 'https://www.facebook.com/Docksvauban/',
 	tags: ['vêtements', 'homme', 'femme', 'T-shirts','Carnets de vol', 'Zara','H&M', 'librairie', 'jouets' ],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: ['ouvert le dimanche' ],
 	avis: 'Un centre commercial bien désigné rempli de franchises'
   },
   
@@ -510,7 +510,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/split.jpg',
     page: 'https://www.facebook.com/Split-Le-Havre-113149882080660',
 	tags: ['tennis', 'baskets', 'sweat', 'skateur','vêtements', 'femmes','hommes', 'lunettes', 'planches de skate', 'chaussures' ],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: ['carhart', 'nike', 'veja' ],
 	avis: 'Le lieu pour avoir du style'
   },
   
@@ -521,7 +521,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/pis.jpg',
     page: 'https://www.facebook.com/pages/Les-Bains-des-Docks/1417724998465411',
 	tags: ['piscine', 'nager', 'spa', 'massage','sport', 'salle de sport','aquabiking'],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: ['ouverture le dimanche' ],
 	avis: 'Une piscine qui aura coûté un bras mais qui est vraiment splendide'
   },
   
@@ -532,7 +532,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/split.jpg',
     page: 'https://www.facebook.com/pages/Hôtel-Vent-dOuest/148982211803940',
 	tags: ['hôtel', 'spa', 'petit-déjeuner', 'massage','dormir'],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: ['' ],
 	avis: 'Un bien chouette hôtel qui propose de quoi se détendre (non pas de prestations sexuelles)'
   },
   
@@ -543,7 +543,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/histnat.jpg',
     page: 'https://www.facebook.com/pages/Muséum-dhistoire-naturelle-du-Havre/145058868870605',
 	tags: ['visite', 'histoire', 'expositions', 'exposition'],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: ['' ],
 	avis: 'Si tu n\'as pas visité ce musée avant 50 ans t\'as loupé ta vie'
   },
   
@@ -554,7 +554,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/sir.jpg',
     page: 'https://www.facebook.com/pages/Le-Sirius/656479911083484',
 	tags: ['cinéma', 'blockbusters', 'film', 'film d\'auteur', 'café' ],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: ['' ],
 	avis: 'Le lieu pour se mater un film bien noté par Télérama'
   },
   
@@ -565,7 +565,7 @@ const datas = [
 	image : '',
     page: '',
 	tags: ['skate', 'roller' ],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: ['' ],
 	avis: 'ride on !'
   },
   
@@ -576,7 +576,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/gaum.jpg',
     page: 'https://www.facebook.com/GaumontDocksVaubanLeHavre',
 	tags: ['cinéma', 'blockbusters', 'film' ],
-	detailsTag: ['fermeture à 2h' ],
+	detailsTag: ['' ],
 	avis: 'Le cinéma pour se mater un bon spectable en grand format'
   },
   
@@ -586,8 +586,8 @@ const datas = [
 	locationTag : ['tourneville'],
 	image : 'http://arthurfortin.fr/images/tet.jpg',
     page: 'https://www.facebook.com/louise.cafe.le.havre',
-	tags: ['concert', 'musique électro','rap','électro' ],
-	detailsTag: ['fermeture à 2h' ],
+	tags: ['concert' ],
+	detailsTag: ['rap', 'rock', 'électro' ],
 	avis: 'Le lieu pour un concert'
   },
  ]

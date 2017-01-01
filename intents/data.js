@@ -50,7 +50,7 @@ const datas = [
     location: 'plage',
 	locationTag : ['plage', 'mer'],
 	image : 'http://arthurfortin.fr/images/rade.jpg',
-	tags: ['bière', 'burger', 'frites' ],
+	tags: ['bière', 'burger', 'frites', 'terrasse' ],
     page: 'https://www.facebook.com/La-Petite-Rade-188341881206913',
 	avis: 'LE spot pour se siffler une mousse en mangeant un burger délicieux.'
   },
@@ -90,7 +90,7 @@ const datas = [
     location: 'Sainte-Adresse',
 	locationTag : ['plage', 'mer'],
 	image : 'http://arthurfortin.fr/images/chat.jpeg',
-	tags: ['café', 'thé', 'tapas', 'charcuterie', 'salon de thé', 'pâtisseries', 'brunch'],
+	tags: ['café', 'thé', 'tapas', 'charcuterie', 'salon de thé', 'pâtisseries', 'brunch', 'exposition', 'expo'],
 	page: 'https://www.facebook.com/Le-Chat-Bleu-au-bon-goût-dici-et-dailleurs-294275044012714',
 	avis: 'Le refuge idéal pour les urbains souhaitant trouver un refuge où manger un bout, prende un thé ou une mousse. Tout est bon, tout est fait maison.'
   },
@@ -101,7 +101,7 @@ const datas = [
 	locationTag : ['centre-ville', 'rues piétonnes'],
 	image : 'http://arthurfortin.fr/images/will.jpg',
     page: 'https://www.facebook.com/Williamsburg-Food-Coffee-771263892910406',
-	tags: ['coffee shop', 'café', 'cheescake', 'sandwichs', 'cappucino', 'petit déjeuner'],
+	tags: ['coffee shop', 'café', 'cheescake', 'sandwichs', 'cappucino', 'petit déjeuner', 'muffin', 'salade'],
 	avis: 'Le Havre a son coffee shop, tu peux y aller les yeux fermés.'
   },
   
@@ -150,7 +150,7 @@ const datas = [
     location: 'saint-vincent',
 	locationTag : ['saint-vincent', 'centre-ville'],
     page: 'https://www.facebook.com/AffichesLaCaveABieresLeHavre',
-	tags: ['bière', 'exposition', 'artiste', 'bière belge'],
+	tags: ['bière', 'exposition', 'artiste', 'bière belge', 'illustration'],
 	avis: 'Le lieu idéal pour acheter de la bonne bière et savourer une expo.'
   },
   
@@ -217,10 +217,10 @@ const datas = [
   {
     name: 'Le Grignot',
     location: 'Niemeyer',
-	locationTag : ['centre-ville', 'Notre-Dame'],
+	locationTag : ['centre-ville', 'niemeyer'],
 	image : 'http://arthurfortin.fr/images/grign.jpg',
     page: 'https://www.facebook.com/legrignotLH',
-	tags: ['brasserie', 'fruits de mer', '', 'viande', 'bavette', 'Niemeyer', 'centre-ville'],
+	tags: ['brasserie', 'fruits de mer', 'entrecôte', 'viande', 'bavette'],
 	avis: 'Une chouette brasserie à la déco typique'
   },
   
@@ -310,13 +310,13 @@ const datas = [
 	locationTag : ['centre-ville', 'niemeyer'],
 	image : 'http://arthurfortin.fr/images/bur.jpg',
     page: 'https://www.facebook.com/aubureau.lehavre',
-	tags: ['fish\'n ships'],
+	tags: ['fish\'n ships', 'afterwork', 'bière', 'burger', 'restaurant', 'concert', 'rock'],
 	avis: 'L\'un des seuls lieux où manger un fish\'n ships'
   },
   
    {
     name: 'Ortiz',
-    location: 'Niemeyer',
+    location: 'Plage',
 	locationTag : ['centre-ville', 'plage', 'mer'],
 	image : 'http://arthurfortin.fr/images/ortiz.jpg',
     page: 'https://www.facebook.com/aubureau.lehavre',
@@ -361,7 +361,7 @@ const datas = [
 	locationTag : ['coty'],
 	image : 'http://arthurfortin.fr/images/lebis.jpg',
     page: 'https://www.facebook.com/lebistrotcoty',
-	tags: ['concert', 'bistrot', 'bière' ],
+	tags: ['concert', 'bistrot', 'bière', 'rock' ],
 	avis: 'Une institution pour écouter un concert'
   },
   

@@ -10,7 +10,7 @@ const fuzzyActivite = new Fuzzy(datas.reduce((prev, current) => {
  return [...prev, ...current.tags];
 }, []));
 const random = array => { return array[Math.floor(Math.random() * array.length)] }
-const activiteAnswer = (RESTOINFO, SPECIALITIES, CUSTOMLOCATION, ACTIVITEINFO, ACHATINFO) => {
+const activiteAnswer = (RESTOINFO, SPECIALITIES, CUSTOMLOCATION, DETAIL, ACTIVITEINFO, ACHATINFO) => {
 	 
 		if (!ACTIVITEINFO.length) { return Promise.resolve([utils.toText('Que veux-tu faire exactement ?')])}
 

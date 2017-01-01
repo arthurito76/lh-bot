@@ -36,6 +36,7 @@ ACTIVITEINFO.forEach(tag => {
 if (goodActivite.length && DETAIL.length) {
     DETAIL.forEach(tag => {
        const match = fuzzyDetail.get(tag.raw);
+	   console.log(match)
        if (match.distance > 0.8) {
          goodActivite = _.filter(goodActivite, place => place.detailsTag.indexOf(match.value) !== -1)
        }

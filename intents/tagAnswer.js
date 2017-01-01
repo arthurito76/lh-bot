@@ -1,3 +1,17 @@
+const utils = require('./util.js')
+const _ = require('lodash')
+const datas = require('./data.js') 
+const Fuzzy = require('fuzzy-matching')
+const fuzzyLocation = new Fuzzy(datas.reduce((prev, current) => {
+return [...prev, ...current.locationTag];
+}, []));
+const fuzzyDetail = new Fuzzy(datas.reduce((prev, current) => {
+return [...prev, ...current.detailsTag];
+}, []));
+const fuzzySpecialities = new Fuzzy(datas.reduce((prev, current) => {
+ return [...prev, ...current.tags];
+}, []));
+const random = array => { return array[Math.floor(Math.random() * array.length)] }
 const tagAnswer = (CATEGORIE, SPECIALITIES, CUSTOMLOCATION, DETAIL) => { 
 
 if (!SPECIALITIES.length) { return Promise.resolve([utils.toText('Que veux-tu boire ou manger exactement ?')])}
@@ -22,7 +36,7 @@ if (goodPlaces.length && CUSTOMLOCATION.length) {
 
 if (goodPlaces.length && DETAIL.length) {
     DETAIL.forEach(tag => {
-       const match = fuzzyLocation.get(tag.raw);
+       const match = fuzzyDetail.get(tag.raw);
        if (match.distance > 0.8) {
          goodPlaces = _.filter(goodPlaces, place => place.detailsTag.indexOf(match.value) !== -1)
        }

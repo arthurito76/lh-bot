@@ -10,7 +10,7 @@ const fuzzyActivite = new Fuzzy(datas.reduce((prev, current) => {
  return [...prev, ...current.tags];
 }, []));
 const random = array => { return array[Math.floor(Math.random() * array.length)] }
-const mixteAnswer = (RESTOINFO, SPECIALITIES, CUSTOMLOCATION, ACTIVITEINFO, ACHATINFO) => {
+const mixteAnswer = (RESTOINFO, SPECIALITIES, CUSTOMLOCATION, DETAIL, ACTIVITEINFO, ACHATINFO) => {
 
 var goodMixte = []
 ACTIVITEINFO.forEach(tag => {

@@ -5,9 +5,9 @@ const datas = [
 	locationTag : ['centre-ville', 'rues piétonnes'],
 	image : 'http://arthurfortin.fr/images/eauta.jpg',
     page: 'https://www.facebook.com/www.leautarielehavre.fr/?fref=ts',
-	tags: ['bière', 'charcuterie', 'fromage', 'mojito' ],
-	detailsTag: ['terrasse chauffée','terrasse', 'match', 'foot', 'rugby'],
-	avis: 'Un  bien sympa pour prendre un apéro avec une terrasse chauffée pour ne pas trop se les meuler.'
+	tags: ['bar','bière', 'foster', 'charcuterie', 'fromage', 'mojito', 'burger' ],
+	detailsTag: ['terrasse chauffée','terrasse', 'match', 'foot', 'rugby', 'midi'],
+	avis: 'Un rade bien sympa pour manger sans se saigner le midi, et prendre un apéro sans trop se les meuler grâce à la terrasse chauffée.'
   },
   {
     name: 'l\'Abri Côtier',
@@ -15,9 +15,9 @@ const datas = [
     page: 'https://www.facebook.com/abricotier/?fref=ts',
 	locationTag : ['mer', 'plage'],
 	image : 'http://arthurfortin.fr/images/abri.jpg', 
-	tags: ['', 'bière', 'tapas', 'mojito', 'cocktails','cocktail', 'caïpirinha','accras', 'foccacias', 'exposition', 'expo'],
+	tags: ['bar', 'bière', 'tapas', 'mojito', 'cocktails','cocktail', 'caïpirinha','accras', 'foccacias', 'exposition', 'expo'],
 	detailsTag: ['terrasse chauffée', 'danser', 'terrasse' ],
-	avis: 'Pour moi le meilleur  du Havre. Un emplacement parfait, une équipe au top et en plus on peut danser jusqu\'à 2h le samedi soir.'
+	avis: 'Le meilleur bar du Havre. Un emplacement parfait, une équipe au top et en plus on peut danser jusqu\'à 2h le samedi soir.'
   },
   {
     name: 'Le Trappiste',
@@ -25,9 +25,9 @@ const datas = [
 	locationTag : ['centre-ville', 'niemeyer', 'halles'], 
 	image : 'http://arthurfortin.fr/images/abri.jpg',
     page: 'https://www.facebook.com/LeTrappistLeHavre/?fref=ts',
-	tags: ['bière', 'belge'],
+	tags: ['bar', 'bière', 'belge'],
 	detailsTag: ['terrasse' ],
-	avis: 'Un  bien décoré pour celles et ceux qui aiment la bière qui fait mal au crâne.'
+	avis: 'Un rade bien décoré pour celles et ceux qui aiment la bière qui fait mal aux boulons.'
   },
   {
     name: 'O\'Brother',
@@ -35,19 +35,19 @@ const datas = [
 	locationTag : ['centre-ville', 'niemeyer', 'halles'], 
 	image : 'http://arthurfortin.fr/images/obr.jpg',
     page: 'https://www.facebook.com/obrotherlh',
-	tags: ['pub', 'bière', 'match', 'tapas', 'sport', 'foot', 'rugby'],
-	detailsTag: ['terrasse', 'match', 'foot', 'rugby' ],
-	avis: 'Un  à l\'ambiance irish idéal pour se mater un match. A noter une bouffe excellente le midi.'
+	tags: ['pub', 'bière', 'match', 'tapas', 'burger'],
+	detailsTag: ['terrasse', 'match', 'foot', 'rugby', 'midi' ],
+	avis: 'Un bar à l\'ambiance irish idéal pour se mater un match. A noter une bouffe excellente le midi.'
   },
     {
     name: 'L\'Etable',
     location: 'rues Piétonnes',
 	locationTag : ['centre-ville', 'rues piétonnes'],
 	image : 'http://arthurfortin.fr/images/eta.jpg',
-	tags: ['bière', 'vin', 'tapas', 'charcuterie'],
+	tags: ['bar', 'bière', 'vin', 'tapas', 'charcuterie'],
 	detailsTag: ['terrasse' ],
     page: 'https://www.facebook.com/etable76',
-	avis: 'Un lieu agréable et un peu cher.'
+	avis: 'Un lieu agréable pour se prendre un coup au calme. '
   },
     
   {
@@ -55,7 +55,7 @@ const datas = [
     location: 'plage',
 	locationTag : ['plage', 'mer'],
 	image : 'http://arthurfortin.fr/images/rade.jpg',
-	tags: ['bière', 'burger', 'frites' ],
+	tags: ['bar', 'bière', 'burger', 'frites', 'tapas'],
 	detailsTag: ['terrasse' ],
     page: 'https://www.facebook.com/La-Petite-Rade-188341881206913',
 	avis: 'LE spot pour se siffler une mousse en mangeant un burger délicieux.'
@@ -66,8 +66,8 @@ const datas = [
     location: 'Saint-François',
 	locationTag : ['saint-françois'],
 	image : 'http://arthurfortin.fr/images/chign.jpg',
-	tags: ['crêpe', 'crêperie', 'cidre' ],
-	detailsTag: ['' ],
+	tags: ['restaurant','resto','crêpe', 'crêperie', 'cidre' ],
+	detailsTag: [''],
     page: 'https://www.facebook.com/La-Petite-Rade-188341881206913',
 	avis: '♪ Ils ont des chapeaux ronds, vive la Bretagne... ♪'
   },
@@ -78,7 +78,7 @@ const datas = [
 	locationTag : ['saint-nicolas'],
 	image : 'http://arthurfortin.fr/images/cosm.jpg',
 	tags: ['danser', 'boîte de nuit', 'night club' ],
-	detailsTag: ['danser', 'danser après 2h' ],
+	detailsTag: ['danser après 2h' ],
     page: 'https://www.facebook.com/cosmolh/',
 	avis: 'Si tu veux guincher tu peux y faire un tour'
   },
@@ -89,7 +89,7 @@ const datas = [
 	locationTag : ['saint-nicolas'],
 	image : 'http://arthurfortin.fr/images/musbar.jpg',
 	tags: ['danser', 'boîte de nuit', 'night club', 'karaoké' ],
-	detailsTag: ['danser', 'danser après 2h' ],
+	detailsTag: ['danser après 2h' ],
     page: 'https://www.facebook.com/pages/Music-Bar/158778094180401',
 	avis: 'Tu es ivre et tu veux pouvoir t\'exprimer après 2h du matin ? Ce lieu est fait pour toi' 
   },

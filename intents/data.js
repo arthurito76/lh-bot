@@ -133,8 +133,8 @@ const datas = [
 	locationTag : ['plage', 'mer'],
 	image : 'http://arthurfortin.fr/images/esc.jpg',
     page: 'https://www.facebook.com/Lescapade76',
-	tags: ['bar', 'vin', 'charcuterie', 'fromage', 'terrasse'],
-	detailsTag: ['terrasse' ],
+	tags: ['bar', 'vin', 'charcuterie', 'fromage'],
+	detailsTag: ['terrasse'],
 	avis: 'Une cave et un  à vin vraiment sympas avec un petit coin jardin où siroter du bon pinard.'
   },
   
@@ -341,8 +341,8 @@ const datas = [
 	locationTag : ['centre-ville', 'niemeyer'],
 	image : 'http://arthurfortin.fr/images/bur.jpg',
     page: 'https://www.facebook.com/aubureau.lehavre',
-	tags: ['bar','fish\'n ships', 'afterwork', 'bière', 'burger', 'restaurant'],
-	detailsTag: ['ouvert le dimanche' ,'concert', 'rock' ],
+	tags: ['bar','fish\'n ships', 'afterwork', 'bière', 'burger', 'restaurant', 'concert'],
+	detailsTag: ['ouvert le dimanche', 'rock' ],
 	avis: 'L\'un des seuls lieux où manger un fish\'n ships. A 3h de l\'Irlande c\'est à noter'
   },
   
@@ -397,8 +397,8 @@ const datas = [
 	locationTag : ['coty'],
 	image : 'http://arthurfortin.fr/images/lebis.jpg',
     page: 'https://www.facebook.com/lebistrotcoty',
-	tags: ['bar', 'bière' ],
-	detailsTag: ['concert', 'rock' ],
+	tags: ['bar', 'bière', 'concert' ],
+	detailsTag: [ 'rock' ],
 	avis: 'Une institution qui mérite d\'être redécouverte par les jeunes générations.'
   },
   
@@ -408,8 +408,8 @@ const datas = [
 	locationTag : ['notre-dame'],
 	image : 'http://arthurfortin.fr/images/merl.jpg',
     page: 'https://www.facebook.com/Le-Merle-Moqueur-383939731755519',
-	tags: ['bar','bière' ],
-	detailsTag: ['concert', 'rock' ],
+	tags: ['bar','bière', 'concert' ],
+	detailsTag: ['rock' ],
 	avis: 'Un rade à la bonne franquette comme vous dîtes vous autres les humains'
   },
   
@@ -419,8 +419,8 @@ const datas = [
 	locationTag : ['hôtel-de-ville'],
 	image : 'http://arthurfortin.fr/images/zaz.jpg',
     page: 'https://www.facebook.com/leszazouslehavre',
-	tags: ['bar','bière'],
-	detailsTag: ['concert', 'rock', 'blind test' ],
+	tags: ['bar','bière', 'concert', 'blind test'],
+	detailsTag: ['rock' ],
 	avis: 'bonne ambiance, bon délire et des sessions blind test chaque semaine pour se fendre la poire et écouter des gens mal chanter.'
   },
   
@@ -452,8 +452,8 @@ const datas = [
 	locationTag : ['Niemeyer'],
 	image : 'http://arthurfortin.fr/images/bla.jpg',
     page: 'https://www.facebook.com/Black-Café-739396976180251',
-	tags: ['bar','bière' ],
-	detailsTag: ['fléchettes', 'billard', 'ouvert le dimanche' ],
+	tags: ['bar','bière', 'fléchettes', 'billard' ],
+	detailsTag: ['ouvert le dimanche' ],
 	avis: 'Le spot idéal pour se faire un billard'
   },
   

@@ -5,8 +5,8 @@ const datas = [
 	locationTag : ['centre-ville', 'rues piétonnes'],
 	image : 'http://arthurfortin.fr/images/eauta.jpg',
     page: 'https://www.facebook.com/www.leautarielehavre.fr/?fref=ts',
-	tags: ['bar','bière', 'foster', 'charcuterie', 'fromage', 'mojito', 'burger' ],
-	detailsTag: ['terrasse chauffée','terrasse', 'match', 'foot', 'rugby', 'midi'],
+	tags: ['bar','bière', 'foster', 'charcuterie', 'fromage', 'mojito', 'burger', 'match', 'foot', 'rugby', 'manger' ],
+	detailsTag: ['terrasse chauffée','terrasse', 'midi'],
 	avis: 'Un rade bien sympa pour manger sans se saigner le midi, et prendre un apéro sans trop se les meuler grâce à la terrasse chauffée.'
   },
   {
@@ -35,8 +35,8 @@ const datas = [
 	locationTag : ['centre-ville', 'niemeyer', 'halles'], 
 	image : 'http://arthurfortin.fr/images/obr.jpg',
     page: 'https://www.facebook.com/obrotherlh',
-	tags: ['pub', 'bière', 'tapas', 'burger'],
-	detailsTag: ['terrasse', 'match', 'foot', 'rugby', 'midi' ],
+	tags: ['pub', 'bière', 'tapas', 'burger', 'match', 'foot', 'rugby'],
+	detailsTag: ['terrasse',  'midi' ],
 	avis: 'Un bar à l\'ambiance irish idéal pour se mater un match. A noter une bouffe excellente le midi.'
   },
     {
@@ -99,8 +99,8 @@ const datas = [
     location: 'Sainte-Adresse',
 	locationTag : ['plage', 'mer'],
 	image : 'http://arthurfortin.fr/images/chat.jpeg',
-	tags: ['café', 'thé', 'tapas', 'charcuterie', 'salon de thé', 'pâtisseries', 'brunch'],
-	detailsTag: ['terrasse', 'exposition', 'expo', 'ouvert le dimanche' ],
+	tags: ['café', 'thé', 'tapas', 'charcuterie', 'salon de thé', 'pâtisseries', 'brunch', 'exposition', 'expo',],
+	detailsTag: ['terrasse', 'ouvert le dimanche' ],
 	page: 'https://www.facebook.com/Le-Chat-Bleu-au-bon-goût-dici-et-dailleurs-294275044012714',
 	avis: 'Le refuge idéal pour les urbains souhaitant trouver un refuge où manger un bout, prende un thé ou une mousse. Tout est bon, tout est fait maison.'
   },
@@ -165,8 +165,8 @@ const datas = [
     location: 'saint-vincent',
 	locationTag : ['saint-vincent', 'centre-ville'],
     page: 'https://www.facebook.com/AffichesLaCaveABieresLeHavre',
-	tags: ['bière', 'bière belge'],
-	detailsTag: [ 'exposition', 'artiste' ],
+	tags: ['bière', 'bière belge',  'exposition', 'artiste'],
+	detailsTag: ['' ],
 	avis: 'Le lieu idéal pour acheter de la bonne bière et savourer une expo.'
   },
   
@@ -341,8 +341,8 @@ const datas = [
 	locationTag : ['centre-ville', 'niemeyer'],
 	image : 'http://arthurfortin.fr/images/bur.jpg',
     page: 'https://www.facebook.com/aubureau.lehavre',
-	tags: ['fish\'n ships', 'afterwork', 'bière', 'burger', 'restaurant', 'concert', 'rock'],
-	detailsTag: ['ouvert le dimanche' ],
+	tags: ['bar','fish\'n ships', 'afterwork', 'bière', 'burger', 'restaurant'],
+	detailsTag: ['ouvert le dimanche' ,'concert', 'rock' ],
 	avis: 'L\'un des seuls lieux où manger un fish\'n ships. A 3h de l\'Irlande c\'est à noter'
   },
   
@@ -397,7 +397,7 @@ const datas = [
 	locationTag : ['coty'],
 	image : 'http://arthurfortin.fr/images/lebis.jpg',
     page: 'https://www.facebook.com/lebistrotcoty',
-	tags: ['bière' ],
+	tags: ['bar', 'bière' ],
 	detailsTag: ['concert', 'rock' ],
 	avis: 'Une institution qui mérite d\'être redécouverte par les jeunes générations.'
   },
@@ -463,8 +463,8 @@ const datas = [
 	locationTag : ['Niemeyer', 'centre-ville'],
 	image : 'http://arthurfortin.fr/images/mac.jpg',
     page: 'https://www.facebook.com/pages/Mac-Daids/115590181861208',
-	tags: ['pub', 'bière', 'guiness' ],
-	detailsTag: ['billard', 'fléchettes', 'ouvert le dimanche' ],
+	tags: ['pub','bar', 'bière', 'guiness', 'billard', 'fléchettes', 'concert' ],
+	detailsTag: ['ouvert le dimanche', 'metal', 'rock' ],
 	avis: 'LE pub havrais'
   },
     

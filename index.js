@@ -51,7 +51,7 @@ const bot = new builder.UniversalBot(connector)
   }
 } 
 
-const createGreetingApi(data) {
+const createGreetingApi = (data) => {
 request({
 uri: 'https://facebook.botframework.com/api/v1/bots/arthurfortinbot',
 qs: { access_token: EAAZAgZCeKLlq4BAOmcfpvVnjq96PZBZAhZB9bwCNhTIcdRB6XQaCsZBUgoOaDwTqsIMDwGhaxa8ftcoW25AFDfgbIuN5yNQ5JSyqKKLYrC1esGjviZBTkdPZA9fSjRSiP9HI39ZBpSMmZAZBZCMPpRSOFOXuZAgYjw85LJvBAIzT673Fk9gZDZD },

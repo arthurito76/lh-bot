@@ -5,7 +5,7 @@ const datas = [
 	locationTag : ['centre-ville', 'rues piétonnes'],
 	image : 'http://arthurfortin.fr/images/eauta.jpg',
     page: 'https://www.facebook.com/www.leautarielehavre.fr/?fref=ts',
-	tags: ['bar','bière', 'foster', 'charcuterie', 'fromage', 'mojito', 'burger', 'match', 'foot', 'rugby', 'manger' ],
+	tags: ['bar','bière', 'foster', 'charcuterie', 'fromage', 'mojito', 'burger','hamburger', 'match', 'foot', 'rugby', 'manger' ],
 	detailsTag: ['terrasse chauffée','terrasse', 'midi'],
 	avis: 'Un rade bien sympa pour manger sans se saigner le midi, et prendre un apéro sans trop se les meuler grâce à la terrasse chauffée.'
   },
@@ -35,7 +35,7 @@ const datas = [
 	locationTag : ['centre-ville', 'niemeyer', 'halles'], 
 	image : 'http://arthurfortin.fr/images/obr.jpg',
     page: 'https://www.facebook.com/obrotherlh',
-	tags: ['pub', 'bière', 'tapas', 'burger', 'match', 'foot', 'rugby'],
+	tags: ['pub', 'bière', 'tapas', 'burger','hamburger', 'match', 'foot', 'rugby'],
 	detailsTag: ['terrasse',  'midi' ],
 	avis: 'Un bar à l\'ambiance irish idéal pour se mater un match. A noter une bouffe excellente le midi.'
   },
@@ -55,7 +55,7 @@ const datas = [
     location: 'plage',
 	locationTag : ['plage', 'mer'],
 	image : 'http://arthurfortin.fr/images/rade.jpg',
-	tags: ['bar', 'bière', 'burger', 'frites', 'tapas'],
+	tags: ['bar', 'bière', 'burger','hamburger', 'frites', 'tapas'],
 	detailsTag: ['terrasse', 'ouvert le dimanche' ],
     page: 'https://www.facebook.com/La-Petite-Rade-188341881206913',
 	avis: 'LE spot pour se siffler une mousse en mangeant un burger délicieux.'
@@ -99,7 +99,7 @@ const datas = [
     location: 'Sainte-Adresse',
 	locationTag : ['plage', 'mer'],
 	image : 'http://arthurfortin.fr/images/chat.jpeg',
-	tags: ['café', 'thé', 'tapas', 'charcuterie', 'salon de thé', 'pâtisseries', 'brunch', 'exposition', 'expo',],
+	tags: ['café', 'thé', 'tapas', 'charcuterie', 'salon de thé', 'pâtisseries', 'brunch', 'exposition', 'expo', 'goûter'],
 	detailsTag: ['terrasse', 'ouvert le dimanche' ],
 	page: 'https://www.facebook.com/Le-Chat-Bleu-au-bon-goût-dici-et-dailleurs-294275044012714',
 	avis: 'Le refuge idéal pour les urbains souhaitant trouver un refuge où manger un bout, prende un thé ou une mousse. Tout est bon, tout est fait maison.'
@@ -111,7 +111,7 @@ const datas = [
 	locationTag : ['centre-ville', 'rues piétonnes'],
 	image : 'http://arthurfortin.fr/images/will.jpg',
     page: 'https://www.facebook.com/Williamsburg-Food-Coffee-771263892910406',
-	tags: ['coffee shop', 'café', 'cheescake', 'sandwichs', 'cappucino', 'petit déjeuner', 'muffin', 'salade'],
+	tags: ['coffee shop', 'café', 'cheescake', 'sandwichs', 'cappucino', 'petit déjeuner', 'muffin', 'salade', 'goûter', 'petit-déjeuner'],
 	detailsTag: [''],
 	avis: 'Le Havre a son coffee shop, tu peux y aller les yeux fermés.'
   },
@@ -122,7 +122,7 @@ const datas = [
 	locationTag : ['hôtel-de-ville', 'centre-ville'],
 	image : 'http://arthurfortin.fr/images/french.jpg',
     page: 'https://www.facebook.com/LHfrenchcoffeeshop/',
-	tags: ['coffee shop', 'café', 'cheescake', 'sandwichs', 'cappucino', 'petit déjeuner'],
+	tags: ['coffee shop', 'café', 'cheescake', 'sandwichs', 'cappucino', 'petit déjeuner', 'goûter'],
 	detailsTag: ['' ],
 	avis: 'Un chouette coffee shop, à la starbuck style.'
   },
@@ -144,7 +144,7 @@ const datas = [
 	locationTag : ['Bellanger', 'saint-vincent'],
 	image : 'http://arthurfortin.fr/images/andre.jpg',
     page: 'https://www.facebook.com/restaurantchezandre/',
-	tags: ['restaurant', 'vin', 'fromage'],
+	tags: ['restaurant','resto', 'vin', 'fromage'],
 	detailsTag: ['' ],
 	avis: 'Unun chouette  où siroter du bon pinard.'
   },
@@ -330,7 +330,7 @@ const datas = [
 	locationTag : ['centre-ville', 'saint-roch'],
 	image : 'http://arthurfortin.fr/images/pail.jpg',
     page: 'https://www.facebook.com/La-Taverne-Paillette-176529912364014',
-	tags: ['moules', 'fruit de mer', 'choucroute', 'brasserie'],
+	tags: ['restaurant','resto', 'moules', 'fruits de mer', 'choucroute', 'brasserie'],
 	detailsTag: ['ouvert le dimanche' ],
 	avis: 'Un classique havrais. Si t\'as pas essayé cette brasserie typique t\'as loupé ta vie '
   },
@@ -341,7 +341,7 @@ const datas = [
 	locationTag : ['centre-ville', 'niemeyer'],
 	image : 'http://arthurfortin.fr/images/bur.jpg',
     page: 'https://www.facebook.com/aubureau.lehavre',
-	tags: ['bar','fish\'n ships', 'afterwork', 'bière', 'burger', 'restaurant', 'concert'],
+	tags: ['bar','fish\'n ships', 'afterwork', 'bière', 'burger','hamburger', 'restaurant', 'concert'],
 	detailsTag: ['ouvert le dimanche', 'rock' ],
 	avis: 'L\'un des seuls lieux où manger un fish\'n ships. A 3h de l\'Irlande c\'est à noter'
   },
@@ -441,7 +441,7 @@ const datas = [
 	locationTag : ['saint-françois'],
 	image : 'http://arthurfortin.fr/images/quentin.jpg',
     page: 'https://www.facebook.com/lebistrotdequentin',
-	tags: ['bar','restaurant','resto', 'happy hour', 'bistrot', 'burger', 'bavette' ],
+	tags: ['bar','restaurant','resto', 'happy hour', 'bistrot', 'burger','hamburger', 'bavette' ],
 	detailsTag: ['terrasse', 'midi'],
 	avis: 'Un très bon resto le midi et un très bon rade le soir.'
   },
@@ -509,7 +509,7 @@ const datas = [
 	locationTag : ['Vauban'],
 	image : 'http://arthurfortin.fr/images/split.jpg',
     page: 'https://www.facebook.com/Split-Le-Havre-113149882080660',
-	tags: ['tennis', 'baskets', 'sweat', 'skateur','vêtements', 'femmes','hommes', 'lunettes', 'planches de skate', 'chaussures' ],
+	tags: ['tennis', 'baskets', 'sweat', 'skateur','vêtements', 'femmes','hommes', 'lunettes', 'planches de skate', 'chaussures', 'chemise', 'polo' ],
 	detailsTag: ['carhart', 'nike', 'veja' ],
 	avis: 'Le lieu pour avoir du style'
   },

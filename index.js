@@ -50,6 +50,17 @@ const bot = new builder.UniversalBot(connector)
     session.send(elem.content)
   }
 } 
+
+function setGreetingText() {
+var greetingData = {
+setting_type: "greeting",
+greeting:{
+text:"Hi {{user_first_name}}, welcome!"
+}
+};
+createGreetingApi(greetingData);
+}
+
 bot.dialog('/', (session) => {
   recastClient.textRequest(session.message.text)
   .then(res => {
@@ -74,5 +85,6 @@ const server = restify.createServer()
 var port = process.env.PORT || 5000;
 server.listen(port, function() {
     console.log("Listening on " + port);
+	setGreetingText();
 });
 server.post('/', connector.listen())

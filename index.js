@@ -67,7 +67,7 @@ if (!error && response.statusCode == 200) {
 });  
 }
 
-const setGreetingText() {
+const setGreetingText = () => {
 var greetingData = {
 setting_type: "greeting",
 greeting:{

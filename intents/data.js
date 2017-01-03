@@ -365,6 +365,17 @@ const datas = [
     page: 'https://www.facebook.com/Fleur-de-Sel-665021900279649',
 	tags: [ 'truffe', 'poisson'],
 	detailsTag: ['gastronomique' ],
+	avis: 'Raffiné et abordable'
+  },
+  
+    {
+    name: 'Tartarin',
+    location: 'avenue foch',
+	locationTag : ['centre-ville', 'avenue foch'],
+	image : 'http://arthurfortin.fr/images/tart.png',
+    page: 'https://www.facebook.com/Restaurant-Jean-Luc-Tartarin-146369338737976',
+	tags: [ 'truffe', 'poisson'],
+	detailsTag: ['gastronomique' ],
 	avis: 'L\'un des seuls lieux où manger un fish\'n ships'
   },
   
@@ -512,6 +523,18 @@ const datas = [
 	tags: ['tennis', 'baskets', 'sweat', 'skateur','vêtements', 'femmes','hommes', 'lunettes', 'planches de skate', 'chaussures', 'chemise', 'polo' ],
 	detailsTag: ['carhart', 'nike', 'veja' ],
 	avis: 'Le lieu pour avoir du style'
+  },
+  
+  
+   {
+    name: 'Printemps',
+    location: 'Coty',
+	locationTag : ['Coty'],
+	image : 'http://arthurfortin.fr/images/print.ppg',
+    page: 'https://www.facebook.com/Split-Le-Havre-113149882080660',
+	tags: ['tennis', 'baskets', 'sweat', 'skateur','vêtements', 'femmes','hommes', 'lunettes', 'jean','pantalon','robe','jupe', 'manteau', 'chaussures', 'chemise', 'polo' ],
+	detailsTag: ['lacoste', 'chevignon', 'ralph lauren', 'tommy hilfiger', 'diesel', 'kaporal', 'g-star' ],
+	avis: 'L\'un des premiers Printemps (le magasin, pas la saison ahaha)'
   },
   
   {

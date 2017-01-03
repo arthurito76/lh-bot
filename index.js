@@ -51,32 +51,6 @@ const bot = new builder.UniversalBot(connector)
   }
 } 
 
-function createGreetingApi(data) {
-request({
-uri: 'https://facebook.botframework.com/api/v1/bots/arthurfortinbot',
-qs: { access_token: EAAZAgZCeKLlq4BAOmcfpvVnjq96PZBZAhZB9bwCNhTIcdRB6XQaCsZBUgoOaDwTqsIMDwGhaxa8ftcoW25AFDfgbIuN5yNQ5JSyqKKLYrC1esGjviZBTkdPZA9fSjRSiP9HI39ZBpSMmZAZBZCMPpRSOFOXuZAgYjw85LJvBAIzT673Fk9gZDZD },
-method: 'POST',
-json: data
-
-}, function (error, response, body) {
-if (!error && response.statusCode == 200) {
-  console.log("Greeting set successfully!");
-} else {
-  console.error("Failed calling Thread Reference API", response.statusCode,     response.statusMessage, body.error);
-}
-});  
-}
-
-const setGreetingText = () => {
-var greetingData = {
-setting_type: "greeting",
-greeting:{
-text:"Hi {{user_first_name}}, welcome!"
-}
-};
-createGreetingApi(greetingData);
-}
-
 bot.dialog('/', (session) => {
   recastClient.textRequest(session.message.text)
   .then(res => {
@@ -101,6 +75,5 @@ const server = restify.createServer()
 var port = process.env.PORT || 5000;
 server.listen(port, function() {
     console.log("Listening on " + port);
-	setGreetingText();
 });
 server.post('/', connector.listen())

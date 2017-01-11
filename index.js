@@ -52,16 +52,25 @@ const bot = new builder.UniversalBot(connector)
 } 
 
 bot.dialog('/', (session) => {
+	const user = getUser(session.message.address, session)
   recastClient.textRequest(session.message.text)
   .then(res => {
     const intent = res.intent()
 if (intent) {
-const restaurantName = res.get('restoinfo')	
+ const restaurantName = res.get('restoinfo')    
 const specialitiesType = res.all('specialities')
 const activiteType = res.all('activiteinfo')
 const achatType = res.all('achatinfo')
 const locationType = res.all('customlocation')
 const detailType = res.all('detail')
+
+// on sauvegarde en mémoire la localisation si il y en a une
+// sinon si on voit qu'en mémoire on en a sauvegarder une, on l'utilise
+if (locationType) {
+  user.locationType = locationType
+} else if (user.locationType) {
+  locationType = user.locationType
+}
 INTENTS[intent.slug](restaurantName, specialitiesType, locationType, detailType, activiteType, achatType)
 .then(res => { res.forEach((message) => sendMessageByType(session, message)) }) 
 .catch(err => { err.forEach((message) => sendMessageByType(session, message)) }) 

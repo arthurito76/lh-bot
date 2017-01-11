@@ -52,7 +52,11 @@ const bot = new builder.UniversalBot(connector)
 } 
 
 bot.dialog('/', (session) => {
-	const user = getUser(session.message.address, session)
+	 const getUser = (address, session) => {
+  const user = session.userData
+  user.locationType = devslashnull 
+  return (user)
+} 
   recastClient.textRequest(session.message.text)
   .then(res => {
     const intent = res.intent()

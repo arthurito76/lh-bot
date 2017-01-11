@@ -54,7 +54,7 @@ const bot = new builder.UniversalBot(connector)
 bot.dialog('/', (session) => {
 	 
   const user = session.userData
-
+console.log (user)
   recastClient.textRequest(session.message.text)
   .then(res => {
     const intent = res.intent()

@@ -71,13 +71,13 @@ if (detailType ) {
   user.detailType = detailType
 } else if (user.detailType) {
   detailType = user.detailType
-  console.log (user.detailType)
+  console.log (detailType)
 }
 if (locationType ) {
   user.locationType = locationType
 } else if (user.locationType) {
   locationType = user.locationType
-  console.log (user.locationType)
+  console.log (locationType)
 }
 INTENTS[intent.slug](restaurantName, specialitiesType, locationType, detailType, activiteType, achatType)
 .then(res => { res.forEach((message) => sendMessageByType(session, message)) }) 

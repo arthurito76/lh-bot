@@ -73,6 +73,7 @@ if (locationType ) {
   locationType = user.locationType
   console.log (locationType)
 }
+console.log (locationType)
 
 if (detailType ) {
   user.detailType = detailType

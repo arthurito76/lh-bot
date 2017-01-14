@@ -68,6 +68,7 @@ for (var i = 0, len = goodPlaces.length; i < len; i++) {
 }
 answer.push(utils.toCarousel(cards))
 user.locationType = null
+console.log('coucou')
 return Promise.resolve(answer) 
 }
 

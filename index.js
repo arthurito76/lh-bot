@@ -67,18 +67,13 @@ const detailType = res.all('detail')
 
 // on sauvegarde en mémoire la localisation si il y en a une
 // sinon si on voit qu'en mémoire on en a sauvegarder une, on l'utilise
-if (detailType ) {
-  user.detailType = detailType
-} else if (user.detailType) {
-  detailType = user.detailType
-  console.log (detailType)
-}
 if (locationType ) {
   user.locationType = locationType
 } else if (user.locationType) {
   locationType = user.locationType
   console.log (locationType)
 }
+
 INTENTS[intent.slug](restaurantName, specialitiesType, locationType, detailType, activiteType, achatType)
 .then(res => { res.forEach((message) => sendMessageByType(session, message)) }) 
 .catch(err => { err.forEach((message) => sendMessageByType(session, message)) }) 

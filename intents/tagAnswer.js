@@ -67,7 +67,7 @@ for (var i = 0, len = goodPlaces.length; i < len; i++) {
   cards.push({ title, image, buttons })
 }
 answer.push(utils.toCarousel(cards))
-user.locationType = null
+USER.locationType = null
 console.log('coucou')
 return Promise.resolve(answer) 
 }

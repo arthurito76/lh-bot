@@ -54,6 +54,7 @@ const bot = new builder.UniversalBot(connector)
 bot.dialog('/', (session) => {
 	 
   const user = session.privateConversationData
+  console.log(user)
   recastClient.textRequest(session.message.text)
   .then(res => {
     const intent = res.intent()
@@ -72,6 +73,13 @@ if (locationType ) {
 } else if (user.locationType) {
   locationType = user.locationType
   console.log (locationType)
+}
+
+if (detailType ) {
+  user.detailType = detailType
+} else if (user.detailType) {
+  detailType = user.detailType
+  console.log (detailType)
 }
 
 INTENTS[intent.slug](restaurantName, specialitiesType, locationType, detailType, activiteType, achatType)

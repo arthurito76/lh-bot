@@ -58,12 +58,12 @@ bot.dialog('/', (session) => {
   .then(res => {
     const intent = res.intent()
 if (intent) {
- const restaurantName = res.get('restoinfo')    
-const specialitiesType = res.all('specialities')
-const activiteType = res.all('activiteinfo')
-const achatType = res.all('achatinfo')
-const locationType = res.all('customlocation')
-const detailType = res.all('detail')
+ var restaurantName = res.get('restoinfo')    
+var specialitiesType = res.all('specialities')
+var activiteType = res.all('activiteinfo')
+var achatType = res.all('achatinfo')
+var locationType = res.all('customlocation')
+var detailType = res.all('detail')
 
 // on sauvegarde en mémoire la localisation si il y en a une
 // sinon si on voit qu'en mémoire on en a sauvegarder une, on l'utilise

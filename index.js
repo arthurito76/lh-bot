@@ -54,7 +54,6 @@ const bot = new builder.UniversalBot(connector)
 bot.dialog('/', (session) => {
 	 
   const user = session.privateConversationData
-console.log (user)
   recastClient.textRequest(session.message.text)
   .then(res => {
     const intent = res.intent()
@@ -68,7 +67,13 @@ const detailType = res.all('detail')
 
 // on sauvegarde en mémoire la localisation si il y en a une
 // sinon si on voit qu'en mémoire on en a sauvegarder une, on l'utilise
-if (locationType) {
+if (detailType ) {
+  user.detailType = detailType
+} else if (user.detailType) {
+  detailType = user.detailType
+  console.log (user.detailType)
+}
+if (locationType ) {
   user.locationType = locationType
 } else if (user.locationType) {
   locationType = user.locationType

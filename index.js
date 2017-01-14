@@ -73,9 +73,10 @@ if (locationType) {
 console.log('set location')
 } else if (user.locationType) {
   locationType = user.locationType
+console.log('ici aussi')
 }
 
-console.log(locationType) 
+console.log(locationType)  
 
 if (detailType ) {
   user.detailType = detailType

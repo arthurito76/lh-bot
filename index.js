@@ -72,6 +72,7 @@ if (locationType) {
   user.locationType = locationType
 } else if (user.locationType) {
   locationType = user.locationType
+  console.log (user.locationType)
 }
 INTENTS[intent.slug](restaurantName, specialitiesType, locationType, detailType, activiteType, achatType)
 .then(res => { res.forEach((message) => sendMessageByType(session, message)) }) 

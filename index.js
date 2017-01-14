@@ -67,8 +67,8 @@ const detailType = res.all('detail')
 
 // on sauvegarde en mémoire la localisation si il y en a une
 // sinon si on voit qu'en mémoire on en a sauvegarder une, on l'utilise
- console.log(user.locationType)
-if (locationType) {
+  console.log(user.locationType)
+if (locationType.length > 0) {
   user.locationType = locationType
 console.log('set location')
 } else if (user.locationType) {

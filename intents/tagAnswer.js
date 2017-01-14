@@ -12,7 +12,7 @@ const fuzzySpecialities = new Fuzzy(datas.reduce((prev, current) => {
  return [...prev, ...current.tags];
 }, []));
 const random = array => { return array[Math.floor(Math.random() * array.length)] }
-const tagAnswer = (CATEGORIE, SPECIALITIES, CUSTOMLOCATION, DETAIL) => { 
+const tagAnswer = (RESTOINFO, SPECIALITIES, CUSTOMLOCATION, DETAIL, ACTIVITEINFO, ACHATINFO, USER) => { 
 
 if (!SPECIALITIES.length) { return Promise.resolve([utils.toText('Que veux-tu boire ou manger exactement ?')])}
 
@@ -67,7 +67,7 @@ for (var i = 0, len = goodPlaces.length; i < len; i++) {
   cards.push({ title, image, buttons })
 }
 answer.push(utils.toCarousel(cards))
-
+user.locationType = null
 return Promise.resolve(answer) 
 }
 

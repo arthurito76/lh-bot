@@ -100,7 +100,7 @@ const datas = [
 	locationTag : ['plage', 'mer'],
 	image : 'http://arthurfortin.fr/images/chat.jpeg',
 	tags: ['café', 'thé', 'tapas', 'charcuterie', 'salon de thé', 'pâtisseries', 'brunch', 'exposition', 'expo', 'goûter'],
-	detailsTag: ['terrasse', 'ouvert le dimanche' ],
+	detailsTag: ['terrasse', 'ouvert le dimanche', 'dimanche' ],
 	page: 'https://www.facebook.com/Le-Chat-Bleu-au-bon-goût-dici-et-dailleurs-294275044012714',
 	avis: 'Le refuge idéal pour les urbains souhaitant trouver un refuge où manger un bout, prende un thé ou une mousse. Tout est bon, tout est fait maison.'
   },
@@ -221,7 +221,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/ist.jpg',
     page: 'https://www.facebook.com/pages/Istanbul-Kebab/251742424858786',
 	tags: ['kebab'],
-	detailsTag: ['' ],
+	detailsTag: ['ouvert le dimanche', 'dimanche' ],
 	avis: 'Le meilleur kebab de France par kebab-frites.com'
   },
   
@@ -331,7 +331,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/pail.jpg',
     page: 'https://www.facebook.com/La-Taverne-Paillette-176529912364014',
 	tags: ['restaurant','resto', 'moules', 'fruits de mer', 'choucroute', 'brasserie'],
-	detailsTag: ['ouvert le dimanche' ],
+	detailsTag: ['ouvert le dimanche', 'dimanche' ],
 	avis: 'Un classique havrais. Si t\'as pas essayé cette brasserie typique t\'as loupé ta vie '
   },
   
@@ -342,7 +342,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/bur.jpg',
     page: 'https://www.facebook.com/aubureau.lehavre',
 	tags: ['bar','fish\'n ships', 'afterwork', 'bière', 'burger','hamburger', 'restaurant', 'concert'],
-	detailsTag: ['ouvert le dimanche', 'rock' ],
+	detailsTag: ['midi', 'ouvert le dimanche','dimanche', 'rock' ],
 	avis: 'L\'un des seuls lieux où manger un fish\'n ships. A 3h de l\'Irlande c\'est à noter'
   },
   

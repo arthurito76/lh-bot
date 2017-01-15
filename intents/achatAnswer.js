@@ -12,7 +12,7 @@ const fuzzyAchatinfo = new Fuzzy(datas.reduce((prev, current) => {
  return [...prev, ...current.tags];
 }, []));
 const random = array => { return array[Math.floor(Math.random() * array.length)] }
-const achatAnswer = (RESTOINFO, SPECIALITIES, CUSTOMLOCATION, DETAIL, ACTIVITEINFO, ACHATINFO) => {
+const achatAnswer = (RESTOINFO, SPECIALITIES, CUSTOMLOCATION, DETAIL, ACTIVITEINFO, ACHATINFO, USER) => {
 
 	 
 		if (!ACHATINFO.length) { return Promise.resolve([utils.toText('Précise ce que tu veux acheter ?')])}
@@ -66,6 +66,8 @@ for (var i = 0, len = goodAchat.length; i < len; i++) {
   cards.push({ title, image, buttons })
 }
 answer.push(utils.toCarousel(cards))
+USER.locationType = null
+console.log('coucou')
 
 return Promise.resolve(answer) 
 }

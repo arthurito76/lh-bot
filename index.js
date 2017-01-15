@@ -78,12 +78,16 @@ console.log('ici aussi')
 
 console.log(locationType)  
 
-if (detailType ) {
+ console.log(user.detailType)
+if (detailType.length > 0) {
   user.detailType = detailType
+console.log('set detail')
 } else if (user.detailType) {
   detailType = user.detailType
-  console.log (detailType)
+console.log('ici aussi détails')
 }
+
+console.log(detailType) 
 
 INTENTS[intent.slug](restaurantName, specialitiesType, locationType, detailType, activiteType, achatType, user)
 .then(res => { res.forEach((message) => sendMessageByType(session, message)) }) 

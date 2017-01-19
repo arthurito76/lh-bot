@@ -1,6 +1,7 @@
 const recast = require('recastai')
 const config = require('./config.js')
 const INTENTS = require('./intents')
+const getEntities = require('./getEntities.js')
 const restify = require('restify')
 const builder = require('botbuilder')
 // Connection to Microsoft Bot Framework

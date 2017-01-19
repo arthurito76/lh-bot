@@ -59,38 +59,8 @@ bot.dialog('/', (session) => {
   .then(res => {
     const intent = res.intent()
 if (intent) {
- var restaurantName = res.get('restoinfo')    
-var specialitiesType = res.all('specialities')
-var activiteType = res.all('activiteinfo')
-var achatType = res.all('achatinfo')
-var locationType = res.all('customlocation')
-var detailType = res.all('detail')
-
-// on sauvegarde en mémoire la localisation si il y en a une
-// sinon si on voit qu'en mémoire on en a sauvegarder une, on l'utilise
-  console.log(user.locationType)
-if (locationType.length > 0) {
-  user.locationType = locationType
-console.log('set location')
-} else if (user.locationType) {
-  locationType = user.locationType
-console.log('ici aussi')
-}
-
-console.log(locationType)  
-
- console.log(user.detailType)
-if (detailType.length > 0) {
-  user.detailType = detailType
-console.log('set detail')
-} else if (user.detailType) {
-  detailType = user.detailType
-console.log('ici aussi détails')
-}
-
-console.log(detailType) 
-
-INTENTS[intent.slug](restaurantName, specialitiesType, locationType, detailType, activiteType, achatType, user)
+  const entities = getEntities(res, user)
+INTENTS[intent.slug](entities, user) 
 .then(res => { res.forEach((message) => sendMessageByType(session, message)) }) 
 .catch(err => { err.forEach((message) => sendMessageByType(session, message)) }) 
 } else { session.send(['Je ne comprends pas encore tout très bien, il faut être patient avec moi. Je suis un jeune bot qui doit apprendre.', 'ouhlala j\'ai encore beaucoup à apprendre tu sais', 'Là je n\'ai pas la réponse mais promis je vais chercher', 'hein ?', 'je vais sortir mon chapeau et ma guinbardine pour enquêter...', 'Je ne suis qu\'un bot, pas terminator', 'j\'aimerais te répondre mais les limites de l\'AI ne me permettent de répondre qu\'à des requêtes simples']) }

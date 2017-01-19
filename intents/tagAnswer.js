@@ -1,6 +1,7 @@
 const utils = require('./util.js')
 const _ = require('lodash')
 const datas = require('./data.js') 
+const getEntities = require('./getEntities.js')
 const Fuzzy = require('fuzzy-matching')
 const fuzzyLocation = new Fuzzy(datas.reduce((prev, current) => {
 return [...prev, ...current.locationTag];
@@ -12,7 +13,7 @@ const fuzzySpecialities = new Fuzzy(datas.reduce((prev, current) => {
  return [...prev, ...current.tags];
 }, []));
 const random = array => { return array[Math.floor(Math.random() * array.length)] }
-const tagAnswer = (RESTOINFO, SPECIALITIES, CUSTOMLOCATION, DETAIL, ACTIVITEINFO, ACHATINFO, USER) => { 
+const tagAnswer = (ENTITIES, USER) => { 
 
 if (!SPECIALITIES.length) { return Promise.resolve([utils.toText('Que veux-tu boire ou manger exactement ?')])}
 

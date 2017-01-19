@@ -15,19 +15,19 @@ const fuzzySpecialities = new Fuzzy(datas.reduce((prev, current) => {
 const random = array => { return array[Math.floor(Math.random() * array.length)] }
 const tagAnswer = (ENTITIES, USER) => { 
 
-if (!SPECIALITIES.length) { return Promise.resolve([utils.toText('Que veux-tu boire ou manger exactement ?')])}
+if (!ENTITIES.specialitiesType.length) { return Promise.resolve([utils.toText('Que veux-tu boire ou manger exactement ?')])}
 
 
  var goodPlaces = []
-SPECIALITIES.forEach(tag => {
+ENTITIES.specialitiesType.forEach(tag => {
      const match = fuzzySpecialities.get(tag.raw);
      if (match.distance > 0.8) {
        goodPlaces = _.filter(datas, place => place.tags.indexOf(match.value) !== -1)
      }
  })
 
-if (goodPlaces.length && CUSTOMLOCATION.length) {
-    CUSTOMLOCATION.forEach(tag => {
+if (goodPlaces.length && ENTITIES.locationType.length) {
+    ENTITIES.locationType.forEach(tag => {
        const match = fuzzyLocation.get(tag.raw);
        if (match.distance > 0.8) {
          goodPlaces = _.filter(goodPlaces, place => place.locationTag.indexOf(match.value) !== -1)
@@ -35,8 +35,8 @@ if (goodPlaces.length && CUSTOMLOCATION.length) {
    })
 }
 
-if (goodPlaces.length && DETAIL.length) {
-    DETAIL.forEach(tag => {
+if (goodPlaces.length && ENTITIES.detailType.length) {
+    ENTITIES.detailType.forEach(tag => {
        const match = fuzzyDetail.get(tag.raw);
        if (match.distance > 0.8) {
          goodPlaces = _.filter(goodPlaces, place => place.detailsTag.indexOf(match.value) !== -1)

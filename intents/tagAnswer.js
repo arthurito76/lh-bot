@@ -7,25 +7,39 @@ const fuzzyLocation = new Fuzzy(datas.reduce((prev, current) => {
 return [...prev, ...current.locationTag];
 }, []));
 const fuzzyNourriture = new Fuzzy(datas.reduce((prev, current) => {
+if (current.nourrituretag) {	
 return [...prev, ...current.nourrituretag];
+} else { return prev }
 }, []));
 const fuzzyBoisson = new Fuzzy(datas.reduce((prev, current) => {
+if (current.boissonstag) {	
  return [...prev, ...current.boissonstag];
+ } else { return prev }
 }, []));
 const fuzzyType = new Fuzzy(datas.reduce((prev, current) => {
+	if (current.typetag) {
  return [...prev, ...current.typetag];
+ } else { return prev }
 }, []));
 const fuzzyAnimation = new Fuzzy(datas.reduce((prev, current) => {
+	if (current.animationtag) {
  return [...prev, ...current.animationtag];
+  } else { return prev }
 }, []));
 const fuzzyMusique = new Fuzzy(datas.reduce((prev, current) => {
+	if (current.musiquetag) {
  return [...prev, ...current.musiquetag];
+  } else { return prev }
 }, []));
 const fuzzyAmenagement = new Fuzzy(datas.reduce((prev, current) => {
+	if (current.aménagementtag) {
  return [...prev, ...current.aménagementtag];
+ } else { return prev }
 }, []));
 const fuzzyOuverture = new Fuzzy(datas.reduce((prev, current) => {
+	if (current.ouverturetag) {
  return [...prev, ...current.ouverturetag];
+  } else { return prev }
 }, []));
 const random = array => { return array[Math.floor(Math.random() * array.length)] }
 const tagAnswer = (ENTITIES, USER) => { 

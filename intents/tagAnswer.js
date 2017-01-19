@@ -56,7 +56,7 @@ ENTITIES.nourritureType.forEach(tag => {
      }
  })
 
-if (goodPlaces.length && ENTITIES.boissonType.length) {
+if (ENTITIES.boissonType.length) {
     ENTITIES.boissonType.forEach(tag => {
        const match = fuzzyBoisson.get(tag.raw);
 	   console.log(match)

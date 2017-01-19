@@ -14,5 +14,5 @@ emo : require('./emoAnswer.js')  ,
 tagresto: require('./tagAnswer.js')  ,
 
 avis: require('./avis.js')  ,
-mixte: require('./mixteAnswer.js')  ,
+
  } 

@@ -67,8 +67,6 @@ if (goodPlaces.length && ENTITIES.boissonType.length) {
    })
 }
 
-console.log (goodplaces)
-
 if (goodPlaces.length && ENTITIES.typeType.length) {
     ENTITIES.typeType.forEach(tag => {
        const match = fuzzyType.get(tag.raw);

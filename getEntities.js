@@ -18,8 +18,6 @@ const getEntities = (res, user) => {
     entities.locationType = user.locationType
   }
   
-  
-
   return entities
 }
 module.exports = getEntities

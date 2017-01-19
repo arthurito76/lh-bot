@@ -45,7 +45,7 @@ const random = array => { return array[Math.floor(Math.random() * array.length)]
 const tagAnswer = (ENTITIES, USER) => { 
 
 if (!ENTITIES.nourritureType.length && !ENTITIES.boissonType.length &&!ENTITIES.typeType.length ) { return Promise.resolve([utils.toText('Que veux-tu boire ou manger exactement ?')])}
-
+console.log(ENTITIES.boissonType) 
 
 
  var goodPlaces = []
@@ -58,7 +58,6 @@ ENTITIES.nourritureType.forEach(tag => {
 
 if (goodPlaces.length && ENTITIES.boissonType.length) {
     ENTITIES.boissonType.forEach(tag => {
-		console.log(ENTITIES.boissonType) 
        const match = fuzzyBoisson.get(tag.raw);
 	   console.log(match)
        if (match.distance > 0.8) {

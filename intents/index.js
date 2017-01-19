@@ -12,8 +12,7 @@ findresto : require('./findresto.js')  ,
 lol : require('./lolAnswer.js')  ,
 emo : require('./emoAnswer.js')  ,
 tagresto: require('./tagAnswer.js')  ,
-activite: require('./activiteAnswer.js')  ,
-achat: require('./achatAnswer.js')  ,
+
 avis: require('./avis.js')  ,
 mixte: require('./mixteAnswer.js')  ,
  } 

@@ -56,7 +56,7 @@ ENTITIES.nourritureType.forEach(tag => {
      }
  })
 
-
+if (goodPlaces.length || ENTITIES.boissonType.length) {
     ENTITIES.boissonType.forEach(tag => {
        const match = fuzzyBoisson.get(tag.raw);
 	   console.log(match)
@@ -64,9 +64,9 @@ ENTITIES.nourritureType.forEach(tag => {
          goodPlaces = _.filter(goodPlaces, place => place.boissonstag.indexOf(match.value) !== -1)
        }
    })
+}
 
-
-if (goodPlaces.length && ENTITIES.typeType.length) {
+if (goodPlaces.length || ENTITIES.typeType.length) {
     ENTITIES.typeType.forEach(tag => {
        const match = fuzzyType.get(tag.raw);
        if (match.distance > 0.8) {
@@ -93,7 +93,7 @@ if (goodPlaces.length && ENTITIES.musiqueType.length) {
    })
 }
 
-if (goodPlaces.length && ENTITIES.amenagementType.length) {
+if (goodPlaces.length || ENTITIES.amenagementType.length) {
     ENTITIES.amenagementType.forEach(tag => {
        const match = fuzzyAmenagement.get(tag.raw);
        if (match.distance > 0.8) {

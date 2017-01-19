@@ -46,11 +46,12 @@ const tagAnswer = (ENTITIES, USER) => {
 
 if (!ENTITIES.nourritureType.length && !ENTITIES.boissonType.length &&!ENTITIES.typeType.length ) { return Promise.resolve([utils.toText('Que veux-tu boire ou manger exactement ?')])}
 console.log(ENTITIES.boissonType) 
-
+console.log(ENTITIES.nourritureType) 
 
  var goodPlaces = []
 ENTITIES.nourritureType.forEach(tag => {
      const match = fuzzyNourriture.get(tag.raw);
+	 console.log(match)
      if (match.distance > 0.8) {
        goodPlaces = _.filter(datas, place => place.nourrituretag.indexOf(match.value) !== -1)
      }

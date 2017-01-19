@@ -5,8 +5,13 @@ const datas = [
 	locationTag : ['centre-ville', 'rues piétonnes'],
 	image : 'http://arthurfortin.fr/images/eauta.jpg',
     page: 'https://www.facebook.com/www.leautarielehavre.fr/?fref=ts',
-	tags: ['bar','bière', 'foster', 'charcuterie', 'fromage', 'mojito', 'burger','hamburger', 'match', 'foot', 'rugby', 'manger' ],
-	detailsTag: ['terrasse chauffée','terrasse', 'midi'],
+	typetag : ['bar' ],
+	boissonstag : ['mojito', 'bière', 'caïpirihna' ],
+	nourrituretag : ['tapas' ],
+	animationtag : ['danser'],
+	musiquetag: ['' ],
+	aménagementtag: ['terrasse', 'terrasse chauffée' ],
+	ouverturetag : ['dimanche', 'lundi'],
 	avis: 'Un rade bien sympa pour manger sans se saigner le midi, et prendre un apéro sans trop se les meuler grâce à la terrasse chauffée.'
   },
   {
@@ -243,7 +248,7 @@ const datas = [
 	image : 'http://arthurfortin.fr/images/grign.jpg',
     page: 'https://www.facebook.com/legrignotLH',
 	tags: ['brasserie', 'fruits de mer', 'entrecôte', 'viande', 'bavette'],
-	detailsTag: ['brasserie' ],
+	detailsTag: ['' ],
 	avis: 'Une chouette brasserie à la déco typique'
   },
   

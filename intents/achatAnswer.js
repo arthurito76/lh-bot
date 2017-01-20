@@ -15,35 +15,30 @@ return [...prev, ...current.locationTag];
 } else { return prev }
 }, [])
 const fuzzyLocation = new Fuzzy(location);
-
 const type = datas.reduce((prev, current) => {
 if (current.typetag) {
 return [...prev, ...current.typetag];
 } else { return prev }
 }, [])
 const fuzzyType = new Fuzzy(type);
-
 const animation = datas.reduce((prev, current) => {
 if (current.animationtag) {
 return [...prev, ...current.animationtag];
 } else { return prev }
 }, [])
 const fuzzyAnimation = new Fuzzy(animation);
-
 const amenagement = datas.reduce((prev, current) => {
 if (current.amenagementtag) {
 return [...prev, ...current.amenagementtag];
 } else { return prev }
 }, [])
 const fuzzyAmenagement = new Fuzzy(amenagement);
-
 const ouverture = datas.reduce((prev, current) => {
 if (current.ouverturetag) {
 return [...prev, ...current.ouverturetag];
 } else { return prev }
 }, [])
 const fuzzyOuverture = new Fuzzy(ouverture);
-
 const marque = datas.reduce((prev, current) => {
 if (current.marquetag) {
 return [...prev, ...current.marquetag];

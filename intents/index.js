@@ -12,7 +12,7 @@ findresto : require('./findresto.js')  ,
 lol : require('./lolAnswer.js')  ,
 emo : require('./emoAnswer.js')  ,
 tagresto: require('./tagAnswer.js')  ,
-
+achat: require('./achatAnswer.js')  ,
 avis: require('./avis.js')  ,
 
  } 

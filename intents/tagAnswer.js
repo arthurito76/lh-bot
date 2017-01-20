@@ -6,11 +6,13 @@ const Fuzzy = require('fuzzy-matching')
 const fuzzyLocation = new Fuzzy(datas.reduce((prev, current) => {
 return [...prev, ...current.locationTag];
 }, []));
-const fuzzyNourriture = new Fuzzy(datas.reduce((prev, current) => {
-if (current.nourrituretag) {	
+const nourriture = datas.reduce((prev, current) => {
+if (current.nourrituretag) {    
 return [...prev, ...current.nourrituretag];
 } else { return prev }
-}, []));
+}, [])
+console.log(nourriture)
+const fuzzyNourriture = new Fuzzy(nourriture);
 const fuzzyBoisson = new Fuzzy(datas.reduce((prev, current) => {
 if (current.boissonstag) {	
  return [...prev, ...current.boissonstag];

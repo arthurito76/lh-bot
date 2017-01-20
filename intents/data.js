@@ -12,6 +12,8 @@ const datas = [
 	musiquetag: ['' ],
 	aménagementtag: ['terrasse', 'terrasse chauffée' ],
 	ouverturetag : ['dimanche', 'lundi'],
+	livraisontag : [''],
+	marquetag : [''],
 	avis: 'Un rade bien sympa pour manger sans se saigner le midi, et prendre un apéro sans trop se les meuler grâce à la terrasse chauffée.'
   },
   {
@@ -27,6 +29,8 @@ const datas = [
 	musiquetag: [''],
 	aménagementtag: ['terrasse', 'terrasse chauffée' ],
 	ouverturetag : ['midi', 'dimanche'],
+	livraisontag : [''],
+	marquetag : [''],
 	avis: 'Le meilleur bar du Havre. Un emplacement parfait, une équipe au top et en plus on peut danser jusqu\'à 2h le samedi soir.'
   },
   {
@@ -42,6 +46,8 @@ const datas = [
 	musiquetag: [''],
 	aménagementtag: ['terrasse', 'terrasse chauffée' ],
 	ouverturetag : [''],
+	livraisontag : [''],
+	marquetag : [''],
 	avis: 'Un rade bien décoré pour celles et ceux qui aiment la bière qui fait mal aux boulons.'
   },
   {
@@ -57,6 +63,8 @@ const datas = [
 	musiquetag: [''],
 	aménagementtag: ['terrasse'],
 	ouverturetag : ['midi'],
+	livraisontag : [''],
+	marquetag : [''],
 	avis: 'Un bar à l\'ambiance irish idéal pour se mater un match. A noter une bouffe excellente le midi.'
   },
     {
@@ -72,6 +80,8 @@ const datas = [
 	musiquetag: [''],
 	aménagementtag: ['terrasse'],
 	ouverturetag : ['midi'],
+	livraisontag : [''],
+	marquetag : [''],
 	avis: 'Un lieu agréable pour se prendre un coup au calme. '
   },
     
@@ -88,6 +98,8 @@ const datas = [
 	musiquetag: [''],
 	aménagementtag: ['terrasse'],
 	ouverturetag : ['dimanche'],
+	livraisontag : [''],
+	marquetag : [''],
 	avis: 'LE spot pour se siffler une mousse en mangeant un burger délicieux.'
   },
   
@@ -103,6 +115,8 @@ const datas = [
 	musiquetag: [''],
 	aménagementtag: [''],
 	ouverturetag : ['midi'],
+	livraisontag : [''],
+	marquetag : [''],
     page: 'https://www.facebook.com/La-Petite-Rade-188341881206913',
 	avis: '♪ Ils ont des chapeaux ronds, vive la Bretagne... ♪'
   },
@@ -119,6 +133,8 @@ const datas = [
 	musiquetag: ['électro', 'mainstream', 'dj'],
 	aménagementtag: [''],
 	ouverturetag : ['après 2h'],
+	livraisontag : [''],
+	marquetag : [''],
     page: 'https://www.facebook.com/cosmolh/',
 	avis: 'Si tu veux guincher tu peux y faire un tour'
   },
@@ -135,6 +151,8 @@ const datas = [
 	musiquetag: ['électro', 'mainstream', 'dj'],
 	aménagementtag: [''],
 	ouverturetag : ['après 2h'],
+	livraisontag : [''],
+	marquetag : [''],
     page: 'https://www.facebook.com/pages/Music-Bar/158778094180401',
 	avis: 'Tu es ivre et tu veux pouvoir t\'exprimer après 2h du matin ? Ce lieu est fait pour toi' 
   },
@@ -151,6 +169,8 @@ const datas = [
 	musiquetag: ['électro', 'jazz', 'piano'],
 	aménagementtag: ['terrasse'],
 	ouverturetag : ['midi'],
+	livraisontag : [''],
+	marquetag : [''],
 	page: 'https://www.facebook.com/Le-Chat-Bleu-au-bon-goût-dici-et-dailleurs-294275044012714',
 	avis: 'Le refuge idéal pour les urbains souhaitant trouver un refuge où manger un bout, prende un thé ou une mousse. Tout est bon, tout est fait maison.'
   },
@@ -168,6 +188,8 @@ const datas = [
 	musiquetag: [''],
 	aménagementtag: [''],
 	ouverturetag : ['midi'],
+	livraisontag : [''],
+	marquetag : [''],
 	avis: 'Le Havre a son coffee shop, tu peux y aller les yeux fermés.'
   },
   
@@ -184,6 +206,8 @@ const datas = [
 	musiquetag: [''],
 	aménagementtag: [''],
 	ouverturetag : ['midi'],
+	livraisontag : [''],
+	marquetag : [''],
 	avis: 'Un chouette coffee shop, à la starbuck style.'
   },
   
@@ -200,6 +224,8 @@ const datas = [
 	musiquetag: [''],
 	aménagementtag: ['terrasse'],
 	ouverturetag : [''],
+	livraisontag : [''],
+	marquetag : [''],
 	avis: 'Une cave et un  à vin vraiment sympas avec un petit coin jardin où siroter du bon pinard.'
   },
   
@@ -216,6 +242,8 @@ const datas = [
 	musiquetag: [''],
 	aménagementtag: [''],
 	ouverturetag : ['midi'],
+	livraisontag : [''],
+	marquetag : [''],
 	avis: 'Unun chouette  où siroter du bon pinard.'
   },
   
@@ -225,8 +253,15 @@ const datas = [
 	locationTag : ['Saint-François', 'centre-ville'],
 	image : 'http://arthurfortin.fr/images/cycl.jpg',
     page: 'https://www.facebook.com/pages/Le-Cyclamen/178489788865708',
-	tags: ['bar', 'cocktails', 'cocktails','rhum', 'mojito', 'Caïpirinha'],
-	detailsTag: ['' ],
+	typetag : ['bar' ],
+	boissonstag : ['cocktails', 'rhum', 'mojito', 'Caïpirinha'],
+	nourrituretag : [''],
+	animationtag : [''],
+	musiquetag: [''],
+	aménagementtag: [''],
+	ouverturetag : [''],
+	livraisontag : [''],
+	marquetag : [''],
 	avis: 'Une cave et un  à vin vraiment sympas avec un petit coin jardin où siroter du bon pinard.'
   },
     
@@ -235,8 +270,15 @@ const datas = [
     location: 'saint-vincent',
 	locationTag : ['saint-vincent', 'centre-ville'],
     page: 'https://www.facebook.com/AffichesLaCaveABieresLeHavre',
-	tags: ['bière', 'bière belge',  'exposition', 'artiste'],
-	detailsTag: ['' ],
+	typetag : ['magasin' ],
+	boissonstag : ['bière', 'bière belge'],
+	nourrituretag : [''],
+	animationtag : [''],
+	musiquetag: [''],
+	aménagementtag: [''],
+	ouverturetag : [''],
+	livraisontag : [''],
+	marquetag : [''],
 	avis: 'Le lieu idéal pour acheter de la bonne bière et savourer une expo.'
   },
   
@@ -246,8 +288,15 @@ const datas = [
 	locationTag : ['Grand Hameau', 'ville haute'],
 	image : 'http://arthurfortin.fr/images/natur.jpg',
     page: '',
-	tags: ['bio', 'magasin'],
-	detailsTag: ['' ],
+	typetag : ['magasin' , 'bio'],
+	boissonstag : [''],
+	nourrituretag : [''],
+	animationtag : [''],
+	musiquetag: [''],
+	aménagementtag: [''],
+	ouverturetag : [''],
+	livraisontag : [''],
+	marquetag : [''],
 	avis: 'Un endroit pour acheter bio avec du choix'
   },
   
@@ -257,8 +306,15 @@ const datas = [
 	locationTag : ['avenue coty'],
 	image : 'http://arthurfortin.fr/images/ray.jpg',
     page: 'https://www.facebook.com/Rayons-Verts-1421643768155053',
-	tags: ['bio', 'magasin'],
-	detailsTag: ['' ],
+	typetag : ['magasin' , 'bio'],
+	boissonstag : [''],
+	nourrituretag : [''],
+	animationtag : [''],
+	musiquetag: [''],
+	aménagementtag: [''],
+	ouverturetag : [''],
+	livraisontag : [''],
+	marquetag : [''],
 	avis: 'Un endroit pour acheter bio avec du choix'
   },
   
@@ -268,8 +324,15 @@ const datas = [
 	locationTag : ['centre-ville', 'Notre-Dame'],
 	image : 'http://arthurfortin.fr/images/marchbio.jpg',
     page: 'https://www.facebook.com/lemarchebioLH/',
-	tags: ['bio', 'magasin'],
-	detailsTag: ['' ],
+	typetag : ['magasin' , 'bio'],
+	boissonstag : [''],
+	nourrituretag : [''],
+	animationtag : [''],
+	musiquetag: [''],
+	aménagementtag: [''],
+	ouverturetag : [''],
+	livraisontag : [''],
+	marquetag : [''],
 	avis: 'Un endroit pour acheter bio avec du choix'
   },
   
@@ -279,8 +342,15 @@ const datas = [
 	locationTag : ['Saint-Nicolas', 'Niemeyer', 'centre-ville'],
 	image : 'http://arthurfortin.fr/images/all.jpg',
     page: 'https://www.facebook.com/AllInBagels',
-	tags: ['bagels', 'salade'],
-	detailsTag: ['' ],
+	typetag : ['fast food' ],
+	boissonstag : ['café','cappucino'],
+	nourrituretag : ['bagels', 'salade'],
+	animationtag : [''],
+	musiquetag: [''],
+	aménagementtag: [''],
+	ouverturetag : ['midi'],
+	livraisontag : ['à emporter'],
+	marquetag : [''],
 	avis: 'Ca tombe bien que tu aimes ça car je vais te dire la meilleure adresse de la ville : All in Bagels'
   },
   
@@ -290,8 +360,15 @@ const datas = [
 	locationTag : ['saint-vincent', 'plage'],
 	image : 'http://arthurfortin.fr/images/ist.jpg',
     page: 'https://www.facebook.com/pages/Istanbul-Kebab/251742424858786',
-	tags: ['kebab'],
-	detailsTag: ['ouvert le dimanche', 'dimanche' ],
+	typetag : ['fast food' ],
+	boissonstag : [''],
+	nourrituretag : ['kebab'],
+	animationtag : [''],
+	musiquetag: [''],
+	aménagementtag: [''],
+	ouverturetag : ['midi', 'dimanche'],
+	livraisontag : [''],
+	marquetag : [''],
 	avis: 'Le meilleur kebab de France par kebab-frites.com'
   },
   
@@ -301,8 +378,15 @@ const datas = [
 	locationTag : ['Notre-dame', 'centre-ville'],
 	image : 'http://arthurfortin.fr/images/sush.jpg',
     page: 'https://www.facebook.com/sushimakers',
-	tags: ['sushis', 'japonais'],
-	detailsTag: ['livre à domicile', 'livraison' ],
+	typetag : ['restaurant' ],
+	boissonstag : [''],
+	nourrituretag : ['japonais', 'sushis'],
+	animationtag : [''],
+	musiquetag: [''],
+	aménagementtag: [''],
+	ouverturetag : ['midi'],
+	livraisontag : ['livraison', 'livre'],
+	marquetag : [''],
 	avis: 'Du japonais fait maison. Si si'
   },
   
@@ -312,8 +396,15 @@ const datas = [
 	locationTag : ['centre-ville', 'niemeyer'],
 	image : 'http://arthurfortin.fr/images/grign.jpg',
     page: 'https://www.facebook.com/legrignotLH',
-	tags: ['brasserie', 'fruits de mer', 'entrecôte', 'viande', 'bavette'],
-	detailsTag: ['' ],
+	typetag : ['brasserie' ],
+	boissonstag : [''],
+	nourrituretag : ['fruits de mer', 'fruits de mer', 'entrecôte', 'viande', 'bavette'],
+	animationtag : [''],
+	musiquetag: [''],
+	aménagementtag: [''],
+	ouverturetag : ['midi'],
+	livraisontag : [''],
+	marquetag : [''],
 	avis: 'Une chouette brasserie à la déco typique'
   },
   
@@ -323,8 +414,15 @@ const datas = [
 	locationTag : ['centre-ville', 'saint-vincent'],
 	image : 'http://arthurfortin.fr/images/sai.jpg',
     page: 'https://www.petitfute.com/v16634-le-havre-76600/c650-produits-gourmands-vins/c1108-produits-du-monde/421611-saigon.html',
-	tags: ['chinois', 'nems'],
-	detailsTag: ['à emporter' ],
+		typetag : ['restaurant' ],
+	boissonstag : [''],
+	nourrituretag : ['chinois', 'nems'],
+	animationtag : [''],
+	musiquetag: [''],
+	aménagementtag: [''],
+	ouverturetag : ['midi'],
+	livraisontag : ['emporter'],
+	marquetag : [''],
 	avis: 'LE meilleur chinois de la ville'
   },
   
@@ -333,9 +431,16 @@ const datas = [
     location: 'rue Aristide Briant',
 	locationTag : ['centre-ville', 'saint-vincent'],
 	image : 'http://arthurfortin.fr/images/pal.jpg',
+	typetag : ['restaurant' ],
+	boissonstag : [''],
+	nourrituretag : ['chinois', 'nems'],
+	animationtag : [''],
+	musiquetag: [''],
+	aménagementtag: [''],
+	ouverturetag : ['midi'],
+	livraisontag : ['emporter'],
+	marquetag : [''],
     page: 'http://www.palais-imperial.fr/',
-	tags: ['restaurant', 'chinois', 'nems', 'nouilles'],
-	detailsTag: ['' ],
 	avis: 'J\'ai pas test pour être franc mais il est bien noté'
   },
   
@@ -345,8 +450,15 @@ const datas = [
 	locationTag : ['Niemeyer', 'centre-ville'],
 	image : 'http://arthurfortin.fr/images/ald.jpg',
     page: 'https://www.facebook.com/Al-Dente-Ristorante-196816710348037',
-	tags: ['restaurant', 'resto', 'pizza', 'pizzeria', 'italien', 'pâtes'],
-	detailsTag: ['emporter' ],
+	typetag : ['restaurant', 'pizzeria' ],
+	boissonstag : [''],
+	nourrituretag : ['pizza', 'italien', 'pâtes'],
+	animationtag : [''],
+	musiquetag: [''],
+	aménagementtag: [''],
+	ouverturetag : ['midi'],
+	livraisontag : ['emporter'],
+	marquetag : [''],
 	avis: 'L\'un des meilleurs italiens de la ville, basta !'
   },
   
@@ -356,9 +468,16 @@ const datas = [
 	locationTag : ['plage'],
 	image : 'http://arthurfortin.fr/images/odel.jpg',
     page: 'https://www.facebook.com/odelicesdulibanduhavre',
-	tags: ['libanais', 'mezzé', 'chawerma', 'falafel'],
-	detailsTag: ['à emporter' ],
-	avis: 'L\'un des meilleurs italiens de la ville, basta !'
+	typetag : ['restaurant' ],
+	boissonstag : [''],
+	nourrituretag : ['libanais', 'mezzé', 'chawerma', 'falafel'],
+	animationtag : [''],
+	musiquetag: [''],
+	aménagementtag: [''],
+	ouverturetag : ['midi'],
+	livraisontag : ['emporter'],
+	marquetag : [''],
+	avis: 'Un excellent Libanais'
   },
   
    {
@@ -366,9 +485,16 @@ const datas = [
     location: 'Rue de la Soif',
 	locationTag : ['les halles', 'centre-ville'],
 	image : 'http://arthurfortin.fr/images/fift.jpg',
+	typetag : ['restaurant' ],
+	boissonstag : [''],
+	nourrituretag : ['burger'],
+	animationtag : [''],
+	musiquetag: [''],
+	aménagementtag: [''],
+	ouverturetag : ['midi'],
+	livraisontag : ['emporter'],
+	marquetag : [''],
     page: 'https://www.facebook.com/odelicesdulibanduhavre',
-	tags: ['burger', 'mini-burgers'],
-	detailsTag: [''],
 	avis: 'Un burger comme dans les 50\'s. Sors ton costume champion et fais comme les américains. En plus ils font des apéros avec de vrais assiettes qui te calent. Pas comme ces voleurs qui te mettent 3 trucs à becqueter'
   },
   
@@ -378,8 +504,15 @@ const datas = [
 	locationTag : ['centre-ville', 'saint-françois'],
 	image : 'http://arthurfortin.fr/images/savoi.jpg',
     page: 'https://www.facebook.com/pages/La-Petite-Savoie/156213701077390',
-	tags: ['restaurant’, ‘resto' ,'fromage','raclette'],
-	detailsTag: ['' ],
+	typetag : ['restaurant' ],
+	boissonstag : [''],
+	nourrituretag : ['fromage','raclette'],
+	animationtag : [''],
+	musiquetag: [''],
+	aménagementtag: [''],
+	ouverturetag : ['midi'],
+	livraisontag : [''],
+	marquetag : [''],
 	avis: 'Si tu veux manger du fromage et avoir une haleine de raclette c\'est là que ça se passe'
   },
     
@@ -389,8 +522,15 @@ const datas = [
 	locationTag : ['centre-ville', 'saint-françois'],
 	image : 'http://arthurfortin.fr/images/lyo.jpg',
     page: 'https://www.facebook.com/pages/Le-Lyonnais/206566939421182',
-	tags: ['gastronomie française', 'escargots'],
-	detailsTag: ['' ],
+	typetag : ['restaurant' ],
+	boissonstag : [''],
+	nourrituretag : ['escargots'],
+	animationtag : [''],
+	musiquetag: [''],
+	aménagementtag: [''],
+	ouverturetag : ['midi'],
+	livraisontag : [''],
+	marquetag : [''],
 	avis: 'Un excellent resto pour une bonne gastronomie française au sein d\'un environnement chaleureux'
   },
   
@@ -400,8 +540,15 @@ const datas = [
 	locationTag : ['centre-ville', 'saint-roch'],
 	image : 'http://arthurfortin.fr/images/pail.jpg',
     page: 'https://www.facebook.com/La-Taverne-Paillette-176529912364014',
-	tags: ['restaurant','resto', 'moules', 'fruits de mer', 'choucroute', 'brasserie'],
-	detailsTag: ['ouvert le dimanche', 'dimanche' ],
+	typetag : ['brasserie' ],
+	boissonstag : [''],
+	nourrituretag : ['moules', 'fruits de mer', 'choucroute'],
+	animationtag : [''],
+	musiquetag: [''],
+	aménagementtag: [''],
+	ouverturetag : ['midi', 'dimanche'],
+	livraisontag : [''],
+	marquetag : [''],
 	avis: 'Un classique havrais. Si t\'as pas essayé cette brasserie typique t\'as loupé ta vie '
   },
   
@@ -411,8 +558,15 @@ const datas = [
 	locationTag : ['centre-ville', 'niemeyer'],
 	image : 'http://arthurfortin.fr/images/bur.jpg',
     page: 'https://www.facebook.com/aubureau.lehavre',
-	tags: ['bar','fish\'n ships', 'afterwork', 'bière', 'burger','hamburger', 'restaurant', 'concert'],
-	detailsTag: ['midi', 'ouvert le dimanche','dimanche', 'rock' ],
+	typetag : ['brasserie', 'bar' ],
+	boissonstag : [''],
+	nourrituretag : ['fish\'n ships', 'burger', 'hamburger'],
+	animationtag : ['concert', 'afterwork'],
+	musiquetag: ['rock'],
+	aménagementtag: [''],
+	ouverturetag : ['midi', 'dimanche'],
+	livraisontag : [''],
+	marquetag : [''],
 	avis: 'L\'un des seuls lieux où manger un fish\'n ships. A 3h de l\'Irlande c\'est à noter'
   },
   
@@ -422,8 +576,15 @@ const datas = [
 	locationTag : ['centre-ville', 'plage', 'mer'],
 	image : 'http://arthurfortin.fr/images/ortiz.jpg',
     page: 'https://www.facebook.com/aubureau.lehavre',
-	tags: ['glacier', 'glace', 'glace italienne'],
-	detailsTag: ['ouvert le dimanche' ],
+	typetag : ['glacier'],
+	boissonstag : [''],
+	nourrituretag : ['glace', 'glace italienne'],
+	animationtag : [''],
+	musiquetag: [''],
+	aménagementtag: [''],
+	ouverturetag : [''],
+	livraisontag : [''],
+	marquetag : [''],
 	avis: 'L\'institution glacière au Havre. Idéal pour une glace à la plage'
   },
   
@@ -433,8 +594,15 @@ const datas = [
 	locationTag : ['centre-ville', 'Saint-François'],
 	image : 'http://arthurfortin.fr/images/fleur.jpg',
     page: 'https://www.facebook.com/Fleur-de-Sel-665021900279649',
-	tags: [ 'truffe', 'poisson'],
-	detailsTag: ['gastronomique' ],
+	typetag : ['restaurant', 'gastronomique'],
+	boissonstag : [''],
+	nourrituretag : ['truffe', 'poisson'],
+	animationtag : [''],
+	musiquetag: [''],
+	aménagementtag: [''],
+	ouverturetag : [''],
+	livraisontag : [''],
+	marquetag : [''],
 	avis: 'Raffiné et abordable'
   },
   
@@ -444,9 +612,16 @@ const datas = [
 	locationTag : ['centre-ville', 'avenue foch'],
 	image : 'http://arthurfortin.fr/images/tart.png',
     page: 'https://www.facebook.com/Restaurant-Jean-Luc-Tartarin-146369338737976',
-	tags: [ 'truffe', 'poisson'],
-	detailsTag: ['gastronomique' ],
-	avis: 'L\'un des seuls lieux où manger un fish\'n ships'
+	typetag : ['restaurant', 'gastronomique'],
+	boissonstag : [''],
+	nourrituretag : ['truffe', 'poisson'],
+	animationtag : [''],
+	musiquetag: [''],
+	aménagementtag: [''],
+	ouverturetag : [''],
+	livraisontag : [''],
+	marquetag : [''],
+	avis: 'La crème de la crème'
   },
   
    {
@@ -455,8 +630,15 @@ const datas = [
 	locationTag : ['centre-ville', 'quai Southampton'],
 	image : 'http://arthurfortin.fr/images/odel.jpg',
     page: 'https://www.facebook.com/Saveurs-Ile-Maurice-282357235180859',
-	tags: ['restaurant', 'resto', 'accras', 'samoussas', 'pina colada'],
-	detailsTag: ['' ],
+	typetag : ['restaurant'],
+	boissonstag : ['pina colada'],
+	nourrituretag : ['accras', 'samoussas'],
+	animationtag : [''],
+	musiquetag: [''],
+	aménagementtag: [''],
+	ouverturetag : [''],
+	livraisontag : [''],
+	marquetag : [''],
 	avis: 'Connais pas mais j\'ai entendu de bonnes choses donc...'
   },
   
@@ -466,8 +648,15 @@ const datas = [
 	locationTag : ['centre-ville', 'rues piétonnes'],
 	image : '',
     page: 'https://www.facebook.com/louise.cafe.le.havre',
-	tags: ['glacier','glace', 'café'],
-	detailsTag: ['terrasse' ],
+	typetag : ['glacier'],
+	boissonstag : [''],
+	nourrituretag : ['glace', 'glace italienne'],
+	animationtag : [''],
+	musiquetag: [''],
+	aménagementtag: [''],
+	ouverturetag : [''],
+	livraisontag : [''],
+	marquetag : [''],
 	avis: 'Pour savourer une bonne glace avec un café'
   },
   
@@ -478,8 +667,15 @@ const datas = [
 	locationTag : ['coty'],
 	image : 'http://arthurfortin.fr/images/lebis.jpg',
     page: 'https://www.facebook.com/lebistrotcoty',
-	tags: ['bar', 'bière', 'concert' ],
-	detailsTag: [ 'rock' ],
+	typetag : ['bistrot', 'bar'],
+	boissonstag : ['bière'],
+	nourrituretag : [''],
+	animationtag : ['concert'],
+	musiquetag: ['rock'],
+	aménagementtag: [''],
+	ouverturetag : [''],
+	livraisontag : [''],
+	marquetag : [''],
 	avis: 'Une institution qui mérite d\'être redécouverte par les jeunes générations.'
   },
   
@@ -489,8 +685,15 @@ const datas = [
 	locationTag : ['notre-dame'],
 	image : 'http://arthurfortin.fr/images/merl.jpg',
     page: 'https://www.facebook.com/Le-Merle-Moqueur-383939731755519',
-	tags: ['bar','bière', 'concert' ],
-	detailsTag: ['rock' ],
+	typetag : ['bistrot', 'bar'],
+	boissonstag : ['bière'],
+	nourrituretag : [''],
+	animationtag : ['concert'],
+	musiquetag: ['rock'],
+	aménagementtag: [''],
+	ouverturetag : [''],
+	livraisontag : [''],
+	marquetag : [''],
 	avis: 'Un rade à la bonne franquette comme vous dîtes vous autres les humains'
   },
   
@@ -500,8 +703,15 @@ const datas = [
 	locationTag : ['hôtel-de-ville'],
 	image : 'http://arthurfortin.fr/images/zaz.jpg',
     page: 'https://www.facebook.com/leszazouslehavre',
-	tags: ['bar','bière', 'concert', 'blind test'],
-	detailsTag: ['rock' ],
+	typetag : ['bistrot', 'bar'],
+	boissonstag : ['bière'],
+	nourrituretag : [''],
+	animationtag : ['concert', 'blind test'],
+	musiquetag: ['rock'],
+	aménagementtag: [''],
+	ouverturetag : [''],
+	livraisontag : [''],
+	marquetag : [''],
 	avis: 'bonne ambiance, bon délire et des sessions blind test chaque semaine pour se fendre la poire et écouter des gens mal chanter.'
   },
   
@@ -511,8 +721,15 @@ const datas = [
 	locationTag : ['saint-françois'],
 	image : 'http://arthurfortin.fr/images/zaz.jpg',
     page: 'https://www.facebook.com/wallaby..7',
-	tags: ['bar','cocktail', 'mojito', 'caïpirinha', 'bière' ],
-	detailsTag: [ 'concert' ],
+	typetag : ['bistrot', 'bar'],
+	boissonstag : ['bière', 'mojito'],
+	nourrituretag : [''],
+	animationtag : ['concert'],
+	musiquetag: ['rock'],
+	aménagementtag: [''],
+	ouverturetag : [''],
+	livraisontag : [''],
+	marquetag : [''],
 	avis: 'Un bon rade niché dans Saint-François qui te donne l\'impression de vivre un été permanent'
   },
     
@@ -522,8 +739,15 @@ const datas = [
 	locationTag : ['saint-françois'],
 	image : 'http://arthurfortin.fr/images/quentin.jpg',
     page: 'https://www.facebook.com/lebistrotdequentin',
-	tags: ['bar','restaurant','resto', 'happy hour', 'bistrot', 'burger','hamburger', 'bavette' ],
-	detailsTag: ['terrasse', 'midi'],
+	typetag : ['bar' ],
+	boissonstag : ['bière'],
+	nourrituretag : ['saucisson', 'tapas', 'burger','hamburger'],
+	animationtag : ['happy hours'],
+	musiquetag: [''],
+	aménagementtag: ['terrasse'],
+	ouverturetag : ['midi'],
+	livraisontag : [''],
+	marquetag : [''],
 	avis: 'Un très bon resto le midi et un très bon rade le soir.'
   },
   
@@ -533,8 +757,15 @@ const datas = [
 	locationTag : ['Niemeyer'],
 	image : 'http://arthurfortin.fr/images/bla.jpg',
     page: 'https://www.facebook.com/Black-Café-739396976180251',
-	tags: ['bar','bière', 'fléchettes', 'billard' ],
-	detailsTag: ['ouvert le dimanche' ],
+	typetag : ['bar' ],
+	boissonstag : ['bière'],
+	nourrituretag : ['saucisson', 'tapas'],
+	animationtag : ['billard', 'fléchettes'],
+	musiquetag: [''],
+	aménagementtag: ['terrasse'],
+	ouverturetag : ['midi'],
+	livraisontag : [''],
+	marquetag : [''],
 	avis: 'Le spot idéal pour se faire un billard'
   },
   
@@ -544,145 +775,20 @@ const datas = [
 	locationTag : ['Niemeyer', 'centre-ville'],
 	image : 'http://arthurfortin.fr/images/mac.jpg',
     page: 'https://www.facebook.com/pages/Mac-Daids/115590181861208',
-	tags: ['pub','bar', 'bière', 'guiness', 'billard', 'fléchettes', 'concert' ],
-	detailsTag: ['ouvert le dimanche', 'metal', 'rock' ],
+	typetag : ['bar' ],
+	boissonstag : ['bière'],
+	nourrituretag : ['saucisson', 'tapas'],
+	animationtag : ['billard', 'fléchettes'],
+	musiquetag: [''],
+	aménagementtag: ['terrasse'],
+	ouverturetag : [''],
+	livraisontag : [''],
+	marquetag : ['guinness'],
 	avis: 'LE pub havrais'
   },
     
 
   
- {
-    name: 'LH Store',
-    location: 'Rues piétonnes',
-	locationTag : ['rues piétonnes'],
-	image : 'http://arthurfortin.fr/images/lh.jpg',
-    page: 'https://www.facebook.com/LH-CONCEPT-STORE-226383204081032',
-	tags: ['vêtements', 'homme', 'femme', 'T-shirts', 'sweats', 'polos'  ],
-	detailsTag: ['LH' ],
-	avis: 'LA boutique pour avoir le style façon LH '
-  },
-  
-    {
-    name: 'LOHO',
-    location: 'Niemeyer',
-	locationTag : ['Niemeyer'],
-	image : 'http://arthurfortin.fr/images/loho.jpg',
-    page: 'https://www.facebook.com/lelocalshop.loho',
-	tags: ['vêtements', 'homme', 'femme', 'T-shirts','produits locaux', 'souvenirs','illustrations', 'mugs' ],
-	detailsTag: ['Karsenty', 'Marygribouille' ],
-	avis: 'La boutique consommer local'
-  },
-  
-    {
-    name: 'Docks Vauban',
-    location: 'Vauban',
-	locationTag : ['Vauban'],
-	image : 'http://arthurfortin.fr/images/dock.jpg',
-    page: 'https://www.facebook.com/Docksvauban/',
-	tags: ['vêtements', 'homme', 'femme', 'T-shirts','Carnets de vol', 'Zara','H&M', 'librairie', 'jouets' ],
-	detailsTag: ['ouvert le dimanche' ],
-	avis: 'Un centre commercial bien désigné rempli de franchises'
-  },
-  
-   {
-    name: 'Split',
-    location: 'Vauban',
-	locationTag : ['Vauban'],
-	image : 'http://arthurfortin.fr/images/split.jpg',
-    page: 'https://www.facebook.com/Split-Le-Havre-113149882080660',
-	tags: ['tennis', 'baskets', 'sweat', 'skateur','vêtements', 'femmes','hommes', 'lunettes', 'planches de skate', 'chaussures', 'chemise', 'polo' ],
-	detailsTag: ['carhart', 'nike', 'veja' ],
-	avis: 'Le lieu pour avoir du style'
-  },
-  
-  
-   {
-    name: 'Printemps',
-    location: 'Coty',
-	locationTag : ['Coty'],
-	image : 'http://arthurfortin.fr/images/print.ppg',
-    page: 'https://www.facebook.com/Split-Le-Havre-113149882080660',
-	tags: ['tennis', 'baskets', 'sweat', 'skateur','vêtements', 'femmes','hommes', 'lunettes', 'jean','pantalon','robe','jupe', 'manteau', 'chaussures', 'chemise', 'polo' ],
-	detailsTag: ['lacoste', 'chevignon', 'ralph lauren', 'tommy hilfiger', 'diesel', 'kaporal', 'g-star' ],
-	avis: 'L\'un des premiers Printemps (le magasin, pas la saison ahaha)'
-  },
-  
-  {
-    name: 'Piscine des Docks',
-    location: 'Vauban',
-	locationTag : ['Vauban'],
-	image : 'http://arthurfortin.fr/images/pis.jpg',
-    page: 'https://www.facebook.com/pages/Les-Bains-des-Docks/1417724998465411',
-	tags: ['piscine', 'nager', 'spa', 'massage','sport', 'salle de sport','aquabiking'],
-	detailsTag: ['ouverture le dimanche' ],
-	avis: 'Une piscine qui aura coûté un bras mais qui est vraiment splendide'
-  },
-  
-       {
-    name: 'Vent d\'Ouest',
-    location: 'Saint-Joseph',
-	locationTag : ['saint-joseph'],
-	image : 'http://arthurfortin.fr/images/split.jpg',
-    page: 'https://www.facebook.com/pages/Hôtel-Vent-dOuest/148982211803940',
-	tags: ['hôtel', 'spa', 'petit-déjeuner', 'massage','dormir'],
-	detailsTag: ['' ],
-	avis: 'Un bien chouette hôtel qui propose de quoi se détendre (non pas de prestations sexuelles)'
-  },
-  
-       {
-    name: 'Muséum d\'Histoire Naturelle',
-    location: 'Notre-Dame',
-	locationTag : ['notre-dame'],
-	image : 'http://arthurfortin.fr/images/histnat.jpg',
-    page: 'https://www.facebook.com/pages/Muséum-dhistoire-naturelle-du-Havre/145058868870605',
-	tags: ['visite', 'histoire', 'expositions', 'exposition'],
-	detailsTag: ['' ],
-	avis: 'Si tu n\'as pas visité ce musée avant 50 ans t\'as loupé ta vie'
-  },
-  
-   {
-    name: 'Sirius',
-    location: 'La gare',
-	locationTag : ['gare'],
-	image : 'http://arthurfortin.fr/images/sir.jpg',
-    page: 'https://www.facebook.com/pages/Le-Sirius/656479911083484',
-	tags: ['cinéma', 'blockbusters', 'film', 'film d\'auteur', 'café' ],
-	detailsTag: ['' ],
-	avis: 'Le lieu pour se mater un film bien noté par Télérama'
-  },
-  
-  {
-    name: 'skate park',
-    location: 'La plage',
-	locationTag : ['plage'],
-	image : '',
-    page: '',
-	tags: ['skate', 'roller' ],
-	detailsTag: ['' ],
-	avis: 'ride on !'
-  },
-  
-  	{
-    name: 'Gaumont',
-    location: 'Les docks vaubans',
-	locationTag : ['docks vaubans'],
-	image : 'http://arthurfortin.fr/images/gaum.jpg',
-    page: 'https://www.facebook.com/GaumontDocksVaubanLeHavre',
-	tags: ['cinéma', 'blockbusters', 'film' ],
-	detailsTag: ['' ],
-	avis: 'Le cinéma pour se mater un bon spectable en grand format'
-  },
-  
-    {
-    name: 'Tétris',
-    location: 'fort de tourneville',
-	locationTag : ['tourneville'],
-	image : 'http://arthurfortin.fr/images/tet.jpg',
-    page: 'https://www.facebook.com/louise.cafe.le.havre',
-	tags: ['concert' ],
-	detailsTag: ['rap', 'rock', 'électro' ],
-	avis: 'Le lieu pour un concert'
-  },
  ]
 
 module.exports = datas

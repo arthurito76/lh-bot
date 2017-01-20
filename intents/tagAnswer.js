@@ -74,13 +74,11 @@ const random = array => { return array[Math.floor(Math.random() * array.length)]
 const tagAnswer = (ENTITIES, USER) => { 
 
 if (!ENTITIES.nourritureType.length && !ENTITIES.boissonType.length &&!ENTITIES.typeType.length ) { return Promise.resolve([utils.toText('Que veux-tu boire ou manger exactement ?')])}
-console.log(ENTITIES.boissonType) 
-console.log(ENTITIES.nourritureType) 
+
 
  var goodPlaces = []
 ENTITIES.nourritureType.forEach(tag => {
      const match = fuzzyNourriture.get(tag.raw);
-	 console.log(match)
      if (match.distance > 0.8) {
        goodPlaces = _.filter(datas, place => place.nourrituretag.indexOf(match.value) !== -1)
      }
@@ -91,7 +89,7 @@ ENTITIES.nourritureType.forEach(tag => {
 if (goodPlaces.length && ENTITIES.boissonType.length) {
     ENTITIES.boissonType.forEach(tag => {
        const match = fuzzyBoisson.get(tag.raw);
-	   console.log(match)
+	   console.log('2 entités')
        if (match.distance > 0.8) {
          goodPlaces = _.filter(goodPlaces, place => place.boissonstag.indexOf(match.value) !== -1)
        }
@@ -100,7 +98,7 @@ if (goodPlaces.length && ENTITIES.boissonType.length) {
 
 ENTITIES.boissonType.forEach(tag => {
        const match = fuzzyBoisson.get(tag.raw);
-	   console.log(match)
+	    console.log('1 entités')
        if (match.distance > 0.8) {
          goodPlaces = _.filter(datas, place => place.boissonstag.indexOf(match.value) !== -1)
        }
@@ -108,7 +106,6 @@ ENTITIES.boissonType.forEach(tag => {
 
 }
 
-console.log(goodPlaces)
 
 if (goodPlaces.length && ENTITIES.typeType.length) {
     ENTITIES.typeType.forEach(tag => {
@@ -127,7 +124,7 @@ if (goodPlaces.length && ENTITIES.animationType.length) {
        }
    })
 }
-console.log(goodPlaces)
+
 
 if (goodPlaces.length && ENTITIES.musiqueType.length) {
     ENTITIES.musiqueType.forEach(tag => {
@@ -138,7 +135,6 @@ if (goodPlaces.length && ENTITIES.musiqueType.length) {
    })
 }
 
-console.log(goodPlaces)
 
 if (goodPlaces.length && ENTITIES.amenagementType.length) {
     ENTITIES.amenagementType.forEach(tag => {
@@ -149,7 +145,6 @@ if (goodPlaces.length && ENTITIES.amenagementType.length) {
    })
 }
 
-console.log(goodPlaces)
 
 if (goodPlaces.length && ENTITIES.ouvertureType.length) {
     ENTITIES.ouvertureType.forEach(tag => {
@@ -160,7 +155,7 @@ if (goodPlaces.length && ENTITIES.ouvertureType.length) {
    })
 }
 
-console.log(goodPlaces)
+
 
 if (goodPlaces.length && ENTITIES.locationType.length) {
     ENTITIES.locationType.forEach(tag => {

@@ -48,7 +48,7 @@ const fuzzyMarque = new Fuzzy(marque);
 
 
 const random = array => { return array[Math.floor(Math.random() * array.length)] }
-const tagAnswer = (ENTITIES, USER) => { 
+const achatAnswer = (ENTITIES, USER) => { 
 	 
 if (!ENTITIES.produitType.length) { return Promise.resolve([utils.toText('Que veux-tu acheter exactement ?')])}
 
@@ -132,5 +132,4 @@ USER.locationType = null
 console.log('coucou')
 return Promise.resolve(answer) 
 }
-
 module.exports = achatAnswer

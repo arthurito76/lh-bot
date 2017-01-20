@@ -1,47 +1,112 @@
 const utils = require('./util.js')
 const _ = require('lodash')
 const datas = require('./data.js') 
+const getEntities = require('../getEntities.js')
 const Fuzzy = require('fuzzy-matching')
-const fuzzyLocation = new Fuzzy(datas.reduce((prev, current) => {
+const produit = datas.reduce((prev, current) => {
+if (current.locationTag) {
+return [...prev, ...current.produitstag];
+} else { return prev }
+}, [])
+const fuzzyProduit = new Fuzzy(produit);
+const location = datas.reduce((prev, current) => {
+if (current.locationTag) {
 return [...prev, ...current.locationTag];
-}, []));
-const fuzzyDetail = new Fuzzy(datas.reduce((prev, current) => {
-return [...prev, ...current.detailsTag];
-}, []));
-const fuzzyAchatinfo = new Fuzzy(datas.reduce((prev, current) => {
- return [...prev, ...current.tags];
-}, []));
+} else { return prev }
+}, [])
+const fuzzyLocation = new Fuzzy(location);
+
+const type = datas.reduce((prev, current) => {
+if (current.typetag) {
+return [...prev, ...current.typetag];
+} else { return prev }
+}, [])
+const fuzzyType = new Fuzzy(type);
+
+const animation = datas.reduce((prev, current) => {
+if (current.animationtag) {
+return [...prev, ...current.animationtag];
+} else { return prev }
+}, [])
+const fuzzyAnimation = new Fuzzy(animation);
+
+const amenagement = datas.reduce((prev, current) => {
+if (current.amenagementtag) {
+return [...prev, ...current.amenagementtag];
+} else { return prev }
+}, [])
+const fuzzyAmenagement = new Fuzzy(amenagement);
+
+const ouverture = datas.reduce((prev, current) => {
+if (current.ouverturetag) {
+return [...prev, ...current.ouverturetag];
+} else { return prev }
+}, [])
+const fuzzyOuverture = new Fuzzy(ouverture);
+
+const marque = datas.reduce((prev, current) => {
+if (current.marquetag) {
+return [...prev, ...current.marquetag];
+} else { return prev }
+}, [])
+const fuzzyMarque = new Fuzzy(marque);
+
+
 const random = array => { return array[Math.floor(Math.random() * array.length)] }
-const achatAnswer = (RESTOINFO, SPECIALITIES, CUSTOMLOCATION, DETAIL, ACTIVITEINFO, ACHATINFO, USER) => {
-
+const tagAnswer = (ENTITIES, USER) => { 
 	 
-		if (!ACHATINFO.length) { return Promise.resolve([utils.toText('Précise ce que tu veux acheter ?')])}
+if (!ENTITIES.produitType.length) { return Promise.resolve([utils.toText('Que veux-tu acheter exactement ?')])}
 
-var goodAchat = []
-ACHATINFO.forEach(tag => {
-     const match = fuzzyAchatinfo.get(tag.raw);
+
+ var goodAchats = []
+ENTITIES.produitType.forEach(tag => {
+     const match = fuzzyProduit.get(tag.raw);
      if (match.distance > 0.8) {
-       goodAchat = _.filter(datas, place => place.tags.indexOf(match.value) !== -1)
+       goodAchats = _.filter(datas, place => place.produitstag.indexOf(match.value) !== -1)
      }
  })
- 
- if (goodAchat.length && CUSTOMLOCATION.length) {
-    CUSTOMLOCATION.forEach(tag => {
-       const match = fuzzyLocation.get(tag.raw);
+
+
+if (goodAchats.length && ENTITIES.marqueType.length) {
+    ENTITIES.marqueType.forEach(tag => {
+       const match = fuzzyMarque.get(tag.raw);
        if (match.distance > 0.8) {
-         goodAchat = _.filter(goodAchat, place => place.locationTag.indexOf(match.value) !== -1)
+         goodAchats = _.filter(goodAchats, place => place.marquetag.indexOf(match.value) !== -1)
+       }
+   })
+
+
+
+if (goodAchats.length && ENTITIES.typeType.length) {
+    ENTITIES.typeType.forEach(tag => {
+       const match = fuzzyType.get(tag.raw);
+       if (match.distance > 0.8) {
+         goodAchats = _.filter(goodAchats, place => place.typetag.indexOf(match.value) !== -1)
        }
    })
 }
 
-if (goodAchat.length && DETAIL.length) {
-    DETAIL.forEach(tag => {
-       const match = fuzzyDetail.get(tag.raw);
+
+if (goodAchats.length && ENTITIES.ouvertureType.length) {
+    ENTITIES.ouvertureType.forEach(tag => {
+       const match = fuzzyOuverture.get(tag.raw);
        if (match.distance > 0.8) {
-         goodAchat = _.filter(goodAchat, place => place.detailsTag.indexOf(match.value) !== -1)
+         goodAchats = _.filter(goodAchats, place => place.ouverturetag.indexOf(match.value) !== -1)
        }
    })
 }
+
+
+
+if (goodAchats.length && ENTITIES.locationType.length) {
+    ENTITIES.locationType.forEach(tag => {
+       const match = fuzzyLocation.get(tag.raw);
+       if (match.distance > 0.8) {
+         goodAchats = _.filter(goodAchats, place => place.locationTag.indexOf(match.value) !== -1)
+       }
+   })
+}
+
 
 if (goodAchat.length === 0) {
    const answer = []

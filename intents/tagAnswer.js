@@ -79,17 +79,17 @@ if (!ENTITIES.nourritureType.length && !ENTITIES.boissonType.length &&!ENTITIES.
  var goodPlaces = []
 ENTITIES.nourritureType.forEach(tag => {
      const match = fuzzyNourriture.get(tag.raw);
+	 console.log('la bouffe')
      if (match.distance > 0.8) {
        goodPlaces = _.filter(datas, place => place.nourrituretag.indexOf(match.value) !== -1)
      }
  })
- 
- console.log(goodPlaces) 
+
 
 if (goodPlaces.length && ENTITIES.boissonType.length) {
     ENTITIES.boissonType.forEach(tag => {
        const match = fuzzyBoisson.get(tag.raw);
-	   console.log('2 entités')
+	   console.log('bouffe + boisson')
        if (match.distance > 0.8) {
          goodPlaces = _.filter(goodPlaces, place => place.boissonstag.indexOf(match.value) !== -1)
        }
@@ -98,7 +98,7 @@ if (goodPlaces.length && ENTITIES.boissonType.length) {
 
 ENTITIES.boissonType.forEach(tag => {
        const match = fuzzyBoisson.get(tag.raw);
-	    console.log('1 entités')
+	    console.log('boisson')
        if (match.distance > 0.8) {
          goodPlaces = _.filter(datas, place => place.boissonstag.indexOf(match.value) !== -1)
        }

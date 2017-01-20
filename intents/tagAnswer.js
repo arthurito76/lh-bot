@@ -11,8 +11,7 @@ if (current.nourrituretag) {
 return [...prev, ...current.nourrituretag];
 } else { return prev }
 }, [])
-console.log('----->')
-console.log(nourriture)
+
 const fuzzyNourriture = new Fuzzy(nourriture);
 
 const boisson = datas.reduce((prev, current) => {
@@ -20,6 +19,8 @@ if (current.boissonstag) {
 return [...prev, ...current.boissonstag];
 } else { return prev }
 }, [])
+console.log('----->')
+console.log(boisson)
 const fuzzyBoisson = new Fuzzy(boisson);
 
 const type = datas.reduce((prev, current) => {

@@ -19,8 +19,6 @@ if (current.boissonstag) {
 return [...prev, ...current.boissonstag];
 } else { return prev }
 }, [])
-console.log('----->')
-console.log(boisson)
 const fuzzyBoisson = new Fuzzy(boisson);
 
 const type = datas.reduce((prev, current) => {
@@ -87,6 +85,8 @@ ENTITIES.nourritureType.forEach(tag => {
        goodPlaces = _.filter(datas, place => place.nourrituretag.indexOf(match.value) !== -1)
      }
  })
+ 
+ console.log(goodPlaces) 
 
     ENTITIES.boissonType.forEach(tag => {
        const match = fuzzyBoisson.get(tag.raw);
@@ -116,6 +116,7 @@ if (goodPlaces.length && ENTITIES.animationType.length) {
        }
    })
 }
+console.log(goodPlaces)
 
 if (goodPlaces.length && ENTITIES.musiqueType.length) {
     ENTITIES.musiqueType.forEach(tag => {
@@ -126,6 +127,8 @@ if (goodPlaces.length && ENTITIES.musiqueType.length) {
    })
 }
 
+console.log(goodPlaces)
+
 if (goodPlaces.length && ENTITIES.amenagementType.length) {
     ENTITIES.amenagementType.forEach(tag => {
        const match = fuzzyAmenagement.get(tag.raw);
@@ -134,6 +137,8 @@ if (goodPlaces.length && ENTITIES.amenagementType.length) {
        }
    })
 }
+
+console.log(goodPlaces)
 
 if (goodPlaces.length && ENTITIES.ouvertureType.length) {
     ENTITIES.ouvertureType.forEach(tag => {
@@ -144,6 +149,8 @@ if (goodPlaces.length && ENTITIES.ouvertureType.length) {
    })
 }
 
+console.log(goodPlaces)
+
 if (goodPlaces.length && ENTITIES.locationType.length) {
     ENTITIES.locationType.forEach(tag => {
        const match = fuzzyLocation.get(tag.raw);
@@ -152,6 +159,8 @@ if (goodPlaces.length && ENTITIES.locationType.length) {
        }
    })
 }
+
+console.log(goodPlaces)
 
 if (goodPlaces.length === 0) {
    const answer = []

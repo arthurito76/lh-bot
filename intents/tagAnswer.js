@@ -92,7 +92,7 @@ ENTITIES.nourritureType.forEach(tag => {
        const match = fuzzyBoisson.get(tag.raw);
 	   console.log(match)
        if (match.distance > 0.8) {
-         goodPlaces = _.filter(goodPlaces, place => place.boissonstag.indexOf(match.value) !== -1)
+         goodPlaces = _.filter(datas, place => place.boissonstag.indexOf(match.value) !== -1)
        }
    })
 

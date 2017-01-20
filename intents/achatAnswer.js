@@ -51,7 +51,7 @@ const random = array => { return array[Math.floor(Math.random() * array.length)]
 const achatAnswer = (ENTITIES, USER) => { 
 	 
 if (!ENTITIES.produitType.length) { return Promise.resolve([utils.toText('Que veux-tu acheter exactement ?')])}
-
+console.log(ENTITIES.produitType)
 
  var goodAchats = []
 ENTITIES.produitType.forEach(tag => {

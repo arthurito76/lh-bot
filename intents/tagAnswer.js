@@ -16,7 +16,7 @@ console.log(nourriture)
 const fuzzyNourriture = new Fuzzy(nourriture);
 
 const boisson = datas.reduce((prev, current) => {
-if (current.nourrituretag) {
+if (current.boissonstag) {
 return [...prev, ...current.boissonstag];
 } else { return prev }
 }, [])
@@ -97,8 +97,8 @@ if ( ENTITIES.boissonType.length) {
    })
 }
 
-
 console.log(goodPlaces)
+
 if (goodPlaces.length && ENTITIES.typeType.length) {
     ENTITIES.typeType.forEach(tag => {
        const match = fuzzyType.get(tag.raw);

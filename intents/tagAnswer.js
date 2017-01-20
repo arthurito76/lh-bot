@@ -88,7 +88,17 @@ ENTITIES.nourritureType.forEach(tag => {
  
  console.log(goodPlaces) 
 
+if (goodPlaces.length && ENTITIES.boissonType.length) {
     ENTITIES.boissonType.forEach(tag => {
+       const match = fuzzyBoisson.get(tag.raw);
+	   console.log(match)
+       if (match.distance > 0.8) {
+         goodPlaces = _.filter(goodPlaces, place => place.boissonstag.indexOf(match.value) !== -1)
+       }
+   })
+} else {
+
+ENTITIES.boissonType.forEach(tag => {
        const match = fuzzyBoisson.get(tag.raw);
 	   console.log(match)
        if (match.distance > 0.8) {
@@ -96,6 +106,7 @@ ENTITIES.nourritureType.forEach(tag => {
        }
    })
 
+}
 
 console.log(goodPlaces)
 
@@ -160,7 +171,7 @@ if (goodPlaces.length && ENTITIES.locationType.length) {
    })
 }
 
-console.log(goodPlaces)
+
 
 if (goodPlaces.length === 0) {
    const answer = []

@@ -35,8 +35,8 @@ const fuzzyMusique = new Fuzzy(datas.reduce((prev, current) => {
   } else { return prev }
 }, []));
 const fuzzyAmenagement = new Fuzzy(datas.reduce((prev, current) => {
-	if (current.aménagementtag) {
- return [...prev, ...current.aménagementtag];
+	if (current.amenagementtag) {
+ return [...prev, ...current.amenagementtag];
  } else { return prev }
 }, []));
 const fuzzyOuverture = new Fuzzy(datas.reduce((prev, current) => {
@@ -103,7 +103,7 @@ if (goodPlaces.length && ENTITIES.amenagementType.length) {
     ENTITIES.amenagementType.forEach(tag => {
        const match = fuzzyAmenagement.get(tag.raw);
        if (match.distance > 0.8) {
-         goodPlaces = _.filter(goodPlaces, place => place.aménagementtag.indexOf(match.value) !== -1)
+         goodPlaces = _.filter(goodPlaces, place => place.amenagementtag.indexOf(match.value) !== -1)
        }
    })
 }

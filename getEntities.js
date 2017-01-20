@@ -9,7 +9,7 @@ const getEntities = (res, user) => {
  entities.nourritureType = res.all('nourriture')
  entities.animationType = res.all('animation')
  entities.musiqueType = res.all('musique')
- entities.aménagementType = res.all('amenagement')
+ entities.amenagementType = res.all('amenagement')
  entities.livraisonType = res.all('livraison')
  entities.ouvertureType = res.all('ouverture')
   if (entities.locationType.length > 0) {

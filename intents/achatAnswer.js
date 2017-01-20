@@ -3,12 +3,16 @@ const _ = require('lodash')
 const datas = require('./data.js') 
 const getEntities = require('../getEntities.js')
 const Fuzzy = require('fuzzy-matching')
+
 const produit = datas.reduce((prev, current) => {
 if (current.produitsTag) {
 return [...prev, ...current.produitstag];
 } else { return prev }
 }, [])
+console.log('----->')
+console.log(produit)
 const fuzzyProduit = new Fuzzy(produit);
+
 const location = datas.reduce((prev, current) => {
 if (current.locationTag) {
 return [...prev, ...current.locationTag];

@@ -56,6 +56,7 @@ console.log(ENTITIES.produitType)
  var goodAchats = []
 ENTITIES.produitType.forEach(tag => {
      const match = fuzzyProduit.get(tag.raw);
+	 console.log('la sape')
      if (match.distance > 0.8) {
        goodAchats = _.filter(datas, place => place.produitstag.indexOf(match.value) !== -1)
      }

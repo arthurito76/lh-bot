@@ -5,7 +5,7 @@ const getEntities = require('../getEntities.js')
 const Fuzzy = require('fuzzy-matching')
 
 const produit = datas.reduce((prev, current) => {
-if (current.produitsTag) {
+if (current.produitstag) {
 return [...prev, ...current.produitstag];
 } else { return prev }
 }, [])

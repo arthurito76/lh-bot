@@ -69,7 +69,7 @@ if (goodAchats.length && ENTITIES.marqueType.length) {
          goodAchats = _.filter(goodAchats, place => place.marquetag.indexOf(match.value) !== -1)
        }
    })
-
+}
 
 
 if (goodAchats.length && ENTITIES.typeType.length) {

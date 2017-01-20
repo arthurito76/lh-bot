@@ -7,11 +7,11 @@ const fuzzyLocation = new Fuzzy(datas.reduce((prev, current) => {
 return [...prev, ...current.locationTag];
 }, []));
 const nourriture = datas.reduce((prev, current) => {
-console.log(current.nourrituretag)
 if (current.nourrituretag) {
 return [...prev, ...current.nourrituretag];
 } else { return prev }
 }, [])
+console.log('----->')
 console.log(nourriture)
 const fuzzyNourriture = new Fuzzy(nourriture);
 const fuzzyBoisson = new Fuzzy(datas.reduce((prev, current) => {

@@ -119,6 +119,7 @@ if (goodPlaces.length && ENTITIES.typeType.length) {
 if (goodPlaces.length && ENTITIES.animationType.length) {
     ENTITIES.animationType.forEach(tag => {
        const match = fuzzyAnimation.get(tag.raw);
+	   console.log(match)
        if (match.distance > 0.8) {
          goodPlaces = _.filter(goodPlaces, place => place.animationtag.indexOf(match.value) !== -1)
        }

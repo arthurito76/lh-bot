@@ -192,10 +192,9 @@ for (var i = 0, len = goodPlaces.length; i < len; i++) {
   cards.push({ title, image, buttons })
 }
 answer.push(utils.toCarousel(cards))
-USER.detailType = null
-console.log('coucou achat')
+USER.typeType = null
 USER.locationType = null
-console.log('coucou')
+USER.ouvertureType = null
 return Promise.resolve(answer) 
 }
 

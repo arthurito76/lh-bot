@@ -13,10 +13,23 @@ const getEntities = (res, user) => {
  entities.livraisonType = res.all('livraison')
  entities.ouvertureType = res.all('ouverture')
  entities.marqueType = res.all('marque')
+ 
   if (entities.locationType.length > 0) {
     user.locationType = entities.locationType
   } else if (user.locationType) {
     entities.locationType = user.locationType
+  }
+  
+    if (entities.typeType.length > 0) {
+    user.typeType = entities.typeType
+  } else if (user.typeType) {
+    entities.typeType = user.typeType
+  }
+  
+    if (entities.ouvertureType.length > 0) {
+    user.ouvertureType = entities.ouvertureType
+  } else if (user.ouvertureType) {
+    entities.ouvertureType = user.ouvertureType
   }
   
   return entities

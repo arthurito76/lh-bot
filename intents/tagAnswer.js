@@ -79,6 +79,7 @@ if (!ENTITIES.nourritureType.length && !ENTITIES.boissonType.length &&!ENTITIES.
  var goodPlaces = []
 ENTITIES.nourritureType.forEach(tag => {
      const match = fuzzyNourriture.get(tag.raw);
+	 console.log('le manger')
      if (match.distance > 0.8) {
        goodPlaces = _.filter(datas, place => place.nourrituretag.indexOf(match.value) !== -1)
      }
@@ -173,6 +174,10 @@ answer.push(utils.toText('J\'ai pas ça mon bézot, les lieux de vie ne sont pl�
  answer.push(utils.toText('Non désolé, essaie de reformuler peut-être. Je ne veux pas que tu meurs de soif ou de faim'))	
   answer.push(utils.toText('ouhla t\'es dur avec moi. Réessaie si tu veux mais n\'oublie pas que je ne suis qu\'un petit robot. Pas Bacchus'))	
     answer.push(utils.toText('j\'ai pas ça en stock mais je vais chercher parmi mes connaissances épicuriennes'))	
+  USER.typeType = null
+USER.locationType = null
+console.log('annulation 0')
+USER.ouvertureType = null
   return Promise.resolve([random(answer)])
   }
 
@@ -193,6 +198,7 @@ for (var i = 0, len = goodPlaces.length; i < len; i++) {
 answer.push(utils.toCarousel(cards))
 USER.typeType = null
 USER.locationType = null
+console.log('annulation réponses')
 USER.ouvertureType = null
 return Promise.resolve(answer) 
 }

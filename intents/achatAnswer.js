@@ -55,7 +55,7 @@ const random = array => { return array[Math.floor(Math.random() * array.length)]
 const achatAnswer = (ENTITIES, USER) => { 
 	 
 if (!ENTITIES.produitType.length) { return Promise.resolve([utils.toText('Que veux-tu acheter exactement ?')])}
-console.log(ENTITIES.produitType)
+
 
  var goodAchats = []
 ENTITIES.produitType.forEach(tag => {
@@ -65,7 +65,7 @@ ENTITIES.produitType.forEach(tag => {
        goodAchats = _.filter(datas, place => place.produitstag.indexOf(match.value) !== -1)
      }
  })
-console.log(goodAchats)
+
 
 if (goodAchats.length && ENTITIES.marqueType.length) {
     ENTITIES.marqueType.forEach(tag => {
@@ -107,6 +107,7 @@ if (goodAchats.length && ENTITIES.locationType.length) {
    })
 }
 
+console.log(goodAchats)
 
 if (goodAchat.length === 0) {
    const answer = []

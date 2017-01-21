@@ -18,12 +18,14 @@ const getEntities = (res, user) => {
     user.locationType = entities.locationType
   } else if (user.locationType) {
     entities.locationType = user.locationType
+	console.log(user.locationType)
   }
   
     if (entities.typeType.length > 0) {
     user.typeType = entities.typeType
   } else if (user.typeType) {
     entities.typeType = user.typeType
+	
   }
  
   

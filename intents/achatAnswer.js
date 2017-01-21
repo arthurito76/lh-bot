@@ -57,59 +57,59 @@ const achatAnswer = (ENTITIES, USER) => {
 if (!ENTITIES.produitType.length) { return Promise.resolve([utils.toText('Que veux-tu acheter exactement ?')])}
 
 
- var goodAchatss = []
+ var goodAchats = []
 ENTITIES.produitType.forEach(tag => {
      const match = fuzzyProduit.get(tag.raw);
 	 console.log(match)
      if (match.distance > 0.8) {
-       goodAchatss = _.filter(datas, place => place.produitstag.indexOf(match.value) !== -1)
+       goodAchats = _.filter(datas, place => place.produitstag.indexOf(match.value) !== -1)
      }
  })
 
 
-if (goodAchatss.length && ENTITIES.marqueType.length) {
+if (goodAchats.length && ENTITIES.marqueType.length) {
     ENTITIES.marqueType.forEach(tag => {
        const match = fuzzyMarque.get(tag.raw);
        if (match.distance > 0.8) {
-         goodAchatss = _.filter(goodAchatss, place => place.marquetag.indexOf(match.value) !== -1)
+         goodAchats = _.filter(goodAchats, place => place.marquetag.indexOf(match.value) !== -1)
        }
    })
 }
 
 
-if (goodAchatss.length && ENTITIES.typeType.length) {
+if (goodAchats.length && ENTITIES.typeType.length) {
     ENTITIES.typeType.forEach(tag => {
        const match = fuzzyType.get(tag.raw);
        if (match.distance > 0.8) {
-         goodAchatss = _.filter(goodAchatss, place => place.typetag.indexOf(match.value) !== -1)
+         goodAchats = _.filter(goodAchats, place => place.typetag.indexOf(match.value) !== -1)
        }
    })
 }
 
 
-if (goodAchatss.length && ENTITIES.ouvertureType.length) {
+if (goodAchats.length && ENTITIES.ouvertureType.length) {
     ENTITIES.ouvertureType.forEach(tag => {
        const match = fuzzyOuverture.get(tag.raw);
        if (match.distance > 0.8) {
-         goodAchatss = _.filter(goodAchatss, place => place.ouverturetag.indexOf(match.value) !== -1)
+         goodAchats = _.filter(goodAchats, place => place.ouverturetag.indexOf(match.value) !== -1)
        }
    })
 }
 
 
 
-if (goodAchatss.length && ENTITIES.locationType.length) {
+if (goodAchats.length && ENTITIES.locationType.length) {
     ENTITIES.locationType.forEach(tag => {
        const match = fuzzyLocation.get(tag.raw);
        if (match.distance > 0.8) {
-         goodAchatss = _.filter(goodAchatss, place => place.locationTag.indexOf(match.value) !== -1)
+         goodAchats = _.filter(goodAchats, place => place.locationTag.indexOf(match.value) !== -1)
        }
    })
 }
 
-console.log(goodAchatss)
+console.log(goodAchats)
 
-if (goodAchatss.length === 0) {
+if (goodAchats.length === 0) {
    const answer = []
 answer.push(utils.toText('Je n’ai rien là. L\'activité économique du Havre est difficile tu sais...'))
 answer.push(utils.toText('Je n\'ai rien trouvé là mais ça ne veut pas dire que ça n\'existe pas au Havre!'))	
@@ -122,8 +122,8 @@ answer.push(utils.toText('Je n’ai rien là.Mais n\'oublie pas : Chaque achat s
 answer.push(utils.toText('Yes, j\'ai trouvé quelque chose pour toi : ') )
 const cards = []
 for (var i = 0, len = goodAchats.length; i < len; i++) {  
-  const title = goodAchatss[i].name + ' situé à ' + goodAchatss[i].location
-  const image = goodAchatss[i].image
+  const title = goodAchats[i].name + ' situé à ' + goodAchats[i].location
+  const image = goodAchats[i].image
   const buttons = [
     utils.toButton('Lire mon avis', 'lire mon avis sur ' + goodAchats[i].name, 'imBack'), //bouton 1
 	utils.toButton('page facebook',goodAchats[i].page , 'openUrl'), //bouton 2

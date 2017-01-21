@@ -9,8 +9,6 @@ if (current.produitstag) {
 return [...prev, ...current.produitstag];
 } else { return prev }
 }, [])
-console.log('----->')
-console.log(produit)
 const fuzzyProduit = new Fuzzy(produit);
 
 const location = datas.reduce((prev, current) => {
@@ -60,7 +58,6 @@ if (!ENTITIES.produitType.length) { return Promise.resolve([utils.toText('Que ve
  var goodAchats = []
 ENTITIES.produitType.forEach(tag => {
      const match = fuzzyProduit.get(tag.raw);
-	 console.log(match)
      if (match.distance > 0.8) {
        goodAchats = _.filter(datas, place => place.produitstag.indexOf(match.value) !== -1)
      }
@@ -107,7 +104,6 @@ if (goodAchats.length && ENTITIES.locationType.length) {
    })
 }
 
-console.log(goodAchats)
 
 if (goodAchats.length === 0) {
    const answer = []

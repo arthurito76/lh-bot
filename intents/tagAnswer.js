@@ -77,10 +77,12 @@ if (!ENTITIES.nourritureType.length && !ENTITIES.boissonType.length &&!ENTITIES.
 
 
  var goodPlaces = []
+// JavaScript Document
+
 if (ENTITIES.boissonType.length && ENTITIES.nourritureType.length) {
  ENTITIES.nourritureType.forEach(tag => {
      const match = fuzzyNourriture.get(tag.raw);
-	 console.log('le manger')
+	 console.log('manger et...')
      if (match.distance > 0.8) {
        goodPlaces = _.filter(datas, place => place.nourrituretag.indexOf(match.value) !== -1)
      }
@@ -88,7 +90,7 @@ if (ENTITIES.boissonType.length && ENTITIES.nourritureType.length) {
  
   ENTITIES.boissonType.forEach(tag => {
        const match = fuzzyBoisson.get(tag.raw);
-	  console.log(match)
+	  console.log('...boire!')
        if (match.distance > 0.8) {
          goodPlaces = _.filter(goodPlaces, place => place.boissonstag.indexOf(match.value) !== -1)
        }
@@ -97,7 +99,7 @@ if (ENTITIES.boissonType.length && ENTITIES.nourritureType.length) {
 } else if (!ENTITIES.boissonType.length && ENTITIES.nourritureType.length) {
  ENTITIES.nourritureType.forEach(tag => {
      const match = fuzzyNourriture.get(tag.raw);
-	 console.log('le manger')
+	 console.log('que manger')
      if (match.distance > 0.8) {
        goodPlaces = _.filter(datas, place => place.nourrituretag.indexOf(match.value) !== -1)
      }
@@ -106,14 +108,13 @@ if (ENTITIES.boissonType.length && ENTITIES.nourritureType.length) {
 } else if (ENTITIES.boissonType.length && !ENTITIES.nourritureType.length) {
  ENTITIES.boissonType.forEach(tag => {
      const match = fuzzyBoisson.get(tag.raw);
-	 console.log('le manger')
+	 console.log('que boire')
      if (match.distance > 0.8) {
-       goodPlaces = _.filter(datas, place => place.boissontag.indexOf(match.value) !== -1)
+       goodPlaces = _.filter(datas, place => place.boissonstag.indexOf(match.value) !== -1)
      }
  })
      
 } 
-
 
 if (goodPlaces.length && ENTITIES.typeType.length) {
     ENTITIES.typeType.forEach(tag => {

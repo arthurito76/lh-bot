@@ -77,7 +77,12 @@ if (!ENTITIES.nourritureType.length && !ENTITIES.boissonType.length &&!ENTITIES.
 
 
  var goodPlaces = []
-// JavaScript Document
+
+var ar = [
+['ENTITIES.boissonType.length', 'boissonType', 'fuzzyBoisson', 'boissonstag'],
+['ENTITIES.nourritureType.length', 'nourritureType', 'fuzzyNourriture', 'nourrituretag'],
+['ENTITIES.typeType.length', 'typeType', 'fuzzyType', 'typetag'],
+];
 
 for (var i=0, len=ar.length; i<len; i++) {
     // inner loop applies to sub-arrays

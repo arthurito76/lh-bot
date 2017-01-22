@@ -79,7 +79,7 @@ if (!ENTITIES.nourritureType.length && !ENTITIES.boissonType.length &&!ENTITIES.
  var goodPlaces = []
 
 var ar = [
-[ENTITIES.boissonType.length, ENTITIES.boissonType.forEach, fuzzyBoisson, _.filter(datas, place => place.boissonstag.indexOf(match.value)],
+[ENTITIES.boissonType.length, ENTITIES.boissonType.forEach, fuzzyBoisson, _.filter(datas, place => place.boissonstag.indexOf(match.value))],
 [ENTITIES.nourritureType.length, nourritureType, fuzzyNourriture, nourrituretag],
 [ENTITIES.typeType.length, typeType, fuzzyType, typetag],
 ];

@@ -91,7 +91,7 @@ for (var i=0, len=ar.length; i<len; i++) {
      const match = ar[i][2].get(tag.raw);
 	 console.log('manger et...')
      if (match.distance > 0.8) {
-       goodPlaces =  ar[i][3].indexOf(match.value) !== -1)
+       goodPlaces = _.filter(goodPlaces, place => place. ar[i][3].indexOf(match.value) !== -1)
      }
  })
  

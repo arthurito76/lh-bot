@@ -93,19 +93,20 @@ for (var i=0, len=ar.length; i<len; i++) {
 			
 		ar[0][1] (tag => {
      const match = ar[0][2].get(tag.raw);
-	 console.log('manger et...')
+	 console.log(match)
      if (match.distance > 0.8) {
        goodPlaces = _.filter(datas, place => place. ar[0][3].indexOf(match.value) !== -1)
+	   console.log(goodPlaces)
      }
  })
  
  if ( goodPlaces.length && ar[i][0])
  ar[i][1] (tag => {
        const match = ar[i][2].get(tag.raw);
-	  console.log(match)
+	  
        if (match.distance > 0.8) {
          goodPlaces = _.filter(goodPlaces, place => place. ar[i][3].indexOf(match.value) !== -1)
-		 console.log(goodPlaces)
+		 
        }
    })   		
 		

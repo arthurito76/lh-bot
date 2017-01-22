@@ -79,7 +79,7 @@ if (!ENTITIES.nourritureType.length && !ENTITIES.boissonType.length &&!ENTITIES.
  var goodPlaces = []
 
 var ar = [
-['ENTITIES.boissonType.length', 'ENTITIES.boissonType', 'fuzzyBoisson', 'boissonstag'],
+['ENTITIES.boissonType.length', 'ENTITIES.boissonType.forEach', 'fuzzyBoisson', 'boissonstag'],
 ['ENTITIES.nourritureType.length', 'nourritureType', 'fuzzyNourriture', 'nourrituretag'],
 ['ENTITIES.typeType.length', 'typeType', 'fuzzyType', 'typetag'],
 ];
@@ -88,7 +88,7 @@ for (var i=0, len=ar.length; i<len; i++) {
     // inner loop applies to sub-arrays
     for (var j=0, len2=ar[i].length; j<len2; j++) {
  console.log( ar[i][1] );
-		ar[i][1].forEach(tag => {
+		ar[i][1] (tag => {
      const match = entit.get(tag.raw);
 	 console.log('manger et...')
      if (match.distance > 0.8) {

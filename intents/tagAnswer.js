@@ -88,9 +88,10 @@ for (var i=0, len=ar.length; i<len; i++) {
     // inner loop applies to sub-arrays
     for (var j=0, len2=ar[i].length; j<len2; j++) {
  console.log( ar[i][1] );
-  ENTITIES.ar[1][1].forEach(tag => {
-	  var entit= ar[i][1].get(tag.raw);
-     const match = entit;
+ entit = return (ar[i][1]);
+ console.log(entit)
+		ENTITIES.ar[i][1].forEach(tag => {
+     const match = entit.get(tag.raw);
 	 console.log('manger et...')
      if (match.distance > 0.8) {
        goodPlaces = _.filter(datas, place => place.ar[0] [3].indexOf(match.value) !== -1)

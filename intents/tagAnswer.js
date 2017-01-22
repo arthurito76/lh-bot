@@ -81,7 +81,7 @@ if (!ENTITIES.nourritureType.length && !ENTITIES.boissonType.length &&!ENTITIES.
 var ar = [
 [ENTITIES.boissonType.length, ENTITIES.boissonType.forEach, fuzzyBoisson, 'boissonstag'],
 [ENTITIES.nourritureType.length, ENTITIES.nourritureType.forEach, fuzzyNourriture, 'nourrituretag'],
-[ENTITIES.typeType.length, ENTITIES.typeType.forEach, fuzzyType, typetag],
+[ENTITIES.typeType.length, ENTITIES.typeType.forEach, fuzzyType, 'typetag'],
 ];
 
 for (var i=0, len=ar.length; i<len; i++) {

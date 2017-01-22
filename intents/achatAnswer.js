@@ -52,26 +52,46 @@ const fuzzyMarque = new Fuzzy(marque);
 const random = array => { return array[Math.floor(Math.random() * array.length)] }
 const achatAnswer = (ENTITIES, USER) => { 
 	 
-if (!ENTITIES.produitType.length) { return Promise.resolve([utils.toText('Que veux-tu acheter exactement ?')])}
+if (!ENTITIES.produitType.length && ENTITIES.marqueType.length) { return Promise.resolve([utils.toText('Que veux-tu acheter exactement ?')])}
 
 
  var goodAchats = []
-ENTITIES.produitType.forEach(tag => {
+if (ENTITIES.produitType.length && ENTITIES.marqueType.length) {
+ ENTITIES.produitType.forEach(tag => {
      const match = fuzzyProduit.get(tag.raw);
+	 console.log('Produit et...')
      if (match.distance > 0.8) {
        goodAchats = _.filter(datas, place => place.produitstag.indexOf(match.value) !== -1)
      }
  })
-
-
-if (goodAchats.length && ENTITIES.marqueType.length) {
-    ENTITIES.marqueType.forEach(tag => {
+ 
+  ENTITIES.marqueType.forEach(tag => {
        const match = fuzzyMarque.get(tag.raw);
+	  console.log('...marque!')
        if (match.distance > 0.8) {
          goodAchats = _.filter(goodAchats, place => place.marquetag.indexOf(match.value) !== -1)
        }
-   })
-}
+   })   
+   
+} else if (!ENTITIES.produitType.length && ENTITIES.marqueType.length) {
+ ENTITIES.marqueType.forEach(tag => {
+     const match = fuzzyMarque.get(tag.raw);
+	 console.log('que marque')
+     if (match.distance > 0.8) {
+       goodAchats = _.filter(datas, place => place.marquetag.indexOf(match.value) !== -1)
+     }
+ })
+     
+} else if (ENTITIES.produitType.length && !ENTITIES.marqueType.length) {
+ ENTITIES.produitType.forEach(tag => {
+     const match = fuzzyProduit.get(tag.raw);
+	 console.log('que produit')
+     if (match.distance > 0.8) {
+       goodAchats = _.filter(datas, place => place.produitstag.indexOf(match.value) !== -1)
+     }
+ })
+     
+} 
 
 
 if (goodAchats.length && ENTITIES.typeType.length) {

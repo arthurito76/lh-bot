@@ -37,6 +37,14 @@ console.log(user.typeType)
 	console.log('-->')
 console.log(user.ouvertureType)
   }
+  
+   if (entities.marqueType.length > 0) {
+    user.marqueType = entities.marqueType
+  } else if (user.ouvertureType) {
+    entities.marqueType = user.marqueType
+	console.log('-->')
+console.log(user.marqueType)
+  }
 
   
   return entities

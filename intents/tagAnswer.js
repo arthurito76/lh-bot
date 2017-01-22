@@ -78,20 +78,19 @@ if (!ENTITIES.nourritureType.length && !ENTITIES.boissonType.length &&!ENTITIES.
 
  var goodPlaces = []
 var ar = [
-[ENTITIES.boissonType.length, ENTITIES.boissonType.forEach, fuzzyBoisson, 'boissonstag'],
-[ENTITIES.nourritureType.length, ENTITIES.nourritureType.forEach, fuzzyNourriture, 'nourrituretag'],
-[ENTITIES.typeType.length, ENTITIES.typeType.forEach, fuzzyType, 'typetag'],
+[ENTITIES.boissonType, fuzzyBoisson, 'boissonstag'],
+[ENTITIES.nourritureType, fuzzyNourriture, 'nourrituretag'],
+[ENTITIES.typeType, fuzzyType, 'typetag'],
 ];
 
 for (var i=0, len=ar.length; i<len; i++) {
     // inner loop applies to sub-arrays
     for (var j=0, len2=ar[i].length; j<len2; j++) 
-	
-	if (ar[i][0]){
 	{
-		
-			
-		ar[0][1] (tag => {
+	
+	if (ar[i][0].length){
+	
+		ar[0][1].forEach (tag => {
      const match = ar[0][2].get(tag.raw);
 	 console.log(match)
      if (match.distance > 0.8) {
@@ -99,16 +98,7 @@ for (var i=0, len=ar.length; i<len; i++) {
 	   console.log(goodPlaces)
      }
  })
- 
- if ( goodPlaces.length && ar[i][0])
- ar[i][1] (tag => {
-       const match = ar[i][2].get(tag.raw);
-	  
-       if (match.distance > 0.8) {
-         goodPlaces = _.filter(goodPlaces, place => place. ar[i][3].indexOf(match.value) !== -1)
-		 
-       }
-   })   		
+ 	
 		
 	 }	
     }

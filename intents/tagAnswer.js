@@ -85,7 +85,12 @@ var ar = [
 ['ENTITIES.typeType.length', 'ENTITIES.typeType', 'fuzzyType', 'typetag'],
 ];
 
-for (var i = 0, len = ar[i] [0] ; i < len; i++) { 
+for (var i=0, len=ar.length; i<len; i++) {
+    // inner loop applies to sub-arrays
+    for (var j=0, len2=ar[i].length; j<len2; j++) {
+        // accesses each element of each sub-array in turn
+        console.log( ar[i][j] ); 
+ 
 
 ENTITIES.ar[0] [1].forEach(tag => {
      const match = ar[0] [2].get(tag.raw);
@@ -102,6 +107,7 @@ ENTITIES.ar[0] [1].forEach(tag => {
          goodPlaces = _.filter(goodPlaces, place => place.ar[i] [3].indexOf(match.value) !== -1)
        }
    })   
+   }
 }
 
 

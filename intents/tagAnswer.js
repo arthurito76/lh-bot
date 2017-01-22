@@ -78,9 +78,9 @@ if (!ENTITIES.nourritureType.length && !ENTITIES.boissonType.length &&!ENTITIES.
 
  var goodPlaces = []
 var ar = [
-[ENTITIES.boissonType, fuzzyBoisson, boissonstag],
-[ENTITIES.nourritureType, fuzzyNourriture, nourrituretag],
-[ENTITIES.typeType, fuzzyType, typetag],
+[ENTITIES.boissonType, fuzzyBoisson, 'boissonstag'],
+[ENTITIES.nourritureType, fuzzyNourriture, 'nourrituretag'],
+[ENTITIES.typeType, fuzzyType, 'typetag'],
 ];
 
 for (var i=0, len=ar.length; i<len; i++) {
@@ -98,7 +98,7 @@ for (var i=0, len=ar.length; i<len; i++) {
 	   console.log(goodPlaces)
      }
  })
- 	
+ }	
 		
 	 }	
     }

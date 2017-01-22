@@ -88,6 +88,7 @@ for (var i=0, len=ar.length; i<len; i++) {
     // inner loop applies to sub-arrays
     for (var j=0, len2=ar[i].length; j<len2; j++) {
 		
+			
 		ar[0][1] (tag => {
      const match = ar[0][2].get(tag.raw);
 	 console.log('manger et...')
@@ -96,6 +97,7 @@ for (var i=0, len=ar.length; i<len; i++) {
      }
  })
  
+ if ( goodPlaces.length && ar[i][0])
  ar[i][1] (tag => {
        const match = ar[i][2].get(tag.raw);
 	  console.log('...boire!')

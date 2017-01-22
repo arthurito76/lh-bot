@@ -91,10 +91,10 @@ for (var i=0, len=ar.length; i<len; i++) {
 	if (ar[i][0].length){
 	
 		ar[0][0].forEach (tag => {
-     const match = ar[0][2].get(tag.raw);
+     const match = ar[0][1].get(tag.raw);
 	 console.log(match)
      if (match.distance > 0.8) {
-       goodPlaces = _.filter(datas, place => place. ar[0][3].indexOf(match.value) !== -1)
+       goodPlaces = _.filter(datas, place => place. ar[0][2].indexOf(match.value) !== -1)
 	   console.log(goodPlaces)
      }
  })

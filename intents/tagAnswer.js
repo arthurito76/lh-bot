@@ -85,7 +85,10 @@ var ar = [
 
 for (var i=0, len=ar.length; i<len; i++) {
     // inner loop applies to sub-arrays
-    for (var j=0, len2=ar[i].length; j<len2; j++) {
+    for (var j=0, len2=ar[i].length; j<len2; j++) 
+	
+	if (ar[i][0]){
+	{
 		
 			
 		ar[0][1] (tag => {
@@ -105,7 +108,7 @@ for (var i=0, len=ar.length; i<len; i++) {
        }
    })   		
 		
-		
+	 }	
     }
 }
 

@@ -79,7 +79,7 @@ if (!ENTITIES.nourritureType.length && !ENTITIES.boissonType.length &&!ENTITIES.
  var goodPlaces = []
 
 var ar = [
-[ENTITIES.boissonType.length, ENTITIES.boissonType.forEach, fuzzyBoisson, _.filter(datas, place => place.boissonstag.indexOf(match.value))],
+[ENTITIES.boissonType.length, ENTITIES.boissonType.forEach, const match = fuzzyBoisson.get(tag.raw), _.filter(datas, place => place.boissonstag.indexOf(match.value))],
 [ENTITIES.nourritureType.length, nourritureType, fuzzyNourriture, nourrituretag],
 [ENTITIES.typeType.length, typeType, fuzzyType, typetag],
 ];
@@ -88,7 +88,7 @@ for (var i=0, len=ar.length; i<len; i++) {
     // inner loop applies to sub-arrays
     for (var j=0, len2=ar[i].length; j<len2; j++) {
 		ar[i][1] (tag => {
-     const match = ar[i][2].get(tag.raw);
+     ar[i][2];
 	 console.log('manger et...')
      if (match.distance > 0.8) {
        goodPlaces =  ar[i][3] !== -1

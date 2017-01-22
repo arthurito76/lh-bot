@@ -87,9 +87,9 @@ var ar = [
 for (var i=0, len=ar.length; i<len; i++) {
     // inner loop applies to sub-arrays
     for (var j=0, len2=ar[i].length; j<len2; j++) {
- 
+ console.log( ar[i][j] );
 		
-ENTITIES.ar[0] [1].forEach(tag => {
+ENTITIES.return ar[0] [1].forEach(tag => {
      const match = ar[0] [2].get(tag.raw);
 	 console.log('manger et...')
      if (match.distance > 0.8) {

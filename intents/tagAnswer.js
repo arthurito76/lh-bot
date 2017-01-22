@@ -87,10 +87,11 @@ var ar = [
 for (var i=0, len=ar.length; i<len; i++) {
     // inner loop applies to sub-arrays
     for (var j=0, len2=ar[i].length; j<len2; j++) {
- console.log( ar[i][j] );
+ console.log( ar[i][1] );
+ var entit= ar[i][1].get(tag.raw); 
 		
 ENTITIES.ar[1][1].forEach(tag => {
-     const match = ar[0] [2].get(tag.raw);
+     const match = entit;
 	 console.log('manger et...')
      if (match.distance > 0.8) {
        goodPlaces = _.filter(datas, place => place.ar[0] [3].indexOf(match.value) !== -1)

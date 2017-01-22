@@ -78,7 +78,7 @@ if (!ENTITIES.nourritureType.length && !ENTITIES.boissonType.length &&!ENTITIES.
 
  var goodPlaces = []
 var ar = [
-[ENTITIES.boissonType, fuzzyBoisson, 'boissonstag'],
+[ENTITIES.boissonType, fuzzyBoisson, 'boissons'],
 [ENTITIES.nourritureType, fuzzyNourriture, 'nourrituretag'],
 [ENTITIES.typeType, fuzzyType, 'typetag'],
 ];

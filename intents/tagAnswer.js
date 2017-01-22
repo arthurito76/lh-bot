@@ -97,9 +97,9 @@ for (var i=0, len=ar.length; i<len; i++) {
        goodPlaces = _.filter(datas, place => place. ar[0][2].indexOf(match.value) !== -1)
 	   console.log(goodPlaces)
      }
- })
- }	
-		
+ })	
+ 
+ 
 	 }	
     }
 }

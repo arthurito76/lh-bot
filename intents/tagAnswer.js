@@ -87,19 +87,20 @@ var ar = [
 for (var i=0, len=ar.length; i<len; i++) {
     // inner loop applies to sub-arrays
     for (var j=0, len2=ar[i].length; j<len2; j++) {
-		ar[i][1] (tag => {
-     const match = ar[i][2].get(tag.raw);
+		
+		ar[0][1] (tag => {
+     const match = ar[0][2].get(tag.raw);
 	 console.log('manger et...')
      if (match.distance > 0.8) {
-       goodPlaces = _.filter(goodPlaces, place => place. ar[i][3].indexOf(match.value) !== -1)
+       goodPlaces = _.filter(goodPlaces, place => place. ar[0][3].indexOf(match.value) !== -1)
      }
  })
  
-  ENTITIES.ar[i] [1].forEach(tag => {
-       const match = ar[i] [2].get(tag.raw);
+ ar[i][1] (tag => {
+       const match = ar[i][2].get(tag.raw);
 	  console.log('...boire!')
        if (match.distance > 0.8) {
-         goodPlaces = _.filter(goodPlaces, place => place.ar[i] [3].indexOf(match.value) !== -1)
+         goodPlaces = _.filter(goodPlaces, place => place. ar[i][3].indexOf(match.value) !== -1)
        }
    })   		
 		

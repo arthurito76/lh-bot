@@ -82,7 +82,6 @@ if (!ENTITIES.nourritureType.length && !ENTITIES.boissonType.length &&!ENTITIES.
 if (ENTITIES.boissonType.length && ENTITIES.nourritureType.length) {
  ENTITIES.nourritureType.forEach(tag => {
      const match = fuzzyNourriture.get(tag.raw);
-	 console.log('manger et...')
      if (match.distance > 0.8) {
        goodPlaces = _.filter(datas, place => place.nourrituretag.indexOf(match.value) !== -1)
      }
@@ -107,12 +106,11 @@ if (ENTITIES.boissonType.length && ENTITIES.nourritureType.length) {
  })
      
 } else if (ENTITIES.boissonType.length && !ENTITIES.nourritureType.length) {
+	console.log(ENTITIES.boissonType.length)
  ENTITIES.boissonType.forEach(tag => {
      const match = fuzzyBoisson.get(tag.raw);
-    console.log(match)
      if (match.distance > 0.8) {
        goodPlaces = _.filter(datas, place => place.boissonstag.indexOf(match.value) !== -1)
-	   console.log(goodPlaces)
      }
  })
      

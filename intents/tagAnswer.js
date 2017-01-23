@@ -93,7 +93,7 @@ if (ENTITIES.boissonType.length && ENTITIES.nourritureType.length) {
 	  
        if (match.distance > 0.8) {
          goodPlaces = _.filter(goodPlaces, place => place.boissonstag.indexOf(match.value) !== -1)
-		 console.log(goodPlaces)
+		 
        }
    })   
    
@@ -112,6 +112,7 @@ if (ENTITIES.boissonType.length && ENTITIES.nourritureType.length) {
 
      if (match.distance > 0.8) {
        goodPlaces = _.filter(datas, place => place.boissonstag.indexOf(match.value) !== -1)
+	   console.log(goodPlaces)
      }
  })
      

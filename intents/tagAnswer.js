@@ -90,16 +90,17 @@ if (ENTITIES.boissonType.length && ENTITIES.nourritureType.length) {
  
   ENTITIES.boissonType.forEach(tag => {
        const match = fuzzyBoisson.get(tag.raw);
-	  console.log('...boire!')
+	  
        if (match.distance > 0.8) {
          goodPlaces = _.filter(goodPlaces, place => place.boissonstag.indexOf(match.value) !== -1)
+		 console.log(goodPlaces)
        }
    })   
    
 } else if (!ENTITIES.boissonType.length && ENTITIES.nourritureType.length) {
  ENTITIES.nourritureType.forEach(tag => {
      const match = fuzzyNourriture.get(tag.raw);
-	 console.log('que manger')
+	
      if (match.distance > 0.8) {
        goodPlaces = _.filter(datas, place => place.nourrituretag.indexOf(match.value) !== -1)
      }
@@ -108,7 +109,7 @@ if (ENTITIES.boissonType.length && ENTITIES.nourritureType.length) {
 } else if (ENTITIES.boissonType.length && !ENTITIES.nourritureType.length) {
  ENTITIES.boissonType.forEach(tag => {
      const match = fuzzyBoisson.get(tag.raw);
-	 console.log('que boire')
+
      if (match.distance > 0.8) {
        goodPlaces = _.filter(datas, place => place.boissonstag.indexOf(match.value) !== -1)
      }
@@ -119,7 +120,7 @@ if (ENTITIES.boissonType.length && ENTITIES.nourritureType.length) {
 if (goodPlaces.length && ENTITIES.typeType.length) {
     ENTITIES.typeType.forEach(tag => {
        const match = fuzzyType.get(tag.raw);
-	   console.log('le type')
+	
        if (match.distance > 0.8) {
          goodPlaces = _.filter(goodPlaces, place => place.typetag.indexOf(match.value) !== -1)
        }
@@ -129,7 +130,7 @@ if (goodPlaces.length && ENTITIES.typeType.length) {
 if (goodPlaces.length && ENTITIES.animationType.length) {
     ENTITIES.animationType.forEach(tag => {
        const match = fuzzyAnimation.get(tag.raw);
-	   console.log('l\'animation')
+	 
        if (match.distance > 0.8) {
          goodPlaces = _.filter(goodPlaces, place => place.animationtag.indexOf(match.value) !== -1)
        }
@@ -140,7 +141,7 @@ if (goodPlaces.length && ENTITIES.animationType.length) {
 if (goodPlaces.length && ENTITIES.musiqueType.length) {
     ENTITIES.musiqueType.forEach(tag => {
        const match = fuzzyMusique.get(tag.raw);
-	   console.log('la zik')
+
        if (match.distance > 0.8) {
          goodPlaces = _.filter(goodPlaces, place => place.musiquetag.indexOf(match.value) !== -1)
        }
@@ -151,7 +152,7 @@ if (goodPlaces.length && ENTITIES.musiqueType.length) {
 if (goodPlaces.length && ENTITIES.amenagementType.length) {
     ENTITIES.amenagementType.forEach(tag => {
        const match = fuzzyAmenagement.get(tag.raw);
-	   console.log('aménagement')
+	
        if (match.distance > 0.8) {
          goodPlaces = _.filter(goodPlaces, place => place.amenagementtag.indexOf(match.value) !== -1)
        }
@@ -162,7 +163,7 @@ if (goodPlaces.length && ENTITIES.amenagementType.length) {
 if (goodPlaces.length && ENTITIES.ouvertureType.length) {
     ENTITIES.ouvertureType.forEach(tag => {
        const match = fuzzyOuverture.get(tag.raw);
-	   console.log(ouverture)
+	
        if (match.distance > 0.8) {
          goodPlaces = _.filter(goodPlaces, place => place.ouverturetag.indexOf(match.value) !== -1)
        }
@@ -174,7 +175,7 @@ if (goodPlaces.length && ENTITIES.ouvertureType.length) {
 if (goodPlaces.length && ENTITIES.locationType.length) {
     ENTITIES.locationType.forEach(tag => {
        const match = fuzzyLocation.get(tag.raw);
-	   console.log('location')
+
        if (match.distance > 0.8) {
          goodPlaces = _.filter(goodPlaces, place => place.locationTag.indexOf(match.value) !== -1)
        }

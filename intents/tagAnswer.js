@@ -183,7 +183,7 @@ if (goodPlaces.length && ENTITIES.locationType.length) {
    })
 }
 
-
+console.log(goodPlaces.length)
 
 if (goodPlaces.length === 0) {
    const answer = []

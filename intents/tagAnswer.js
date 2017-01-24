@@ -84,6 +84,8 @@ if (match.distance > 0.8) {
 return goodPlaces;
 }
 
+console.log(getGoodPlaces(ar[0][2], match) )
+
 var ar = [
 [ENTITIES.boissonType, fuzzyBoisson, 'boissonstag'],
 [ENTITIES.nourritureType, fuzzyNourriture, 'nourrituretag'],

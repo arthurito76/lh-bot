@@ -77,9 +77,10 @@ if (!ENTITIES.nourritureType.length && !ENTITIES.boissonType.length &&!ENTITIES.
 
 
 var goodPlaces = []
-
-function getGoodPlaces(tagType) {
+function getGoodPlaces(tagType, match) {
+if (match.distance > 0.8) {
     goodPlaces = _.filter(datas, place => tagType.indexOf(match.value) !== -1)
+  }
 return goodPlaces;
 }
 
@@ -99,10 +100,8 @@ for (var i=0, len=ar.length; i<len; i++) {
 		ar[0][0].forEach (tag => {
      const match = ar[0][1].get(tag.raw);
 	 console.log(match)
-	 if (match.distance > 0.8) {
-       goodPlaces = getGoodPlaces(ar[0][2]);
+       goodPlaces = getGoodPlaces(ar[0][2], match);
 	   console.log(goodPlaces)
-	   }
  })	
  
  

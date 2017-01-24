@@ -76,10 +76,14 @@ const tagAnswer = (ENTITIES, USER) => {
 if (!ENTITIES.nourritureType.length && !ENTITIES.boissonType.length &&!ENTITIES.typeType.length ) { return Promise.resolve([utils.toText('Que veux-tu boire ou manger exactement ?')])}
 
 
- var goodPlaces = []
+var goodPlaces = []
 // JavaScript Document
+var tabBoisson = ENTITIES.boissonType
+var tabNourriture = ENTITIES.nourritureType
 
 if (ENTITIES.boissonType.length && ENTITIES.nourritureType.length) {
+for (var i = 0, len = tabNourriture.length; i < len; i++) {	
+	if (i==0) {
  ENTITIES.nourritureType.forEach(tag => {
      const match = fuzzyNourriture.get(tag.raw);
      if (match.distance > 0.8) {
@@ -87,6 +91,17 @@ if (ENTITIES.boissonType.length && ENTITIES.nourritureType.length) {
      }
  })
  
+ } // fin du IF (i=0)
+ else { ENTITIES.nourritureType.forEach(tag => {
+     const match = fuzzyNourriture.get(tag.raw);
+     if (match.distance > 0.8) {
+       goodPlaces = _.filter(goodPlaces, place => place.nourrituretag.indexOf(match.value) !== -1)
+     }
+ })
+ 
+ } // fin du ELSE
+ } // fin du FOR
+  
   ENTITIES.boissonType.forEach(tag => {
        const match = fuzzyBoisson.get(tag.raw);
 	  
@@ -96,7 +111,8 @@ if (ENTITIES.boissonType.length && ENTITIES.nourritureType.length) {
        }
    })   
    
-} else if (!ENTITIES.boissonType.length && ENTITIES.nourritureType.length) {
+} // fin du IF
+ else if (!ENTITIES.boissonType.length && ENTITIES.nourritureType.length) {
  ENTITIES.nourritureType.forEach(tag => {
      const match = fuzzyNourriture.get(tag.raw);
 	

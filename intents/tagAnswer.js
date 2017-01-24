@@ -81,6 +81,7 @@ var goodPlaces = []
 var tabBoisson = ENTITIES.boissonType
 var tabNourriture = ENTITIES.nourritureType
 
+// <------- Début option 1------->
 if (ENTITIES.boissonType.length && ENTITIES.nourritureType.length) {
 for (var i = 0, len = tabNourriture.length; i < len; i++) {	
 	if (i==0) {
@@ -112,20 +113,35 @@ for (var i = 0, len = tabNourriture.length; i < len; i++) {
    })   
    
 } // fin du IF
+
+// <------- Début option 2------->
+
  else if (!ENTITIES.boissonType.length && ENTITIES.nourritureType.length) {
+	 
+ for (var i = 0, len = tabNourriture.length; i < len; i++) {	
+	if (i==0) {
  ENTITIES.nourritureType.forEach(tag => {
      const match = fuzzyNourriture.get(tag.raw);
-	
      if (match.distance > 0.8) {
        goodPlaces = _.filter(datas, place => place.nourrituretag.indexOf(match.value) !== -1)
      }
  })
+ 
+ } // fin du IF (i=0)
+ else { ENTITIES.nourritureType.forEach(tag => {
+     const match = fuzzyNourriture.get(tag.raw);
+     if (match.distance > 0.8) {
+       goodPlaces = _.filter(goodPlaces, place => place.nourrituretag.indexOf(match.value) !== -1)
+     }
+ })
+ 
+ } // fin du ELSE
+ } // fin du FOR
+ 
+ // <------- Début option 3------->
    
-	  
-} else if (ENTITIES.boissonType.length && !ENTITIES.nourritureType.length) {
-var tab = ENTITIES.boissonType
-console.log(tab[0])
-for (var i = 0, len = tab.length; i < len; i++) {  
+   } else if (ENTITIES.boissonType.length && !ENTITIES.nourritureType.length) {
+for (var i = 0, len = tabBoisson.length; i < len; i++) {	    
 if (i==0) {
  ENTITIES.boissonType.forEach(tag => {
      const match = fuzzyBoisson.get(tag.raw);

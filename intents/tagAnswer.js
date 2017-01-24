@@ -107,7 +107,7 @@ if (ENTITIES.boissonType.length && ENTITIES.nourritureType.length) {
    
 	  
 } else if (ENTITIES.boissonType.length && !ENTITIES.nourritureType.length) {
-console.log(ENTITIES.nourritureType)
+console.log(ENTITIES.boissonType)
 
  ENTITIES.boissonType.forEach(tag => {
      const match = fuzzyBoisson.get(tag.raw);

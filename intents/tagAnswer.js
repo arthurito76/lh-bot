@@ -107,11 +107,9 @@ if (ENTITIES.boissonType.length && ENTITIES.nourritureType.length) {
    
 	  
 } else if (ENTITIES.boissonType.length && !ENTITIES.nourritureType.length) {
-console.log(ENTITIES.boissonType)
 var tab = ENTITIES.boissonType
-console.log(tab[0])
 for (var i = 0, len = tab.length; i < len; i++) {  
-for (i==0) {
+for (tab[0]) {
  ENTITIES.boissonType.forEach(tag => {
      const match = fuzzyBoisson.get(tag.raw);
      if (match.distance > 0.8) {

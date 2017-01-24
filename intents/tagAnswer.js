@@ -110,12 +110,23 @@ if (ENTITIES.boissonType.length && ENTITIES.nourritureType.length) {
 console.log(ENTITIES.boissonType)
 var tab = ENTITIES.boissonType
 console.log(tab[0])
+for (var i = 0, len = tab.length; i < len; i++) {  
+for (i==0) {
  ENTITIES.boissonType.forEach(tag => {
      const match = fuzzyBoisson.get(tag.raw);
      if (match.distance > 0.8) {
        goodPlaces = _.filter(datas, place => place.boissonstag.indexOf(match.value) !== -1)
      }
  })
+ 
+ } else {
+ ENTITIES.boissonType.forEach(tag => {
+     const match = fuzzyBoisson.get(tag.raw);
+     if (match.distance > 0.8) {
+       goodPlaces = _.filter(goodPlaces, place => place.boissonstag.indexOf(match.value) !== -1)
+     }
+ })
+ } 
      
 } 
 

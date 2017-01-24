@@ -105,7 +105,7 @@ if (ENTITIES.boissonType.length && ENTITIES.nourritureType.length) {
      }
  })
      
-console.log(ENTITIES.boissonType[0] )	 
+console.log(ENTITIES.boissonType.name )	 
 } else if (ENTITIES.boissonType.length && !ENTITIES.nourritureType.length) {
 
  ENTITIES.boissonType.forEach(tag => {

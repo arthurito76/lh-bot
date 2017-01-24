@@ -126,7 +126,7 @@ if (i==0) {
      }
  })
  } 
-     
+   }   
 } 
 
 if (goodPlaces.length && ENTITIES.typeType.length) {

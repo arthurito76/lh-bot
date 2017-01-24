@@ -97,6 +97,7 @@ if (ENTITIES.boissonType.length && ENTITIES.nourritureType.length) {
    })   
    
 } else if (!ENTITIES.boissonType.length && ENTITIES.nourritureType.length) {
+	console.log(ENTITIES.nourritureType)
  ENTITIES.nourritureType.forEach(tag => {
      const match = fuzzyNourriture.get(tag.raw);
 	
@@ -104,9 +105,7 @@ if (ENTITIES.boissonType.length && ENTITIES.nourritureType.length) {
        goodPlaces = _.filter(datas, place => place.nourrituretag.indexOf(match.value) !== -1)
      }
  })
-
-var tab =   ENTITIES.nourritureType
-console.log (tab[0])    
+   
 	  
 } else if (ENTITIES.boissonType.length && !ENTITIES.nourritureType.length) {
 

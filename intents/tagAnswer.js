@@ -97,7 +97,6 @@ if (ENTITIES.boissonType.length && ENTITIES.nourritureType.length) {
    })   
    
 } else if (!ENTITIES.boissonType.length && ENTITIES.nourritureType.length) {
-	console.log(ENTITIES.nourritureType)
  ENTITIES.nourritureType.forEach(tag => {
      const match = fuzzyNourriture.get(tag.raw);
 	
@@ -108,6 +107,7 @@ if (ENTITIES.boissonType.length && ENTITIES.nourritureType.length) {
    
 	  
 } else if (ENTITIES.boissonType.length && !ENTITIES.nourritureType.length) {
+console.log(ENTITIES.nourritureType)
 
  ENTITIES.boissonType.forEach(tag => {
      const match = fuzzyBoisson.get(tag.raw);

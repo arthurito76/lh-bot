@@ -105,8 +105,9 @@ if (ENTITIES.boissonType.length && ENTITIES.nourritureType.length) {
      }
  })
      
+console.log(ENTITIES.boissonType[0] )	 
 } else if (ENTITIES.boissonType.length && !ENTITIES.nourritureType.length) {
-	console.log(ENTITIES.boissonType)
+
  ENTITIES.boissonType.forEach(tag => {
      const match = fuzzyBoisson.get(tag.raw);
      if (match.distance > 0.8) {
@@ -181,7 +182,6 @@ if (goodPlaces.length && ENTITIES.locationType.length) {
    })
 }
 
-console.log(goodPlaces.length)
 
 if (goodPlaces.length === 0) {
    const answer = []

@@ -91,8 +91,6 @@ var ar = [
 [ENTITIES.typeType, fuzzyType, 'typetag'],
 ];
 
-console.log(getGoodPlaces(ar[0][2], match) )
-
 for (var i=0, len=ar.length; i<len; i++) {
     // inner loop applies to sub-arrays
     for (var j=0, len2=ar[i].length; j<len2; j++) 
@@ -104,7 +102,7 @@ for (var i=0, len=ar.length; i<len; i++) {
      const match = ar[0][1].get(tag.raw);
 	 console.log(match)
        goodPlaces = getGoodPlaces(ar[0][2], match);
-	   console.log(goodPlaces)
+	   console.log(getGoodPlaces(ar[0][2], match))
  })	
  
  

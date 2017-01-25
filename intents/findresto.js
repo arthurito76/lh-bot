@@ -11,7 +11,7 @@ return [...prev, ...current.name];
 const fuzzyResto = new Fuzzy(resto);
 
 const findresto = (ENTITIES, USER) => {
-console.log(ENTITIES.restaurantName) 
+console.log(ENTITIES.restaurantName.length) 
  if (!ENTITIES.restaurantName.length) { return Promise.resolve([utils.toText('De quel lieux parles-tu ?')])}
  
  ENTITIES.restaurantName.forEach(tag => {

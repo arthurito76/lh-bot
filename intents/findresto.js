@@ -10,7 +10,7 @@ return [...prev, ...current.name];
 }, [])
 const fuzzyResto = new Fuzzy(resto);
 
-const findresto = (RESTOINFO) => { 
+const tagAnswer = (ENTITIES, USER) => {
 console.log('1') 
  if (!ENTITIES.restaurantName) { return Promise.resolve([utils.toText('De quel lieux parles-tu ?')])}
  

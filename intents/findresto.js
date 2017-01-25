@@ -12,7 +12,7 @@ const fuzzyResto = new Fuzzy(resto);
 
 const findresto = (ENTITIES, USER) => {
 console.log('1') 
- if (!ENTITIES.nourritureType) { return Promise.resolve([utils.toText('De quel lieux parles-tu ?')])}
+ if (!ENTITIES.nourritureType.length) { return Promise.resolve([utils.toText('De quel lieux parles-tu ?')])}
  
  ENTITIES.nourritureType.forEach(tag => {
    const match = fuzzyResto.get(tag.raw);
@@ -22,7 +22,7 @@ console.log('1')
 		}
 		})
 		console.log ('3')
-if (!object) { return Promise.resolve([utils.toText('Je ne trouve pas ce resto mais je vais me renseigner')])}
+if (object.length==0) { return Promise.resolve([utils.toText('Je ne trouve pas ce resto mais je vais me renseigner')])}
 const answer = []
   answer.push(utils.toText('localisation ' + object.location))
   answer.push(utils.toText('sa page facebook: ' + object.page))

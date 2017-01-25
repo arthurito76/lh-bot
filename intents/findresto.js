@@ -1,7 +1,8 @@
 const _ = require('lodash') 
 const Fuzzy = require('fuzzy-matching') 
 const utils = require('./util.js')
-const datas = require('./data.js') 
+const datas = require('./data.js')
+const getEntities = require('../getEntities.js')
 const resto = datas.reduce((prev, current) => {
 if (current.name) {
 return [...prev, ...current.name];
@@ -11,7 +12,7 @@ const fuzzyResto = new Fuzzy(resto);
 
 const findresto = (ENTITIES, USER) => {
 console.log('1') 
- if (!RESTOINFO) { return Promise.resolve([utils.toText('De quel lieux parles-tu ?')])}
+ if (!ENTITIES.nourritureType) { return Promise.resolve([utils.toText('De quel lieux parles-tu ?')])}
  
  ENTITIES.nourritureType.forEach(tag => {
    const match = fuzzyResto.get(tag.raw);

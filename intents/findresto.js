@@ -14,6 +14,8 @@ const findresto = (ENTITIES, USER) => {
 console.log(ENTITIES.restaurantName) 
  if (!ENTITIES.restaurantName) { return Promise.resolve([utils.toText('De quel lieux parles-tu ?')])}
  
+ var object = []
+ 
  ENTITIES.restaurantName.forEach(tag => {
    const match = fuzzyResto.get(tag.raw);
    console.log ('2')

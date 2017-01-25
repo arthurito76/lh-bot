@@ -2,10 +2,10 @@ const _ = require('lodash')
 const fuzzy = require('clj-fuzzy') 
 const utils = require('./util.js')
 const datas = require('./data.js') 
-const findresto = (RESTOINFO) => { 
-console.log(datas) 
- if (!RESTOINFO) { return Promise.resolve([utils.toText('De quel lieux parles-tu ?')])}
-const object =_.find(datas, data => fuzzy.metrics.jaro_winkler(data.name, RESTOINFO.raw) > 0.8)
+const getEntities = require('../getEntities.js')
+const findresto = (ENTITIES, USER) => { 
+ if (!ENTITIES.restaurantName) { return Promise.resolve([utils.toText('De quel lieux parles-tu ?')])}
+const object =_.find(datas, data => fuzzy.metrics.jaro_winkler(data.name, ENTITIES.restaurantName.raw) > 0.8)
 console.log(object)
 if (!object) { return Promise.resolve([utils.toText('Je ne trouve pas ce resto mais je vais me renseigner')])}
 const answer = []

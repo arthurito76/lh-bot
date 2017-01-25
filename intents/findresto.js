@@ -12,9 +12,9 @@ const fuzzyResto = new Fuzzy(resto);
 
 const findresto = (ENTITIES, USER) => {
 console.log('1') 
- if (!ENTITIES.nourritureType.length) { return Promise.resolve([utils.toText('De quel lieux parles-tu ?')])}
+ if (!ENTITIES.restaurantName.length) { return Promise.resolve([utils.toText('De quel lieux parles-tu ?')])}
  
- ENTITIES.nourritureType.forEach(tag => {
+ ENTITIES.restaurantName.forEach(tag => {
    const match = fuzzyResto.get(tag.raw);
    console.log ('2')
        if (match.distance > 0.8) {

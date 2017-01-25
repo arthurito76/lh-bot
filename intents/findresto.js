@@ -1,5 +1,5 @@
 const _ = require('lodash') 
-const fuzzy = require('fuzzy-matching') 
+const Fuzzy = require('fuzzy-matching') 
 const utils = require('./util.js')
 const datas = require('./data.js') 
 const resto = datas.reduce((prev, current) => {

@@ -18,7 +18,7 @@ console.log('1')
    const match = fuzzyResto.get(tag.raw);
    console.log ('2')
        if (match.distance > 0.8) {
-        const object = _.filter(datas, place => place.name.indexOf(match.value) !== -1)
+        object = _.filter(datas, place => place.name.indexOf(match.value) !== -1)
 		}
 		})
 		console.log ('3')

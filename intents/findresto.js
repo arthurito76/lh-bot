@@ -20,7 +20,7 @@ console.log('1')
        if (match.distance > 0.8) {
         const object = _.filter(datas, place => place.name.indexOf(match.value) !== -1)
 		}
-		}
+		})
 		console.log ('3')
 if (!object) { return Promise.resolve([utils.toText('Je ne trouve pas ce resto mais je vais me renseigner')])}
 const answer = []

@@ -1,31 +1,92 @@
 const utils = require('./util.js')
 const _ = require('lodash')
 const datas = require('./data.js') 
+const getEntities = require('../getEntities.js')
 const Fuzzy = require('fuzzy-matching')
-const fuzzyLocation = new Fuzzy(datas.reduce((prev, current) => {
-return [...prev, ...current.locationTag];
-}, []));
-const fuzzyDetail = new Fuzzy(datas.reduce((prev, current) => {
-return [...prev, ...current.detailsTag];
-}, []));
-const fuzzyActivite = new Fuzzy(datas.reduce((prev, current) => {
- return [...prev, ...current.tags];
-}, []));
-const random = array => { return array[Math.floor(Math.random() * array.length)] }
-const activiteAnswer = (RESTOINFO, SPECIALITIES, CUSTOMLOCATION, DETAIL, ACTIVITEINFO, ACHATINFO) => {
-	 
-		if (!ACTIVITEINFO.length) { return Promise.resolve([utils.toText('Que veux-tu faire exactement ?')])}
 
-var goodActivite = []
-ACTIVITEINFO.forEach(tag => {
-     const match = fuzzyActivite.get(tag.raw);
+const produit = datas.reduce((prev, current) => {
+if (current.produitstag) {
+return [...prev, ...current.produitstag];
+} else { return prev }
+}, [])
+const fuzzyProduit = new Fuzzy(produit);
+
+const location = datas.reduce((prev, current) => {
+if (current.locationTag) {
+return [...prev, ...current.locationTag];
+} else { return prev }
+}, [])
+const fuzzyLocation = new Fuzzy(location);
+const type = datas.reduce((prev, current) => {
+if (current.typetag) {
+return [...prev, ...current.typetag];
+} else { return prev }
+}, [])
+const fuzzyType = new Fuzzy(type);
+const animation = datas.reduce((prev, current) => {
+if (current.animationtag) {
+return [...prev, ...current.animationtag];
+} else { return prev }
+}, [])
+const fuzzyAnimation = new Fuzzy(animation);
+const amenagement = datas.reduce((prev, current) => {
+if (current.amenagementtag) {
+return [...prev, ...current.amenagementtag];
+} else { return prev }
+}, [])
+const fuzzyAmenagement = new Fuzzy(amenagement);
+const ouverture = datas.reduce((prev, current) => {
+if (current.ouverturetag) {
+return [...prev, ...current.ouverturetag];
+} else { return prev }
+}, [])
+const fuzzyOuverture = new Fuzzy(ouverture);
+const marque = datas.reduce((prev, current) => {
+if (current.marquetag) {
+return [...prev, ...current.marquetag];
+} else { return prev }
+}, [])
+const fuzzyMarque = new Fuzzy(marque);
+const random = array => { return array[Math.floor(Math.random() * array.length)] }
+const activiteAnswer = (ENTITIES, USER) => { 
+	 
+if (!ENTITIES.animationType.length) { return Promise.resolve([utils.toText('Que veux-tu faire exactement ?')])}
+
+
+ var goodActivite = []
+
+ ENTITIES.animationType.forEach(tag => {
+     const match = fuzzyAnimation.get(tag.raw);
      if (match.distance > 0.8) {
-       goodActivite = _.filter(datas, place => place.tags.indexOf(match.value) !== -1)
+       goodActivite = _.filter(datas, place => place.animationtag.indexOf(match.value) !== -1)
      }
  })
- 
- if (goodActivite.length && CUSTOMLOCATION.length) {
-    CUSTOMLOCATION.forEach(tag => {
+  
+
+
+if (goodActivite.length && ENTITIES.typeType.length) {
+    ENTITIES.typeType.forEach(tag => {
+       const match = fuzzyType.get(tag.raw);
+       if (match.distance > 0.8) {
+         goodActivite = _.filter(goodActivite, place => place.typetag.indexOf(match.value) !== -1)
+       }
+   })
+}
+
+
+if (goodActivite.length && ENTITIES.ouvertureType.length) {
+    ENTITIES.ouvertureType.forEach(tag => {
+       const match = fuzzyOuverture.get(tag.raw);
+       if (match.distance > 0.8) {
+         goodActivite = _.filter(goodActivite, place => place.ouverturetag.indexOf(match.value) !== -1)
+       }
+   })
+}
+
+
+
+if (goodActivite.length && ENTITIES.locationType.length) {
+    ENTITIES.locationType.forEach(tag => {
        const match = fuzzyLocation.get(tag.raw);
        if (match.distance > 0.8) {
          goodActivite = _.filter(goodActivite, place => place.locationTag.indexOf(match.value) !== -1)
@@ -33,15 +94,6 @@ ACTIVITEINFO.forEach(tag => {
    })
 }
 
-if (goodActivite.length && DETAIL.length) {
-    DETAIL.forEach(tag => {
-       const match = fuzzyDetail.get(tag.raw);
-	   
-       if (match.distance > 0.8) {
-         goodActivite = _.filter(goodActivite, place => place.detailsTag.indexOf(match.value) !== -1)
-       }
-   })
-}
 
 if (goodActivite.length === 0) {
    const answer = []
@@ -67,8 +119,10 @@ for (var i = 0, len = goodActivite.length; i < len; i++) {
   cards.push({ title, image, buttons })
 }
 answer.push(utils.toCarousel(cards))
-
+USER.detailType = null
+console.log('coucou achat')
+USER.locationType = null
+console.log('coucou')
 return Promise.resolve(answer) 
 }
-
 module.exports = activiteAnswer

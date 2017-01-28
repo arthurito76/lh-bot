@@ -52,7 +52,7 @@ const fuzzyMarque = new Fuzzy(marque);
 const random = array => { return array[Math.floor(Math.random() * array.length)] }
 const achatAnswer = (ENTITIES, USER) => { 
 	 
-if (!ENTITIES.produitType.length && ENTITIES.marqueType.length) { return Promise.resolve([utils.toText('Que veux-tu acheter exactement ?')])}
+if (!ENTITIES.produitType.length && !ENTITIES.marqueType.length) { return Promise.resolve([utils.toText('Que veux-tu acheter exactement ?')])}
 
 
  var goodAchats = []

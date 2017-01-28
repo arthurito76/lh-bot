@@ -94,8 +94,7 @@ for (var i = 0, len = tabProduit.length; i < len; i++) {
 } // fin du IF
 
 // <------- Début option 2 (que des marques)------->
-   
-} else if (!ENTITIES.produitType.length && ENTITIES.marqueType.length) {
+    else if (!ENTITIES.produitType.length && ENTITIES.marqueType.length) {
 	for (var i = 0, len = tabMarque.length; i < len; i++) {	
 	if (i==0) {
  ENTITIES.marqueType.forEach(tag => {

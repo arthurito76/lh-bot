@@ -56,14 +56,32 @@ if (!ENTITIES.produitType.length && !ENTITIES.marqueType.length) { return Promis
 
 
  var goodAchats = []
+ 
+ // mes variables
+var tabProduit = ENTITIES.produitType
+var tabMarque = ENTITIES.marqueType
+ 
+ // <------- Début option 1 (marques + produits)------->
+ 
 if (ENTITIES.produitType.length && ENTITIES.marqueType.length) {
+for (var i = 0, len = tabProduit.length; i < len; i++) {	
+	if (i==0) {	
  ENTITIES.produitType.forEach(tag => {
      const match = fuzzyProduit.get(tag.raw);
-	 console.log('Produit et...')
      if (match.distance > 0.8) {
        goodAchats = _.filter(datas, place => place.produitstag.indexOf(match.value) !== -1)
      }
  })
+ } // fin du IF (i=0)
+ else { ENTITIES.produitType.forEach(tag => {
+     const match = fuzzyProduit.get(tag.raw);
+     if (match.distance > 0.8) {
+       goodAchats = _.filter(goodAchats, place => place.produitstag.indexOf(match.value) !== -1)
+     }
+ })
+ 
+ } // fin du ELSE
+ } // fin du FOR
  
   ENTITIES.marqueType.forEach(tag => {
        const match = fuzzyMarque.get(tag.raw);
@@ -72,8 +90,14 @@ if (ENTITIES.produitType.length && ENTITIES.marqueType.length) {
          goodAchats = _.filter(goodAchats, place => place.marquetag.indexOf(match.value) !== -1)
        }
    })   
+      
+} // fin du IF
+
+// <------- Début option 2 (que des marques)------->
    
 } else if (!ENTITIES.produitType.length && ENTITIES.marqueType.length) {
+	for (var i = 0, len = tabMarque.length; i < len; i++) {	
+	if (i==0) {
  ENTITIES.marqueType.forEach(tag => {
      const match = fuzzyMarque.get(tag.raw);
 	 console.log('que marque')
@@ -81,8 +105,23 @@ if (ENTITIES.produitType.length && ENTITIES.marqueType.length) {
        goodAchats = _.filter(datas, place => place.marquetag.indexOf(match.value) !== -1)
      }
  })
+ 
+ } // fin du IF (i=0)
+ else { ENTITIES.marqueType.forEach(tag => {
+     const match = fuzzyMarque.get(tag.raw);
+     if (match.distance > 0.8) {
+       goodAchats = _.filter(goodAchats, place => place.marquetag.indexOf(match.value) !== -1)
+     }
+ })
+ 
+ } // fin du ELSE
+ } // fin du FOR
+ 
+ // <------- Début option 3 (que des produits)------->
      
 } else if (ENTITIES.produitType.length && !ENTITIES.marqueType.length) {
+	for (var i = 0, len = tabProduit.length; i < len; i++) {	
+	if (i==0) {
  ENTITIES.produitType.forEach(tag => {
      const match = fuzzyProduit.get(tag.raw);
 	 console.log('que produit')
@@ -90,6 +129,16 @@ if (ENTITIES.produitType.length && ENTITIES.marqueType.length) {
        goodAchats = _.filter(datas, place => place.produitstag.indexOf(match.value) !== -1)
      }
  })
+} // fin du IF (i=0)
+ else { ENTITIES.produitType.forEach(tag => {
+     const match = fuzzyProduit.get(tag.raw);
+     if (match.distance > 0.8) {
+       goodAchats = _.filter(goodAchats, place => place.produitstag.indexOf(match.value) !== -1)
+     }
+ })
+ 
+ } // fin du ELSE
+ } // fin du FOR 
      
 } 
 

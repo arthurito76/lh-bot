@@ -77,11 +77,11 @@ if (!ENTITIES.nourritureType.length && !ENTITIES.boissonType.length &&!ENTITIES.
 
 
 var goodPlaces = []
-// JavaScript Document
+// mes variables
 var tabBoisson = ENTITIES.boissonType
 var tabNourriture = ENTITIES.nourritureType
 
-// <------- Début option 1------->
+// <------- Début option 1 (boisson + nourriture)------->
 if (ENTITIES.boissonType.length && ENTITIES.nourritureType.length) {
 for (var i = 0, len = tabNourriture.length; i < len; i++) {	
 	if (i==0) {
@@ -114,7 +114,7 @@ for (var i = 0, len = tabNourriture.length; i < len; i++) {
    
 } // fin du IF
 
-// <------- Début option 2------->
+// <------- Début option 2 (que nourriture)------->
 
  else if (!ENTITIES.boissonType.length && ENTITIES.nourritureType.length) {
 	 
@@ -138,7 +138,7 @@ for (var i = 0, len = tabNourriture.length; i < len; i++) {
  } // fin du ELSE
  } // fin du FOR
  
- // <------- Début option 3------->
+ // <------- Début option 3 (que des boissons)------->
    
    } else if (ENTITIES.boissonType.length && !ENTITIES.nourritureType.length) {
 for (var i = 0, len = tabBoisson.length; i < len; i++) {	    

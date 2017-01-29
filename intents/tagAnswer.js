@@ -75,7 +75,6 @@ const tagAnswer = (ENTITIES, USER) => {
 
 if (!ENTITIES.nourritureType.length && !ENTITIES.boissonType.length &&!ENTITIES.typeType.length ) { return Promise.resolve([utils.toText('Que veux-tu boire ou manger exactement ?')])}
 
-
 var goodPlaces = []
 // mes variables
 var tabBoisson = ENTITIES.boissonType
@@ -161,12 +160,14 @@ if (i==0) {
    }   
 } 
 
-if (goodPlaces.length && ENTITIES.typeType.length) {
+// <------- Début option 4 (le type de lieu)------->
+
+if (!ENTITIES.boissonType.length && !ENTITIES.nourritureType.length && ENTITIES.typeType.length) {
     ENTITIES.typeType.forEach(tag => {
        const match = fuzzyType.get(tag.raw);
 	
        if (match.distance > 0.8) {
-         goodPlaces = _.filter(goodPlaces, place => place.typetag.indexOf(match.value) !== -1)
+         goodPlaces = _.filter(datas, place => place.typetag.indexOf(match.value) !== -1)
        }
    })
 }

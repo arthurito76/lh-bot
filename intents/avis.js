@@ -14,14 +14,16 @@ const fuzzyName = new Fuzzy(name);
  const avis = (ENTITIES, USER) => {
 	 console.log(ENTITIES.restaurantName)
   
-  if (!ENTITIES.restaurantName) { return Promise.resolve([utils.toText('xxxxxxxxx')])}
+  if (!ENTITIES.restaurantName.length) { return Promise.resolve([utils.toText('xxxxxxxxx')])}
 
   goodPlaces = []
-  const match = fuzzyName.get(ENTITIES.restaurantName.raw);
+  ENTITIES.restaurantName.forEach(tag => {
+  const match = fuzzyName.get(tag.raw);
   console.log(match)
   if (match.distance > 0.5) {
     goodPlaces = _.filter(datas, place => place.name === match.value)
   }
+  })
  
    
    var answer = []

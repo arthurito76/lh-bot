@@ -18,7 +18,7 @@ const fuzzyName = new Fuzzy(name);
 
   goodPlaces = []
   
-  const match = fuzzyName.get(ENTITIES.restaurantName.raw);
+  const match = fuzzyName.get((ENTITIES.restaurantName).raw);
   console.log(match)
   if (match.distance > 0.5) {
     goodPlaces = _.filter(datas, place => place.name === match.value)

@@ -5,6 +5,7 @@ const datas = require('./data.js')
 const getEntities = require('../getEntities.js')
 const findresto = (ENTITIES, USER) => { 
  if (!ENTITIES.restaurantName) { return Promise.resolve([utils.toText('De quel lieux parles-tu ?')])}
+ console.log(ENTITIES.restaurantName)
 const object =_.find(datas, data => fuzzy.metrics.jaro_winkler(data.name, ENTITIES.restaurantName.raw) > 0.7)
 console.log(object)
 if (!object) { return Promise.resolve([utils.toText('Je ne trouve pas ce resto mais je vais me renseigner')])}

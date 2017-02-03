@@ -1,19 +1,23 @@
  const utils = require('./util.js')
 const _ = require('lodash')
 const datas = require('./data.js') 
+const getEntities = require('../getEntities.js')
 const Fuzzy = require('fuzzy-matching')
-const fuzzyNames = new Fuzzy(datas.reduce((prev, current) => {
-return [...prev, current.name];
-}, []));
+const name = datas.reduce((prev, current) => {
+if (current.name) {
+return [...prev, ...current.name];
+} else { return prev }
+}, [])
 
- const avis = (RESTOINFO) => {
+const fuzzyName = new Fuzzy(name);
+
+ const avis = (ENTITIES, USER) => {
   
   
-  if (!RESTOINFO) { return Promise.resolve([utils.toText('xxxxxxxxx')])}
+  if (!ENTITIES.restaurantName.length) { return Promise.resolve([utils.toText('xxxxxxxxx')])}
 
   goodPlaces = []
-  const match = fuzzyNames.get(RESTOINFO.raw);
-  console.log(match)
+  const match = fuzzyNames.get(tag.raw);
   if (match.distance > 0.5) {
     goodPlaces = _.filter(datas, place => place.name === match.value)
   }

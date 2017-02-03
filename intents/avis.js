@@ -12,9 +12,9 @@ return [...prev, ...current.name];
 const fuzzyName = new Fuzzy(name);
 
  const avis = (ENTITIES, USER) => {
+	 console.log(ENTITIES.restaurantName)
   
-  
-  if (!ENTITIES.restaurantName.length) { return Promise.resolve([utils.toText('xxxxxxxxx')])}
+  if (!ENTITIES.restaurantName) { return Promise.resolve([utils.toText('xxxxxxxxx')])}
 
   goodPlaces = []
   const match = fuzzyNames.get(tag.raw);

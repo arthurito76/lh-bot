@@ -2,6 +2,7 @@ const _ = require('lodash')
 const fuzzy = require('clj-fuzzy') 
 const utils = require('./util.js')
 const datas = require('./data.js') 
+console.log(datas)
 const getEntities = require('../getEntities.js')
 const findresto = (ENTITIES, USER) => { 
  console.log(ENTITIES.restaurantName)

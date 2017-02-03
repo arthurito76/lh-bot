@@ -4,8 +4,8 @@ const utils = require('./util.js')
 const datas = require('./data.js') 
 const getEntities = require('../getEntities.js')
 const findresto = (ENTITIES, USER) => { 
- if (!ENTITIES.restaurantName) { return Promise.resolve([utils.toText('De quel lieux parles-tu ?')])}
  console.log(ENTITIES.restaurantName)
+ if (!ENTITIES.restaurantName) { return Promise.resolve([utils.toText('De quel lieux parles-tu ?')])}
   console.log('yo')
 const object =_.find(datas, data => fuzzy.metrics.jaro_winkler(data.name, ENTITIES.restaurantName.raw) > 0.7)
 console.log(object)

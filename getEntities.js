@@ -18,32 +18,26 @@ const getEntities = (res, user) => {
     user.locationType = entities.locationType
   } else if (user.locationType) {
     entities.locationType = user.locationType
-	console.log('-->')
-console.log(user.locationType)
 	}
   
     if (entities.typeType.length > 0) {
     user.typeType = entities.typeType
   } else if (user.typeType) {
     entities.typeType = user.typeType
-	console.log('-->')
-console.log(user.typeType)
 	}
    
     if (entities.ouvertureType.length > 0) {
     user.ouvertureType = entities.ouvertureType
   } else if (user.ouvertureType) {
     entities.ouvertureType = user.ouvertureType
-	console.log('-->')
-console.log(user.ouvertureType)
+
   }
   
    if (entities.marqueType.length > 0) {
     user.marqueType = entities.marqueType
   } else if (user.ouvertureType) {
     entities.marqueType = user.marqueType
-	console.log('-->')
-console.log(user.marqueType)
+	
   }
 
   

@@ -2,8 +2,8 @@ const _ = require('lodash')
 const fuzzy = require('clj-fuzzy') 
 const utils = require('./util.js')
 const datas = require('./data.js') 
-console.log(datas)
 const getEntities = require('../getEntities.js')
+console.log(getEntities)
 const findresto = (ENTITIES, USER) => { 
  console.log(ENTITIES.restaurantName)
  if (!ENTITIES.restaurantName) { return Promise.resolve([utils.toText('De quel lieux parles-tu ?')])}

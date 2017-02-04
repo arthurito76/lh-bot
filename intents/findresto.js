@@ -9,7 +9,7 @@ return [...prev, current.name];
 
 const findresto = (ENTITIES, USER) => {
 	 
-  if (!ENTITIES.restaurantName) { return Promise.resolve([utils.toText('xxxxxxxxx')])}
+  if (!ENTITIES.restaurantName) { return Promise.resolve([utils.toText('Ce lieu ne me dit rien...')])}
 
 var RESTOINFO = ENTITIES.restaurantName
 console.log(RESTOINFO)

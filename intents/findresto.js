@@ -7,7 +7,7 @@ const fuzzyName = new Fuzzy(datas.reduce((prev, current) => {
 return [...prev, current.name];
 }, []));
 
-const avis = (ENTITIES, USER) => {
+const findresto = (ENTITIES, USER) => {
 	 
   if (!ENTITIES.restaurantName) { return Promise.resolve([utils.toText('xxxxxxxxx')])}
 

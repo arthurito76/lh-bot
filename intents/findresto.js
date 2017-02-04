@@ -24,9 +24,9 @@ console.log(RESTOINFO)
   
 const answer = []
  goodPlaces.forEach(place => {
-  answer.push(utils.toText('localisation ' + object.location))
-  answer.push(utils.toText('sa page facebook: ' + object.page))
-  answer.push(utils.toText('avis : ' + object.avis))
+  answer.push(utils.toText('localisation ' + place.location))
+  answer.push(utils.toText('sa page facebook: ' + place.page))
+  answer.push(utils.toText('avis : ' +  place.avis))
    })
    return Promise.resolve(answer)
   

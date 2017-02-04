@@ -1,19 +1,34 @@
-const _ = require('lodash') 
-const fuzzy = require('clj-fuzzy') 
+const _ = require('lodash')  
 const utils = require('./util.js')
 const datas = require('./data.js') 
-const findresto = (RESTOINFO) => {  
- if (!RESTOINFO) { return Promise.resolve([utils.toText('De quel lieux parles-tu ?')])}
-const object =_.find(datas, data => fuzzy.metrics.jaro_winkler(data.name, RESTOINFO.raw) > 0.8)
-if (!object) { return Promise.resolve([utils.toText('Je ne trouve pas ce resto mais je vais me renseigner')])}
+const getEntities = require('../getEntities.js')
+const Fuzzy = require('fuzzy-matching')
+const fuzzyName = new Fuzzy(datas.reduce((prev, current) => {
+return [...prev, current.name];
+}, []));
+
+const avis = (ENTITIES, USER) => {
+	 
+  if (!ENTITIES.restaurantName) { return Promise.resolve([utils.toText('xxxxxxxxx')])}
+
+var RESTOINFO = ENTITIES.restaurantName
+console.log(RESTOINFO)
+
+  goodPlaces = []
+  
+  const match = fuzzyName.get(RESTOINFO.raw);
+  console.log(match)
+  if (match.distance > 0.5) {
+    goodPlaces = _.filter(datas, place => place.name === match.value)
+  }
+  
 const answer = []
+ goodPlaces.forEach(place => {
   answer.push(utils.toText('localisation ' + object.location))
   answer.push(utils.toText('sa page facebook: ' + object.page))
   answer.push(utils.toText('avis : ' + object.avis))
+   })
    return Promise.resolve(answer)
-
-const goodPlaces = _.filter(datas, place => place.tags.indexOf(RESTOINFO.raw) !== -1)
-return Promise.resolve(goodPlaces)
-   
+  
 } 
 module.exports = findresto

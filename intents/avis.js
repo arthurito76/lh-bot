@@ -3,14 +3,9 @@ const _ = require('lodash')
 const datas = require('./data.js') 
 const getEntities = require('../getEntities.js')
 const Fuzzy = require('fuzzy-matching')
-const name = datas.reduce((prev, current) => {
-if (current.name) {
-console.log(current.name)	
-return [...prev, ...current.name];
-} else { return prev }
-}, [])
-
-const fuzzyName = new Fuzzy(name);
+const fuzzyName = new Fuzzy(datas.reduce((prev, current) => {
+return [...prev, current.name];
+}, []));
 
  const avis = (ENTITIES, USER) => {
   

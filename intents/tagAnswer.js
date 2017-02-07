@@ -215,6 +215,16 @@ if (goodPlaces.length && ENTITIES.ouvertureType.length) {
    })
 }
 
+if (goodPlaces.length && ENTITIES.livraisonType.length) {
+    ENTITIES.livraisonType.forEach(tag => {
+       const match = fuzzyLivraison.get(tag.raw);
+	
+       if (match.distance > 0.8) {
+         goodPlaces = _.filter(goodPlaces, place => place.livraisontag.indexOf(match.value) !== -1)
+       }
+   })
+}
+
 
 
 if (goodPlaces.length && ENTITIES.locationType.length) {

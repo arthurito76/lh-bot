@@ -507,6 +507,63 @@ animationtag : [''],
 	avis: 'Se faire livrer un burger et des frites maisons ? C\'est possible. Et c’est bon'
   },
   
+    {
+    name: 'Home Made ',
+    location: 'Coty',
+	locationTag : ['centre-ville', 'coty'],
+	image : 'http://arthurfortin.fr/images/home.jpg',
+    page: 'https://www.facebook.com/homemadelehavre',
+	typetag : ['restaurant'],
+	boissonstag : ['bubble tea'],
+	nourrituretag : ['banh mi', 'sandwichs', 'vietnamien', 'hamburger'],
+	produitstag : [''],
+animationtag : [''],
+	musiquetag: [''],
+	amenagementtag: [''],
+	ouverturetag : ['midi'],
+	livraisontag : ['emporter'],
+	marquetag : [''],
+	avis: 'Un air de New York à LH pour s\'empiffrer de petits sandwichs vietnamiens et de bubble tea'
+  },
+  
+  {
+    name: 'Punjab ',
+    location: 'Saint-François',
+	locationTag : ['centre-ville', 'saint-françois'],
+	image : 'http://arthurfortin.fr/images/punjab.jpg',
+    page: 'https://www.facebook.com/pages/Le-Punjab/143344159044020',
+	typetag : ['restaurant'],
+	boissonstag : [''],
+	nourrituretag : ['indien', 'poulet madras', 'shaki korma', 'tikka massala', 'nan', 'curry madras'],
+	produitstag : [''],
+animationtag : [''],
+	musiquetag: [''],
+	amenagementtag: [''],
+	ouverturetag : ['midi'],
+	livraisontag : [''],
+	marquetag : [''],
+	avis: 'De la bonne cuisine typique indienne avec des nans à tomber'
+  },
+  
+   {
+    name: 'Le New Delhi ',
+    location: 'Saint-François',
+	locationTag : ['centre-ville', 'saint-françois'],
+	image : 'http://arthurfortin.fr/images/newdel.jpg',
+    page: '',
+	typetag : ['restaurant'],
+	boissonstag : [''],
+	nourrituretag : ['indien', 'poulet madras', 'shaki korma', 'tikka massala', 'nan', 'curry madras'],
+	produitstag : [''],
+animationtag : [''],
+	musiquetag: [''],
+	amenagementtag: [''],
+	ouverturetag : ['midi'],
+	livraisontag : [''],
+	marquetag : [''],
+	avis: 'De la bonne cuisine typique indienne avec des nans à tomber'
+  },
+  
   {
     name: 'L\'Adresse',
     location: 'rues piétonnes',

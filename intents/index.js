@@ -15,4 +15,5 @@ tagresto: require('./tagAnswer.js')  ,
 achat: require('./achatAnswer.js')  ,
 avis: require('./avis.js')  ,
 activite: require('./activiteAnswer.js')  ,
+anecdote: require('./anecdoteAnswer.js')  ,
  } 

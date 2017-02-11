@@ -565,6 +565,25 @@ animationtag : [''],
   },
   
   {
+    name: 'La Maison ',
+    location: 'Saint-Nicolas',
+	locationTag : ['centre-ville', 'Saint-Nicolas', 'docks'],
+	image : 'http://arthurfortin.fr/images/maison.jpg',
+    page: 'https://www.facebook.com/restaurantlamaisonlehavre',
+	typetag : ['restaurant', 'afterwork'],
+	boissonstag : [''],
+	nourrituretag : ['tartare', 'bavette', 'frites', 'cabillaud', 'poisson'],
+	produitstag : [''],
+animationtag : ['concert', 'concerts'],
+	musiquetag: ['jazz'],
+	amenagementtag: [''],
+	ouverturetag : ['midi'],
+	livraisontag : [''],
+	marquetag : [''],
+	avis: 'Un très bon resto, une cuisine raffinée et un porte-feuille encore en vie à la fin. '
+  },
+  
+  {
     name: 'Punjab ',
     location: 'Saint-François',
 	locationTag : ['centre-ville', 'saint-françois'],

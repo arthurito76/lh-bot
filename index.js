@@ -9,7 +9,7 @@ const connector = new builder.ChatConnector({
   appId: '3cfbf84d-f022-495f-a8f7-0d4b2ddd6504',
   appPassword: 'yio4TqmvQt6ewOzCsqOPgd5',
 })
-const recastClient = new recast.Client(config.recast)
+const recastClient = new recast.Client(config.recast, 'fr')
 const bot = new builder.UniversalBot(connector)
 // Event when Message received
 

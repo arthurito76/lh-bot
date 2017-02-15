@@ -12,7 +12,7 @@ const connector = new builder.ChatConnector({
 const recastClient = new recast.Client(config.recast, 'fr')
 const bot = new builder.UniversalBot(connector)
 // Event when Message received
-
+const replies = ['Je ne comprends pas encore tout très bien, il faut être patient avec moi. Je suis un jeune bot qui doit apprendre.', 'ouhlala j\'ai encore beaucoup à apprendre tu sais', 'Là je n\'ai pas la réponse mais promis je vais chercher', 'hein ?', 'je vais sortir mon chapeau et ma guinbardine pour enquêter...', 'Je ne suis qu\'un bot, pas terminator', 'j\'aimerais te répondre mais les limites de l\'AI ne me permettent de répondre qu\'à des requêtes simples']
 
  const sendMessageByType = (session, elem) => {
   if (elem.type == 'image') {
@@ -112,7 +112,7 @@ INTENTS[intent.slug](entities, user)
 .catch(err => { err.forEach((message) => sendMessageByType(session, message)) }) 
 } 
 
-else { sendMessageByType(['Je ne comprends pas encore tout très bien, il faut être patient avec moi. Je suis un jeune bot qui doit apprendre.', 'ouhlala j\'ai encore beaucoup à apprendre tu sais', 'Là je n\'ai pas la réponse mais promis je vais chercher', 'hein ?', 'je vais sortir mon chapeau et ma guinbardine pour enquêter...', 'Je ne suis qu\'un bot, pas terminator', 'j\'aimerais te répondre mais les limites de l\'AI ne me permettent de répondre qu\'à des requêtes simples']) }
+else { sendMessageByType(session, {type: 'text', content: replies[Math.floor(Math.random() * replies.length)] }) }
  }})
   .catch((err) => { console.log (err); session.send('ouch!.') })
 })

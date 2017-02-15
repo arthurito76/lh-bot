@@ -103,7 +103,7 @@ bot.dialog('/', (session) => {
   recastClient.textRequest(session.message.text)
   .then(res => {
     const intent = res.intent()
-	
+	console.log(res)
 if (intent) {
   const entities = getEntities(res, user)
   if (INTENTS[intent.slug]) {

@@ -98,25 +98,23 @@ function addPersistentMenu(){
 }
 
 bot.dialog('/', (session) => {
-	 
   const user = session.privateConversationData
   recastClient.textRequest(session.message.text)
-  .then(res => {
-    const intent = res.intent()
-console.log(intent)
-if (intent) {
-	console.log('la');
-  const entities = getEntities(res, user)
-  if (INTENTS[intent.slug]) {
-INTENTS[intent.slug](entities, user) 
-.then(res => { res.forEach((message) => sendMessageByType(session, message)) }) 
-.catch(err => { err.forEach((message) => sendMessageByType(session, message)) }) 
-} 
-
-else { console.log('ici'); sendMessageByType(session, {type: 'text', content: replies[Math.floor(Math.random() * replies.length)] }) }
- }})
-  .catch((err) => { console.log (err); session.send('ouch!.') })
-})
+    .then(res => {
+      const intent = res.intent()
+      console.log(intent)
+      if (intent && INTENTS[intent.slug]) {
+        const entities = getEntities(res, user)
+        INTENTS[intent.slug](entities, user)
+          .then(res => { res.forEach((message) => sendMessageByType(session, message)) })
+          .catch(err => { err.forEach((message) => sendMessageByType(session, message)) })
+      } else {
+        console.log('ici');
+        sendMessageByType(session, {type: 'text', content: replies[Math.floor(Math.random() * replies.length)] })
+      }
+    })
+    .catch((err) => { console.log (err); session.send('ouch!.') })
+}) 
 // Setup Restify Server
 // Server Init
 const server = restify.createServer()

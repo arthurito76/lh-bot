@@ -105,6 +105,7 @@ bot.dialog('/', (session) => {
     const intent = res.intent()
 console.log(intent)
 if (intent) {
+	console.log('la');
   const entities = getEntities(res, user)
   if (INTENTS[intent.slug]) {
 INTENTS[intent.slug](entities, user) 

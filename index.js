@@ -112,7 +112,7 @@ INTENTS[intent.slug](entities, user)
 .catch(err => { err.forEach((message) => sendMessageByType(session, message)) }) 
 } 
 
-else { sendMessageByType(session, {type: 'text', content: replies[Math.floor(Math.random() * replies.length)] }) }
+else { console.log('ici') sendMessageByType(session, {type: 'text', content: replies[Math.floor(Math.random() * replies.length)] }) }
  }})
   .catch((err) => { console.log (err); session.send('ouch!.') })
 })

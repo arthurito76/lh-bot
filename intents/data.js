@@ -868,6 +868,44 @@ animationtag : [''],
 	avis: 'L\'une des meilleures viandes de la ville à déguster dans un cadre encore dans son jus. Incontournable'
   },
   
+   {
+    name: 'Phildar',
+    location: 'rues piétonnes',
+	locationTag : ['centre-ville', 'rues piétonnes'],
+	image : 'http://arthurfortin.fr/images/nofoto.jpg',
+    page: 'http://www.phildar.fr/magasin/le-havre-phildar.r.html',
+	typetag : ['magasin'],
+	boissonstag : [''],
+	nourrituretag : [''],
+	produitstag : ['laine', 'aiguilles à tricoter', 'tricot', 'crochet'],
+animationtag : [''],
+	musiquetag: [''],
+	amenagementtag: [''],
+	ouverturetag : [''],
+	livraisontag : [''],
+	marquetag : [''],
+	avis: 'C\'est beau et design,'
+  },
+  
+   {
+    name: 'L\'aiguillon',
+    location: 'rues piétonnes',
+	locationTag : ['centre-ville', 'rues piétonnes'],
+	image : 'http://arthurfortin.fr/images/nofoto.jpg',
+    page: 'https://www.facebook.com/Boucherie-Laiguillon-337793553093831',
+	typetag : ['boucherie'],
+	boissonstag : [''],
+	nourrituretag : [''],
+	produitstag : ['saucisses', 'marguez', 'boudin', 'pommes dauphines', 'coquelet', 'poulet', 'pintade', 'volaille', 'steack haché', 'tournedos', 'bavette'],
+animationtag : [''],
+	musiquetag: [''],
+	amenagementtag: [''],
+	ouverturetag : [''],
+	livraisontag : [''],
+	marquetag : [''],
+	avis: 'LA meilleure boucherie'
+  },
+  
   {
     name: 'Fleur de Sel',
     location: 'Saint-François',

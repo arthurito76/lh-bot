@@ -1060,24 +1060,7 @@ animationtag : [''],
 	avis: 'Le seul primeur de la ville à proposer du bio à ma connaissance'
   },
   
-   {
-    name: 'Chez Fabrice',
-    location: 'les Halles Centrales',
-	locationTag : ['centre-ville', 'les halles', 'rues piétonnes'],
-	image : 'http://arthurfortin.fr/images/nofoto.jpg',
-    page: 'http://www.phildar.fr/magasin/le-havre-phildar.r.html',
-	typetag : ['fromager'],
-	boissonstag : [''],
-	nourrituretag : [''],
-	produitstag : ['gorgonzola', 'tome', 'camembert', 'crochet', 'fromage', 'époisse', 'crotin', 'chèvre', 'cantal', 'gouda', 'saint-marcelin'],
-animationtag : [''],
-	musiquetag: [''],
-	amenagementtag: [''],
-	ouverturetag : [''],
-	livraisontag : [''],
-	marquetag : [''],
-	avis: 'Du bon claquos '
-  },
+  
   
   {
     name: 'Fleur de Sel',
@@ -1386,7 +1369,7 @@ animationtag : [''],
   },
   
     {
-    name: 'Chez Fabrice',
+    name: 'Le Chauss\'Pied',
     location: 'les Halles Centrales',
 	locationTag : ['centre-ville', 'les halles', 'rues piétonnes'],
 	image : 'http://arthurfortin.fr/images/nofoto.jpg',

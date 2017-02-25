@@ -888,6 +888,46 @@ animationtag : [''],
   },
   
    {
+    name: 'Chez Fabrice',
+    location: 'les Halles Centrales',
+	locationTag : ['centre-ville', 'les halles', 'rues piétonnes'],
+	image : 'http://arthurfortin.fr/images/nofoto.jpg',
+    page: 'http://www.phildar.fr/magasin/le-havre-phildar.r.html',
+	typetag : ['fromager'],
+	boissonstag : [''],
+	nourrituretag : [''],
+	produitstag : ['gorgonzola', 'tome', 'camembert', 'crochet', 'fromage', 'époisse', 'crotin', 'chèvre', 'cantal', 'gouda'],
+animationtag : [''],
+	musiquetag: [''],
+	amenagementtag: [''],
+	ouverturetag : [''],
+	livraisontag : [''],
+	marquetag : [''],
+	avis: 'Du bon claquos '
+  },
+  
+  {
+    name: 'Chez Fabrice',
+    location: 'les Halles Centrales',
+	locationTag : ['centre-ville', 'les halles', 'rues piétonnes'],
+	image : 'http://arthurfortin.fr/images/nofoto.jpg',
+    page: 'http://www.phildar.fr/magasin/le-havre-phildar.r.html',
+	typetag : ['fromager'],
+	boissonstag : [''],
+	nourrituretag : [''],
+	produitstag : ['gorgonzola', 'tome', 'camembert', 'crochet', 'fromage', 'époisse', 'crotin', 'chèvre', 'cantal', 'gouda', 'saint-marcelin'],
+animationtag : [''],
+	musiquetag: [''],
+	amenagementtag: [''],
+	ouverturetag : [''],
+	livraisontag : [''],
+	marquetag : [''],
+	avis: 'Du bon claquos '
+  },
+  
+  
+  
+   {
     name: 'L\'aiguillon',
     location: 'rues piétonnes',
 	locationTag : ['centre-ville', 'rues piétonnes'],
@@ -1018,6 +1058,25 @@ animationtag : [''],
 	livraisontag : [''],
 	marquetag : ['bio'],
 	avis: 'Le seul primeur de la ville à proposer du bio à ma connaissance'
+  },
+  
+   {
+    name: 'Chez Fabrice',
+    location: 'les Halles Centrales',
+	locationTag : ['centre-ville', 'les halles', 'rues piétonnes'],
+	image : 'http://arthurfortin.fr/images/nofoto.jpg',
+    page: 'http://www.phildar.fr/magasin/le-havre-phildar.r.html',
+	typetag : ['fromager'],
+	boissonstag : [''],
+	nourrituretag : [''],
+	produitstag : ['gorgonzola', 'tome', 'camembert', 'crochet', 'fromage', 'époisse', 'crotin', 'chèvre', 'cantal', 'gouda', 'saint-marcelin'],
+animationtag : [''],
+	musiquetag: [''],
+	amenagementtag: [''],
+	ouverturetag : [''],
+	livraisontag : [''],
+	marquetag : [''],
+	avis: 'Du bon claquos '
   },
   
   {
@@ -1258,7 +1317,7 @@ animationtag : [''],
 	typetag : ['magasin','boutique' ],
 	boissonstag : [''],
 	nourrituretag : [''],
-	produitstag : ['vêtements', 'T-shirts','produits locaux', 'souvenirs','illustrations', 'mugs'],
+	produitstag : ['vêtements', 'T-shirts','produits locaux', 'souvenirs','illustrations', 'mugs', 'bière'],
 animationtag : [''],
 	musiquetag: [''],
 	amenagementtag: [''],
@@ -1302,7 +1361,7 @@ animationtag : [''],
 	amenagementtag: [''],
 	ouverturetag : [''],
 	livraisontag : [''],
-	marquetag : ['carhart', 'nike', 'veja'],
+	marquetag : ['carhart', 'nike', 'veja', 'converse'],
 	avis: 'Le lieu pour avoir du style'
   },
   
@@ -1324,6 +1383,44 @@ animationtag : [''],
 	livraisontag : [''],
 	marquetag : ['lacoste', 'chevignon', 'ralph lauren', 'tommy hilfiger', 'diesel', 'kaporal', 'g-star'],
 	avis: 'L\'un des premiers Printemps (le magasin, pas la saison ahaha)'
+  },
+  
+    {
+    name: 'Chez Fabrice',
+    location: 'les Halles Centrales',
+	locationTag : ['centre-ville', 'les halles', 'rues piétonnes'],
+	image : 'http://arthurfortin.fr/images/nofoto.jpg',
+    page: 'http://www.phildar.fr/magasin/le-havre-phildar.r.html',
+	typetag : ['magasin'],
+	boissonstag : [''],
+	nourrituretag : [''],
+	produitstag : ['chaussures', 'femmes', 'homme', 'talons', 'mocassins', 'cuir'],
+animationtag : [''],
+	musiquetag: [''],
+	amenagementtag: [''],
+	ouverturetag : [''],
+	livraisontag : [''],
+	marquetag : ['repetto', 'geox'],
+	avis: 'Un magasin de godasses avec du choix et du goût'
+  },
+  
+    {
+    name: 'Lulu la Berlue',
+    location: 'Coty',
+	locationTag : ['centre-ville', 'coty'],
+	image : 'http://arthurfortin.fr/images/nofoto.jpg',
+    page: 'http://www.phildar.fr/magasin/le-havre-phildar.r.html',
+	typetag : ['magasin'],
+	boissonstag : [''],
+	nourrituretag : [''],
+	produitstag : ['chaussures', 'femmes', 'homme', 'talons', 'mocassins', 'cuir'],
+animationtag : [''],
+	musiquetag: [''],
+	amenagementtag: [''],
+	ouverturetag : [''],
+	livraisontag : [''],
+	marquetag : ['repetto', 'geox'],
+	avis: 'Un magasin de godasses avec du choix et du goût'
   },
 
   

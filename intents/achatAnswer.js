@@ -141,12 +141,14 @@ for (var i = 0, len = tabProduit.length; i < len; i++) {
      
 } 
 
+// <------- Début option 4 (le type de lieu)------->
 
-if (goodAchats.length && ENTITIES.typeType.length) {
+if (!ENTITIES.produitType.length && !ENTITIES.marqueType.length && ENTITIES.typeType.length) {
     ENTITIES.typeType.forEach(tag => {
        const match = fuzzyType.get(tag.raw);
+	
        if (match.distance > 0.8) {
-         goodAchats = _.filter(goodAchats, place => place.typetag.indexOf(match.value) !== -1)
+         goodAchats = _.filter(datas, place => place.typetag.indexOf(match.value) !== -1)
        }
    })
 }

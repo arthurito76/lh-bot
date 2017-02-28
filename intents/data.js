@@ -951,7 +951,7 @@ animationtag : [''],
     location: 'Hôtel de ville',
 	locationTag : ['centre-ville', 'hôtel de ville'],
 	image : 'http://arthurfortin.fr/images/nofoto.jpg',
-    page: '',
+    page: 'https://www.facebook.com/',
 	typetag : ['poissonerie'],
 	boissonstag : [''],
 	nourrituretag : [''],
@@ -1023,7 +1023,7 @@ animationtag : [''],
   },
   
   {
-    name: 'Prim\' Vert',
+    name: 'Locavor',
     location: 'quai Southampton',
 	locationTag : ['centre-ville', 'quai southampton', 'port'],
 	image : 'http://arthurfortin.fr/images/nofoto.jpg',
@@ -1424,6 +1424,26 @@ animationtag : [''],
 	marquetag : [''],
 	avis: 'Une institution havraise'
   },
+  
+  {
+    name: 'Chagroune Nordine',
+    location: 'Maréchal Joffre',
+	locationTag : ['centre-ville', 'maréchal Joffre', 'rond point'],
+	image : 'http://arthurfortin.fr/images/nofoto.jpg',
+    page: 'https://www.facebook.com/',
+	typetag : ['cordonnier'],
+	boissonstag : [''],
+	nourrituretag : [''],
+	produitstag : ['lacetss', 'clés', 'semelles','piles','montre', 'femmes', 'homme', 'lumière', 'luminaires', 'trousses', 'carnets', 'peluches','cadeaux de naissance', ''],
+animationtag : [''],
+	musiquetag: [''],
+	amenagementtag: [''],
+	ouverturetag : [''],
+	livraisontag : [''],
+	marquetag : [''],
+	avis: 'pratique pour tes souliers '
+  },
+  
   
   {
     name: 'Chagroune Nordine',

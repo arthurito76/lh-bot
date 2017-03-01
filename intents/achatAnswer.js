@@ -52,15 +52,15 @@ const fuzzyMarque = new Fuzzy(marque);
 const random = array => { return array[Math.floor(Math.random() * array.length)] }
 const achatAnswer = (ENTITIES, USER) => { 
 	 
-if (!ENTITIES.produitType.length && !ENTITIES.marqueType.length) { return Promise.resolve([utils.toText('Que veux-tu acheter exactement ?')])}
-
+if (!ENTITIES.produitType.length && !ENTITIES.marqueType.length && !ENTITIES.typeType.length) { return Promise.resolve([utils.toText('Que veux-tu acheter exactement ?')])}
+console.log ("jusqu'ici tout va bien") 
 
  var goodAchats = []
  
  // mes variables
 var tabProduit = ENTITIES.produitType
 var tabMarque = ENTITIES.marqueType
- 
+ console.log ("là aussi") 
  // <------- Début option 1 (marques + produits)------->
  
 if (ENTITIES.produitType.length && ENTITIES.marqueType.length) {
@@ -146,7 +146,7 @@ for (var i = 0, len = tabProduit.length; i < len; i++) {
 if (!ENTITIES.produitType.length && !ENTITIES.marqueType.length && ENTITIES.typeType.length) {
     ENTITIES.typeType.forEach(tag => {
        const match = fuzzyType.get(tag.raw);
-	console.log("que type") 
+	console.log("et là") 
        if (match.distance > 0.8) {
          goodAchats = _.filter(datas, place => place.typetag.indexOf(match.value) !== -1)
        }

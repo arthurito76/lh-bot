@@ -470,6 +470,25 @@ animationtag : [''],
   },
   
     {
+    name: 'Torino ',
+    location: 'avenue Coty',
+	locationTag : ['centre-ville', 'coty', 'ormeaux'],
+	image : 'http://arthurfortin.fr/images/nofoto.jpg',
+    page: 'https://www.facebook.com',
+	typetag : ['pizzeria'],
+	boissonstag : [''],
+	nourrituretag : ['pizza', 'panini', 'pâtes'],
+	produitstag : [''],
+animationtag : [''],
+	musiquetag: [''],
+	amenagementtag: [''],
+	ouverturetag : ['midi'],
+	livraisontag : [''],
+	marquetag : [''],
+	avis: 'LE meilleur panini de la ville, une folie.'
+  },
+  
+    {
     name: 'Le Chieng Mai ',
     location: 'Niemeyer',
 	locationTag : ['centre-ville', 'niemeyer', 'rues piétonnes', 'volcan'],
@@ -1424,7 +1443,43 @@ animationtag : [''],
   },
   
   
+ {
+    name: 'La Galerne',
+    location: 'Hôtel de Ville',
+	locationTag : ['centre-ville', 'hôtel de ville'],
+	image : 'http://arthurfortin.fr/images/nofoto.jpg',
+    page: 'https://www.facebook.com/librairie.lagalerne',
+	typetag : ['librairie', 'libraire'],
+	boissonstag : [''],
+	nourrituretag : [''],
+	produitstag : ['BD', 'bande dessinée', 'roman', 'essais', 'livre jeunesse', 'cadeau de naissance', 'livre', 'mangas'],
+animationtag : [''],
+	musiquetag: [''],
+	amenagementtag: [''],
+	ouverturetag : [''],
+	livraisontag : [''],
+	marquetag : [''],
+	avis: 'Mon coin préféré de la ville et au passage l\'une des meilleures librairies de France'
+  },
   
+   {
+    name: 'Star-Livres',
+    location: 'boulevard de Strasbourg',
+	locationTag : ['centre-ville', 'boulevard de strasbourg'],
+	image : 'http://arthurfortin.fr/images/nofoto.jpg',
+    page: 'https://www.facebook.com/starlivre',
+	typetag : ['librairie', 'libraire', 'bouquiniste'],
+	boissonstag : [''],
+	nourrituretag : [''],
+	produitstag : ['BD', 'bande dessinée', 'roman', 'essais', 'livre jeunesse', 'cadeau de naissance', 'livre', 'mangas', 'jeux vidéos', 'figurines', 'comics'],
+animationtag : [''],
+	musiquetag: [''],
+	amenagementtag: [''],
+	ouverturetag : [''],
+	livraisontag : [''],
+	marquetag : ['marvel', 'DC'],
+	avis: 'un temple pour les Geeks et les amoureux des livres'
+  },
   
  ]
 

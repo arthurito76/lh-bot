@@ -1481,6 +1481,44 @@ animationtag : [''],
 	avis: 'un temple pour les Geeks et les amoureux des livres'
   },
   
+    {
+    name: 'Coquelicot',
+    location: 'avenue Coty',
+	locationTag : ['centre-ville', 'Coty'],
+	image : 'http://arthurfortin.fr/images/nofoto.jpg',
+    page: 'https://www.facebook.com/coquelicotlehavre',
+	typetag : ['fleuriste', 'décorateur d\'intérieur'],
+	boissonstag : [''],
+	nourrituretag : [''],
+	produitstag : ['fleurs', 'compositions florales', 'fleurs', 'bouquets', 'plantes', 'pots', 'terreau'],
+animationtag : ['mariages'],
+	musiquetag: [''],
+	amenagementtag: [''],
+	ouverturetag : [''],
+	livraisontag : [''],
+	marquetag : [''],
+	avis: 'un chouette fleuriste pour qui la composition florale est un art'
+  },
+  
+   {
+    name: 'Croc Pot',
+    location: 'Saint-Roch',
+	locationTag : ['centre-ville', 'saint-roch'],
+	image : 'http://arthurfortin.fr/images/nofoto.jpg',
+    page: 'https://www.facebook.com/Crocpot-907468492684866',
+	typetag : ['fleuriste', 'jardinerie'],
+	boissonstag : [''],
+	nourrituretag : [''],
+	produitstag : ['fleurs', 'compositions florales', 'fleurs', 'bouquets', 'plantes', 'pots', 'terreau', 'accessoirs de jardin', 'engrais'],
+animationtag : ['potager'],
+	musiquetag: [''],
+	amenagementtag: [''],
+	ouverturetag : [''],
+	livraisontag : [''],
+	marquetag : [''],
+	avis: 'un très bon magasin de plantes où tu trouveras tout le nécessaire pour rendre tes mains bien vertes. Sourire compris.'
+  },
+  
  ]
 
 module.exports = datas

@@ -716,6 +716,25 @@ animationtag : [''],
 	avis: 'L\'un des meilleurs italiens de la ville, basta !'
   },
   
+    {
+    name: 'Casse-Noisette',
+    location: 'Niemeyer',
+	locationTag : ['Niemeyer', 'centre-ville'],
+	image : 'http://arthurfortin.fr/images/ald.jpg',
+    page: 'https://www.facebook.com/Al-Dente-Ristorante-196816710348037',
+	typetag : ['restaurant', 'végétalien', 'traiteur'],
+	boissonstag : [''],
+	nourrituretag : ['lasagnes', 'soupes', 'gratin', 'gratin', 'tofu', 'houmous', 'caviar d\'aubergine', 'légume', 'polenta','quiche', 'gâteaux'],
+	produitstag : [''],
+animationtag : [''],
+	musiquetag: [''],
+	amenagementtag: [''],
+	ouverturetag : ['midi'],
+	livraisontag : [''],
+	marquetag : [''],
+	avis: 'Un resto 100% vegan avec de succulents petits plats. On adhère!'
+  },
+  
    {
     name: 'O Délices du Liban',
     location: 'Rue de la Soif',

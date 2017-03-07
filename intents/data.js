@@ -1538,6 +1538,25 @@ animationtag : ['potager'],
 	avis: 'un très bon magasin de plantes où tu trouveras tout le nécessaire pour rendre tes mains bien vertes. Sourire compris.'
   },
   
+  {
+    name: 'Maison de la Presse',
+    location: 'les Halles',
+	locationTag : ['centre-ville', 'les Halles'],
+	image : 'http://arthurfortin.fr/images/nofoto.jpg',
+    page: 'https://www.facebook.com/Maison-de-la-Presse-des-Halles-Centrales-451715521671631',
+	typetag : ['presse', 'marchand de journaux'],
+	boissonstag : [''],
+	nourrituretag : [''],
+	produitstag : ['journaux', 'Paris Normandie', 'Ouest France', 'cartes', 'magazine'],
+animationtag : [''],
+	musiquetag: [''],
+	amenagementtag: [''],
+	ouverturetag : ['dimanche'],
+	livraisontag : [''],
+	marquetag : ['pokemon'],
+	avis: 'Si tu cherches de la presse, c\'est the place to be.'
+  },
+  
  ]
 
 module.exports = datas

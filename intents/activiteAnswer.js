@@ -11,6 +11,13 @@ return [...prev, ...current.produitstag];
 }, [])
 const fuzzyProduit = new Fuzzy(produit);
 
+const musique = datas.reduce((prev, current) => {
+if (current.musiquetag) {
+return [...prev, ...current.musiquetag];
+} else { return prev }
+}, [])
+const fuzzymusique = new Fuzzy(musique);
+
 const location = datas.reduce((prev, current) => {
 if (current.locationTag) {
 return [...prev, ...current.locationTag];
@@ -94,7 +101,14 @@ if (goodActivite.length && ENTITIES.ouvertureType.length) {
    })
 }
 
-
+if (goodActivite.length && ENTITIES.musiqueType.length) {
+    ENTITIES.musiqueType.forEach(tag => {
+       const match = fuzzymusique.get(tag.raw);
+       if (match.distance > 0.8) {
+         goodActivite = _.filter(goodActivite, place => place.musiquetag.indexOf(match.value) !== -1)
+       }
+   })
+}
 
 if (goodActivite.length && ENTITIES.locationType.length) {
     ENTITIES.locationType.forEach(tag => {

@@ -1557,6 +1557,27 @@ animationtag : [''],
 	avis: 'Si tu cherches de la presse, c\'est the place to be.'
   },
   
+  {
+    name: 'Vent d\'Ouest',
+    location: 'avenue Foch',
+	locationTag : ['centre-ville', 'avenue Foch', 'saint-joseph'],
+	image : 'http://arthurfortin.fr/images/nofoto.jpg',
+    page: 'https://www.facebook.com/pages/Hôtel-Vent-dOuest/148982211803940',
+	typetag : ['hôtel', 'SPA'],
+	boissonstag : [''],
+	nourrituretag : [''],
+	produitstag : [''],
+animationtag : ['dormir', 'massage', 'masser'],
+	musiquetag: [''],
+	amenagementtag: [''],
+	ouverturetag : [''],
+	livraisontag : [''],
+	marquetag : ['Nuxe'],
+	avis: 'Un hôtel avec SPA multi-étoiles'
+  },
+  
+  
+  
  ]
 
 module.exports = datas

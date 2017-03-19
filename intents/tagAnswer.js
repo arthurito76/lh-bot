@@ -73,7 +73,7 @@ const fuzzyLivraison = new Fuzzy(livraison);
 const random = array => { return array[Math.floor(Math.random() * array.length)] }
 const tagAnswer = (ENTITIES, USER) => { 
 
-if (!ENTITIES.nourritureType.length && !ENTITIES.boissonType.length &&!ENTITIES.typeType.length ) { return Promise.resolve([utils.toText('Que veux-tu boire ou manger exactement ?')])}
+if (!ENTITIES.nourritureType.length && !ENTITIES.boissonType.length &&!ENTITIES.typeType.length ) { return Promise.resolve([utils.toText('Que veux-tu boire ou manger exactement ? Etant jeune j\ai encore du mal avec le pluriel et les majuscules')])}
 
 var goodPlaces = []
 // mes variables

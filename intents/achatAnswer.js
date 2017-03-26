@@ -59,7 +59,7 @@ const fuzzyNourriture = new Fuzzy(nourriture);
 const random = array => { return array[Math.floor(Math.random() * array.length)] }
 const achatAnswer = (ENTITIES, USER) => { 
 	 
-if (!ENTITIES.produitType.length && !ENTITIES.marqueType.length && !ENTITIES.typeType.length) { return Promise.resolve([utils.toText('Que veux-tu acheter exactement ? Je n\'ai pas très bien saisi. Parfois le pluriel et les majuscules m\embrouillent les boulons')])}
+if (!ENTITIES.produitType.length && !ENTITIES.marqueType.length && !ENTITIES.typeType.length && !ENTITIES.nourritureType.length) { return Promise.resolve([utils.toText('Que veux-tu acheter exactement ? Je n\'ai pas très bien saisi. Parfois le pluriel et les majuscules m\embrouillent les boulons')])}
 
  var goodAchats = []
  

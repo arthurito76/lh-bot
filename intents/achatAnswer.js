@@ -48,6 +48,13 @@ return [...prev, ...current.marquetag];
 }, [])
 const fuzzyMarque = new Fuzzy(marque);
 
+const nourriture = datas.reduce((prev, current) => {
+if (current.nourrituretag) {
+return [...prev, ...current.nourrituretag];
+} else { return prev }
+}, [])
+
+const fuzzyNourriture = new Fuzzy(nourriture);
 
 const random = array => { return array[Math.floor(Math.random() * array.length)] }
 const achatAnswer = (ENTITIES, USER) => { 
@@ -156,7 +163,7 @@ if (!ENTITIES.produitType.length && !ENTITIES.marqueType.length && ENTITIES.type
 
 // <------- Début option 5 (marques + nourriture)------->
  
-if (ENTITIES.nourritureType.length && ENTITIES.marqueType.length) {
+if (ENTITIES.nourritureType.length && ENTITIES.marqueType.length && !ENTITIES.produitType.length && !ENTITIES.typeType.length) {
 for (var i = 0, len = tabNourriture.length; i < len; i++) {	
 	if (i==0) {	
  ENTITIES.nourritureType.forEach(tag => {
@@ -188,7 +195,7 @@ for (var i = 0, len = tabNourriture.length; i < len; i++) {
 
 // <------- Début option 6 (que de la nourriture)------->
      
-} else if (ENTITIES.nourritureType.length && !ENTITIES.marqueType.length &&!ENTITIES.produitType.length && ENTITIES.typeType.length) {
+else if (ENTITIES.nourritureType.length && !ENTITIES.marqueType.length &&!ENTITIES.produitType.length && !ENTITIES.typeType.length) {
 	for (var i = 0, len = tabProduit.length; i < len; i++) {	
 	if (i==0) {
  ENTITIES.nourritureType.forEach(tag => {

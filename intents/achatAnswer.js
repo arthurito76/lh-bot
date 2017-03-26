@@ -49,8 +49,8 @@ return [...prev, ...current.marquetag];
 const fuzzyMarque = new Fuzzy(marque);
 
 const nourriture = datas.reduce((prev, current) => {
-if (current.nourrituretag) {
-return [...prev, ...current.nourrituretag];
+if (current.produitstag) {
+return [...prev, ...current.produitstag];
 } else { return prev }
 }, [])
 
@@ -169,14 +169,14 @@ for (var i = 0, len = tabNourriture.length; i < len; i++) {
  ENTITIES.nourritureType.forEach(tag => {
      const match = fuzzyNourriture.get(tag.raw);
      if (match.distance > 0.8) {
-       goodAchats = _.filter(datas, place => place.nourrituretag.indexOf(match.value) !== -1)
+       goodAchats = _.filter(datas, place => place.produitstag.indexOf(match.value) !== -1)
      }
  })
  } // fin du IF (i=0)
  else { ENTITIES.nourritureType.forEach(tag => {
      const match = fuzzyNourriture.get(tag.raw);
      if (match.distance > 0.8) {
-       goodAchats = _.filter(goodAchats, place => place.nourrituretag.indexOf(match.value) !== -1)
+       goodAchats = _.filter(goodAchats, place => place.produitstag.indexOf(match.value) !== -1)
      }
  })
  
@@ -202,14 +202,14 @@ else if (ENTITIES.nourritureType.length && !ENTITIES.marqueType.length &&!ENTITI
      const match = fuzzyNourriture.get(tag.raw);
 	 console.log('que bouffe à acheter')
      if (match.distance > 0.8) {
-       goodAchats = _.filter(datas, place => place.nourrituretag.indexOf(match.value) !== -1)
+       goodAchats = _.filter(datas, place => place.produitstag.indexOf(match.value) !== -1)
      }
  })
 } // fin du IF (i=0)
  else { ENTITIES.nourritureType.forEach(tag => {
      const match = fuzzyNourriture.get(tag.raw);
      if (match.distance > 0.8) {
-       goodAchats = _.filter(goodAchats, place => place.nourrituretag.indexOf(match.value) !== -1)
+       goodAchats = _.filter(goodAchats, place => place.produitstag.indexOf(match.value) !== -1)
      }
  })
  

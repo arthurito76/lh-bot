@@ -56,10 +56,17 @@ return [...prev, ...current.produitstag];
 
 const fuzzyNourriture = new Fuzzy(nourriture);
 
+const boisson = datas.reduce((prev, current) => {
+if (current.produitstag) {
+return [...prev, ...current.produitstag];
+} else { return prev }
+}, [])
+const fuzzyBoisson = new Fuzzy(boisson);
+
 const random = array => { return array[Math.floor(Math.random() * array.length)] }
 const achatAnswer = (ENTITIES, USER) => { 
 	 
-if (!ENTITIES.produitType.length && !ENTITIES.marqueType.length && !ENTITIES.typeType.length && !ENTITIES.nourritureType.length) { return Promise.resolve([utils.toText('Que veux-tu acheter exactement ? Je n\'ai pas très bien saisi. Parfois le pluriel et les majuscules m\embrouillent les boulons')])}
+if (!ENTITIES.produitType.length && !ENTITIES.marqueType.length && !ENTITIES.typeType.length && !ENTITIES.nourritureType.length && !ENTITIES.boissonType.length) { return Promise.resolve([utils.toText('Que veux-tu acheter exactement ? Je n\'ai pas très bien saisi. Parfois le pluriel et les majuscules m\embrouillent les boulons')])}
 
  var goodAchats = []
  
@@ -161,7 +168,32 @@ if (!ENTITIES.produitType.length && !ENTITIES.marqueType.length && ENTITIES.type
    })
 }
 
-// <------- Début option 5 (marques + nourriture)------->
+// <------- Début option 5 (que de la boisson)------->
+     
+else if (ENTITIES.boissonType.length && !ENTITIES.nourritureType.length && !ENTITIES.marqueType.length &&!ENTITIES.produitType.length && !ENTITIES.typeType.length) {
+	for (var i = 0, len = tabBoisson.length; i < len; i++) {	
+	if (i==0) {
+ ENTITIES.boissonType.forEach(tag => {
+     const match = fuzzyBoisson.get(tag.raw);
+	 console.log('que boisson à acheter')
+     if (match.distance > 0.8) {
+       goodAchats = _.filter(datas, place => place.produitstag.indexOf(match.value) !== -1)
+     }
+ })
+} // fin du IF (i=0)
+ else { ENTITIES.boissonType.forEach(tag => {
+     const match = fuzzyBoisson.get(tag.raw);
+     if (match.distance > 0.8) {
+       goodAchats = _.filter(goodAchats, place => place.produitstag.indexOf(match.value) !== -1)
+     }
+ })
+ 
+ } // fin du ELSE
+ } // fin du FOR 
+     
+} 
+
+// <------- Début option 6 (marques + nourriture)------->
  
 if (ENTITIES.nourritureType.length && ENTITIES.marqueType.length && !ENTITIES.produitType.length && !ENTITIES.typeType.length) {
 for (var i = 0, len = tabNourriture.length; i < len; i++) {	
@@ -193,7 +225,7 @@ for (var i = 0, len = tabNourriture.length; i < len; i++) {
       
 } // fin du IF
 
-// <------- Début option 6 (que de la nourriture)------->
+// <------- Début option 7 (que de la nourriture)------->
      
 else if (ENTITIES.nourritureType.length && !ENTITIES.marqueType.length &&!ENTITIES.produitType.length && !ENTITIES.typeType.length) {
 	for (var i = 0, len = tabNourriture.length; i < len; i++) {	

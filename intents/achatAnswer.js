@@ -196,18 +196,18 @@ for (var i = 0, len = tabNourriture.length; i < len; i++) {
 // <------- Début option 6 (que de la nourriture)------->
      
 else if (ENTITIES.nourritureType.length && !ENTITIES.marqueType.length &&!ENTITIES.produitType.length && !ENTITIES.typeType.length) {
-	for (var i = 0, len = tabProduit.length; i < len; i++) {	
+	for (var i = 0, len = tabNourriture.length; i < len; i++) {	
 	if (i==0) {
  ENTITIES.nourritureType.forEach(tag => {
-     const match = fuzzyProduit.get(tag.raw);
-	 console.log('que produit')
+     const match = fuzzyNourriture.get(tag.raw);
+	 console.log('que bouffe à acheter')
      if (match.distance > 0.8) {
        goodAchats = _.filter(datas, place => place.produitstag.indexOf(match.value) !== -1)
      }
  })
 } // fin du IF (i=0)
  else { ENTITIES.nourritureType.forEach(tag => {
-     const match = fuzzyProduit.get(tag.raw);
+     const match = fuzzyNourriture.get(tag.raw);
      if (match.distance > 0.8) {
        goodAchats = _.filter(goodAchats, place => place.produitstag.indexOf(match.value) !== -1)
      }

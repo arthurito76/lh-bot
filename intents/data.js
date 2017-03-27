@@ -294,7 +294,7 @@ animationtag : [''],
 	amenagementtag: [''],
 	ouverturetag : [''],
 	livraisontag : [''],
-	marquetag : [''],
+	marquetag : ['guinness'],
 	avis: 'Le lieu idéal pour acheter de la bonne bière et savourer une expo.'
   },
   

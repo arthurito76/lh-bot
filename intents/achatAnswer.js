@@ -76,6 +76,7 @@ var tabMarque = ENTITIES.marqueType
 var tabBoisson = ENTITIES.boissonType
 var tabNourriture = ENTITIES.nourritureType
  console.log ("là aussi") 
+ 
  // <------- Début option 1 (marques + produits)------->
  
 if (ENTITIES.produitType.length && ENTITIES.marqueType.length) {
@@ -167,6 +168,41 @@ if (!ENTITIES.produitType.length && !ENTITIES.marqueType.length && ENTITIES.type
        }
    })
 }
+
+
+// <------- Début option 6 (marques + boisson)------->
+ 
+if (ENTITIES.boissonType.length && !ENTITIES.nourritureType.length && ENTITIES.marqueType.length && !ENTITIES.produitType.length && !ENTITIES.typeType.length) {
+for (var i = 0, len = tabBoisson.length; i < len; i++) {	
+	if (i==0) {
+ ENTITIES.boissonType.forEach(tag => {
+     const match = fuzzyBoisson.get(tag.raw);
+	 console.log('Boisson + marque')
+     if (match.distance > 0.8) {
+       goodAchats = _.filter(datas, place => place.produitstag.indexOf(match.value) !== -1)
+     }
+ })
+} // fin du IF (i=0)
+ else { ENTITIES.boissonType.forEach(tag => {
+     const match = fuzzyBoisson.get(tag.raw);
+     if (match.distance > 0.8) {
+       goodAchats = _.filter(goodAchats, place => place.produitstag.indexOf(match.value) !== -1)
+     }
+ })
+ 
+ } // fin du ELSE
+ } // fin du FOR 
+ 
+  ENTITIES.marqueType.forEach(tag => {
+       const match = fuzzyMarque.get(tag.raw);
+	  console.log('...marque!')
+       if (match.distance > 0.8) {
+         goodAchats = _.filter(goodAchats, place => place.marquetag.indexOf(match.value) !== -1)
+       }
+   })   
+      
+} // fin du IF
+
 
 // <------- Début option 5 (que de la boisson)------->
      

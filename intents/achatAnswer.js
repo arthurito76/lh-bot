@@ -286,6 +286,40 @@ else if (ENTITIES.nourritureType.length && !ENTITIES.marqueType.length &&!ENTITI
      
 } 
 
+ 
+ // <------- Début option  (nourriture + boisson)------->
+ 
+if (ENTITIES.boissonType.length && ENTITIES.nourritureType.length) {
+for (var i = 0, len = tabBoisson.length; i < len; i++) {	
+	if (i==0) {
+ ENTITIES.boissonType.forEach(tag => {
+     const match = fuzzyBoisson.get(tag.raw);
+	 console.log('Boisson + nourriture')
+     if (match.distance > 0.8) {
+       goodAchats = _.filter(datas, place => place.produitstag.indexOf(match.value) !== -1)
+     }
+ })
+} // fin du IF (i=0)
+ else { ENTITIES.boissonType.forEach(tag => {
+     const match = fuzzyBoisson.get(tag.raw);
+     if (match.distance > 0.8) {
+       goodAchats = _.filter(goodAchats, place => place.produitstag.indexOf(match.value) !== -1)
+     }
+ })
+ 
+ } // fin du ELSE
+ } // fin du FOR 
+ 
+ ENTITIES.nourritureType.forEach(tag => {
+        const match = fuzzyNourriture.get(tag.raw);
+     if (match.distance > 0.8) {
+       goodAchats = _.filter(goodAchats, place => place.produitstag.indexOf(match.value) !== -1)
+       }
+   })   
+      
+} // fin du IF
+
+
 if (goodAchats.length && ENTITIES.ouvertureType.length) {
     ENTITIES.ouvertureType.forEach(tag => {
        const match = fuzzyOuverture.get(tag.raw);

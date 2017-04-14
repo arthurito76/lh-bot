@@ -6,6 +6,9 @@ answer.push(utils.toText('Ca me fait plaisir ;-)'))
  answer.push(utils.toText('J\'aime faire connaître les bons plan du LH'))	
   answer.push(utils.toText('De rien mon bézot'))	
   return Promise.resolve([random(answer)])
-  
+  USER.detailType = null
+console.log('coucou achat')
+USER.locationType = null
+console.log('coucou')
 }
 module.exports = merciAnswer

@@ -144,10 +144,6 @@ for (var i = 0, len = goodActivite.length; i < len; i++) {
   cards.push({ title, image, buttons })
 }
 answer.push(utils.toCarousel(cards))
-USER.detailType = null
-console.log('coucou achat')
-USER.locationType = null
-console.log('coucou')
 return Promise.resolve(answer) 
 }
 module.exports = activiteAnswer

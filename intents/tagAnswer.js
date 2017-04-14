@@ -266,10 +266,6 @@ for (var i = 0, len = goodPlaces.length; i < len; i++) {
   cards.push({ title, image, buttons })
 }
 answer.push(utils.toCarousel(cards))
-USER.typeType = null
-USER.locationType = null
-console.log('annulation réponses')
-USER.ouvertureType = null
 return Promise.resolve(answer) 
 }
 

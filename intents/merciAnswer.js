@@ -12,6 +12,9 @@ answer.push(utils.toText('Ca me fait plaisir ;-)'))
 console.log('coucou achat')
 USER.locationType = null
 console.log('coucou')
+user.ouvertureType = null
+ user.marqueType = null
+    user.typeType = null
   return Promise.resolve([random(answer)])
 }
 module.exports = merciAnswer

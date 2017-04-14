@@ -1,5 +1,6 @@
 const utils = require('./util.js')
 const getEntities = require('../getEntities.js')
+console.log (getEntitie)
 const random = array => { return array[Math.floor(Math.random() * array.length)] }
 const merciAnswer = () => {
   const answer = []

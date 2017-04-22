@@ -101,7 +101,7 @@ for (var i = 0, len = tabProduit.length; i < len; i++) {
  
   ENTITIES.marqueType.forEach(tag => {
        const match = fuzzyMarque.get(tag.raw);
-	  console.log('...marque!')
+	  console.log(match)
        if (match.distance > 0.8) {
          goodAchats = _.filter(goodAchats, place => place.marquetag.indexOf(match.value) !== -1)
        }

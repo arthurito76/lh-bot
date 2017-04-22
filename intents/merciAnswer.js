@@ -8,9 +8,9 @@ answer.push(utils.toText('Ca me fait plaisir ;-)'))
  answer.push(utils.toText('J\'aime faire connaître les bons plan du LH'))	
   answer.push(utils.toText('De rien mon bézot'))	
   
-    USER.detailType = null
+   user.detailType = null
 console.log('coucou achat')
-USER.locationType = null
+user.locationType = null
 console.log('coucou')
 user.ouvertureType = null
  user.marqueType = null

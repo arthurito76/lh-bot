@@ -75,7 +75,7 @@ var tabProduit = ENTITIES.produitType
 var tabMarque = ENTITIES.marqueType
 var tabBoisson = ENTITIES.boissonType
 var tabNourriture = ENTITIES.nourritureType
- console.log ("là aussi") 
+
  
  // <------- Début option 1 (marques + produits)------->
  
@@ -334,6 +334,7 @@ if (goodAchats.length && ENTITIES.ouvertureType.length) {
 if (goodAchats.length && ENTITIES.locationType.length) {
     ENTITIES.locationType.forEach(tag => {
        const match = fuzzyLocation.get(tag.raw);
+	   console.log (match)
        if (match.distance > 0.8) {
          goodAchats = _.filter(goodAchats, place => place.locationTag.indexOf(match.value) !== -1)
        }

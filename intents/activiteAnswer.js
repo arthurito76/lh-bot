@@ -79,6 +79,7 @@ if (i==0) {
      const match = fuzzyAnimation.get(tag.raw);
      if (match.distance > 0.8) {
        goodActivite = _.filter(goodActivite, place => place.animationtag.indexOf(match.value) !== -1)
+	   console.log (goodActivite.length)
      }
  })
 } // fin du ELSE
@@ -121,7 +122,7 @@ if (goodActivite.length && ENTITIES.locationType.length) {
    })
 }
 
-
+console.log (goodActivite.length)
 if (goodActivite.length === 0) {
    const answer = []
 answer.push(utils.toText('Je ne sais pas où te diriger mon bézot, je suis désolé'))

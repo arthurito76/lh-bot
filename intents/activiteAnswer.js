@@ -72,6 +72,7 @@ if (i==0) {
 	 console.log (match)
      if (match.distance > 0.8) {
        goodActivite = _.filter(datas, place => place.animationtag.indexOf(match.value) !== -1)
+	   console.log (goodActivite)
      }
  })
  } // Fin du IF --> plusieurs entités 

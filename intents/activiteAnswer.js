@@ -78,7 +78,15 @@ if (i==0) {
  })
  } // Fin du IF --> plusieurs entités 
  
-
+ else { ENTITIES.animationType.forEach(tag => {
+     const match = fuzzyAnimation.get(tag.raw);
+     if (match.distance > 0.8) {
+       goodActivite = _.filter(goodActivite, place => place.animationtag.indexOf(match.value) !== -1)
+	   console.log ("second :")
+	   console.log (goodActivite.length)
+     }
+ })
+} // fin du ELSE
  } // fin du FOR
   }// fin du IF
 
@@ -87,6 +95,8 @@ if (goodActivite.length && ENTITIES.typeType.length) {
        const match = fuzzyType.get(tag.raw);
        if (match.distance > 0.8) {
          goodActivite = _.filter(goodActivite, place => place.typetag.indexOf(match.value) !== -1)
+		  console.log ("third :")
+	   console.log (goodActivite.length)
        }
    })
 }
@@ -97,6 +107,8 @@ if (goodActivite.length && ENTITIES.ouvertureType.length) {
        const match = fuzzyOuverture.get(tag.raw);
        if (match.distance > 0.8) {
          goodActivite = _.filter(goodActivite, place => place.ouverturetag.indexOf(match.value) !== -1)
+		  console.log ("four :")
+	   console.log (goodActivite.length)
        }
    })
 }
@@ -106,6 +118,8 @@ if (goodActivite.length && ENTITIES.musiqueType.length) {
        const match = fuzzymusique.get(tag.raw);
        if (match.distance > 0.8) {
          goodActivite = _.filter(goodActivite, place => place.musiquetag.indexOf(match.value) !== -1)
+		  console.log ("five :")
+	   console.log (goodActivite.length)
        }
    })
 }
@@ -115,11 +129,13 @@ if (goodActivite.length && ENTITIES.locationType.length) {
        const match = fuzzyLocation.get(tag.raw);
        if (match.distance > 0.8) {
          goodActivite = _.filter(goodActivite, place => place.locationTag.indexOf(match.value) !== -1)
+		  console.log ("six :")
+	   console.log (goodActivite.length)
        }
    })
 }
 
-console.log ("Third :")
+console.log ("final :")
 console.log (goodActivite.length)
 if (goodActivite.length === 0) {
    const answer = []

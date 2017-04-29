@@ -70,6 +70,7 @@ if (i==0) {
      const match = fuzzyAnimation.get(tag.raw);
      if (match.distance > 0.8) {
        goodActivite = _.filter(datas, place => place.animationtag.indexOf(match.value) !== -1)
+	   console.log ("first :")
 	   console.log (goodActivite.length)
      }
  })
@@ -79,6 +80,7 @@ if (i==0) {
      const match = fuzzyAnimation.get(tag.raw);
      if (match.distance > 0.8) {
        goodActivite = _.filter(goodActivite, place => place.animationtag.indexOf(match.value) !== -1)
+	   console.log ("second :")
 	   console.log (goodActivite.length)
      }
  })
@@ -122,6 +124,7 @@ if (goodActivite.length && ENTITIES.locationType.length) {
    })
 }
 
+console.log ("Third :")
 console.log (goodActivite.length)
 if (goodActivite.length === 0) {
    const answer = []

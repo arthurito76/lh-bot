@@ -16,4 +16,5 @@ achat: require('./achatAnswer.js')  ,
 avis: require('./avis.js')  ,
 activite: require('./activiteAnswer.js')  ,
 anecdote: require('./anecdoteAnswer.js')  ,
+anniversaire: require('./anniversaireAnswer.js')  ,
  } 

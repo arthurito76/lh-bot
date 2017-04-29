@@ -63,6 +63,8 @@ if (!ENTITIES.animationType.length) { return Promise.resolve([utils.toText('Que 
 
  var goodActivite = []
  var tabAnimation = ENTITIES.animationType
+ 
+ if (ENTITIES.animationType.length) {
 for (var i = 0, len = tabAnimation.length; i < len; i++) {	
 // 1 seule entité
 if (i==0) {

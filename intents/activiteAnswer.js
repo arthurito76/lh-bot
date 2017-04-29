@@ -36,7 +36,6 @@ return [...prev, ...current.animationtag];
 } else { return prev }
 }, [])
 const fuzzyAnimation = new Fuzzy(animation);
-console.log (fuzzyAnimation)
 
 const amenagement = datas.reduce((prev, current) => {
 if (current.amenagementtag) {
@@ -69,7 +68,6 @@ for (var i = 0, len = tabAnimation.length; i < len; i++) {
 if (i==0) {
  ENTITIES.animationType.forEach(tag => {
      const match = fuzzyAnimation.get(tag.raw);
-	 console.log (match)
      if (match.distance > 0.8) {
        goodActivite = _.filter(datas, place => place.animationtag.indexOf(match.value) !== -1)
 	   console.log (goodActivite)

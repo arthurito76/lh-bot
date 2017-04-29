@@ -36,6 +36,8 @@ return [...prev, ...current.animationtag];
 } else { return prev }
 }, [])
 const fuzzyAnimation = new Fuzzy(animation);
+console.log (fuzzyAnimation)
+
 const amenagement = datas.reduce((prev, current) => {
 if (current.amenagementtag) {
 return [...prev, ...current.amenagementtag];

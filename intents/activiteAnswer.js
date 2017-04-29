@@ -79,6 +79,7 @@ if (i==0) {
  } // Fin du IF --> plusieurs entités 
  
 
+ } // fin du FOR
   }// fin du IF
 
 if (goodActivite.length && ENTITIES.typeType.length) {

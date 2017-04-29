@@ -77,45 +77,10 @@ if (i==0) {
  })
  } // Fin du IF --> plusieurs entités 
  
-
+ 
  } // fin du FOR
 
-if (goodActivite.length && ENTITIES.typeType.length) {
-    ENTITIES.typeType.forEach(tag => {
-       const match = fuzzyType.get(tag.raw);
-       if (match.distance > 0.8) {
-         goodActivite = _.filter(goodActivite, place => place.typetag.indexOf(match.value) !== -1)
-       }
-   })
-}
 
-
-if (goodActivite.length && ENTITIES.ouvertureType.length) {
-    ENTITIES.ouvertureType.forEach(tag => {
-       const match = fuzzyOuverture.get(tag.raw);
-       if (match.distance > 0.8) {
-         goodActivite = _.filter(goodActivite, place => place.ouverturetag.indexOf(match.value) !== -1)
-       }
-   })
-}
-
-if (goodActivite.length && ENTITIES.musiqueType.length) {
-    ENTITIES.musiqueType.forEach(tag => {
-       const match = fuzzymusique.get(tag.raw);
-       if (match.distance > 0.8) {
-         goodActivite = _.filter(goodActivite, place => place.musiquetag.indexOf(match.value) !== -1)
-       }
-   })
-}
-
-if (goodActivite.length && ENTITIES.locationType.length) {
-    ENTITIES.locationType.forEach(tag => {
-       const match = fuzzyLocation.get(tag.raw);
-       if (match.distance > 0.8) {
-         goodActivite = _.filter(goodActivite, place => place.locationTag.indexOf(match.value) !== -1)
-       }
-   })
-}
 
 console.log ("Third :")
 console.log (goodActivite.length)

@@ -90,7 +90,18 @@ if (i==0) {
  } // fin du FOR
   }// fin du IF
 
-
+if (goodActivite.length && ENTITIES.typeType.length) {
+	console.log (ENTITIES.typeType)
+    ENTITIES.typeType.forEach(tag => {
+       const match = fuzzyType.get(tag.raw);
+	   console.log (match)
+       if (match.distance > 0.8) {
+         goodActivite = _.filter(goodActivite, place => place.typetag.indexOf(match.value) !== -1)
+		  console.log ("third :")
+	   console.log (goodActivite.length)
+       }
+   })
+}
 
 
 if (goodActivite.length && ENTITIES.ouvertureType.length) {

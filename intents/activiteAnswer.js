@@ -64,7 +64,6 @@ if (!ENTITIES.animationType.length) { return Promise.resolve([utils.toText('Que 
  var goodActivite = []
  var tabAnimation = ENTITIES.animationType
  
-if (ENTITIES.animationType.length) { 
 for (var i = 0, len = tabAnimation.length; i < len; i++) {	
 // 1 seule entité
 if (i==0) {
@@ -78,17 +77,8 @@ if (i==0) {
  })
  } // Fin du IF --> plusieurs entités 
  
- else { ENTITIES.animationType.forEach(tag => {
-     const match = fuzzyAnimation.get(tag.raw);
-     if (match.distance > 0.8) {
-       goodActivite = _.filter(goodActivite, place => place.animationtag.indexOf(match.value) !== -1)
-	   console.log ("second :")
-	   console.log (goodActivite.length)
-     }
- })
-} // fin du ELSE
+
  } // fin du FOR
-  }// fin du IF
 
 if (goodActivite.length && ENTITIES.typeType.length) {
     ENTITIES.typeType.forEach(tag => {

@@ -6,7 +6,7 @@ const faireAnswer = () => {
      utils.toButton('stats', `les stats`),
      utils.toButton('moves', `show me`),
    ]
-   answer.push(utils.toButtons('Click on them!', boutton))
+   answer.push(utils.toButton('page facebook','yo' , 'imBack'))
   return Promise.resolve(answer)
   
 }

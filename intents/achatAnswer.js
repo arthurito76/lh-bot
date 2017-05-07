@@ -352,7 +352,7 @@ answer.push(utils.toText('Je n’ai rien là.Mais n\'oublie pas : Chaque achat s
 
 
  const answer = [] 
-answer.push(utils.toText('Yes, j\'ai trouvé quelque chose pour toi 💶 : ') )
+answer.push(utils.toText('Yes, j\'ai trouvé quelque chose pour toi 😎 : ') )
 const cards = []
 for (var i = 0, len = goodAchats.length; i < len; i++) {  
   const title = goodAchats[i].name + ' situé à ' + goodAchats[i].location

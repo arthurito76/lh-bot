@@ -54,6 +54,7 @@ const replies = ['Je ne comprends pas encore tout très bien, il faut être pati
     var msg = new builder.Message(session)
         .textFormat(builder.TextFormat.xml)
         .attachments(cards)
+		.attachments('buttons')
         .attachmentLayout('carousel')
     session.send(msg)  
   } else { 

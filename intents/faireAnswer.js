@@ -7,7 +7,7 @@ const faireAnswer = () => {
     utils.toButton('je veux boire', 'boire', 'imBack'),
 	utils.toButton('je veux acheter quelque chose', 'acheter', 'imBack'),
 	]
-   answer.push((buttons))
+   answer.push({buttons})
   return Promise.resolve(answer)
   
 }

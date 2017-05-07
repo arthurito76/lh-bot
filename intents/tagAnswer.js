@@ -73,7 +73,7 @@ const fuzzyLivraison = new Fuzzy(livraison);
 const random = array => { return array[Math.floor(Math.random() * array.length)] }
 const tagAnswer = (ENTITIES, USER) => { 
 
-if (!ENTITIES.nourritureType.length && !ENTITIES.boissonType.length &&!ENTITIES.typeType.length ) { return Promise.resolve([utils.toText('Que veux-tu boire ou manger exactement ? Etant jeune j\ai encore du mal avec le pluriel et les majuscules')])}
+if (!ENTITIES.nourritureType.length && !ENTITIES.boissonType.length &&!ENTITIES.typeType.length ) { return Promise.resolve([utils.toText('Que veux-tu boire ou manger exactement mon bézot? Je n\'ai pas bien saisi Etant jeune j\ai encore du mal avec le pluriel et les majuscules')])}
 
 var goodPlaces = []
 // mes variables
@@ -241,9 +241,9 @@ if (goodPlaces.length && ENTITIES.locationType.length) {
 if (goodPlaces.length === 0) {
    const answer = []
 answer.push(utils.toText('J\'ai pas ça mon bézot, les lieux de vie ne sont pléthores non plus au Havre'))
- answer.push(utils.toText('Non désolé, essaie de reformuler peut-être. Je ne veux pas que tu meurs de soif ou de faim'))	
-  answer.push(utils.toText('ouhla t\'es dur avec moi. Réessaie si tu veux mais n\'oublie pas que je ne suis qu\'un petit robot. Pas Bacchus'))	
-    answer.push(utils.toText('j\'ai pas ça en stock mais je vais chercher parmi mes connaissances épicuriennes'))	
+ answer.push(utils.toText('Non désolé mon bézot, essaie de reformuler peut-être. Je ne veux pas que tu meurs de soif ou de faim'))	
+  answer.push(utils.toText('Non là je n\'ai rien mon bézot. Réessaie si tu veux mais n\'oublie pas que je ne suis qu\'un petit robot. Pas Bacchus'))	
+    answer.push(utils.toText('j\'ai pas ça en stock mon bézot mais je vais chercher parmi mes connaissances épicuriennes'))	
   USER.typeType = null
 USER.locationType = null
 console.log('annulation 0')
@@ -253,7 +253,7 @@ USER.ouvertureType = null
 
 
  const answer = [] 
-answer.push(utils.toText('Yes, j\'ai trouvé quelque chose pour toi : ') )
+answer.push(utils.toText('Yes, j\'ai trouvé quelque chose pour toi 👌 : ') )
 const cards = []
 for (var i = 0, len = goodPlaces.length; i < len; i++) {  
   const title = goodPlaces[i].name + ' situé à ' + goodPlaces[i].location

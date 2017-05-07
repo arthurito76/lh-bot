@@ -5,7 +5,6 @@ const faireAnswer = () => {
   utils.toButton('je veux manger', `manger`),
     utils.toButton('je veux boire', `boire`),
 	utils.toButton('je veux acheter quelque chose', `acheter`),
-   answer.push(utils.toButtons('Click on them!', prompt))
   return Promise.resolve(answer)
   
 }

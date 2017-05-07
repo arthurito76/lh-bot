@@ -20,11 +20,6 @@ const getEntities = (res, user) => {
     entities.locationType = user.locationType
 	}
   
-    if (entities.typeType.length > 0) {
-    user.typeType = entities.typeType
-  } else if (user.typeType) {
-    entities.typeType = user.typeType
-	}
    
     if (entities.ouvertureType.length > 0) {
     user.ouvertureType = entities.ouvertureType

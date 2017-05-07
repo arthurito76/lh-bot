@@ -14,7 +14,6 @@ USER.locationType = null
 console.log('coucou')
 USER.ouvertureType = null
  USER.marqueType = null
-    USER.typeType = null
   return Promise.resolve([random(answer)])
 }
 module.exports = merciAnswer

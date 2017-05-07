@@ -21,13 +21,12 @@ const replies = ['Je ne comprends pas encore tout très bien, il faut être pati
       contentUrl: elem.content,
     }))
 	
-	 else if (elem.type == 'buttons') {
+	} else if (elem.type == 'buttons') {
     const buttons = elem.content.map(button => {
       return (new builder.CardAction().title(button.title).type('imBack').value(button.value))
     })
     const card = new builder.ThumbnailCard().buttons(buttons).subtitle(elem.title)
     session.send(new builder.Message().addAttachment(card))
-  }
 	
   } else if (elem.type == 'carousel') {
 

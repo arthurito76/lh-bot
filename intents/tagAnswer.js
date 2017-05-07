@@ -73,7 +73,7 @@ const fuzzyLivraison = new Fuzzy(livraison);
 const random = array => { return array[Math.floor(Math.random() * array.length)] }
 const tagAnswer = (ENTITIES, USER) => { 
 
-if (!ENTITIES.nourritureType.length && !ENTITIES.boissonType.length &&!ENTITIES.typeType.length ) { return Promise.resolve([utils.toText('Que veux-tu boire ou manger exactement mon bézot? Je n\'ai pas bien saisi Etant jeune j\ai encore du mal avec le pluriel et les majuscules')])}
+if (!ENTITIES.nourritureType.length && !ENTITIES.boissonType.length &&!ENTITIES.typeType.length ) { return Promise.resolve([utils.toText('Que veux-tu boire ou manger exactement mon bézot? Je n\'ai pas bien saisi 😕 Etant jeune j\ai encore du mal avec le pluriel et les majuscules')])}
 
 var goodPlaces = []
 // mes variables
@@ -253,7 +253,7 @@ USER.ouvertureType = null
 
 
  const answer = [] 
-answer.push(utils.toText('Yes, j\'ai trouvé quelque chose pour toi 👌 : ') )
+answer.push(utils.toText('🍸 Yes, j\'ai trouvé quelque chose pour toi🍴 : ') )
 const cards = []
 for (var i = 0, len = goodPlaces.length; i < len; i++) {  
   const title = goodPlaces[i].name + ' situé à ' + goodPlaces[i].location

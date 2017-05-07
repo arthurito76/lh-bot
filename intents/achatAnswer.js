@@ -66,7 +66,7 @@ const fuzzyBoisson = new Fuzzy(boisson);
 const random = array => { return array[Math.floor(Math.random() * array.length)] }
 const achatAnswer = (ENTITIES, USER) => { 
 	 
-if (!ENTITIES.produitType.length && !ENTITIES.marqueType.length && !ENTITIES.typeType.length && !ENTITIES.nourritureType.length && !ENTITIES.boissonType.length) { return Promise.resolve([utils.toText('Que veux-tu acheter exactement ? Je n\'ai pas très bien saisi. Parfois le pluriel et les majuscules m\embrouillent les boulons')])}
+if (!ENTITIES.produitType.length && !ENTITIES.marqueType.length && !ENTITIES.typeType.length && !ENTITIES.nourritureType.length && !ENTITIES.boissonType.length) { return Promise.resolve([utils.toText('Que veux-tu acheter exactement mon bézot? Je n\'ai pas très bien saisi 😕 Parfois le pluriel et les majuscules m\embrouillent les boulons')])}
 
  var goodAchats = []
  
@@ -352,7 +352,7 @@ answer.push(utils.toText('Je n’ai rien là.Mais n\'oublie pas : Chaque achat s
 
 
  const answer = [] 
-answer.push(utils.toText('Yes, j\'ai trouvé quelque chose pour toi : ') )
+answer.push(utils.toText('Yes, j\'ai trouvé quelque chose pour toi 💶 : ') )
 const cards = []
 for (var i = 0, len = goodAchats.length; i < len; i++) {  
   const title = goodAchats[i].name + ' situé à ' + goodAchats[i].location

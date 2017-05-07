@@ -253,7 +253,7 @@ USER.ouvertureType = null
 
 
  const answer = [] 
-answer.push(utils.toText('🍸 Yes, j\'ai trouvé quelque chose pour toi🍴 : ') )
+answer.push(utils.toText('🍸🍴 Yes, j\'ai trouvé quelque chose pour toi : ') )
 const cards = []
 for (var i = 0, len = goodPlaces.length; i < len; i++) {  
   const title = goodPlaces[i].name + ' situé à ' + goodPlaces[i].location

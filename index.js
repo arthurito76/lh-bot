@@ -27,6 +27,7 @@ const replies = ['Je ne comprends pas encore tout très bien, il faut être pati
     })
     const card = new builder.ThumbnailCard().buttons(buttons).subtitle(elem.title)
     session.send(new builder.Message().addAttachment(card))
+	console.log('ok')
 	
   } else if (elem.type == 'carousel') {
 
@@ -60,50 +61,7 @@ const replies = ['Je ne comprends pas encore tout très bien, il faut être pati
   }
 } 
 
-function addPersistentMenu(){
- request({
-    url: 'https://graph.facebook.com/v2.6/me/thread_settings',
-    qs: { access_token: EAAZAgZCeKLlq4BAOmcfpvVnjq96PZBZAhZB9bwCNhTIcdRB6XQaCsZBUgoOaDwTqsIMDwGhaxa8ftcoW25AFDfgbIuN5yNQ5JSyqKKLYrC1esGjviZBTkdPZA9fSjRSiP9HI39ZBpSMmZAZBZCMPpRSOFOXuZAgYjw85LJvBAIzT673Fk9gZDZD },
-    method: 'POST',
-    json:{
-        setting_type : "call_to_actions",
-        thread_state : "existing_thread",
-        call_to_actions:[
-            {
-              type:"postback",
-              title:"Manger",
-              payload:"manger"
-            },
-            {
-              type:"postback",
-              title:"Boire",
-              payload:"boire"
-            },
-			
-			{
-              type:"postback",
-              title:"Acheter",
-              payload:"acheter"
-            },
-            {
-              type:"postback",
-              title:"anecdote sur le havre",
-              payload:"anecdote"
-            },
-           
-          ]
-    }
 
-}, function(error, response, body) {
-    console.log(response)
-    if (error) {
-        console.log('Error sending messages: ', error)
-    } else if (response.body.error) {
-        console.log('Error: ', response.body.error)
-    }
-})
-
-}
 
 bot.dialog('/', (session) => {
   const user = session.privateConversationData

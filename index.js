@@ -26,7 +26,7 @@ const replies = ['Je ne comprends pas encore tout très bien, il faut être pati
       return (new builder.CardAction().title(button.title).type('imBack').value(button.value))
     })
     const card = new builder.ThumbnailCard().buttons(buttons).subtitle(elem.title)
-    session.send(new builder.Message().addAttachment(card))
+    session.send(new builder.Message(session).addAttachment(card))
 	console.log('ok')
 	
   } else if (elem.type == 'carousel') {

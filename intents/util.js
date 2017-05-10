@@ -3,6 +3,6 @@
  toText: message => ({ type: 'text', content: message } ),
  toButton: (title, value, type) => { return { title, value, type } },
  toCarousel: (cards) => { return { type: 'carousel', cards } },
- toButtonsTest: (title, buttons) => ({ type: 'quickReplies', content: {title: 'TITLE', buttons: [{title: 'BUTTON_TITLE', value: 'BUTTON_VALUE',},]}}),
+ toButtonsTest: (title, buttons) => ({ type: 'buttons', content: buttons, title }),
 }
 module.exports = utils 
